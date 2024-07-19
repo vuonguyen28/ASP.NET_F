@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="08e73bade26e41ed8ee420823a2396bb" Name="Diagram1">
+        <EntityTypeShape EntityType="QLTTModel.ChucNang" Width="1.5" PointX="5.75" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLTTModel.DanhGiaSanPham" Width="1.5" PointX="5.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLTTModel.DanhMuc" Width="1.5" PointX="0.75" PointY="2.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLTTModel.GiamGia" Width="1.5" PointX="0.75" PointY="15.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLTTModel.HinhAnhSanPham" Width="1.5" PointX="3" PointY="11.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLTTModel.KichThuoc" Width="1.5" PointX="3.75" PointY="20.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLTTModel.KhuyenMai" Width="1.5" PointX="3.75" PointY="2.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLTTModel.MauSac" Width="1.5" PointX="3.75" PointY="23.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLTTModel.NhaCungCap" Width="1.5" PointX="0.75" PointY="5.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLTTModel.NHANVIEN" Width="1.5" PointX="5.75" PointY="27" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLTTModel.PhanQuyen" Width="1.5" PointX="8" PointY="0.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLTTModel.SanPham" Width="1.5" PointX="0.75" PointY="10.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLTTModel.SanPhamDanhMuc" Width="1.5" PointX="3" PointY="8.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLTTModel.SanPhamGiamGia" Width="1.5" PointX="3" PointY="14.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLTTModel.SanPhamKichThuoc" Width="1.5" PointX="6" PointY="11.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLTTModel.SanPhamKhuyenMai" Width="1.5" PointX="6" PointY="8.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLTTModel.SanPhamMauSac" Width="1.5" PointX="6" PointY="14.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLTTModel.SanPhamNhaCungCap" Width="1.5" PointX="3" PointY="5.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLTTModel.SanPhamThuongHieu" Width="1.5" PointX="3" PointY="17.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLTTModel.sysdiagrams" Width="1.5" PointX="7.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLTTModel.ThuongHieu" Width="1.5" PointX="0.75" PointY="18.875" IsExpanded="true" />
+        <AssociationConnector Association="QLTTModel.FK_PhanQuyen_ChucNang" ManuallyRouted="false" />
+        <AssociationConnector Association="QLTTModel.FK_SanPhamDanhMuc_DanhMuc" ManuallyRouted="false" />
+        <AssociationConnector Association="QLTTModel.FK_SanPhamGiamGia_GiamGia" ManuallyRouted="false" />
+        <AssociationConnector Association="QLTTModel.FK_HinhAnhSanPham_SanPham" ManuallyRouted="false" />
+        <AssociationConnector Association="QLTTModel.FK_SanPhamKichThuoc_KichThuoc" ManuallyRouted="false" />
+        <AssociationConnector Association="QLTTModel.FK_SanPhamKhuyenMai_KhuyenMai" ManuallyRouted="false" />
+        <AssociationConnector Association="QLTTModel.FK_SanPhamMauSac_MauSac" ManuallyRouted="false" />
+        <AssociationConnector Association="QLTTModel.FK_S_SanPhamNhaCungCap_NhaCungCap" ManuallyRouted="false" />
+        <AssociationConnector Association="QLTTModel.FK_PhanQuyen_SanPham" ManuallyRouted="false" />
+        <AssociationConnector Association="QLTTModel.FK_SanPhamDanhMuc_SanPham" ManuallyRouted="false" />
+        <AssociationConnector Association="QLTTModel.FK_SanPhamGiamGia_SanPham" ManuallyRouted="false" />
+        <AssociationConnector Association="QLTTModel.FK_SanPhamKichThuoc_SanPham" ManuallyRouted="false" />
+        <AssociationConnector Association="QLTTModel.FK_SanPhamKhuyenMai_SanPham" ManuallyRouted="false" />
+        <AssociationConnector Association="QLTTModel.FK_SanPhamMauSac_SanPham" ManuallyRouted="false" />
+        <AssociationConnector Association="QLTTModel.FK_SanPhamNhaCungCap_SanPham" ManuallyRouted="false" />
+        <AssociationConnector Association="QLTTModel.FK_SanPhamThuongHieu_SanPham" ManuallyRouted="false" />
+        <AssociationConnector Association="QLTTModel.FK_SanPhamThuongHieu_ThuongHieu" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

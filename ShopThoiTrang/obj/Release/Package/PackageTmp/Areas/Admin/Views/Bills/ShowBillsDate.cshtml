@@ -1,0 +1,242 @@
+﻿@model IEnumerable<ShopThoiTrang.Models.LocDonHangTheoGioiGian_TongTien_MaKH_TrangThai_Result>
+
+@{
+    ViewBag.Title = "ShowBillsDate";
+    Layout = "~/Areas/Admin/Views/Shared/LayoutPageAdmin.cshtml";
+}
+
+<style>
+    .container {
+        margin-bottom: 20px;
+    }
+
+    .table-container {
+        max-height: 65vh; /* Chiều cao tối đa cho thanh cuộn */
+        overflow-y: auto; /* Thanh cuộn dọc */
+        cursor: pointer;
+    }
+
+    thead {
+        position: sticky;
+        top: 0;
+        background-color: white; /* Đổi màu nền header */
+    }
+
+    .Row_Select {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .btn_XacNhan {
+        width: 120px;
+        height: 40px;
+        margin: 10px auto;
+        border-radius: 20px;
+        font-weight: bold;
+    }
+
+        .btn_XacNhan:hover {
+            background: #21f5b9;
+            color: #fff;
+        }
+</style>
+
+
+@using (Html.BeginForm("ShowBillsDate", "Bills", FormMethod.Post))
+{
+    <div class="container">
+        <!--row 1-->
+        <div class="row ">
+            <div class="col col-md-3">
+                <div class="row Row_Select">
+                    <label for="startTime">Thời gian bắt đầu:</label>
+                </div>
+                <div class="row Row_Select">
+                    <input type="datetime-local" id="startTime" name="startTime" value="@DateTime.Now.AddDays(-7).ToString("yyyy-MM-ddTHH:mm")">
+                </div>
+            </div>
+
+            <div class="col col-md-3">
+                <div class="row Row_Select">
+                    <label for="endTime">Thời gian kết thúc:</label>
+                </div>
+                <div class="row Row_Select">
+                    <input type="datetime-local" id="endTime" name="endTime" value="@DateTime.Now.ToString("yyyy-MM-ddTHH:mm")">
+                </div>
+            </div>
+
+            <div class="col col-md-3">
+
+                <div class="row Row_Select">
+                    <label for="trangThaiDonHang">Trạng thái đơn hàng:</label>
+                </div>
+                <div class="row Row_Select">
+                    <select id="trangThaiDonHang" name="trangThaiDonHang">
+                        <option value="">Tất cả</option>
+                        <option value="Đang chờ xác nhận">Đang chờ xác nhận</option>
+                        <option value="Đang xử lý">Đang xử lý</option>
+                        <option value="Đã Giao">Đã Giao</option>
+                    </select>
+                    <br />
+                </div>
+            </div>
+
+            <div class="col col-md-3">
+                <div class="row Row_Select">
+                    <label for="hinhThucThanhToan">Hình thức thanh toán:</label>
+
+                </div>
+                <div class="row Row_Select">
+                    <select id="hinhThucThanhToan" name="hinhThucThanhToan">
+                        <option value="">Tất cả</option>
+                        <option value="Thanh toán sau khi nhận hàng">Thanh toán sau khi nhận hàng</option>
+                        <option value="Thanh toán trực tuyến">Thanh toán trực tuyến</option>
+                        <!-- Thêm các hình thức thanh toán khác nếu cần -->
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <!--Row 2-->
+        <div class="row">
+
+            <div class="col col-md-4">
+
+                <div class="row">
+                    <label for="maKhachHang">Mã khách hàng:</label>
+                </div>
+                <div class="row">
+                    <input type="number" id="maKhachHang" name="maKhachHang">
+                </div>
+
+            </div>
+
+            <div class="col col-md-4">
+                <div class="row">
+                    <label for="giaMin">Giá trị đơn hàng tối thiểu:</label>
+
+                </div>
+                <div class="row">
+                    <input type="number" id="giaMin" name="giaMin">
+                </div>
+            </div>
+
+            <div class="col col-md-4">
+                <div class="row">
+                    <label for="giaMax">Giá trị đơn hàng tối đa:</label>
+                </div>
+                <div class="row">
+                    <input type="number" id="giaMax" name="giaMax">
+                </div>
+            </div>
+        </div>
+
+        <!--Row 3-->
+        <div class="row" style="width: 100%">
+            <input type="submit" value="Accept" class="btn_XacNhan">
+        </div>
+
+    </div>
+    <!--Row 4-->
+    <div class="row">
+        @if (Model != null && Model.Any())
+        {
+
+            <div class="table-container">
+
+                <table class="table">
+                    <thead class="table-dark">
+                        <tr>
+                            <th>
+                                Mã Đơn
+                            </th>
+                            <th>
+                                Mã Khách
+                            </th>
+                            <th>
+                                Ngày Đặt
+                            </th>
+                            <th>
+                                Ngày Dự Kiến
+                            </th>
+                            <th>
+                                Tổng Giá
+                            </th>
+                            <th>
+                                Phí Ship
+                            </th>
+                            <th>
+                                Trạng Thái Thanh Toán
+                            </th>
+                            <th>
+                                Hình Thức Thanh Toán
+                            </th>
+                            <th>
+                                Trạng Thái Đơn
+                            </th>
+
+                            <th>
+                                Địa chỉ giao hàng
+                            </th>
+                            <th>Xem Chi Tiết</th>
+
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        @foreach (var item in Model)
+                        {
+                            <tr>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.MaDonHang)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.MaKhachHang)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.NgayDat)
+                                </td>
+                                <td>
+                                    @((item.NgayDuKienGiaoHang as DateTime?)?.ToString("dd/MM/yyyy"))
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.TongGia)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.PhiVanChuyen)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.TrangThaiThanhToan)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.HinhThucThanhToan)
+                                </td>
+                                <td>
+                                    <a href="@Url.Action("UpdateBill","Bills", new {madonhang = item.MaDonHang})">@item.TrangThaiDonHang</a>
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.DiaChiGiaoHang)
+                                </td>
+                                <td>
+
+                                    <button class="btn btn-success">
+                                        <a href="@Url.Action("ShowBillsItem", "Bills", new { MaDonHang = item.MaDonHang })" style="color: white; font-size: 20px" class="fa-solid fa-eye">
+                                        </a>
+                                    </button>
+
+                                </td>
+
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        }
+        else
+        {
+            <p>No bills found.</p>
+        }
+    </div>
+
+}
+

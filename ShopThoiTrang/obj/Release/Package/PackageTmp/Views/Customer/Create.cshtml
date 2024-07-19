@@ -1,0 +1,295 @@
+﻿@model ShopThoiTrang.Models.KHACHHANG
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Register</title>
+
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-image: url(../../Image/image_Banner/Banner_SanPham.jpg);
+        }
+
+        .title_Register {
+            text-align: center;
+            font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+            margin: 10px 0 20px 0;
+            font-size: 28px;
+            font-weight: 800;
+        }
+
+        .form_ctn_Register {
+            width: 500px;
+            height: 490px;
+            background-color: rgba(255, 255, 255, 0.8);
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            border-radius: 10px;
+            box-sizing: border-box;
+            padding: 20px 30px;
+        }
+
+        .form_Register {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 18px;
+            margin-bottom: 15px;
+        }
+
+        .Input_User {
+            border-radius: 20px;
+            outline: 0 !important;
+            box-sizing: border-box;
+            padding: 12px 15px;
+            width: 100%;
+            /*padding-left: 39px;*/
+        }
+
+        .Input_Password {
+            border-radius: 20px;
+            outline: 0 !important;
+            box-sizing: border-box;
+            padding: 12px 15px;
+        }
+
+
+        .input-group input {
+            height: 30px;
+            width: 100%;
+            /*padding: 12px 15px;*/
+            font-size: 13px;
+        }
+
+        .input-group label {
+            padding-right: 30px;
+            font-size: 12px;
+            font-weight: bold;
+        }
+
+        .btn_Register {
+            padding: 10px 15px;
+            font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+            border-radius: 20px;
+            border: 0 !important;
+            outline: 0 !important;
+            /*margin-left: 95px;*/
+            margin-bottom: 20px;
+            background: teal;
+            color: white;
+            cursor: pointer;
+            /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;*/
+            width: -webkit-fill-available;
+            height: 50px;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+
+            .btn_Register:active {
+                box-shadow: none;
+            }
+
+            .btn_Register:hover {
+                background: #fff;
+                color: teal;
+                box-shadow: 5px 10px 20px 0 rgba(0, 0, 0, 0.5);
+                border: 2px solid #000;
+            }
+
+        .Signup_label {
+            margin: 0;
+            font-size: 13px;
+            color: #000;
+            font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+            text-align: center;
+        }
+
+
+        .signup_link {
+            margin-left: 1px;
+            font-size: 13px;
+            text-decoration: underline;
+            text-decoration-color: teal;
+            color: teal;
+            cursor: pointer;
+            font-weight: 800;
+            font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+        }
+        .text-danger-red {
+            color: red;
+        }
+    </style>
+
+</head>
+<body>
+    <!--Card Register-->
+    <div class="form-container form_ctn_Register">
+        <p class="title_Register">Đăng Ký</p>
+        <hr />
+        @using (Html.BeginForm("Create", "Customer", FormMethod.Post))
+        {
+            @Html.AntiForgeryToken()
+
+            <!--Form-->
+            <form class="form_Register">
+                <!--Email-->
+                <div class="input-group Input_User">
+                    <div class="form-group">
+                        <span>Email</span>
+                        @Html.EditorFor(model => model.Email, new { htmlAttributes = new { @class = "form-control" } })
+                        @Html.ValidationMessageFor(model => model.Email, "", new { @class = "text-danger text-danger-red" })
+                    </div>
+                </div>
+
+
+                <!-- Password -->
+                <div class="input-group Input_Password">
+                    <div class="form-group">
+                        <span>Mật Khẩu</span>
+                        <div class="input-group-append">
+                            <span class="input-group-text">
+                                <i class="fas fa-eye" id="togglePassword"></i>
+                            </span>
+                        </div>
+                        @Html.EditorFor(model => model.Password_hs5, new { htmlAttributes = new { @class = "form-control", type = "password" } })
+                        @Html.ValidationMessageFor(model => model.Password_hs5, "", new { @class = "text-danger text-danger-red" })
+                    </div>
+                </div>
+
+                <!-- Confirm Password -->
+                <div class="input-group Input_Password">
+                    <div class="form-group">
+                        <span>Xác Nhận Mật Khẩu</span>
+                        <div class="input-group-append">
+                            <span class="input-group-text">
+                                <i class="fas fa-eye" id="toggleConfirmPassword"></i>
+                            </span>
+                        </div>
+                        @Html.EditorFor(model => model.ConfirmPassword, new { htmlAttributes = new { @class = "form-control", type = "password" } })
+                        @Html.ValidationMessageFor(model => model.ConfirmPassword, "", new { @class = "text-danger text-danger-red" })
+                    </div>
+                </div>
+
+                <!-- Button Register -->
+                <button type="button" name="submitButton" class="btn_Register" onclick="validatePasswords()">Đăng ký</button>
+
+            </form>
+
+            <!-- Existing user login link -->
+            <p class="Signup_label">
+                Bạn đã có tài khoản? @Html.ActionLink("Đăng nhập ngay", "Login", "Customer", null, new { @class = "signup_link" })
+            </p>
+        }
+    </div>
+</body>
+
+
+
+<!-- Script để xử lý hiển thị/ẩn Password và ConfirmPassword -->
+<script>
+    document.getElementById('togglePassword').addEventListener('click', function () {
+        togglePasswordVisibility('Password_hs5');
+    });
+
+    document.getElementById('toggleConfirmPassword').addEventListener('click', function () {
+        togglePasswordVisibility('ConfirmPassword');
+    });
+
+    function togglePasswordVisibility(inputId) {
+        var passwordInput = document.getElementById(inputId);
+        var type = passwordInput.getAttribute('type') === 'password' ? 'text' : 'password';
+        passwordInput.setAttribute('type', type);
+    }
+</script>
+
+<!-- Script để kiểm tra xác nhận mật khẩu -->
+<script>
+    function validatePasswords() {
+        var password = document.getElementById('Password_hs5').value;
+        var confirmPassword = document.getElementById('ConfirmPassword').value;
+
+        if (password !== confirmPassword) {
+            alert("Mật khẩu và xác nhận mật khẩu không khớp.");
+        } else {
+            document.forms[0].submit(); // Submit form nếu mọi thứ đều hợp lệ.
+        }
+    }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+@*<div class="form-horizontal">
+
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        <div class="form-group">
+            @Html.LabelFor(model => model.MaKH, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.MaKH, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.MaKH, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.TenKH, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.TenKH, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.TenKH, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.SoDienThoai, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.SoDienThoai, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.SoDienThoai, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.DiaChi, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.DiaChi, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.DiaChi, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.GioiTinh, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.GioiTinh, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.GioiTinh, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.TrangThai, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.TrangThai, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.TrangThai, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+
+    </div>*@

@@ -1,0 +1,243 @@
+﻿@model IEnumerable<ShopThoiTrang.Models.DonHang>
+
+@{
+    ViewBag.Title = "InvoiceAwaitingConfirmation";
+    Layout = "~/Views/Share/LayoutPage_Customer.cshtml";
+}
+<style>
+    .ctn_Bills {
+        height: 80vh; /* Độ cao của khu vực chứa nội dung */
+        overflow-y: auto;
+    }
+        /* Thanh cuộn dọc */
+        /* Cho trình duyệt sử dụng Webkit (Chrome, Safari) */
+        .ctn_Bills::-webkit-scrollbar {
+            width: 3px; /* Độ rộng thanh cuộn */
+            height: 3px;
+        }
+
+        .ctn_Bills::-webkit-scrollbar-track {
+            background: #f1f1f1; /* Màu nền cho phần track (phần thanh cuộn không được hover hoặc bấm vào) */
+        }
+
+        .ctn_Bills::-webkit-scrollbar-thumb {
+            background: #0c2c37; /* Màu nền cho phần thumb (phần cuộn mà người dùng có thể kéo) */
+            border-radius: 10%; /* Bo tròn góc cho thumb */
+        }
+
+
+
+    /*css from bills*/
+    .Form_Order {
+        background: #c9c6b9;
+        margin-top: 30px;
+        border-radius: 10px;
+    }
+
+    .ID_Order {
+        padding-top: 10px;
+        font-size: 13px;
+    }
+
+    .title_order {
+        font-size: 16px;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .content_oder {
+        text-align: center;
+        font-size: 17px;
+    }
+
+    .btn_CancelOrder, .btn_ViewOrder {
+        height: 30px;
+        border-radius: 10px;
+        font-weight: bold;
+        font-size: 13px;
+        transition: .3s ease;
+        width: 60px;
+        margin-left: 5%;
+        text-decoration: none; /* Remove underline */
+        color: black;
+    }
+
+        .btn_CancelOrder a {
+            text-decoration: none;
+            color: red;
+        }
+
+        .btn_ViewOrder a {
+            text-decoration: none;
+            color: green;
+        }
+
+        .btn_CancelOrder:hover {
+            transform: scale(1.1);
+            box-shadow: 5px 5px 10px #131313, -5px -5px 10px #ffffff;
+        }
+
+        .btn_ViewOrder:hover {
+            transform: scale(1.1);
+            box-shadow: 5px 5px 10px #131313, -5px -5px 10px #ffffff;
+        }
+
+    .Change_Location a {
+        width: 120px;
+        text-align: center;
+        font-size: 16px;
+        font-weight: bold;
+        text-decoration: none;
+        border: 1px solid #000;
+        margin-bottom: 5%;
+        background: #fff;
+        border-radius: 20px;
+    }
+
+        .Change_Location a:hover {
+            transform: scale(1.1);
+            box-shadow: 5px 5px 10px #131313, -5px -5px 10px #ffffff;
+        }
+
+    .Location_content {
+        font-size: 15px;
+    }
+
+    .Date_Bill p {
+        font-size: 14px;
+    }
+
+    .Select_Menu {
+        background: #33a14f;
+        transition: all .4s ease;
+        border-radius: 10px 10px 0 0;
+    }
+</style>
+<br />
+<div class="container">
+    <div class="row ">
+        <div class="col-md-12">
+
+            <nav class="Menu_Order">
+                <a href="@Url.Action("InvoiceAwaitingConfirmation","BillsCustomer")" data-menu-index="1" class="Select_Menu" style="z-index:0;">Chờ xác nhận</a>
+                <a href="@Url.Action("BeingTransported","BillsCustomer")" data-menu-index="2">Đang giao</a>
+                <a href="@Url.Action("BillsDelivered","BillsCustomer")" data-menu-index="3">Đã giao</a>
+                <a href="@Url.Action("canceled","BillsCustomer")" data-menu-index="4">Đã hủy</a>
+                <div class="Animation_MenuOrder Start_Menu"></div>
+            </nav>
+        </div>
+
+    </div>
+</div>
+
+
+<div class="container ctn_Bills">
+
+    @foreach (var item in Model)
+    {
+
+        <div class="row Form_Order">
+
+            <!--Row 1: content of order - nội dung của đơn hàng-->
+            <div class="row">
+                <!--ID-Mã đơn hàng-->
+                <div class="col-md-12 col-12 col-sm-12 col-xl-12 col-lg-12 ID_Order">
+                    <p>Đơn hàng: #@item.MaDonHang</p>
+                </div>
+                <hr>
+
+                <!--Tiêu đề: Ngày đặt + ngày dự kiến-->
+                <div class="col-md-2 col-2 col-sm-2 col-xl-2 col-lg-2">
+                    <p class="title_order">Ngày đặt: </p>
+                    <p class="title_order">Dự kiến giao: </p>
+                </div>
+
+                <!--Nội dung: Ngày đặt + ngày dự kiến-->
+                <div class="col-md-3 col-3 col-sm-3 col-xl-3 col-lg-3 Date_Bill">
+                    <p>@item.NgayDat</p>
+                    <p>@item.NgayDuKienGiaoHang </p>
+                </div>
+
+                <!--Trạng thái đơn hàng-->
+                <div class="col-md-3 col-3 col-sm-3 col-xl-3 col-lg-3">
+                    <p class="title_order">Trạng thái</p>
+                    <hr>
+                    <P class="content_oder">@item.TrangThaiDonHang</P>
+                </div>
+
+                <!--Tổng tiền-->
+                <div class="col-md-2 col-2 col-sm-2 col-xl-2 col-lg-2">
+                    <p class="title_order">Tổng Tiền</p>
+                    <hr>
+                    <p class="content_oder">@item.TongTienSauKhiGiamGia</p>
+                </div>
+
+                <!--Button hủy đơn-->
+                <div class="col-md-2 col-2 col-sm-2 col-xl-2 col-lg-2 d-flex justify-content-center align-items-center">
+                    <button class="btn_CancelOrder">
+                        <a href="@Url.Action("CancledBills","BillsCustomer", new {MaDonHang = item.MaDonHang})">Hủy <i class="fa-solid fa-delete-left"></i></a>
+                    </button>
+
+                    <button class="btn_ViewOrder">
+                        <a href="@Url.Action("ShowBillsItem1","Cart", new {MaHoaDon = item.MaDonHang})">Xem <i class="fa-solid fa-eye"></i> </a>
+                    </button>
+                </div>
+            </div>
+            <!--END ROW 1-->
+            <hr>
+
+            <!--Row 2: location - địa chỉ-->
+            <div class="row">
+
+                <!--Title: phần tiêu đề-->
+                <div class="col-md-2 col-2 col-sm-2 col-xl-2 col-lg-2">
+                    <p class="title_order">Địa chỉ: </p>
+                </div>
+
+                <!--Content: nội dung của địa chỉ-->
+                <div class="col-md-8 col-8 col-sm-8 col-xl-8 col-lg-8 Location_content">
+                    <p>@item.DiaChiGiaoHang</p>
+                </div>
+
+                <!--Button change location - thay đổi địa chỉ-->
+                <div class="col-md-2 col-2 col-sm-2 col-xl-2 col-lg-2 d-flex justify-content-center align-items-center Change_Location">
+                    <a href="@Url.Action("UpdateBill","BillsCustomer", new {MaDonHang = item.MaDonHang})">
+                        Thay đổi<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30" height="30" viewBox="0 0 48 48">
+                            <path fill="#48b564" d="M35.76,26.36h0.01c0,0-3.77,5.53-6.94,9.64c-2.74,3.55-3.54,6.59-3.77,8.06	C24.97,44.6,24.53,45,24,45s-0.97-0.4-1.06-0.94c-0.23-1.47-1.03-4.51-3.77-8.06c-0.42-0.55-0.85-1.12-1.28-1.7L28.24,22l8.33-9.88	C37.49,14.05,38,16.21,38,18.5C38,21.4,37.17,24.09,35.76,26.36z"></path>
+                            <path fill="#fcc60e" d="M28.24,22L17.89,34.3c-2.82-3.78-5.66-7.94-5.66-7.94h0.01c-0.3-0.48-0.57-0.97-0.8-1.48L19.76,15	c-0.79,0.95-1.26,2.17-1.26,3.5c0,3.04,2.46,5.5,5.5,5.5C25.71,24,27.24,23.22,28.24,22z"></path>
+                            <path fill="#2c85eb" d="M28.4,4.74l-8.57,10.18L13.27,9.2C15.83,6.02,19.69,4,24,4C25.54,4,27.02,4.26,28.4,4.74z"></path>
+                            <path fill="#ed5748" d="M19.83,14.92L19.76,15l-8.32,9.88C10.52,22.95,10,20.79,10,18.5c0-3.54,1.23-6.79,3.27-9.3	L19.83,14.92z"></path>
+                            <path fill="#5695f6" d="M28.24,22c0.79-0.95,1.26-2.17,1.26-3.5c0-3.04-2.46-5.5-5.5-5.5c-1.71,0-3.24,0.78-4.24,2L28.4,4.74	c3.59,1.22,6.53,3.91,8.17,7.38L28.24,22z"></path>
+                        </svg>
+                    </a>
+                </div>
+
+            </div>
+            <!--End ROW 2-->
+
+
+        </div>
+
+    }
+
+</div>
+
+
+
+@*// hiệu ứng nav*@
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        var menuLinks = document.querySelectorAll(".Menu_Order a");
+
+        menuLinks.forEach(function (link) {
+            link.addEventListener("click", function () {
+                menuLinks.forEach(function (item) {
+                    item.classList.remove("clicked");
+                });
+
+                link.classList.add("clicked");
+            });
+        });
+    });
+
+</script>

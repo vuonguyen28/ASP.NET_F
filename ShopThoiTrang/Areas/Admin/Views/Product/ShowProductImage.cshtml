@@ -1,0 +1,179 @@
+﻿@model IEnumerable<ShopThoiTrang.Models.HinhAnh>
+
+@{
+    ViewBag.Title = "ShowProductImage";
+    Layout = "~/Areas/Admin/Views/Shared/LayoutPageAdmin.cshtml";
+}
+
+<header>
+
+    <div class="container-fluid">
+        <div class="row" style="height:100px">
+            <h2 class="title_page"> <u>Quản lý hình ảnh sản phẩm</u></h2>
+            <br />
+           
+            <div class="col-md-2 col-sm-2 col-lg-2 col-2 ">
+                <label class="ctn_checkall">
+                    <input type="checkbox" id="selectAll_img">
+                    <div class="checkmark_all"></div>
+                    <span class="selectAll_text">Select All</span>
+                </label>
+            </div>
+            <div class="col-md-4 col-sm-4 col-lg-4 col-4 ">
+                @*//Button Delete*@
+                <button type="button" class="delete_Button " id="deleteButton">
+                    <span class="text_delete">Delete</span>
+                    <span class="icon_delete">
+                        <i class="fa-solid fa-trash"></i>
+                    </span>
+                </button>
+            </div>
+
+            <div class="col-md-6 col-sm-6 col-lg-6 col-6 ">
+                <div class="btn-new_right">
+                    @*button add new img*@
+                    <button class="btn_addimg " onclick="location.href='@Url.Action("CreateProductImage", "Product", new { MaSP = Request.QueryString["MaSP"] })'">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" viewBox="0 0 20 20" height="20" fill="none" class="addimg_svg-icon">
+                            <g stroke-width="1.5" stroke-linecap="round" stroke="#de8a2a">
+                                <circle r="7.5" cy="10" cx="10"></circle>
+                                <path d="m9.99998 7.5v5"></path>
+                                <path d="m7.5 9.99998h5"></path>
+                            </g>
+                        </svg>
+                        <span class="addimg_lableIcon"> New</i></span>
+                    </button>
+                    <br />
+                </div>
+            </div>
+        </div>
+        <br />
+    </div>
+</header>
+
+@*//gạch ngang*@
+<hr class="hr_dash" />
+
+
+@using (Html.BeginForm("DeleteImages", "Product", FormMethod.Post, new { id = "deleteFormImages" }))
+{
+    //checke box select all item
+
+
+    //Image producr
+    <div class="container_img">
+        @foreach (var item in Model)
+        {
+            <label class="option_item">
+                <input type="checkbox" class="checkbox_imgProduct" onclick="toggleImageSelection()" name="selectedItems[]" value="@item.MaHinhAnh">
+                <!-- Thêm giá trị value của checkbox -->
+                <div class="option_inner choose">
+                    <div class="tickmark "></div>
+                    <div class="img_Product">
+                        <img src="@Url.Content("~/Image/" + item.hinhanh1)" alt="Product Image" width="100px">
+                    </div>
+                </div>
+            </label>
+        }
+    </div>
+}
+
+
+
+@*//modal hiên thị thông báo xác nhận xóa danh mục*@
+<div id="confirmDeleteModalIMG" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">Xác nhận xóa hình ảnh</h4>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <p>Bạn có chắc chắn muốn xóa các hình ảnh đã chọn?</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Hủy bỏ</button>
+                <button type="button" class="btn btn-danger" id="confirmDeleteButton">Xóa</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    // Xử lý sự kiện khi nút "Xóa Danh Mục" được nhấn
+    $('#deleteButton').click(function () {
+        var checkedItems = $("input[name='selectedItems[]']:checked");
+
+        if (checkedItems.length > 0) {
+            // Hiển thị modal xác nhận xóa
+            $('#confirmDeleteModalIMG').modal('show');
+
+            // Xử lý sự kiện khi nút "Xác nhận Xóa" trong modal được nhấn
+            $('#confirmDeleteButton').off('click').on('click', function () {
+                var selectedIds = checkedItems.map(function () {
+                    return this.value;
+                }).get();
+
+                $.ajax({
+                    type: 'POST',
+                    url: '@Url.Action("DeleteImages", "Product")',
+                    data: { MaHinhAnhList: selectedIds },
+                    traditional: true,
+                    success: function (data) {
+                        if (data === "Success") {
+                            location.reload();
+                        } else {
+                            alert('Xóa hình ảnh không thành công.');
+                        }
+                    },
+                    error: function () {
+                        alert('Đã xảy ra lỗi khi xóa hình ảnh.');
+                    }
+                });
+
+                // Ẩn modal sau khi xác nhận xóa
+                $('#confirmDeleteModalIMG').modal('hide');
+            });
+        } else {
+            alert('NoImagesSelected');
+        }
+    });
+</script>
+
+@*//js xử lý chon all checkbox*@
+<script>
+    $(document).ready(function () {
+        // Xử lý sự kiện khi nhấn vào checkbox "Select ALL"
+        $('#selectAll_img').click(function () {
+            // Lấy trạng thái của checkbox "Select ALL"
+            var isChecked = $(this).prop('checked');
+
+            // Đặt trạng thái cho tất cả các checkbox khác trong bảng
+            $('input[name="selectedItems[]"]').prop('checked', isChecked);
+            toggleImageSelection();
+        });
+
+
+    });
+
+    //xử lý chọn đơn
+    //sự kiện chọn hình ảnh + hiện button delete
+    function toggleImageSelection() {
+        var checkboxes = document.querySelectorAll('.checkbox_imgProduct');
+        var deleteButton = document.getElementById('deleteButton');
+
+        // Kiểm tra xem có ít nhất một checkbox được chọn hay không
+        var atLeastOneChecked = Array.from(checkboxes).some(function (checkbox) {
+            return checkbox.checked;
+        });
+
+        // Thêm hoặc loại bỏ lớp 'visible' để ẩn/hiện nút Delete
+        if (atLeastOneChecked) {
+            deleteButton.classList.add('visible');
+        } else {
+            deleteButton.classList.remove('visible');
+        }
+    }
+</script>
+
+
+

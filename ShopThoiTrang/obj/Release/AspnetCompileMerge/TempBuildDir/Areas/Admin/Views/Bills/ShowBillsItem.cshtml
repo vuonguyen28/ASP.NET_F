@@ -1,0 +1,125 @@
+﻿@model IEnumerable<ShopThoiTrang.Models.ChiTietDonHang>
+
+@{
+    ViewBag.Title = "ShowBillsItem";
+    Layout = "~/Areas/Admin/Views/Shared/LayoutPageAdmin.cshtml";
+}
+
+<style>
+    .table-container {
+        /*max-height: 65vh;*/ /* Chiều cao tối đa cho thanh cuộn */
+        overflow-y: auto; /* Thanh cuộn dọc */
+        /*cursor: pointer;*/
+    }
+
+    thead {
+        position: sticky;
+        top: 0;
+        background-color: white; /* Đổi màu nền header */
+    }
+</style>
+
+<h2 class="title_page" id="printableContent"><u>SHOP TAN RÃ</u></h2>
+
+
+<div class="container" id="printableContent">
+    <p id="printableContent">Mã đơn hàng: @ViewBag.MaDH</p>
+    <div class="row" id="printableContent">
+
+        <div class="col-md-6" >
+            <p>Tên Khách Hàng: @ViewBag.tenkh</p>
+        </div>
+        <div class="col-md-6">
+            <p>Sđt: @ViewBag.sdt</p>
+        </div>
+        <div class="col-md-6">
+            <p>Địa chỉ giao hàng: @ViewBag.diachigiao</p>
+        </div>
+
+        <div class="col-md-6">
+            <p>Thành Tiền (VAT): @ViewBag.tonghoadon</p>
+        </div>
+        <div class="col-md-6">
+            <p>Ngày Đặt: @ViewBag.ngaydat</p>
+        </div>
+        <div class="col-md-6">
+            <p>Hình thức thanh toán: @ViewBag.hinhthucthanhtoan</p>
+        </div>
+        <div class="col-md-6">
+            <p>Ngày Dự kiến giao: @ViewBag.ngayGiaoHang</p>
+        </div>
+
+
+    </div>
+</div>
+
+
+<div class="container" id="printableContent">
+
+    <table class="table">
+        <thead class="table-dark">
+            <tr>
+                <td>
+                    Mã Chi Tiết
+                </td>
+                <td>
+                    Tên Sản Phẩm
+                </td>
+                <td>
+                    Color
+                </td>
+                <td>
+                    Size
+                </td>
+                <td>
+                    Số Lượng
+                </td>
+                <td>
+                    Giá /1sp
+                </td>
+            </tr>
+
+        </thead>
+        <tbody>
+
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.MaChiTiet)
+                    </td>
+
+                    <td>
+                        @Html.DisplayFor(modelItem => item.ChiTietSanPham.SanPham.TenSP)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.ChiTietSanPham.MauSac.TenMau)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.ChiTietSanPham.KichThuoc.TenKichThuoc)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.SoLuong)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Gia)
+                    </td>
+                </tr>
+            }
+        </tbody>
+
+
+    </table>
+</div>
+<button onclick="printContent()">In Hóa Đơn</button>
+
+<script>
+    function printContent() {
+        var printContents = document.getElementById('printableContent').innerHTML;
+        var originalContents = document.body.innerHTML;
+        document.body.innerHTML = printContents;
+        window.print();
+        document.body.innerHTML = originalContents;
+    }
+</script>
+

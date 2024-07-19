@@ -1,0 +1,228 @@
+﻿@model ShopThoiTrang.Models.FeedBack
+
+@{
+    ViewBag.Title = "CreateFeedback";
+    Layout = "~/Views/Share/LayoutPage_Customer.cshtml";
+}
+
+<style>
+    .ctn_formFB {
+        margin-top: 130px;
+        margin-bottom: 130px;
+    }
+
+    .Product_NameFb {
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    .Color_ProductFB {
+        font-size: 16px;
+    }
+
+    .Size_ProductFB {
+        font-size: 16px;
+    }
+
+    .RatingStar_ProductFb {
+        font-size: 16px;
+    }
+
+    .Content_Feedback {
+        font-size: 16px;
+        font-weight: bold;
+    }
+
+    .ContentFeeback_Box {
+        height: 50px;
+        resize: none;
+        overflow-y: scroll;
+        font-size: 16px;
+        border: 1px solid #000;
+    }
+
+    .btn_SendFeedback button {
+        background: #00ff21;
+        margin-top: 5%;
+        width: 150px;
+        height: 40px;
+        text-align: center;
+        font-size: 16px;
+        font-weight: bold;
+        border-radius: 20px;
+        transition: all .3s ease;
+    }
+
+        .btn_SendFeedback button:hover {
+            background: #00ffef;
+        }
+
+    .img_ProductFB {
+        border: 1px solid #000;
+    }
+
+    #star-rating {
+        font-size: 16px;
+    }
+
+    .rating i.selected {
+        color: #ffd800; /* Màu vàng */
+    }
+</style>
+
+<h2>Phản Hồi Sản Phẩm</h2>
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+
+    <div class="container ctn_formFB">
+
+        <div class="row">
+
+            <!--Space colums-->
+            <div class="col col-md-2">
+            </div>
+
+            <!--Image-->
+            <div class="col col-md-2 col-sm-12 col-xs-12  d-flex justify-content-center align-items-center img_ProductFB">
+                @if (ViewBag.DanhSachHinhAnh != null && ViewBag.DanhSachHinhAnh.Count > 0)
+                {
+                    bool flag = false;
+                    foreach (var hinhAnh in ViewBag.DanhSachHinhAnh)
+                    {
+                        if (flag == false)
+                        {
+                            <img src="~/Image/@hinhAnh.hinhanh1" alt="Hình ảnh sản phẩm" width="200px" />
+                            flag = true;
+                        }
+                    }
+                }
+                else
+                {
+                    <p>Không có hình ảnh nào.</p>
+                }
+            </div>
+
+            <!--Content-->
+            <div class="col col-md-8">
+                <!--name-->
+                <div class="row">
+                    <p class="Product_NameFb">@ViewBag.TenSanPham</p>
+                </div>
+                <hr />
+
+                <!--Color-->
+                <div class="row">
+                    <div class="col col-md-2">
+                        <p class="Color_ProductFB"><strong>Màu sắc:</strong></p>
+                    </div>
+                    <div class="col col-md-10">
+                        <p class="Color_ProductFB"> @ViewBag.TenMau</p>
+                    </div>
+                </div>
+
+                <!--Size-->
+                <div class="row">
+                    <div class="col col-md-2">
+                        <p class="Size_ProductFB"><strong>Size: </strong></p>
+                    </div>
+                    <div class="col col-md-10">
+                        <p class="Size_ProductFB">@ViewBag.KichThuoc</p>
+                    </div>
+                </div>
+
+                <!--Rating - Đánh giá-->
+                <div class="row">
+                    <div class="col col-md-2">
+                        <p class="RatingStar_ProductFb"><strong>Đánh giá:</strong></p>
+                    </div>
+                    <div class="col-md-10">
+                        <div class="rating" id="star-rating" data-rating="0">
+                            <i class="fas fa-star" data-index="1"></i>
+                            <i class="fas fa-star" data-index="2"></i>
+                            <i class="fas fa-star" data-index="3"></i>
+                            <i class="fas fa-star" data-index="4"></i>
+                            <i class="fas fa-star" data-index="5"></i>
+                        </div>
+                        @Html.HiddenFor(model => model.DanhGia, new { @id = "rating-value" })
+                        @Html.ValidationMessageFor(model => model.DanhGia, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+
+                <!--Content feedback - Nội dung feedback-->
+                <div class="row">
+                    <p class="Content_Feedback">Nội dung phản hồi: </p>
+                    <div class="col-md-10 ">
+                        @Html.EditorFor(model => model.NoiDung, new { htmlAttributes = new { @class = "form-control ContentFeeback_Box" } })
+                        @Html.ValidationMessageFor(model => model.NoiDung, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+
+                <!--Button send feedback - Gửi phản hồi-->
+                <div class="row">
+                    <div class="col-md-offset-2 col-md-10">
+                        <div class="btn_SendFeedback">
+                            <button type="submit">Send <i class="fa-solid fa-paper-plane"></i></button>
+                            @*<input type="submit" value="" class="btn btn-default" />Send <i class="fa-solid fa-paper-plane"></i>*@
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+}
+
+
+<!--Xử lý đánh giá sao-->
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const stars = document.querySelectorAll(".rating i");
+        const ratingValue = document.getElementById("rating-value");
+
+        let currentRating = 0;
+
+        stars.forEach((star, index) => {
+            star.addEventListener("mouseover", function () {
+                highlightStars(index + 1);
+            });
+
+            star.addEventListener("mouseout", function () {
+                resetStars();
+            });
+
+            star.addEventListener("click", function () {
+                currentRating = index + 1;
+                ratingValue.value = currentRating;
+                updateSelectedStars(index);
+            });
+        });
+
+        function highlightStars(index) {
+            stars.forEach((star, i) => {
+                if (i < index) {
+                    star.classList.add("fas");
+                    star.classList.remove("far");
+                } else {
+                    star.classList.remove("fas");
+                    star.classList.add("far");
+                }
+            });
+        }
+
+        function resetStars() {
+            highlightStars(currentRating);
+        }
+
+        function updateSelectedStars(index) {
+            stars.forEach((star, i) => {
+                if (i <= index) {
+                    star.classList.add("selected");
+                } else {
+                    star.classList.remove("selected");
+                }
+            });
+        }
+    });
+</script>

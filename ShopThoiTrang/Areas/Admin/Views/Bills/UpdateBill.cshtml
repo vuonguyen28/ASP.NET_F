@@ -1,0 +1,110 @@
+﻿@model ShopThoiTrang.Models.DonHang
+
+@{
+    ViewBag.Title = "UpdateBill";
+    Layout = "~/Areas/Admin/Views/Shared/LayoutPageAdmin.cshtml";
+
+}
+
+
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+
+    <div class="form-horizontal">
+
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+        <h2 class="title_page" id="printableContent"><u>Cập nhật đơn hàng</u></h2>
+
+
+        <div class="container" id="printableContent">
+            <p id="printableContent">
+                Mã đơn hàng: @Model.MaDonHang
+
+            </p>
+            <div class="row" id="printableContent">
+
+                <div class="col-md-6">
+                    <p>Mã Khách Hàng:  @Html.DisplayFor(model => model.MaKhachHang)</p>
+                </div>
+                <div class="col-md-6">
+                    <p>Địa chỉ giao hàng:  @Html.DisplayFor(model => model.DiaChiGiaoHang)</p>
+                </div>
+                <div class="col-md-6">
+                    <p>Phí vận chuyển: @Html.DisplayFor(model => model.PhiVanChuyen)</p>
+                </div>
+                <div class="col-md-6">
+                    <p>Thành Tiền (VAT): @Html.DisplayFor(model => model.TongGia)</p>
+                </div>
+                <div class="col-md-6">
+                    <p>Ngày Đặt: @Html.DisplayFor(model => model.NgayDat)</p>
+                </div>
+                <div class="col-md-6">
+                    <p>Trạng thái thanh toán:@Html.DisplayFor(model => model.TrangThaiThanhToan)</p>
+                </div>
+                <div class="col-md-6">
+                    <p>Hình thức thanh toán:  @Html.DisplayFor(model => model.HinhThucThanhToan)</p>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label class="control-label">Ngày Dự kiến giao:</label>
+                        <div class="input-group date">
+                            @Html.TextBoxFor(model => model.NgayDuKienGiaoHang, "{0:dd/MM/yyyy}", new { @class = "form-control datepicker", autocomplete = "off" })
+                            <span class="input-group-addon">
+                                <span class="glyphicon glyphicon-calendar"></span>
+                            </span>
+                        </div>
+                        @Html.ValidationMessageFor(model => model.NgayDuKienGiaoHang, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+
+                <div class="col-md-12">
+                    <p>Cập nhật trạng thái đơn hàng</p>
+                    <div>
+                        <select class="form-control" id="TrangThaiDonHang" name="TrangThaiDonHang">
+                            <option value="Đang chờ xác nhận" @(Model.TrangThaiDonHang == "Đang chờ xác nhận" ? "selected" : "")>Đang chờ xác nhận</option>
+                            <option value="Đang giao hàng" @(Model.TrangThaiDonHang == "Đang giao hàng" ? "selected" : "")>Đang giao hàng</option>
+                            <option value="Đã giao" @(Model.TrangThaiDonHang == "Đã giao" ? "selected" : "")>Đã giao</option>
+                            <option value="Đã hủy" @(Model.TrangThaiDonHang == "Đã hủy" ? "selected" : "")>Đã hủy</option>
+                        </select>
+                    </div>
+                </div>
+
+
+                <br />
+                <br />
+                <br />
+                <br />
+                <input type="submit" value="Update Bills" class="btn btn-primary" />
+
+            </div>
+        </div>
+    </div>
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

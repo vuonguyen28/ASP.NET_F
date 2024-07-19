@@ -1,0 +1,231 @@
+﻿@model IEnumerable<ShopThoiTrang.Models.VOUCHER>
+
+@{
+    ViewBag.Title = "Show";
+    Layout = "~/Areas/Admin/Views/Shared/LayoutPageAdmin.cshtml";
+}
+<style>
+    .table-container {
+        max-height: 65vh; /* Chiều cao tối đa cho thanh cuộn */
+        overflow-y: auto; /* Thanh cuộn dọc */
+        cursor: pointer;
+    }
+
+    thead {
+        position: sticky;
+        top: 0;
+        background-color: white; /* Đổi màu nền header */
+    }
+</style>
+
+<h2 class="title_page"> <u>Quản lý Voucher</u></h2>
+
+
+@if (TempData["ErrorMessage"] != null)
+{
+    <div class="alert alert-danger">
+        @TempData["ErrorMessage"]
+    </div>
+}
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="row">
+
+                @*Search*@
+                <div class="col-md-4">
+                    @using (Html.BeginForm("Show", "VoucherAdmin", FormMethod.Get))
+                    {
+                        <div class="input-group mb-3  btn_add_top">
+                            <input type="text" class="form-control" placeholder="Search" name="searching">
+                            <button class="btn btn-success" type="submit"><i class="fa fa-search-plus"></i></button>
+                        </div>
+                    }
+                </div>
+
+                @*Button Delete*@
+                <div class="col-md-7">
+                    <button id="deleteButton" type="button" onclick="confirmDeleteSelectedProducts()" class="delete_Button btn-delete btn-delete_item" style="float:right;">
+                        <span class="text_delete">Delete</span>
+                        <span class="icon_delete">
+                            <i class="fa-solid fa-trash"></i>
+                        </span>
+                    </button>
+                </div>
+
+                @*Button Create New*@
+                <div class="col-md-1">
+                    <button class="btn_addimg btn_add_top" onclick="location.href='@Url.Action("Create", "VoucherAdmin")'" style="float: right">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" viewBox="0 0 20 20" height="20" fill="none" class="addimg_svg-icon">
+                            <g stroke-width="1.5" stroke-linecap="round" stroke="#de8a2a">
+                                <circle r="7.5" cy="10" cx="10"></circle>
+                                <path d="m9.99998 7.5v5"></path>
+                                <path d="m7.5 9.99998h5"></path>
+                            </g>
+                        </svg>
+                        <span class="addimg_lableIcon"> New</i></span>
+                    </button>
+                </div>
+            </div>
+            <hr class="hr_dash" style="margin-top: 10px;" />
+
+
+            @using (Html.BeginForm("DeleteSelected", "VoucherAdmin", FormMethod.Post, new { id = "deleteForm" }))
+            {
+
+
+                <table class="table table-hover">
+                    <thead class="table-dark ">
+                        <tr>
+                            <th>STT</th>
+                            <th>Mã Voucher</th>
+                            <th>Tên Voucher</th>
+                            <th>Phần Trăm Giảm</th>
+                            <th>Sửa</th>
+                            <th><input type="checkbox" id="selectAllCheckbox" />&nbsp; Select All</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @if (Model.Count() == 0)
+                        {
+                            <tr>
+                                <td colspan="4" style="color: red">
+                                    Không tìm thấy tên voucher
+                                </td>
+                            </tr>
+                        }
+                        else
+                        {
+                            foreach (var item in Model.Select((value, index) => new { Value = value, Index = index }))
+                            {
+                                <tr>
+                                    <td>@(item.Index + 1)</td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.Value.MA_VOUCHER)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.Value.Ten_VOUCHER)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.Value.PhanTramGiam)
+                                    </td>
+                                    <td>
+
+                                        @{
+                                            var trimmedMA_VOUCHER = item.Value.MA_VOUCHER?.Trim(); 
+                                        }
+                                        <a href="@Url.Action("Edit", "VoucherAdmin", new { id = trimmedMA_VOUCHER })" class="btn btn-success">
+                                            <i class="fa fa-edit"></i>
+                                        </a>
+
+                                    </td>
+                                    <td>
+                                        <input type="checkbox" name="selectedItems" value="@item.Value.MA_VOUCHER" />
+                                    </td>
+
+
+                                </tr>
+                            }
+                        }
+                    </tbody>
+                </table>
+            }
+
+        </div>
+    </div>
+</div>
+
+@*//modal hiên thị thông báo xác nhận xóa danh mục*@
+<div id="confirmDeleteModal" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">Xác nhận xóa danh mục</h4>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <p>Bạn có chắc chắn muốn xóa các danh mục đã chọn?</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Hủy bỏ</button>
+                <button type="button" class="btn btn-danger" id="confirmDeleteButton">Xóa</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+@*//xử lý hiển thị thông báo xát nhận xóa danh mục*@
+<script>
+    $(document).ready(function () {
+        $('#deleteButton').click(function () {
+            var checkedItems = $("input[name='selectedItems']:checked").length;
+
+            if (checkedItems > 0) {
+                $('#confirmDeleteModal').modal('show');
+            } else {
+                alert('Vui lòng chọn ít nhất một mục để xóa.');
+            }
+        });
+
+        $('#confirmDeleteButton').click(function () {
+            $('#confirmDeleteModal').modal('hide');
+            $('#deleteForm').submit();
+        });
+    });
+
+</script>
+
+
+
+@*//js xử lý chon all checkbox*@
+<script>
+    $(document).ready(function () {
+        // Xử lý sự kiện khi nhấn vào checkbox "Select ALL"
+        $('#selectAllCheckbox').click(function () {
+            // Lấy trạng thái của checkbox "Select ALL"
+            var isChecked = $(this).prop('checked');
+
+            // Đặt trạng thái cho tất cả các checkbox khác trong bảng
+            $('input[name="selectedItems"]').prop('checked', isChecked);
+        });
+    });
+
+
+    //hiện button xóa khi click vào checkbox
+    $(document).ready(function () {
+        // Xử lý sự kiện khi checkbox thay đổi
+        $('input[name="selectedItems"]').change(function () {
+            var anyCheckboxChecked = $('input[name="selectedItems"]:checked').length > 0;
+
+            // Nếu có ít nhất một checkbox được chọn, thì hiển thị nút xóa
+            if (anyCheckboxChecked) {
+                $('.btn-delete').addClass('visible');
+            } else {
+                $('.btn-delete').removeClass('visible');
+            }
+        });
+    });
+
+</script>
+
+@*Xử lý ẩn hiện button xóa khi click vào select all*@
+<script>
+    $(document).ready(function () {
+        // Xử lý sự kiện khi nhấn vào checkbox "Select ALL"
+        $('#selectAllCheckbox').click(function () {
+            // Lấy trạng thái của checkbox "Select ALL"
+            var isChecked = $(this).prop('checked');
+
+            // Đặt trạng thái cho tất cả các checkbox khác trong bảng
+            $('input[name="selectedItems"]').prop('checked', isChecked);
+            if (isChecked) {
+                $('.btn-delete').addClass('visible');
+            } else {
+                $('.btn-delete').removeClass('visible');
+            }
+
+        });
+    });
+</script>
+

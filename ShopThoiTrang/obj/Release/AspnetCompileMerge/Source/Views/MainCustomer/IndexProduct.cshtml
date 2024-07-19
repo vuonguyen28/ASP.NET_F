@@ -1,0 +1,310 @@
+﻿@model IEnumerable<ShopThoiTrang.Models.LaySanPhamDuocDatNhieuNhat_top8_Result>
+
+@{
+    ViewBag.Title = "IndexProduct";
+    Layout = "~/Views/Share/LayoutPage_Customer.cshtml";
+}
+
+<style>
+    /* giao hang */
+    .box_special {
+        border: 1px solid var(--color-text);
+        border-radius: 5px;
+        width: 100%;
+        height: 12em;
+        margin-top: 2em;
+        cursor: pointer;
+        transition: all 0.3s ease;
+    }
+
+        .box_special:hover {
+            border: 1px solid orange;
+        }
+
+    .box_icon_special {
+        width: 8em;
+        height: 8em;
+        border: 1px solid var(--color-text);
+        border-radius: 50%;
+        margin: 2em 2em;
+    }
+
+        .box_icon_special i {
+            font-size: 4em;
+            margin-left: 0.5em;
+            margin-top: 0.5em;
+            color: var(--color-text);
+        }
+
+    .content_special {
+        width: 100%;
+        margin-top: 2em;
+        color: var(--color-text);
+    }
+
+        .content_special h3 {
+            font-size: 2em;
+            font-weight: 600;
+        }
+
+        .content_special p {
+            font-size: 1.5em;
+        }
+
+
+
+
+       /* btn xem them*/
+    .see_more_click-btn {
+        width: 130px;
+        height: 40px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+        .see_more_click-btn a {
+            text-decoration: none;
+        }
+
+        .see_more_click-btn button {
+            width: 9em;
+            height: 3em;
+            border-radius: 30em;
+            font-size: 15px;
+            font-family: inherit;
+            font-weight: bold;
+            border: none;
+            position: relative;
+            overflow: hidden;
+            z-index: 1;
+            box-shadow: 6px 6px 12px #c5c5c5, -6px -6px 12px #ffffff;
+        }
+
+            .see_more_click-btn button::before {
+                content: '';
+                width: 0;
+                height: 3em;
+                border-radius: 30em;
+                position: absolute;
+                top: 0;
+                left: 0;
+                background-image: linear-gradient(to right, var(--color-text) 0%, #cbf2ff 100%);
+                transition: .5s ease;
+                display: block;
+                z-index: -1;
+            }
+
+            .see_more_click-btn button:hover::before {
+                width: 9em;
+            }
+</style>
+
+
+
+<!-- Header end -->
+<!-- Carousel -->
+<div class="carousel_box">
+    <div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+        <!-- Indicators/dots -->
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+        </div>
+
+        <!-- The slideshow/carousel -->
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="~/Image/image_Banner/Banner_1.jpg" alt="Los Angeles" class="d-block w-100">
+            </div>
+            <div class="carousel-item">
+                <img src="~/Image/image_Banner/Banner_SanPham_3.jpg" alt="New York" class="d-block w-100">
+            </div>
+            <div class="carousel-item">
+                <img src="~/Image/image_Banner/Banner_ShopTR1.jpg" alt="Chicago" class="d-block w-100">
+            </div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+
+        <!-- Left and right controls/icons -->
+
+    </div>
+</div>
+<!-- content -->
+
+<div class="container">
+    <div class="text">
+        <br><br>
+        <h1 class="text-1">VERVE BLAZE MENU</h1>
+        <h1 class="text-2">SẢN PHẨM NỔI BẬT</h1>
+        <div class="icon-home"></div>
+    </div>
+
+    <div class="row">
+        @foreach (var product in Model)
+        {
+
+            <div class="col-lg-3 col-md-4 col-sm-6 col-6">
+                <div class="course-item-menu">
+                    @if (ViewBag.Images != null && ViewBag.Images.ContainsKey(product.MaSP)) // kiểm tra xem có hình ảnh hay ko . ko được bỏ if này bỏ là nó báo lõi
+                    {
+                        var images = ViewBag.Images[product.MaSP] as List<ShopThoiTrang.Models.HinhAnh>; // gọi và gán models hình ảnh
+                        if (images != null && images.Any())
+                        {
+                            int imageCount = 0;
+                            foreach (var image in images.Take(2)) // for lấy 2 hình ảnh đầu tiên
+                            {
+                                if (imageCount == 0)
+                                {
+                                    <div class="box"><img src="~/Image/@image.hinhanh1" alt=""></div> //hinh 1
+                                }
+                                else if (imageCount == 1)
+                                {
+                                    <div class="box_2"><img src="~/Image/@image.hinhanh1" alt=""></div> //hinh 2
+                                }
+                                imageCount++;
+                            }
+                            if (imageCount < 2)
+                            {
+                                <p>Chỉ có một hình ảnh cho sản phẩm này.</p>
+                            }
+                        }
+                        else
+                        {
+                            <p>Không có hình ảnh nào cho sản phẩm này.</p>
+                        }
+                    }
+                    else
+                    {
+                        <p>Không có hình ảnh nào cho sản phẩm này.</p>
+                    }
+                    <div class="box__item">
+                        <a href="@Url.Action("ProductDetailItem","MainCustomer", new {MaSP = product.MaSP})">
+                            <div class="btn_buy">
+                                <p>MUA NGAY</p>
+                            </div>
+                        </a>
+                        <a href="@Url.Action("ProductDetailItem","MainCustomer", new {MaSP = product.MaSP})">
+                            <div class="btn_add">
+                                <p>XEM CHI TIẾT</p>
+                            </div>
+                        </a>
+
+                    </div>
+
+                    <div class="box__product">
+                        <div class="box__color">
+                            <div class="color_1"></div>
+                            <div class="color_2"></div>
+                        </div>
+                        <div class="text_product">
+                            <p class="product_name">@product.TenSP</p>
+                            <p class="product_money"></p>
+
+                            <p class="product_money">
+                                <s class=" underline-text" style="font-size: 18px; font-weight: bold; color: #890076; text-c">
+                                    @string.Format("{0:N0}", product.GiaSauGiamGia)
+                                </s>
+
+                                &nbsp;&nbsp;
+                                &nbsp;&nbsp;
+
+                                @if (product.GiaSauGiamGia > 0)
+                                {
+                                    <s class="text-decoration-line-through" style="color: #434040;">@string.Format("{0:N0}", product.Gia)đ</s>
+                                }
+                                else
+                                {
+                                    <span>@string.Format("{0:N0}", product.Gia)đ</span>
+                                }
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+
+
+
+
+</div>
+
+
+<section style="background-color: #ffffff">
+    <div class="see_more_click-btn">
+        <a href="@Url.Action("Fiter_Product","MainCustomer")">
+            <button>
+                XEM THÊM
+            </button>
+        </a>
+    </div>
+</section>
+
+
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 col-md-6 col-sm-12 col-12">
+                <div class="box_special">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-4 col-sm-3 col-4">
+                            <div class="box_icon_special">
+                                <i class="fa-solid fa-paper-plane"></i>
+                            </div>
+                        </div>
+                        <div class="col-lg-8 col-md-8 col-sm-9 col-8">
+                            <div class="content_special">
+                                <h3>MIỄN PHÍ VẬN CHUYỂN</h3>
+                                <p>Bán kính 10km. Trên 10km, phí ship theo đối tác</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4  col-md-6 col-sm-12 col-12">
+                <div class="box_special">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-4 col-sm-3 col-4">
+                            <div class="box_icon_special">
+                                <i class="fa-solid fa-rocket"></i>
+                            </div>
+                        </div>
+                        <div class="col-lg-8 col-md-8 col-sm-9 col-8">
+                            <div class="content_special">
+                                <h3>GIAO HÀNG NHANH</h3>
+                                <p>Nội thành: 1h. Ngoại thành: 3h. Ngoại Tỉnh: 3 ngày</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4  col-md-6 col-sm-12 col-12">
+                <div class="box_special">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-4 col-sm-3 col-4">
+                            <div class="box_icon_special">
+                                <i class="fa-regular fa-thumbs-up"></i>
+                            </div>
+                        </div>
+                        <div class="col-lg-8 col-md-8 col-sm-9 col-8">
+                            <div class="content_special">
+                                <h3>SẢN PHẨM CHÍNH HÃNG</h3>
+                                <p>Từ nhà sản xuất và các đơn vị cung cấp chính thức</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

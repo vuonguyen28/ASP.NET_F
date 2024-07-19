@@ -1,0 +1,113 @@
+﻿@model ShopThoiTrang.Models.NHANVIEN
+
+@{
+    ViewBag.Title = "DangNhap";
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Đăng Nhập</title>
+    <style>
+        /* CSS */
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background: #222D32;
+        }
+
+        .form-container {
+            width: 320px;
+            padding: 2rem;
+            /* background-color: #808080;*/
+            background-color: #1A2226;
+            border-radius: 0.5rem;
+            box-shadow: 10px 10px 20px 0 rgba(0, 0, 0, 0.5);
+        }
+        .Login {
+            text-align: center;
+            font-size: 2em;
+            color: #1cd3e9;
+        }
+        /*.Input_User, .Input_Password, .sign {
+            margin: 0 auto;
+            width: 80%;
+            padding-top: 10px
+        }*/
+        .btn_login {
+            width: 100%;
+            margin-top: 10px;
+            height: 40px;
+            font-weight: bold;
+            border-radius: 20px;
+        }
+
+        .btn_login:hover{
+            background: #7ac062;
+            border-color: aliceblue;
+        }
+
+        .Input_User label{
+            color: #fff;
+        }
+
+        .Input_Password label {
+            color: #fff;
+        }
+        .Input_User input {
+            height: 30px;
+            width: 100%;
+            margin-bottom: 20px;
+            padding-left: 10px;
+            font-size: 15px;
+        }
+        .Input_Password input {
+            height: 30px;
+            width: 100%;
+            margin-bottom: 20px;
+            padding-left: 10px;
+            font-size: 15px;
+        }
+        /* Thêm CSS khác theo yêu cầu */
+
+    </style>
+</head>
+<body>
+    <div class="form-container">
+
+        <h2 class="Login">LOGIN ADMIN</h2>
+        <hr style="height: 3px; border-color: #fff;"/>
+
+        @using (Html.BeginForm("DangNhap", "Home", FormMethod.Post))
+        {
+            <div class="form">
+
+                <!--User name-->
+                <div class="input-group Input_User">
+                    <label for="user">Username</label>
+                    <input type="text" name="user" id="user" placeholder="">
+                </div>
+
+                <!--Password-->
+                <div class="input-group Input_Password">
+                    <label for="password">Password</label>
+                    <input type="password" name="password" id="password" placeholder="">
+                    @if (TempData["error"] != null)
+                    {
+                        <p style="color: red;">@TempData["error"]</p>
+                    }
+                    <div class="forgot">
+                    </div>
+                </div>
+
+                <!--Button Login-->
+                <button type="submit" class="btn_login">Sign in</button>
+
+            </div>
+        }
+    </div>
+
+</body>
+</html>

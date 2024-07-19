@@ -1,0 +1,475 @@
+﻿@model ShopThoiTrang.Models.ProductView
+
+@{
+    ViewBag.Title = "ProductDetailItem";
+    Layout = "~/Views/Share/LayoutPage_Customer.cshtml";
+}
+
+
+<style>
+    .nav_left {
+        float: left;
+    }
+
+    .nav ul {
+        width: auto;
+        height: auto;
+        float: right;
+    }
+
+    .btn_accept {
+        width: 87%;
+        height: auto;
+        background-color: darkgreen;
+        color: #ffffff;
+        font-size: 20px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .window_text p {
+        font-size: 16px;
+        color: #003201;
+        font-weight: bold;
+    }
+
+    .window_text div {
+        width: 100%;
+        height: auto;
+        margin-top: -12px;
+    }
+
+        .window_text div input {
+            padding-top: 10px;
+            width: 100%;
+        }
+
+    main {
+        padding-top: 68px;
+    }
+
+    .container {
+        margin-top: 40px;
+    }
+
+    .item_soluong input {
+        height: 30px;
+        width: 40px;
+    }
+
+    .item_soluong p {
+        font-size: 14px;
+        font-weight: bold;
+    }
+
+    .item_soluong label {
+        font-size: 14px;
+    }
+
+    .price_ip {
+        margin-top: 10px;
+    }
+
+    .item_soluong input {
+        width: 50px;
+        text-align: center;
+        font-weight: bold;
+        font-size: 14px;
+        /*background: #2ca733;*/
+    }
+
+    .item_soluong button {
+        width: 50px;
+        text-align: center;
+        font-weight: bold;
+        font-size: 14px;
+        background: #2ca733;
+        color: #fff;
+        margin-left: 10px;
+        transition: 0.3s ease;
+    }
+
+        .item_soluong button:hover {
+            background: #fff;
+            border: 2px solid #2ca733;
+            color: #2ca733;
+            transform: scale(1.1);
+        }
+
+    .btn_box_ip button:hover {
+        box-shadow: 10px 10px 20px 0 rgba(0, 0, 0, 0.5);
+    }
+
+    .icon_star {
+        color: #ffd800
+    }
+
+    .mo-ta {
+        max-height: 205px; /* Số pixel tối đa  hiển thị ban đầu */
+        overflow: hidden;
+        transition: max-height 0.5s ease; /* Hiệu ứng transition */
+        position: relative;
+    }
+
+        .mo-ta:after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 20px; /* Điều chỉnh chiều cao của phần cuối nhạt đi */
+            background: linear-gradient(rgba(255, 255, 255, 0), white); /* Gradient mờ từ trong suốt đến trắng */
+        }
+
+    .Note-Product {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+        .Note-Product button {
+            border: 1px solid #0062f5;
+            font-size: 16px;
+            margin: 10px 0 10px 0;
+            align-items: center;
+            width: 200px;
+            color: #0062f5;
+        }
+
+    .selected-button {
+        transform: scale(1.1); /* Tăng kích thước lên 1.1 lần khi được chọn */
+        transition: transform 0.3s, background 0.3s; /* Thêm hiệu ứng chuyển động */
+        background-color: #fff;
+    }
+
+    .form-DanhGia {
+        /*border: 1px solid #000;*/
+        margin: 20px 0 20px 0;
+    }
+
+        .form-DanhGia p {
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+    .gold-star {
+        color: gold;
+    }
+
+    .title-Feedback {
+        font-size: 20px;
+        font-weight: bold;
+        padding: 20px 0 10px 0;
+    }
+
+    .btn_View_Hide_Feedback {
+        height: 40px;
+        width: 200px;
+        background: #2ca733;
+        font-size: 16px;
+        color: #fff;
+        font-weight: bold;
+        border-radius: 10px;
+    }
+</style>
+
+
+<main>
+    <section class="container">
+
+        <!--Row 1: item-->
+        <div class="row">
+            <div class="col-lg-5 col-md-12 col-sm-12 col-12">
+                <div class="left_content">
+                    <div class="col-lg-8 offset-lg-2 col-md-6 offset-md-3 col-sm-8 offset-sm-2 col-8 offset-2">
+                        @{
+                            bool displayedFirstImage = false;
+                        }
+                        @foreach (var hinhAnh in Model.HinhAnhs)
+                        {
+                            if (!displayedFirstImage)
+                            {
+                                <div class="main_img ">
+                                    <img src="~/Image/@hinhAnh.hinhanh1" alt="" onclick="showImg(this.src)" width="300px" />
+                                </div>
+                                displayedFirstImage = true;
+                            }
+
+                        }
+
+
+                    </div>
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-12 img_ip">
+
+                        @foreach (var hinhAnh in Model.HinhAnhs)
+                        {
+                            <div class="col-lg-3">
+                                <div class="main_img_ip">
+                                    <img src="~/Image/@hinhAnh.hinhanh1" alt="" onclick="showImg(this.src)" />
+                                </div>
+                            </div>
+                        }
+
+                    </div>
+                    <div class="note_ip">
+                        <p> * LƯU Ý: Hạn chế sử dụng máy sấy nhiệt cao để giữ form áo.</p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-lg-7 col-md-12 col-sm-12 col-12">
+                <div class="right_content">
+                    <div class="name_ip"> @Model.SanPham.TenSP</div>
+                    <div class="rating_txt">
+                        <p>@ViewBag.SoLuongDaBan Đã bán | 580 Đánh giá  | @ViewBag.diem <i class="fa-solid fa-star icon_star"></i></p>
+                    </div>
+
+
+                    <!--Phần lựa chọn-->
+                    <div class="price_ip">Giá:  @Model.SanPham.Gia VNĐ</div>
+                    <h2 style="font-weight: bold;">Thông Tin Chi Tiết:</h2>
+                    @foreach (var chiTiet in Model.SanPham.ChiTietSanPham)
+                    {
+                        <div class="item_soluong">
+                            @using (Html.BeginForm("ThemGioHang", "Cart", new { maChiTiet = chiTiet.MaChiTiet }, FormMethod.Post))
+                            {
+                                <div>
+                                    <p>  @chiTiet.MauSac.TenMau - Size: @chiTiet.KichThuoc.TenKichThuoc - Hàng còn: @chiTiet.SoLuongTon</p>
+
+                                    <label for="SoLuong_@chiTiet.MaChiTiet">Số lượng:</label>
+                                    <input type="number" id="SoLuong_@chiTiet.MaChiTiet" name="soLuong" value="1" min="1" n />
+
+                                    <button type="submit"><i class="fa-solid fa-cart-shopping"></i></button>
+                                    @*<input type="submit" value="Add" />*@
+                                    <hr />
+                                </div>
+
+
+                            }
+                        </div>
+                    }
+
+
+                    <!--WARNING-- Ẩn bị mất js-->
+                    <div class="quantity_ip">
+                        <button class="quantity_btn decrease" style="border: 1px solid #fff;"></button>
+                        @*<input type="number" min="1" max="10" value="1">*@
+                        <button class="quantity_btn increase" style="border: 1px solid #fff;"></button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!--End row 1-->
+        <hr />
+
+        <!--Row 2: Note - mô tả sản phẩm-->
+        <div class="row">
+            <div class="col col-md-7 Note-Product">
+                <div id="moTa" class="mo-ta">
+                    @Html.Raw(Model.SanPham.MoTa)
+                </div>
+                <button id="xemThemBtn" onclick="hienThiThem()">Xem thêm <i class="fa-solid fa-angles-down"></i></button>
+            </div>
+        </div>
+
+        <!--Row 3: Rating - Đánh giá-->
+        <div class="row">
+
+            <!--Row thống kê đánh giá-->
+            <div class="row">
+                <div class="col-md-6">
+                    <hr />
+                    <center class="title-Feedback">Đánh Giá Sản Phẩm @Model.SanPham.TenSP</center>
+                    @{
+                        var Statistic = ViewBag.feedback as List<ShopThoiTrang.Models.FeedBack_SanPham_Result>;
+                        if (Statistic != null)
+                        {
+                            <div class="form-DanhGia">
+                                <!-- Hiển thị biểu đồ cột -->
+                                <canvas id="ratingChart" width="400" height="200"></canvas>
+                            </div>
+                        }
+                    }
+                </div>
+            </div>
+
+            <!--Row: xem đánh giá-->
+            <div class="row">
+                <div class="col-md-6">
+                    <hr />
+                    <center class="title-Feedback">Đánh Giá Sản Phẩm</center>
+                    @{
+                        var feedbackList = ViewBag.feedback as List<ShopThoiTrang.Models.FeedBack_SanPham_Result>;
+                        if (feedbackList != null && feedbackList.Any())
+                        {
+                            <div class="form-DanhGia" id="feedbackContainer">
+                                <!--Lấy 3 đánh giá đầu để hiển thị-->
+                                @foreach (var feedback in feedbackList.Take(3))
+                                {
+                                    <div class="feedbackItem">
+                                        <p>@ViewBag.tenKH</p>
+                                        <h3>
+                                            Đánh Giá:
+                                            @{
+                                                int? danhGiaNullable = (int?)(double?)feedback.DanhGia;
+                                                int danhGia = danhGiaNullable.HasValue ? (int)danhGiaNullable.Value : 0;
+                                                for (int i = 0; i < danhGia; i++)
+                                                {
+                                                    <span class="gold-star">&#9733;</span>
+                                                }
+                                                for (int i = danhGia; i < 5; i++)
+                                                {
+                                                    <span>&#9734;</span>
+                                                }
+                                            }
+                                        </h3>
+                                        <h3>Nội Dung: @feedback.NoiDung</h3>
+                                        <img src="~/Image/@ViewBag.avatar" width="80px" height="auto" style="padding: 10px 0 10px 0;" />
+                                        <h5>Thời Gian: @feedback.ThoiGianfeedback</h5>
+                                        <hr />
+                                    </div>
+                                }
+                                <div id="remainingFeedback" style="display: none;">
+                                    <!--Bỏ qua 3 đánh giá đầu lấy các đánh giá còn lại-->
+                                    @foreach (var feedback in feedbackList.Skip(3))
+                                    {
+                                        <div class="feedbackItem">
+                                            <p>@ViewBag.tenKH</p>
+                                            <h3>
+                                                Đánh Giá:
+                                                @{
+                                                    int? danhGiaNullable = (int?)(double?)feedback.DanhGia;
+                                                    int danhGia = danhGiaNullable.HasValue ? (int)danhGiaNullable.Value : 0;
+                                                    for (int i = 0; i < danhGia; i++)
+                                                    {
+                                                        <span class="gold-star">&#9733;</span>
+                                                    }
+                                                    for (int i = danhGia; i < 5; i++)
+                                                    {
+                                                        <span>&#9734;</span>
+                                                    }
+                                                }
+                                            </h3>
+                                            <h3>Nội Dung: @feedback.NoiDung</h3>
+                                            <img src="~/Image/@ViewBag.avatar" width="80px" height="auto" style="padding: 10px 0 10px 0;" />
+                                            <h5>Thời Gian: @feedback.ThoiGianfeedback</h5>
+                                            <hr />
+                                        </div>
+                                    }
+                                </div>
+                                <!--Nếu đánh giá > 3 hiện button Ẩn bớt-->
+                                @if (feedbackList.Count > 3)
+                                {
+                                    <button id="viewMoreBtn" onclick="showMoreFeedback()" class="btn_View_Hide_Feedback">Xem thêm đánh giá <i class="fa-solid fa-caret-down"></i></button>
+                                    <button id="hideFeedbackBtn" style="display: none;" onclick="hideFeedback()" class="btn_View_Hide_Feedback">Ẩn bớt đánh giá <i class="fa-solid fa-caret-up"></i></button>
+                                }
+                            </div>
+                        }
+                        else
+                        {
+                            <p>Chưa có đánh giá nào cho sản phẩm này.</p>
+                        }
+                    }
+                </div>
+            </div>
+
+        </div>
+        <!--End row 3-->
+
+    </section>
+</main>
+
+<script src="~/Content/Customer/js/js_ip.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+
+<!--See more details product - Xem thêm mô tả sản phẩm-->
+<script>
+    var moTaElement = document.getElementById('moTa');
+    var xemThemBtn = document.getElementById('xemThemBtn');
+
+    // Hàm để hiển thị thêm/nhỏ mô tả
+    function hienThiThem() {
+        if (moTaElement.style.maxHeight) {
+            // Nếu đã mở rộng, thu nhỏ lại
+            moTaElement.style.maxHeight = null;
+            xemThemBtn.innerHTML = 'Xem thêm <i class="fa-solid fa-angles-down"></i> ';
+        } else {
+            // Nếu chưa mở rộng, hiển thị toàn bộ nội dung
+            moTaElement.style.maxHeight = moTaElement.scrollHeight + "px";
+            xemThemBtn.innerHTML = 'Ẩn bớt <i class="fa-solid fa-angles-up"></i> ';
+
+        }
+    }
+</script>
+
+<!--Thống kê đánh giá sao-->
+<script>
+    var ctx = document.getElementById('ratingChart').getContext('2d');
+
+    // Lấy mã sản phẩm từ ViewBag
+    var maSP = @Model.SanPham.MaSP;
+
+    // Gọi action GetProductRating để lấy số liệu đánh giá
+    $.ajax({
+        url: '/MainCustomer/GetProductRating',
+        data: { maSP: maSP },
+        success: function (starCounts) {
+            var data = {
+                labels: ['1 ⭐', '2 ⭐', '3 ⭐', '4 ⭐', '5 ⭐'],
+                datasets: [{
+                    label: 'Đánh Giá Sản Phẩm',
+                    data: starCounts,
+                    backgroundColor: [
+                        'rgba(255, 99, 132, 0.2)',
+                        'rgba(255, 159, 64, 0.2)',
+                        'rgba(255, 205, 86, 0.2)',
+                        'rgba(75, 192, 192, 0.2)',
+                        'rgba(54, 162, 235, 0.2)'
+                    ],
+                    borderColor: [
+                        'rgba(255, 99, 132, 1)',
+                        'rgba(255, 159, 64, 1)',
+                        'rgba(255, 205, 86, 1)',
+                        'rgba(75, 192, 192, 1)',
+                        'rgba(54, 162, 235, 1)'
+                    ],
+                    borderWidth: 1
+                }]
+            };
+
+            var options = {
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                        stepSize: 1
+                    }
+                }
+            };
+
+            var myBarChart = new Chart(ctx, {
+                type: 'bar',
+                data: data,
+                options: options
+            });
+        }
+    });
+</script>
+
+<!--Ẩn / Hiện đánh giá-->
+<script>
+    function showMoreFeedback() {
+        $("#remainingFeedback").show();
+        $("#viewMoreBtn").hide();
+        $("#hideFeedbackBtn").show();
+    }
+
+    function hideFeedback() {
+        $("#remainingFeedback").hide();
+        $("#viewMoreBtn").show();
+        $("#hideFeedbackBtn").hide();
+    }
+</script>

@@ -1,0 +1,119 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Areas/Admin/Views/Shared/LayoutPageAdmin.cshtml";
+}
+<style>
+    .box_Statistics {
+        width: 99%;
+        height: 100px;
+        border-radius: 6px;
+        background-color: #f9abab;
+    }
+
+    .txt_box_Statistics {
+        font-weight: bold;
+        text-align: center;
+        padding-top: 10px;
+    }
+    .txt_vnd {
+        font-weight: bold;
+        text-align: center;
+        color: #055b40;
+    }
+</style>
+<br />
+
+@*// Đặt kết quả vào ViewBag cho tổng tiền giảm giá trong ngày
+ViewBag.TongTienSauGiamGiaTrongNgay = tongTienSauGiamGiaTrongNgay;
+ // Đặt kết quả vào ViewBag cho tổng tiền giảm giá trong tuần
+ ViewBag.TongTienSauGiamGiaTrongTuan = tongTienSauGiamGiaTrongTuan;
+// Đặt kết quả vào ViewBag cho tổng tiền giảm giá trong tháng
+ViewBag.TongTienSauGiamGiaTrongThang = tongTienSauGiamGiaTrongThang;
+ // Đặt kết quả vào ViewBag cho tổng tiền giảm giá trong năm
+ ViewBag.TongTienSauGiamGiaTrongNam = tongTienSauGiamGiaTrongNam;*@
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-2 col-md-2 col-lg-2 col-sm-6">
+        </div>
+
+        <div class="col-2 col-md-2 col-lg-2 col-sm-6">
+            <div class="box_Statistics">
+                <p class="txt_box_Statistics">Sản Phẩm</p>
+                
+                <p class="txt_vnd">@ViewBag.SLSANPHAM</p>
+            </div>
+        </div>
+
+        <div class="col-2 col-md-2 col-lg-2 col-sm-6">
+            <div class="box_Statistics">
+                <p class="txt_box_Statistics">Khách Hàng</p>
+                <p class="txt_vnd">@ViewBag.SoLuongTK_Khach</p>
+            </div>
+        </div>
+
+        <div class="col-2 col-md-2 col-lg-2 col-sm-6">
+            <div class="box_Statistics">
+                <p class="txt_box_Statistics">Đơn Hàng</p>
+                <p class="txt_vnd">@ViewBag.SoLuongBills</p>
+                
+            </div>
+
+        </div>
+
+
+        <div class="col-2 col-md-2 col-lg-2 col-sm-6">
+            <div class="box_Statistics">
+                <p class="txt_box_Statistics">Voucher</p>
+                <p class="txt_vnd">@ViewBag.SoLuongVoucher</p>
+
+                
+            </div>
+        </div>
+
+        <div class="col-2 col-md-2 col-lg-2 col-sm-6">
+        </div>
+    </div>
+    <br />
+    <div class="row">
+        <div class="col-2 col-md-2 col-lg-2 col-sm-6">
+
+        </div>
+
+        <div class="col-2 col-md-2 col-lg-2 col-sm-6">
+            <div class="box_Statistics">
+                <p class="txt_box_Statistics">Doanh thu trong năm</p>
+                <p class="txt_vnd">@ViewBag.TongTienSauGiamGiaTrongNam</p>
+            </div>
+        </div>
+
+        <div class="col-2 col-md-2 col-lg-2 col-sm-6">
+            <div class="box_Statistics">
+                <p class="txt_box_Statistics">Doanh thu trong tháng</p>
+                <p  class="txt_vnd">@ViewBag.TongTienSauGiamGiaTrongThang</p>
+            </div>
+        </div>
+
+        <div class="col-2 col-md-2 col-lg-2 col-sm-6">
+            <div class="box_Statistics">
+                <p class="txt_box_Statistics">Doanh Thu Trong Tuần</p>
+                <p  class="txt_vnd">@ViewBag.TongTienSauGiamGiaTrongTuan</p>
+            </div>
+
+        </div>
+
+
+        <div class="col-2 col-md-2 col-lg-2 col-sm-6">
+            <div class="box_Statistics">
+                <p class="txt_box_Statistics">Doanh Thu Trong Ngày</p>
+                <p  class="txt_vnd">@ViewBag.TongTienSauGiamGiaTrongNgay</p>
+            </div>
+        </div>
+
+        <div class="col-2 col-md-2 col-lg-2 col-sm-6">
+
+        </div>
+    </div>
+</div>
+

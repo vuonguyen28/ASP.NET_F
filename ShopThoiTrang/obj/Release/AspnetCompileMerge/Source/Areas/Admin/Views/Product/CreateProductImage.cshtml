@@ -1,0 +1,45 @@
+﻿@model ShopThoiTrang.Models.HinhAnh
+
+@{
+    ViewBag.Title = "Create Product Image";
+    Layout = "~/Areas/Admin/Views/Shared/LayoutPageAdmin.cshtml";
+}
+
+<h2 class="title_page"><u>Thêm Hình Ảnh Cho Sản Phẩm</u></h2>
+<br />
+
+<!--Main-->
+@using (Html.BeginForm("CreateProductImage", "Product", FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+    @Html.AntiForgeryToken()
+
+    <div class="form-horizontal">
+        @Html.HiddenFor(model => model.MaSp) <!-- Trường ẩn để lưu MaSP -->
+
+        <!--Choose image-->
+        <div class="form-group">
+            @Html.LabelFor(model => model.hinhanh1, "Chọn Hình Ảnh",htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                <input type="file" multiple name="file" id="file" />
+                
+                @Html.ValidationMessageFor(model => model.hinhanh1, "", new { @class = "text-danger" })
+            </div>
+        </div>
+        <br />
+
+        <!--Button create-->
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                @*<input type="submit" value="Create" class="btn btn-primary" />*@
+                <button type="submit" class="btn_AddItem">
+                    <span class="btn_TextAddItem">Create</span>
+                    <span class="btn_IconAddItem">
+                        <i class="fa-solid fa-plus" style="color: #ffffff;"></i>
+                    </span>
+                </button>
+            </div>
+        </div>
+    </div>
+}
+
+

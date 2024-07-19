@@ -1,0 +1,251 @@
+﻿@model IEnumerable<ShopThoiTrang.Models.NHANVIEN>
+
+@{
+    ViewBag.Title = "ShowEmpl";
+    Layout = "~/Areas/Admin/Views/Shared/LayoutPageAdmin.cshtml";
+}
+
+<style>
+    .table-container {
+        max-height: 65vh; /* Chiều cao tối đa cho thanh cuộn */
+        overflow-y: auto; /* Thanh cuộn dọc */
+        cursor: pointer;
+    }
+
+    thead {
+        position: sticky;
+        top: 0;
+        background-color: white; /* Đổi màu nền header */
+    }
+</style>
+
+<h2 class="title_page"><u>Danh Sách Nhân Viên</u></h2>
+
+@if (TempData["ErrorMessage"] != null)
+{
+    <div class="alert alert-danger">
+        @TempData["ErrorMessage"]
+    </div>
+}
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="row">
+                <!--button Search-->
+                <div class="col-md-4">
+                    @using (Html.BeginForm("ShowEmpl", "Employee", FormMethod.Get))
+                    {
+                        <div class="input-group mb-3  btn_add_top">
+                            <input type="text" class="form-control" placeholder="Search" name="searching">
+                            <button class="btn btn-success" type="submit"><i class="fa fa-search-plus"></i></button>
+                        </div>
+                    }
+                </div>
+
+                <!--Button delete-->
+                <div class="col-md-7">
+                    <button id="deleteButton" type="button" onclick="confirmDeleteSelectedProducts()" class="delete_Button btn-delete btn-delete_item" style="float:right;">
+                        <span class="text_delete">Delete</span>
+                        <span class="icon_delete">
+                            <i class="fa-solid fa-trash"></i>
+                        </span>
+                    </button>
+                </div>
+
+
+                <!--Button create new-->
+                <div class="col-md-1">
+                    <button class="btn_addimg btn_add_top" onclick="location.href='@Url.Action("Create", "Employee")'" style="float: right">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" viewBox="0 0 20 20" height="20" fill="none" class="addimg_svg-icon">
+                            <g stroke-width="1.5" stroke-linecap="round" stroke="#de8a2a">
+                                <circle r="7.5" cy="10" cx="10"></circle>
+                                <path d="m9.99998 7.5v5"></path>
+                                <path d="m7.5 9.99998h5"></path>
+                            </g>
+                        </svg>
+                        <span class="addimg_lableIcon"> New</i></span>
+                    </button>
+                </div>
+
+                <div class="table-container">
+
+                    @using (Html.BeginForm("DeleteSelected", "Employee", FormMethod.Post, new { id = "deleteForm" }))
+                    {
+                        <table class="table">
+                            <thead class="table-dark ">
+                                <tr>
+                                    <th>
+                                        Avata
+                                    </th>
+                                    <th>
+                                        Họ Và Tên
+                                    </th>
+                                    <th>
+                                        Ngày Sinh
+                                    </th>
+                                    <th>
+                                        Giới Tính
+                                    </th>
+                                    <th>
+                                        Địa Chỉ
+                                    </th>
+                                    <th>
+                                        Email
+                                    </th>
+                                    
+                                    <th>
+                                        Username
+                                    </th>
+                                   
+                                    <th>
+                                        Chỉnh sửa
+                                    </th>
+                                    <th><input type="checkbox" id="selectAllCheckbox" /> &nbsp; Select All</th>
+
+                                </tr>
+                            </thead>
+
+                            <tbody>
+
+                                @foreach (var item in Model)
+                                {
+                                    <tr>
+                                        <td>
+                                            <img src="~/Image/@item.HinhAnhNV" style="width: 70px; height: 80px; border-radius: 50%; border: 2px solid #00ff21;" />
+                                        </td>
+                                        <td>
+                                            @Html.DisplayFor(modelItem => item.HoTenNV)
+                                        </td>
+                                        <td>
+                                            @Html.DisplayFor(modelItem => item.NgaySinh)
+                                        </td>
+                                        <td>
+                                            @Html.DisplayFor(modelItem => item.GioiTinh)
+                                        </td>
+                                        <td>
+                                            @Html.DisplayFor(modelItem => item.DiaChi)
+                                        </td>
+                                        <td>
+                                            @Html.DisplayFor(modelItem => item.Email)
+                                        </td>
+                                       
+                                        <td>
+                                            @Html.DisplayFor(modelItem => item.Username)
+                                        </td>
+                                        
+                                        <td>
+
+                                            <a href="@Url.Action("EditEmpl", "Employee", new { id = item.MaNV })" class="btn btn-success">
+                                                <i class="fa fa-edit"></i>
+                                            </a>
+                                           
+                                        </td>
+                                        <td><input type="checkbox" name="selectedItems" value="@item.MaNV" /></td>
+                                    </tr>
+                                }
+                            </tbody>
+
+                        </table>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+@*//modal hiên thị thông báo xác nhận xóa danh mục*@
+<div id="confirmDeleteModal" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">Xác nhận xóa danh mục</h4>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <p>Bạn có chắc chắn muốn xóa các danh mục đã chọn?</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Hủy bỏ</button>
+                <button type="button" class="btn btn-danger" id="confirmDeleteButton">Xóa</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+@*//xử lý hiển thị thông báo xác nhận xóa danh mục*@
+<script>
+    $(document).ready(function () {
+        $('#deleteButton').click(function () {
+            var checkedItems = $("input[name='selectedItems']:checked").length;
+
+            if (checkedItems > 0) {
+                $('#confirmDeleteModal').modal('show');
+            } else {
+                alert('Vui lòng chọn ít nhất một mục để xóa.');
+            }
+        });
+
+        $('#confirmDeleteButton').click(function () {
+            $('#confirmDeleteModal').modal('hide');
+            $('#deleteForm').submit();
+        });
+    });
+</script>
+
+
+
+
+<!--JS xử lý select all-->
+<script>
+    $(document).ready(function () {
+        // Xử lý sự kiện khi nhấn vào checkbox "Select ALL"
+        $('#selectAllCheckbox').click(function () {
+            // Lấy trạng thái của checkbox "Select ALL"
+            var isChecked = $(this).prop('checked');
+
+            // Đặt trạng thái cho tất cả các checkbox khác trong bảng
+            $('input[name="selectedItems"]').prop('checked', isChecked);
+        });
+    });
+
+
+    //hiện button xóa khi click vào checkbox
+    $(document).ready(function () {
+        // Xử lý sự kiện khi checkbox thay đổi
+        $('input[name="selectedItems"]').change(function () {
+            var anyCheckboxChecked = $('input[name="selectedItems"]:checked').length > 0;
+
+            // Nếu có ít nhất một checkbox được chọn, thì hiển thị nút xóa
+            if (anyCheckboxChecked) {
+                $('.btn-delete').addClass('visible');
+            } else {
+                $('.btn-delete').removeClass('visible');
+            }
+        });
+    });
+
+</script>
+
+@*Xử lý ẩn hiện button xóa khi click vào select all*@
+<script>
+    $(document).ready(function () {
+        // Xử lý sự kiện khi nhấn vào checkbox "Select ALL"
+        $('#selectAllCheckbox').click(function () {
+            // Lấy trạng thái của checkbox "Select ALL"
+            var isChecked = $(this).prop('checked');
+
+            // Đặt trạng thái cho tất cả các checkbox khác trong bảng
+            $('input[name="selectedItems"]').prop('checked', isChecked);
+            if (isChecked) {
+                $('.btn-delete').addClass('visible');
+            } else {
+                $('.btn-delete').removeClass('visible');
+            }
+
+        });
+    });
+</script>

@@ -1,0 +1,316 @@
+﻿@*@model IEnumerable<ShopThoiTrang.Models.ThongKeDoanhThuTheoNgay_Result>*@
+
+@{
+    ViewBag.Title = "ThongKeDoanhThuTheoNgay_Huy";
+    Layout = "~/Areas/Admin/Views/Shared/LayoutPageAdmin.cshtml";
+
+}
+
+<style>
+    .table-container {
+        max-height: 70vh; /* Chiều cao tối đa cho thanh cuộn */
+        overflow-y: auto; /* Thanh cuộn dọc */
+        cursor: pointer;
+    }
+
+    thead {
+        position: sticky;
+        top: 0;
+        background-color: white; /* Đổi màu nền header */
+    }
+</style>
+
+<h2 style="text-align:center">Thống Đơn Hủy</h2>
+@using System.Globalization;
+
+<div class="container-fluid">
+
+
+    @using (Html.BeginForm("ThongKeDoanhThuTheoThang_Huy", "Statistics", FormMethod.Get, new { id = "thongKeForm" }))
+    {
+
+
+        <div class="row">
+
+            <div class="col-3 col-sm-3 col-md-3 col-lg-3 col-sm-3 col-xl-3 col-xxl-3">
+
+            </div>
+            <div class="col-3 col-sm-3 col-md-3 col-lg-3 col-sm-3 col-xl-3 col-xxl-3">
+                <div class="Row_Select">
+                    <div class="Row_Select">
+                        <label for="startMonth">Chọn tháng bắt đầu:</label>
+                    </div>
+                    <div class="Row_Select">
+                        @{
+                            // Generate a dropdown list for start months
+                            var selectedMonth = DateTime.Now.Month;
+                            var startMonths = Enumerable.Range(1, 12).Select(m => new SelectListItem
+                            {
+                                Value = m.ToString(),
+                                Text = CultureInfo.CurrentCulture.DateTimeFormat.GetMonthName(m)
+                            });
+                        }
+                        @Html.DropDownList("startMonth", startMonths, new { @class = "form-control" })
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-3 col-sm-3 col-md-3 col-lg-3 col-sm-3 col-xl-3 col-xxl-3">
+
+                <div class="row Row_Select">
+                    <label for="endMonth">Chọn tháng kết thúc:</label>
+                </div>
+                <div class="Row_Select">
+                    @{
+                        // Generate a dropdown list for end months
+                        var endMonths = Enumerable.Range(1, 12).Select(m => new SelectListItem
+                        {
+                            Value = m.ToString(),
+                            Text = CultureInfo.CurrentCulture.DateTimeFormat.GetMonthName(m)
+                        });
+                    }
+                    @Html.DropDownList("endMonth", endMonths, new { @class = "form-control" })
+                </div>
+            </div>
+
+            <div class="col-3 col-sm-3 col-md-3 col-lg-3 col-sm-3 col-xl-3 col-xxl-3">
+
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-3 col-sm-3 col-md-3 col-lg-3 col-sm-3 col-xl-3 col-xxl-3">
+
+            </div>
+            <div class="col-3 col-sm-3 col-md-3 col-lg-3 col-sm-3 col-xl-3 col-xxl-3">
+                <div class="row Row_Select">
+                    <label for="startYear">Chọn năm bắt đầu:</label>
+                </div>
+                <div class="row Row_Select">
+                    @{
+                        // Generate a dropdown list for start years
+                        var selectedYear = DateTime.Now.Year;
+                        var startYear = selectedYear - 5; // Adjust the range as needed
+                        var endYear = selectedYear + 5;
+                        var startYears = Enumerable.Range(startYear, endYear - startYear + 1).Select(y => new SelectListItem
+                        {
+                            Value = y.ToString(),
+                            Text = y.ToString()
+                        });
+                    }
+                    @Html.DropDownList("startYear", startYears, new { @class = "form-control" })
+                </div>
+            </div>
+
+            <div class="col-3 col-sm-3 col-md-3 col-lg-3 col-sm-3 col-xl-3 col-xxl-3">
+                <div class="row Row_Select">
+                    <label for="endYear">Chọn năm kết thúc:</label>
+                </div>
+                <div class=" Row_Select">
+                    <div class=" Row_Select">
+                        @{
+                            // Generate a dropdown list for end years
+
+                            var endYears = Enumerable.Range(startYear, endYear - startYear + 1).Select(y => new SelectListItem
+                            {
+                                Value = y.ToString(),
+                                Text = y.ToString()
+                            });
+                        }
+                        @Html.DropDownList("endYear", endYears, (selectedYear - 2).ToString(), new { @class = "form-control" })
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="col-3 col-sm-3 col-md-3 col-lg-3 col-sm-3 col-xl-3 col-xxl-3">
+
+            </div>
+        </div>
+    }
+
+</div>
+<br />
+<br />
+<br />
+
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        var form = document.getElementById('thongKeForm');
+
+        form.addEventListener('input', function () {
+            // Tự động gửi biểu mẫu khi ô nhập ngày thay đổi
+            form.submit();
+        });
+    });
+</script>
+
+<!--Biêu đồ cột-->
+<div class="container-fluid">
+    <div class="row">
+        <h2 style="text-align:center">Thống kê đơn hủy theo tháng</h2>
+        <div class="col-md-3 scroll-container-vertical">
+            <div class="table-container">
+                <table class="table">
+                    <thead class="table-dark">
+                        <tr>
+                            <th>Tháng Năm</th>
+                            <th>SL Hủy</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var item in ViewBag.chart_doanhthu)
+                        {
+                            <tr>
+                                <td>@item.Thang-@item.Nam</td>
+                                <td>@string.Format("{0:#,##0}", item.SoLuongDonHangHuy)</td>
+                            </tr>
+                        }
+
+                    </tbody>
+                </table>
+            </div>
+
+            SL Tổng: @string.Format("{0:#,##0}", ViewBag.tong)
+        </div>
+
+        <div class="col-md-9">
+            <canvas id="myChart" width="400" height="200"></canvas>
+
+        </div>
+    </div>
+</div>
+
+
+
+<br />
+<br />
+<br />
+<br />
+
+<br />
+
+<!--Biêu đồ cột-->
+<div class="container-fluid">
+    <div class="row">
+        <h2 style="text-align:center">Thống kê đơn hủy theo từng ngày</h2>
+        <div class="col-md-3 scroll-container-vertical">
+            <div class="table-container">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Ngày</th>
+                            <th>SL Hủy</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var item in ViewBag.chart_tksp_m)
+                        {
+                            <tr>
+                                <td>@item.Ngay</td>
+                                <td>@item.SoLuongDonHangHuy</td>
+                            </tr>
+                        }
+                       
+                    </tbody>
+                </table>
+            </div>
+
+            SL Tổng: @string.Format("{0:#,##0}", ViewBag.tong)
+        </div>
+
+        <div class="col-md-9">
+            <canvas id="myLineChart" width="400" height="200"></canvas>
+
+
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+
+
+
+
+
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        var chartData = @Html.Raw(Json.Encode(ViewBag.chart_doanhthu));
+
+        var labels = chartData.map(function (item) {
+            return moment(item.Thang + '/' + item.Nam, 'M/YYYY').format('M/YYYY');
+        });
+
+        var data = chartData.map(function (item) {
+            return item.SoLuongDonHangHuy;
+        });
+
+        var ctx = document.getElementById('myChart').getContext('2d');
+        var myChart = new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: labels,
+                datasets: [{
+                    label: 'Doanh thu',
+                    data: data,
+                    backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                    borderColor: 'rgba(75, 192, 192, 1)',
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
+                }
+            }
+        });
+    });
+</script>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        var chartData = @Html.Raw(Json.Encode(ViewBag.chart_tksp_m));
+
+        var labels = chartData.map(function (item) {
+            return moment(item.Ngay).format('DD/MM/YYYY');
+        });
+
+        var data = chartData.map(function (item) {
+            return item.SoLuongDonHangHuy;
+        });
+
+        var ctx = document.getElementById('myLineChart').getContext('2d');
+        var myChart = new Chart(ctx, {
+            type: 'line', // hoặc 'line' tùy thuộc vào loại biểu đồ bạn muốn vẽ
+            data: {
+                labels: labels,
+                datasets: [{
+                    label: 'Doanh thu',
+                    data: data,
+                    backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                    borderColor: 'rgba(75, 192, 192, 1)',
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
+                }
+            }
+        });
+    });
+</script>

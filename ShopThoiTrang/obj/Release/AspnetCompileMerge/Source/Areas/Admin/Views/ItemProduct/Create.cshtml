@@ -1,0 +1,78 @@
+﻿@model ShopThoiTrang.Models.ChiTietSanPham
+
+@{
+
+    Layout = "~/Areas/Admin/Views/Shared/LayoutPageAdmin.cshtml";
+}
+
+<!--Back to list-->
+<div class="btn_BackToList">
+    <button style="height: 2em;">
+        <i class="fa-solid fa-arrow-left"></i>
+        <span> @Html.ActionLink("Back to List", "Show", "ItemProduct", null, new { style = "color: black;" })</span>
+    </button>
+</div>
+<br />
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+
+    <div class="form-horizontal">
+        <h4>Chi Tiết</h4>
+        <hr />
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+        <!--Size-->
+        <div class="form-group">
+            <label class="control-label col-md-2">Tên Sản Phẩm</label>
+            <div class="col-md-10">
+                @Html.DropDownListFor(model => model.MaSP, null, "- Select Product -", new { @class = "form-control" })
+                @Html.ValidationMessageFor(model => model.MaSP, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+
+
+        <!--Size-->
+        <div class="form-group">
+            <label class="control-label col-md-2">Kích Thước</label>
+            <div class="col-md-10">
+                @Html.DropDownListFor(model => model.MaKichThuoc, null, "- Select Size -", new { @class = "form-control" })
+                @Html.ValidationMessageFor(model => model.MaKichThuoc, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <!--Color-->
+        <div class="form-group">
+            <label class="control-label col-md-2">Màu sắt</label>
+            <div class="col-md-10">
+                @Html.DropDownListFor(model => model.MaMau, null, "- Select Color -", new { @class = "form-control" })
+                @Html.ValidationMessageFor(model => model.MaMau, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.SoLuongTon, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.SoLuongTon, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.SoLuongTon, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <!--Button Create-->
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <button type="submit" class="btn_AddItem">
+                    <span class="btn_TextAddItem">Create</span>
+                    <span class="btn_IconAddItem">
+                        <i class="fa-solid fa-plus" style="color: #ffffff;"></i>
+                    </span>
+                </button>
+            </div>
+        </div>
+
+    </div>
+}

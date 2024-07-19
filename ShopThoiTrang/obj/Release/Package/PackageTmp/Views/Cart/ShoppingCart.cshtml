@@ -1,0 +1,497 @@
+﻿@model IEnumerable<ShopThoiTrang.Models.ShoppingCartItemViewModel>
+
+@{
+    ViewBag.Title = "ShoppingCart";
+    Layout = "~/Views/Share/LayoutPage_Customer.cshtml";
+}
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Mulish', sans-serif;
+    }
+
+    :root {
+        --text-clr: #4f4f4f;
+    }
+
+    p {
+        color: #6c757d;
+    }
+
+    a {
+        text-decoration: none;
+        color: var(--text-clr);
+    }
+
+        a:hover {
+            text-decoration: none;
+            color: var(--text-clr);
+        }
+
+    h2 {
+        color: var(--text-clr);
+        font-size: 1.5rem;
+    }
+
+    .container-fluid {
+        margin-top: 100px;
+    }
+
+    .main_cart {
+        background: #fff;
+    }
+
+    .card {
+        border: none;
+    }
+
+    .product_img img {
+        min-width: 100px;
+        max-height: 200px;
+    }
+
+    .product_name {
+        color: black;
+        font-size: 1.4rem;
+        text-transform: capitalize;
+        font-weight: bold;
+    }
+
+    .card-title p {
+        font-size: 1.2rem;
+        font-weight: 500;
+    }
+
+    .remove-and-wish p {
+        font-size: 0.8rem;
+        margin-bottom: 0;
+    }
+
+    .price-money h3 {
+        font-size: 1rem;
+        font-weight: 600;
+    }
+
+    .set_quantity {
+        position: relative;
+    }
+
+        .set_quantity::after {
+            content: "(Note, 1 piece)";
+            width: auto;
+            height: auto;
+            text-align: center;
+            position: absolute;
+            bottom: -20px;
+            right: 1.5rem;
+            font-size: 0.8rem;
+        }
+
+    .page-link {
+        line-height: 16px;
+        width: 45px;
+        font-size: 1rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #495057;
+    }
+
+    .page-item input {
+        line-height: 22px;
+        padding: 3px;
+        font-size: 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .page-link:hover {
+        text-decoration: none;
+        color: #495057;
+        outline: none !important;
+    }
+
+    .page-link:focus {
+        box-shadow: none;
+    }
+
+    .price_indiv p {
+        font-size: 1.1rem;
+    }
+
+    .fa-heart:hover {
+        color: red;
+    }
+
+    .btn_ThanhToan {
+        font-size: 20px;
+        background-color: #f39a27;
+        border-radius: 30px;
+        height: auto;
+        width: 200px;
+    }
+
+    .btn_quantityEdit {
+        width: 20px;
+        border-radius: 30px;
+        background: #6c757d;
+        color: #fff;
+        box-shadow: 26px 26px 51px #949494, -26px -26px 51px #ffffff;
+    }
+
+    /*scroll_cart tạo thanh cuộn cho giỏ hàng*/
+    .scroll_cart {
+        height: 80vh; /* Độ cao của khu vực chứa nội dung */
+        overflow-y: auto;
+    }
+        /* Cho trình duyệt sử dụng Webkit (Chrome, Safari) */
+        /* Thanh cuộn dọc */
+        .scroll_cart::-webkit-scrollbar {
+            width: 3px; /* Độ rộng thanh cuộn */
+        }
+
+        .scroll_cart::-webkit-scrollbar-track {
+            background: #f1f1f1; /* Màu nền cho phần track (phần thanh cuộn không được hover hoặc bấm vào) */
+        }
+
+        .scroll_cart::-webkit-scrollbar-thumb {
+            background: #0c2c37; /* Màu nền cho phần thumb (phần cuộn mà người dùng có thể kéo) */
+            border-radius: 10%; /* Bo tròn góc cho thumb */
+        }                
+</style>
+
+
+<h2>ShoppingCart</h2>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-10 col-11 mx-auto">
+            <div class="row mt-5 gx-3">
+
+                <!--Left side-->
+                <div class="col-md-12 col-lg-8 col-11 mx-auto main_cart mb-lg-0 mb-5 shadow">
+
+                    <!--Cart product 1-->
+                    <div class="card p-4 scroll_cart">
+
+                        @foreach (var item in Model)
+                        {
+                            <div class="row">
+                                @{
+                                    bool flag = false;
+                                }
+                                <!--Cart img-->
+                                <div class="col-md-5 col-11 mx-auto bg-light d-flex justify-content-center align-items-center shadow product_img">
+                                    @foreach (var image in item.Images)
+                                    {
+                                        if (flag == false)
+                                        {
+                                            <img src="~/Image/@Url.Content(image)" class="img-fluid" alt="Product Image" />
+                                            flag = true;
+                                        }
+                                    }
+                                </div>
+
+                                <!--Cart product details: Thông tin chi tiết-->
+                                <div class="col-md-7 col-11 mx-auto px-4 mt-2">
+
+                                    <div class="row">
+
+                                        <!--product-->
+                                        <div class="col-6 card-title">
+                                            <h1 class="mb-4 product_name">@Html.DisplayFor(modelItem => item.ProductName)</h1>
+                                            <p class="mb-2">Color:  @Html.DisplayFor(modelItem => item.ColorName)</p>
+                                            <p class="mb-3">Size:  @Html.DisplayFor(modelItem => item.SizeName)</p>
+                                            <p class="mb-3">Giá hiện tại: @item.Price</p>
+                                            <p class="mb-3">Sale: @item.Sale %</p>
+
+                                        </div>
+
+                                        <!--Quantity: Số lượng-->
+                                        <div class="col-6">
+                                            <p class="quantity-controls">
+                                                <button class="quantity-decrement btn_quantityEdit" data-cartitemid="@item.CartItemId">-</button>
+                                                <input id="quantityInput-@item.CartItemId" type="number" class="quantity-input" value="@item.Quantity" data-cartitemid="@item.CartItemId" onchange="updateTotalPrice()" style="width: 30px; text-align: center;" />
+                                                <button class="quantity-increment btn_quantityEdit" data-cartitemid="@item.CartItemId" style="width: 20px;">+</button>
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <!--Remove and price-->
+                                    <div class="row">
+                                        <div class="col-7 d-flex justify-content-between remove_wish">
+                                            <i class="deleteCartItem" data-maGioHang="@item.CartItemId" class="deleteCartItem" data-cart-id="@item.CartItemId" style="color: red; cursor: pointer;"><i class="fa-solid fa-trash" style="color: red; margin-right: 5px; font-size: 16px;"></i> Xóa</i>
+                                        </div>
+                                        <div class="col-5 d-flex justify-content-end price_money">
+                                            <h3><span id="itemval">Tổng:@string.Format("{0:N0}", @item.TotalPrice)đ</span> </h3>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        }
+                    </div>
+                </div>
+                <!--End left side-->
+                <!--Right side-->
+                <div class="col-md-12 col-lg-4 col-11 mx-auto mt-lg-0 mt-md-5">
+
+                    <div class="right_side p-3 shadow bg-white">
+                        <h2 class="product_name mb-5">Thanh Toán Hóa Đơn</h2>
+                        <div class="price_indiv d-flex justify-content-between">
+                            <p>Số tiền:</p>
+                            <p><span>@ViewBag.tongtiendonhang</span>vnđ</p>
+                        </div>
+                        <div class="price_indiv d-flex justify-content-between">
+                            <p>Phí vận chuyển</p>
+                            <p>@ViewBag.phivanchuyen vnđ</p>
+                        </div>
+                        <hr />
+
+                    </div>
+                    <!--Voucher -->
+                    <div class="mt-3 shadow p-3 bg-white">
+                        <div class="pt-4">
+                            <a class="d-flex justify-content-between" data-toggle="collapse" href="#collapseExample"
+                               aria-expanded="false" aria-controls="collapseExample">
+                                Thêm mã giảm giá (tùy chọn)
+                               
+                            </a>
+                            @using (Html.BeginForm("submitVoucher", "Cart", FormMethod.Post))
+                            {
+                                <input type="text" style="width: 80%; height: 30px" name="MaVoucher" />
+                                <button type="submit" class="btn btn-primary" style="height: 30px; width: 16%"> Áp dụng </button>
+                            }
+                            @{
+                                var message = TempData["Message"];
+                            }
+
+                            @if (message != null)
+                            {
+                                <div>
+                                    <p style="color: red">@message</p>
+                                </div>
+                            }
+                        </div>
+                    </div>
+                    <!--Mã giảm giá-->
+                    <div class="discount_code mt-3 shadow">
+                        <div class="card">
+                            <div class="card-body">
+                                
+                                <div class="collapse" id="collapseExample">
+                                    <div class="mt-3">
+                                        <input type="text" name="" id="discount_code1" class="form-control font-weight-bold" placeholder="Nhập mã giảm giá">
+                                        <small id="error_trw" class="table-dark mt-3"></small>
+                                    </div>
+                                    <button class="btn btn-primary btn-sm mt-3" onclick="discount_code()">Xác nhận</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--Thanh toán-->
+                        <div class="total-amt d-flex justify-content-between font-weight-bold">
+                            <p>Tổng tiền (VAT)</p>
+                            <p><span id="total_cart_amt">@ViewBag.tongDonHangCoPhiVanChuyen</span>vnđ</p>
+                        </div>
+
+                        <div class="total-amt d-flex justify-content-between font-weight-bold">
+                            <p>Tổng tiền sau khi giảm</p>
+                            <p><span id="total_cart_amt">@ViewBag.TongVATsauGiamGia</span>vnđ</p>
+                        </div>
+                        @using (Html.BeginForm("MuaNgay", "Cart", FormMethod.Post, new { id = "checkoutForm" }))
+                        {
+                            <button type="button" class="btn btn-primary text-uppercase btn_ThanhToan" onclick="validateForm()">Thanh toán</button>
+
+                            <div class="mt-3 shadow p-3 bg-white">
+                                <div class="pt-4">
+                                    <label>
+                                        <input type="radio" name="paymentMethod" value="Thanh toán sau khi nhận hàng">
+                                        Thanh Toán sau khi nhận hàng
+                                    </label>
+                                    <label>
+                                        <input type="radio" name="paymentMethod" value="Thanh toán trực tuyến">
+                                        Thanh Toán online
+                                    </label>
+                                </div>
+                            </div>
+                        }
+
+                    </div>
+
+                    <!--Ngày giao hàng dự kiến-->
+                    <div class="mt-3 shadow p-3 bg-white">
+                        <div class="pt-4">
+                            <h5 class="mb-4">Ngày giao hàng dự kiến</h5>
+                            <p>Ngày đặt hàng: @ViewBag.ngaygiao - Ngày nhận: @((ViewBag.ngaynhan as DateTime?)?.ToString("dd/MM/yyyy"))</p>
+                        </div>
+                    </div>
+                    <!--Nơi Nhận Hàng dự kiến hàng dự kiến-->
+                    <div class="mt-3 shadow p-3 bg-white">
+                        <div class="pt-4">
+                            <h5 class="mb-4">Nơi nhận hàng dự kiến</h5>
+                            <p>Nơi Nhận: @ViewBag.CustomerAddress</p>
+                            <a href="@Url.Action("EditProfile", "Customer")" style="color: blue;">Cập Nhật Địa Chỉ <i class="fa-solid fa-map-pin" style="color: red; font-size: 13px;"></i></a>
+
+                        </div>
+                    </div>
+
+
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--End row-->
+
+</div>
+
+
+
+
+@section scripts {
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(".quantity-controls").on("click", ".quantity-decrement, .quantity-increment", function () {
+                var $input = $(this).siblings(".quantity-input");
+                var cartItemId = $input.data("cartitemid");
+                var currentQuantity = parseInt($input.val());
+
+                if ($(this).hasClass("quantity-increment")) {
+                    currentQuantity++;
+                } else if ($(this).hasClass("quantity-decrement") && currentQuantity > 1) {
+                    currentQuantity--;
+                }
+
+                $input.val(currentQuantity);
+
+                // Update the quantity in the database via AJAX
+                updateQuantity(cartItemId, currentQuantity);
+            });
+
+            function updateQuantity(cartItemId, newQuantity) {
+                $.ajax({
+                    url: "@Url.Action("UpdateQuantity", "Cart")",
+                    method: "POST",
+                    data: { cartItemId: cartItemId, newQuantity: newQuantity },
+                    success: function (data) {
+                        // Handle success (e.g., update the UI)
+                        console.log("Quantity updated successfully");
+                        location.reload();
+                    },
+                    error: function () {
+                        console.error("Failed to update quantity");
+                    }
+                });
+            }
+        });
+    </script>
+    @*// hàm tính tổng tiền*@
+
+}
+
+<script>
+    $(document).ready(function () {
+        $('.btn_ThanhToan').on('click', function () {
+            var paymentMethod = $('input[name="paymentMethod"]:checked').val();
+
+            if (paymentMethod) {
+                $.ajax({
+                    url: '@Url.Action("ProcessPayment", "Cart")',
+                    type: 'POST',
+                    data: { paymentMethod: paymentMethod },
+                    success: function (response) {
+                        console.log("Payment method saved successfully");
+                        // Thực hiện hành động tiếp theo sau khi lưu hình thức thanh toán thành công nếu cần
+                    },
+                    error: function () {
+                        console.error("Failed to save payment method");
+                        // Xử lý khi gửi thất bại (nếu cần)
+                    }
+                });
+            } else {
+                console.error("Please select a payment method");
+                // Xử lý khi không chọn hình thức thanh toán
+            }
+        });
+    });
+</script>
+
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<script>
+    $(document).ready(function () {
+        $('.deleteCartItem').click(function () {
+            var cartId = $(this).data('cart-id'); // Lấy mã giỏ hàng từ data-attribute
+
+            // Gửi yêu cầu AJAX để xóa giỏ hàng
+            $.ajax({
+                url: '@Url.Action("XoaGioHang", "Cart")', // Đường dẫn tới Action XoaGioHang
+                type: 'GET', // Phương thức HTTP (có thể là GET hoặc POST tùy thuộc vào cấu hình của bạn)
+                data: { maGioHang: cartId }, // Dữ liệu gửi đi (mã giỏ hàng để xóa)
+                success: function (result) {
+                    // Xử lý kết quả nếu cần
+                    // Ví dụ: cập nhật giao diện người dùng hoặc thông báo khi xóa thành công
+                    console.log('Xóa thành công!');
+                    // Thực hiện các hành động khác sau khi xóa, ví dụ như cập nhật giao diện người dùng
+                },
+                error: function (xhr, status, error) {
+                    // Xử lý lỗi nếu có
+                    console.error('Lỗi khi xóa giỏ hàng:', status, error);
+                    // Hiển thị thông báo lỗi hoặc thực hiện các hành động khác khi xảy ra lỗi
+                }
+            });
+        });
+    });
+</script>
+
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $(".deleteCartItem").click(function () {
+            var maGioHang = $(this).attr("data-maGioHang");
+
+            $.ajax({
+                type: "POST",
+                url: "@Url.Action("XoaGioHang", "Cart")",
+                data: { maGioHang: maGioHang },
+                success: function (result) {
+                    // Reload or update the shopping cart view after successful deletion
+                    location.reload(); // You can update specific part of the page instead of reloading the entire page
+                },
+                error: function (error) {
+                    console.log(error);
+                    // Handle error if needed
+                }
+            });
+        });
+    });
+</script>
+<!--JS xử lý chọn phương thức thanh toán-->
+<script>
+    function validateForm() {
+        var paymentMethods = document.getElementsByName("paymentMethod");
+        var isPaymentMethodSelected = false;
+
+        for (var i = 0; i < paymentMethods.length; i++) {
+            if (paymentMethods[i].checked) {
+                isPaymentMethodSelected = true;
+                break;
+            }
+        }
+
+        if (isPaymentMethodSelected) {
+            document.getElementById("checkoutForm").submit();
+        } else {
+            alert("Vui lòng chọn một hình thức thanh toán trước khi tiếp tục.");
+        }
+    }
+</script>

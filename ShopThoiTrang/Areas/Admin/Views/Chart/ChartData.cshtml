@@ -1,0 +1,45 @@
+﻿
+@{
+    ViewBag.Title = "ChartData";
+    Layout = "~/Views/Share/LayoutPage_Customer.cshtml";
+}
+
+
+<div>
+    <canvas id="myChart" width="400" height="400"></canvas>
+</div>
+
+@section scripts {
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+        $(document).ready(function () {
+            $.ajax({
+                url: '@Url.Action("ChartData", "Chart")',
+                type: 'GET',
+                success: function (data) {
+                    var ctx = document.getElementById('myChart').getContext('2d');
+                    var myChart = new Chart(ctx, {
+                        type: 'line',
+                        data: {
+                            labels: data.labels,
+                            datasets: [{
+                                label: 'Doanh thu',
+                                data: data.data,
+                                backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                                borderColor: 'rgba(75, 192, 192, 1)',
+                                borderWidth: 1
+                            }]
+                        },
+                        options: {
+                            scales: {
+                                y: {
+                                    beginAtZero: true
+                                }
+                            }
+                        }
+                    });
+                }
+            });
+        });
+    </script>
+}

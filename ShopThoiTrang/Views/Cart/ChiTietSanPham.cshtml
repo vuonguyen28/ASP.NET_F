@@ -1,0 +1,38 @@
+﻿@model IEnumerable<ShopThoiTrang.Models.ChiTietSanPham>
+
+@{
+    ViewBag.Title = "ChiTietSanPham";
+    Layout = "~/Views/Share/LayoutPageProduct.cshtml";
+}
+
+<h2>ChiTietSanPham</h2>
+
+<h2>Thêm vào giỏ hàng</h2>
+
+@if (Model.Any())
+{
+    <div>
+        <h3>Thông tin sản phẩm</h3>
+        <ul>
+            @foreach (var chiTiet in Model)
+            {
+                <li>
+                    
+                    <p>
+                        @using (Html.BeginForm("ThemGioHang", "Cart", new { maChiTiet = chiTiet.MaChiTiet }, FormMethod.Post))
+                        {
+                            <label for="SoLuong_@chiTiet.MaChiTiet">Số lượng:</label>
+                            <input type="number" id="SoLuong_@chiTiet.MaChiTiet" name="soLuong" value="1" min="1" n/>
+
+                            <input type="submit" value="Thêm vào giỏ hàng" />
+                        }
+                    </p>
+                </li>
+            }
+        </ul>
+    </div>
+}
+else
+{
+    <p>Không có chi tiết sản phẩm nào để hiển thị.</p>
+}

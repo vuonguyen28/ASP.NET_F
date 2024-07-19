@@ -1,0 +1,17 @@
+﻿@model IEnumerable<ShopThoiTrang.Models.DanhMuc>
+
+<style>
+    .name_danhmuc {
+        font-size: 16px;
+    }
+</style>
+@foreach (var item in Model)
+{
+    <li class="list-group-item name_danhmuc">
+        @Html.ActionLink(item.TenDanhMuc, "Fiter_Product", "MainCustomer", new { MaDanhMuc = item.MaDanhMuc }, new { @style = "text-transform:uppercase; text-decoration:none;" })
+    </li>
+    <hr />
+}
+
+
+

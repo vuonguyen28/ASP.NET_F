@@ -1,0 +1,123 @@
+﻿@model ShopThoiTrang.Models.DonHang
+
+@{
+    ViewBag.Title = "UpdateBill";
+    Layout = "~/Views/Share/LayoutPage_Customer.cshtml";
+}
+
+<style>
+    .frm_UpdateBill {
+        margin-top: 130px;
+        margin-bottom: 100px;
+    }
+
+    .ctn_formUpdate {
+        border: 1px solid #000;
+    }
+
+    .title_page {
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    .btn_UpdateBill button {
+        margin-top: 5%;
+        margin-bottom: 5%;
+        width: 200px;
+        height: 35px;
+        font-size: 16px;
+        font-weight: bold;
+        background: #00ff21;
+        border-radius: 10px;
+        transition: all .3s ease;
+    }
+
+        .btn_UpdateBill button:hover {
+            transform: scale(1.1);
+            background: #00ffff;
+        }
+
+    .New_Location {
+        font-size: 16px;
+    }
+
+    .Box_NewLocation {
+        font-size: 15px;
+        height: 40px;
+        border: 1px solid #000;
+    }
+
+    .Content_BillUpdate {
+        font-size: 16px;
+    }
+</style>
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+
+    <div class="form-horizontal frm_UpdateBill">
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+        <h2 class="title_page" style="text-align:center" id="printableContent">Cập Nhật Địa Chỉ Giao Hàng</h2>
+        <hr />
+
+        <div class="container ctn_formUpdate" id="printableContent">
+            <p id="printableContent" class="Content_BillUpdate">
+                <strong> Mã đơn hàng:</strong> @Model.MaDonHang
+            </p>
+            <div class="row" id="printableContent">
+
+                <!--Content bill-->
+                <div class="col-md-6">
+                    <p class="Content_BillUpdate"><strong>Mã Khách Hàng:</strong>  @Html.DisplayFor(model => model.MaKhachHang)</p>
+                </div>
+                <div class="col-md-6">
+                    <p class="Content_BillUpdate"><strong>Địa chỉ giao hàng:</strong>  @Html.DisplayFor(model => model.DiaChiGiaoHang)</p>
+                </div>
+                <div class="col-md-6">
+                    <p class="Content_BillUpdate"><strong>Phí vận chuyển: </strong>@Html.DisplayFor(model => model.PhiVanChuyen)</p>
+                </div>
+                <div class="col-md-6">
+                    <p class="Content_BillUpdate"><strong>Thành Tiền (VAT): </strong>@Html.DisplayFor(model => model.TongGia)</p>
+                </div>
+                <div class="col-md-6">
+                    <p class="Content_BillUpdate"><strong>Ngày Đặt:</strong> @Html.DisplayFor(model => model.NgayDat)</p>
+                </div>
+                <div class="col-md-6">
+                    <p class="Content_BillUpdate"><strong>Trạng thái thanh toán: </strong>@Html.DisplayFor(model => model.TrangThaiThanhToan)</p>
+                </div>
+                <div class="col-md-6">
+                    <p class="Content_BillUpdate"><strong>Hình thức thanh toán:</strong>  @Html.DisplayFor(model => model.HinhThucThanhToan)</p>
+                </div>
+                <div class="col-md-6">
+                    <p class="Content_BillUpdate"><strong>Ngày Dự kiến giao: </strong>@Model.NgayDuKienGiaoHang</p>
+                </div>
+                <div class="col-md-6">
+                    <p class="Content_BillUpdate"><strong>Trạng Thái: </strong>@Model.TrangThaiDonHang</p>
+                </div>
+
+                <!--Input new location - nhập địa chỉ mới-->
+                <div class="col-md-12">
+                    <div class="form-group">
+                        <div class="col col-md-2 New_Location">
+                            <p><strong>Cập nhật địa chỉ mới:</strong></p>
+                        </div>
+                        <div class="col-md-12">
+                            @Html.EditorFor(model => model.DiaChiGiaoHang, new { htmlAttributes = new { @class = "form-control Box_NewLocation" } })
+                            @Html.ValidationMessageFor(model => model.DiaChiGiaoHang, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                </div>
+
+                <!--Button xác nhận cập nhật-->
+                <div class="col col-md-12  d-flex justify-content-center align-items-center">
+                    <div class="btn_UpdateBill ">
+                        <button type="submit">Cập Nhật</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+}

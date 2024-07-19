@@ -1,0 +1,236 @@
+﻿@model ShopThoiTrang.Models.NHANVIEN
+
+@{
+    ViewBag.Title = "EditProfile";
+    Layout = "~/Areas/Admin/Views/Shared/LayoutPageAdmin.cshtml";
+}
+
+<style>
+
+    
+
+    .avatar_customer {
+        width: 300px;
+        height: 310px;
+        border-radius: 150px;
+        background: linear-gradient(225deg, #cacaca, #f0f0f0);
+        box-shadow: -25px 25px 28px #5a5a5a, 25px -25px 28px #ffffff;
+    }
+
+        .avatar_customer img {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+        }
+
+    .btn_SaveChange {
+        background: #2ea532;
+        color: white;
+        width: 100px;
+        height: 40px;
+        margin-top: 20px;
+        /*padding: 10px 10px;*/
+        font-size: 16px;
+        font-weight: bold;
+        border: 2px solid #00ff21;
+        border-radius: 30px;
+        text-align: center;
+    }
+
+        .btn_SaveChange i {
+            padding-right: 10px;
+        }
+
+        .btn_SaveChange:hover {
+            background: #fff;
+            border: 2px solid #00ff21;
+        }
+
+    .btn_chooseimg {
+        margin-top: 20px;
+        margin-left: 20px;
+        font-size: 13px;
+    }
+
+    .title_customer {
+        font-size: 16px;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+
+    .txt_customer {
+        font-size: 16px;
+    }
+
+    .icon_profile {
+        font-size: 35px;
+        padding-right: 20px;
+        color: #fff;
+    }
+
+    .card_profile {
+        width: 80%;
+        background: #169c9d;
+        padding-top: 30px;
+        margin: 0 auto;
+        border-radius: 20px;
+        box-shadow: -25px 25px 28px #5a5a5a, 25px -25px 28px #ffffff;
+    }
+
+    .box_card {
+        background-color: #169c9d;
+    }
+
+    .table td {
+        background-color: #169c9d;
+    }
+
+    .table span {
+        color: #fff;
+        font-size: 16px;
+        font-weight: bold;
+    }
+</style>
+
+<h2 class="title_page"><u>Edit Profile</u></h2>
+
+@using (Html.BeginForm("EditProfile", "Home", FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+    @Html.AntiForgeryToken()
+    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+    <div class="container">
+
+        <!--Row-->
+        <div class="card_profile">
+            <div class="row">
+
+                <!--COLUMN 1: Avatar - button choose file - Button Save-->
+                <div class="col-md-7">
+                    <div class="form-group">
+                        @*@Html.LabelFor(model => model.Avatar, htmlAttributes: new { @class = "control-label col-md-2" })*@
+                        <!--Avatar-->
+                        <div class="col-md-10  d-flex justify-content-center align-items-center">
+                            <div class="avatar_customer">
+                                <img src="~/Image/@Model.HinhAnhNV" width="60px;" height="70px;" />
+                            </div>
+                         
+
+                        </div>
+
+                        <!--Button choose new avatar: button avatar mới-->
+                        <div class="col-md-10 btn_chooseimg d-flex justify-content-center align-items-center">
+                            <input type="file" name="avatarFile" id="avatarFile" />
+                            @Html.ValidationMessageFor(model => model.HinhAnhNV, "", new { @class = "text-danger" })
+                        </div>
+
+                        <!--Button save change: Button lưu thay đổi-->
+                        <div class="form-group">
+                            <div class="col-md-offset-2 col-md-10 d-flex justify-content-center align-items-center">
+                                <button type="submit" class="btn btn-default btn_SaveChange"><i class="fa-regular fa-floppy-disk"></i>Save</button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!---->
+                <div class="col-md-5 ">
+
+                    <table class="table">
+
+                        <tbody>
+
+                            <tr>
+                                <td style="width: 20px;"><i class="fa-solid fa-user-astronaut icon_profile"></i></td>
+                                <td>
+                                    <span>
+                                        @Html.EditorFor(model => model.MaNV, new { htmlAttributes = new { @class = "form-control" } })
+                                        @Html.ValidationMessageFor(model => model.MaNV, "", new { @class = "text-danger" })
+                                    </span>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td style="width: 20px;"><i class="fa-solid fa-user-astronaut icon_profile"></i></td>
+                                <td>
+                                    <span>
+                                        @Html.EditorFor(model => model.HoTenNV, new { htmlAttributes = new { @class = "form-control" } })
+                                        @Html.ValidationMessageFor(model => model.HoTenNV, "", new { @class = "text-danger" })
+                                    </span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="width: 20px;"> <i class="fa-solid fa-cake-candles icon_profile"></i></td>
+                                <td>
+                                    <span>
+                                        @Html.EditorFor(model => model.NgaySinh, new { htmlAttributes = new { @class = "form-control" } })
+                                        @Html.ValidationMessageFor(model => model.NgaySinh, "", new { @class = "text-danger" })
+                                    </span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="width: 20px;"><i class="fa-solid fa-map-location-dot icon_profile"></i></td>
+                                <td>
+
+                                    <span>
+                                        @Html.EditorFor(model => model.DiaChi, new { htmlAttributes = new { @class = "form-control" } })
+                                        @Html.ValidationMessageFor(model => model.DiaChi, "", new { @class = "text-danger" })
+                                    </span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="width: 20px;"> <i class="fa-solid fa-square-envelope icon_profile"></i></td>
+                                <td>
+                                    <span>
+                                        @Html.EditorFor(model => model.Email, new { htmlAttributes = new { @class = "form-control" } })
+                                        @Html.ValidationMessageFor(model => model.Email, "", new { @class = "text-danger" })
+                                    </span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="width: 20px;"><i class="fa-solid fa-venus-mars icon_profile"></i></td>
+                                <td>
+                                    <span>
+                                        @Html.EditorFor(model => model.GioiTinh, new { htmlAttributes = new { @class = "form-control" } })
+                                        @Html.ValidationMessageFor(model => model.GioiTinh, "", new { @class = "text-danger" })
+                                    </span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="width: 20px;"> <i class="fa-solid fa-lock icon_profile"></i></td>
+                                <td>
+                                    <span>
+                                        @Html.EditorFor(model => model.TrangThai, new { htmlAttributes = new { @class = "form-control" } })
+                                        @Html.ValidationMessageFor(model => model.TrangThai, "", new { @class = "text-danger" })
+                                    </span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="width: 20px;"><i class="fa-solid fa-user icon_profile"></i></td>
+                                <td>
+                                    <span>
+                                        @Html.EditorFor(model => model.Username, new { htmlAttributes = new { @class = "form-control" } })
+                                        @Html.ValidationMessageFor(model => model.Username, "", new { @class = "text-danger" })
+                                    </span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="width: 20px;"><i class="fa-solid fa-unlock-keyhole icon_profile"></i></td>
+                                <td>
+                                    <span>
+                                        @Html.EditorFor(model => model.Password, new { htmlAttributes = new { @class = "form-control" } })
+                                        @Html.ValidationMessageFor(model => model.Password, "", new { @class = "text-danger" })
+                                    </span>
+                                </td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+    </div>
+}
+

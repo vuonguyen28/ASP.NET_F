@@ -1,0 +1,1288 @@
+C:\Users\crhav\OneDrive\Desktop\SHOP_THOI_TRANG\ShopThoiTrang\ShopThoiTrang\bin\ShopThoiTrang.dll.config
+C:\Users\crhav\OneDrive\Desktop\SHOP_THOI_TRANG\ShopThoiTrang\ShopThoiTrang\bin\ShopThoiTrang.dll
+C:\Users\crhav\OneDrive\Desktop\SHOP_THOI_TRANG\ShopThoiTrang\ShopThoiTrang\bin\ShopThoiTrang.pdb
+C:\Users\crhav\OneDrive\Desktop\SHOP_THOI_TRANG\ShopThoiTrang\ShopThoiTrang\bin\roslyn\csc.exe
+C:\Users\crhav\OneDrive\Desktop\SHOP_THOI_TRANG\ShopThoiTrang\ShopThoiTrang\bin\roslyn\csc.exe.config
+C:\Users\crhav\OneDrive\Desktop\SHOP_THOI_TRANG\ShopThoiTrang\ShopThoiTrang\bin\roslyn\csc.rsp
+C:\Users\crhav\OneDrive\Desktop\SHOP_THOI_TRANG\ShopThoiTrang\ShopThoiTrang\bin\roslyn\csi.exe
+C:\Users\crhav\OneDrive\Desktop\SHOP_THOI_TRANG\ShopThoiTrang\ShopThoiTrang\bin\roslyn\csi.exe.config
+C:\Users\crhav\OneDrive\Desktop\SHOP_THOI_TRANG\ShopThoiTrang\ShopThoiTrang\bin\roslyn\csi.rsp
+C:\Users\crhav\OneDrive\Desktop\SHOP_THOI_TRANG\ShopThoiTrang\ShopThoiTrang\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\crhav\OneDrive\Desktop\SHOP_THOI_TRANG\ShopThoiTrang\ShopThoiTrang\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\crhav\OneDrive\Desktop\SHOP_THOI_TRANG\ShopThoiTrang\ShopThoiTrang\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\crhav\OneDrive\Desktop\SHOP_THOI_TRANG\ShopThoiTrang\ShopThoiTrang\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\crhav\OneDrive\Desktop\SHOP_THOI_TRANG\ShopThoiTrang\ShopThoiTrang\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\crhav\OneDrive\Desktop\SHOP_THOI_TRANG\ShopThoiTrang\ShopThoiTrang\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\crhav\OneDrive\Desktop\SHOP_THOI_TRANG\ShopThoiTrang\ShopThoiTrang\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\crhav\OneDrive\Desktop\SHOP_THOI_TRANG\ShopThoiTrang\ShopThoiTrang\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\crhav\OneDrive\Desktop\SHOP_THOI_TRANG\ShopThoiTrang\ShopThoiTrang\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\crhav\OneDrive\Desktop\SHOP_THOI_TRANG\ShopThoiTrang\ShopThoiTrang\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\crhav\OneDrive\Desktop\SHOP_THOI_TRANG\ShopThoiTrang\ShopThoiTrang\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\crhav\OneDrive\Desktop\SHOP_THOI_TRANG\ShopThoiTrang\ShopThoiTrang\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\crhav\OneDrive\Desktop\SHOP_THOI_TRANG\ShopThoiTrang\ShopThoiTrang\bin\roslyn\System.AppContext.dll
+C:\Users\crhav\OneDrive\Desktop\SHOP_THOI_TRANG\ShopThoiTrang\ShopThoiTrang\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\crhav\OneDrive\Desktop\SHOP_THOI_TRANG\ShopThoiTrang\ShopThoiTrang\bin\roslyn\System.Console.dll
+C:\Users\crhav\OneDrive\Desktop\SHOP_THOI_TRANG\ShopThoiTrang\ShopThoiTrang\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\crhav\OneDrive\Desktop\SHOP_THOI_TRANG\ShopThoiTrang\ShopThoiTrang\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\crhav\OneDrive\Desktop\SHOP_THOI_TRANG\ShopThoiTrang\ShopThoiTrang\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\crhav\OneDrive\Desktop\SHOP_THOI_TRANG\ShopThoiTrang\ShopThoiTrang\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\crhav\OneDrive\Desktop\SHOP_THOI_TRANG\ShopThoiTrang\ShopThoiTrang\bin\roslyn\System.IO.Compression.dll
+C:\Users\crhav\OneDrive\Desktop\SHOP_THOI_TRANG\ShopThoiTrang\ShopThoiTrang\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\crhav\OneDrive\Desktop\SHOP_THOI_TRANG\ShopThoiTrang\ShopThoiTrang\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\crhav\OneDrive\Desktop\SHOP_THOI_TRANG\ShopThoiTrang\ShopThoiTrang\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\crhav\OneDrive\Desktop\SHOP_THOI_TRANG\ShopThoiTrang\ShopThoiTrang\bin\roslyn\System.Net.Http.dll
+C:\Users\crhav\OneDrive\Desktop\SHOP_THOI_TRANG\ShopThoiTrang\ShopThoiTrang\bin\roslyn\System.Net.Sockets.dll
+C:\Users\crhav\OneDrive\Desktop\SHOP_THOI_TRANG\ShopThoiTrang\ShopThoiTrang\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\crhav\OneDrive\Desktop\SHOP_THOI_TRANG\ShopThoiTrang\ShopThoiTrang\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\crhav\OneDrive\Desktop\SHOP_THOI_TRANG\ShopThoiTrang\ShopThoiTrang\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\crhav\OneDrive\Desktop\SHOP_THOI_TRANG\ShopThoiTrang\ShopThoiTrang\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\crhav\OneDrive\Desktop\SHOP_THOI_TRANG\ShopThoiTrang\ShopThoiTrang\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\crhav\OneDrive\Desktop\SHOP_THOI_TRANG\ShopThoiTrang\ShopThoiTrang\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\crhav\OneDrive\Desktop\SHOP_THOI_TRANG\ShopThoiTrang\ShopThoiTrang\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\crhav\OneDrive\Desktop\SHOP_THOI_TRANG\ShopThoiTrang\ShopThoiTrang\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\crhav\OneDrive\Desktop\SHOP_THOI_TRANG\ShopThoiTrang\ShopThoiTrang\bin\roslyn\System.ValueTuple.dll
+C:\Users\crhav\OneDrive\Desktop\SHOP_THOI_TRANG\ShopThoiTrang\ShopThoiTrang\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\crhav\OneDrive\Desktop\SHOP_THOI_TRANG\ShopThoiTrang\ShopThoiTrang\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\crhav\OneDrive\Desktop\SHOP_THOI_TRANG\ShopThoiTrang\ShopThoiTrang\bin\roslyn\System.Xml.XPath.dll
+C:\Users\crhav\OneDrive\Desktop\SHOP_THOI_TRANG\ShopThoiTrang\ShopThoiTrang\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\crhav\OneDrive\Desktop\SHOP_THOI_TRANG\ShopThoiTrang\ShopThoiTrang\bin\roslyn\vbc.exe
+C:\Users\crhav\OneDrive\Desktop\SHOP_THOI_TRANG\ShopThoiTrang\ShopThoiTrang\bin\roslyn\vbc.exe.config
+C:\Users\crhav\OneDrive\Desktop\SHOP_THOI_TRANG\ShopThoiTrang\ShopThoiTrang\bin\roslyn\vbc.rsp
+C:\Users\crhav\OneDrive\Desktop\SHOP_THOI_TRANG\ShopThoiTrang\ShopThoiTrang\bin\roslyn\VBCSCompiler.exe
+C:\Users\crhav\OneDrive\Desktop\SHOP_THOI_TRANG\ShopThoiTrang\ShopThoiTrang\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\crhav\OneDrive\Desktop\SHOP_THOI_TRANG\ShopThoiTrang\ShopThoiTrang\bin\EntityFramework.dll
+C:\Users\crhav\OneDrive\Desktop\SHOP_THOI_TRANG\ShopThoiTrang\ShopThoiTrang\bin\EntityFramework.SqlServer.dll
+C:\Users\crhav\OneDrive\Desktop\SHOP_THOI_TRANG\ShopThoiTrang\ShopThoiTrang\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\crhav\OneDrive\Desktop\SHOP_THOI_TRANG\ShopThoiTrang\ShopThoiTrang\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\crhav\OneDrive\Desktop\SHOP_THOI_TRANG\ShopThoiTrang\ShopThoiTrang\bin\Newtonsoft.Json.dll
+C:\Users\crhav\OneDrive\Desktop\SHOP_THOI_TRANG\ShopThoiTrang\ShopThoiTrang\bin\System.Net.Http.Formatting.dll
+C:\Users\crhav\OneDrive\Desktop\SHOP_THOI_TRANG\ShopThoiTrang\ShopThoiTrang\bin\System.Web.Helpers.dll
+C:\Users\crhav\OneDrive\Desktop\SHOP_THOI_TRANG\ShopThoiTrang\ShopThoiTrang\bin\System.Web.Http.dll
+C:\Users\crhav\OneDrive\Desktop\SHOP_THOI_TRANG\ShopThoiTrang\ShopThoiTrang\bin\System.Web.Http.WebHost.dll
+C:\Users\crhav\OneDrive\Desktop\SHOP_THOI_TRANG\ShopThoiTrang\ShopThoiTrang\bin\System.Web.Mvc.dll
+C:\Users\crhav\OneDrive\Desktop\SHOP_THOI_TRANG\ShopThoiTrang\ShopThoiTrang\bin\System.Web.Razor.dll
+C:\Users\crhav\OneDrive\Desktop\SHOP_THOI_TRANG\ShopThoiTrang\ShopThoiTrang\bin\System.Web.Webpages.Deployment.dll
+C:\Users\crhav\OneDrive\Desktop\SHOP_THOI_TRANG\ShopThoiTrang\ShopThoiTrang\bin\System.Web.Webpages.dll
+C:\Users\crhav\OneDrive\Desktop\SHOP_THOI_TRANG\ShopThoiTrang\ShopThoiTrang\bin\System.Web.Webpages.Razor.dll
+C:\Users\crhav\OneDrive\Desktop\SHOP_THOI_TRANG\ShopThoiTrang\ShopThoiTrang\bin\EntityFramework.xml
+C:\Users\crhav\OneDrive\Desktop\SHOP_THOI_TRANG\ShopThoiTrang\ShopThoiTrang\bin\EntityFramework.SqlServer.xml
+C:\Users\crhav\OneDrive\Desktop\SHOP_THOI_TRANG\ShopThoiTrang\ShopThoiTrang\bin\System.Web.Razor.xml
+C:\Users\crhav\OneDrive\Desktop\SHOP_THOI_TRANG\ShopThoiTrang\ShopThoiTrang\bin\System.Web.Webpages.xml
+C:\Users\crhav\OneDrive\Desktop\SHOP_THOI_TRANG\ShopThoiTrang\ShopThoiTrang\bin\System.Web.Webpages.Deployment.xml
+C:\Users\crhav\OneDrive\Desktop\SHOP_THOI_TRANG\ShopThoiTrang\ShopThoiTrang\bin\System.Web.Webpages.Razor.xml
+C:\Users\crhav\OneDrive\Desktop\SHOP_THOI_TRANG\ShopThoiTrang\ShopThoiTrang\bin\System.Web.Helpers.xml
+C:\Users\crhav\OneDrive\Desktop\SHOP_THOI_TRANG\ShopThoiTrang\ShopThoiTrang\bin\System.Web.Mvc.xml
+C:\Users\crhav\OneDrive\Desktop\SHOP_THOI_TRANG\ShopThoiTrang\ShopThoiTrang\bin\Newtonsoft.Json.xml
+C:\Users\crhav\OneDrive\Desktop\SHOP_THOI_TRANG\ShopThoiTrang\ShopThoiTrang\bin\System.Net.Http.Formatting.xml
+C:\Users\crhav\OneDrive\Desktop\SHOP_THOI_TRANG\ShopThoiTrang\ShopThoiTrang\bin\System.Web.Http.xml
+C:\Users\crhav\OneDrive\Desktop\SHOP_THOI_TRANG\ShopThoiTrang\ShopThoiTrang\bin\System.Web.Http.WebHost.xml
+C:\Users\crhav\OneDrive\Desktop\SHOP_THOI_TRANG\ShopThoiTrang\ShopThoiTrang\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\crhav\OneDrive\Desktop\SHOP_THOI_TRANG\ShopThoiTrang\ShopThoiTrang\obj\Debug\ShopThoiTrang.csproj.AssemblyReference.cache
+C:\Users\crhav\OneDrive\Desktop\SHOP_THOI_TRANG\ShopThoiTrang\ShopThoiTrang\obj\Debug\ShopThoiTrang.csproj.CoreCompileInputs.cache
+C:\Users\crhav\OneDrive\Desktop\SHOP_THOI_TRANG\ShopThoiTrang\ShopThoiTrang\obj\Debug\ShopThoiTrang.csproj.CopyComplete
+C:\Users\crhav\OneDrive\Desktop\SHOP_THOI_TRANG\ShopThoiTrang\ShopThoiTrang\obj\Debug\ShopThoiTrang.dll
+C:\Users\crhav\OneDrive\Desktop\SHOP_THOI_TRANG\ShopThoiTrang\ShopThoiTrang\obj\Debug\ShopThoiTrang.pdb
+C:\Users\crhav\OneDrive\Desktop\New folder (2)\ShopThoiTrang\ShopThoiTrang\obj\Debug\ShopThoiTrang.csproj.AssemblyReference.cache
+C:\Users\crhav\OneDrive\Desktop\New folder (2)\ShopThoiTrang\ShopThoiTrang\obj\Debug\ShopThoiTrang.csproj.CoreCompileInputs.cache
+C:\Users\crhav\OneDrive\Desktop\New folder (2)\ShopThoiTrang\ShopThoiTrang\obj\Debug\ShopThoiTrang.dll
+C:\Users\crhav\OneDrive\Desktop\New folder (2)\ShopThoiTrang\ShopThoiTrang\obj\Debug\ShopThoiTrang.pdb
+C:\Users\crhav\OneDrive\Desktop\SHOP_THOI_TRANG\ShopThoiTrang\ShopThoiTrang\bin\Microsoft.Win32.Primitives.dll
+C:\Users\crhav\OneDrive\Desktop\SHOP_THOI_TRANG\ShopThoiTrang\ShopThoiTrang\bin\netstandard.dll
+C:\Users\crhav\OneDrive\Desktop\SHOP_THOI_TRANG\ShopThoiTrang\ShopThoiTrang\bin\System.AppContext.dll
+C:\Users\crhav\OneDrive\Desktop\SHOP_THOI_TRANG\ShopThoiTrang\ShopThoiTrang\bin\System.Collections.Concurrent.dll
+C:\Users\crhav\OneDrive\Desktop\SHOP_THOI_TRANG\ShopThoiTrang\ShopThoiTrang\bin\System.Collections.dll
+C:\Users\crhav\OneDrive\Desktop\SHOP_THOI_TRANG\ShopThoiTrang\ShopThoiTrang\bin\System.Collections.NonGeneric.dll
+C:\Users\crhav\OneDrive\Desktop\SHOP_THOI_TRANG\ShopThoiTrang\ShopThoiTrang\bin\System.Collections.Specialized.dll
+C:\Users\crhav\OneDrive\Desktop\SHOP_THOI_TRANG\ShopThoiTrang\ShopThoiTrang\bin\System.ComponentModel.dll
+C:\Users\crhav\OneDrive\Desktop\SHOP_THOI_TRANG\ShopThoiTrang\ShopThoiTrang\bin\System.ComponentModel.EventBasedAsync.dll
+C:\Users\crhav\OneDrive\Desktop\SHOP_THOI_TRANG\ShopThoiTrang\ShopThoiTrang\bin\System.ComponentModel.Primitives.dll
+C:\Users\crhav\OneDrive\Desktop\SHOP_THOI_TRANG\ShopThoiTrang\ShopThoiTrang\bin\System.ComponentModel.TypeConverter.dll
+C:\Users\crhav\OneDrive\Desktop\SHOP_THOI_TRANG\ShopThoiTrang\ShopThoiTrang\bin\System.Console.dll
+C:\Users\crhav\OneDrive\Desktop\SHOP_THOI_TRANG\ShopThoiTrang\ShopThoiTrang\bin\System.Data.Common.dll
+C:\Users\crhav\OneDrive\Desktop\SHOP_THOI_TRANG\ShopThoiTrang\ShopThoiTrang\bin\System.Diagnostics.Contracts.dll
+C:\Users\crhav\OneDrive\Desktop\SHOP_THOI_TRANG\ShopThoiTrang\ShopThoiTrang\bin\System.Diagnostics.Debug.dll
+C:\Users\crhav\OneDrive\Desktop\SHOP_THOI_TRANG\ShopThoiTrang\ShopThoiTrang\bin\System.Diagnostics.FileVersionInfo.dll
+C:\Users\crhav\OneDrive\Desktop\SHOP_THOI_TRANG\ShopThoiTrang\ShopThoiTrang\bin\System.Diagnostics.Process.dll
+C:\Users\crhav\OneDrive\Desktop\SHOP_THOI_TRANG\ShopThoiTrang\ShopThoiTrang\bin\System.Diagnostics.StackTrace.dll
+C:\Users\crhav\OneDrive\Desktop\SHOP_THOI_TRANG\ShopThoiTrang\ShopThoiTrang\bin\System.Diagnostics.TextWriterTraceListener.dll
+C:\Users\crhav\OneDrive\Desktop\SHOP_THOI_TRANG\ShopThoiTrang\ShopThoiTrang\bin\System.Diagnostics.Tools.dll
+C:\Users\crhav\OneDrive\Desktop\SHOP_THOI_TRANG\ShopThoiTrang\ShopThoiTrang\bin\System.Diagnostics.TraceSource.dll
+C:\Users\crhav\OneDrive\Desktop\SHOP_THOI_TRANG\ShopThoiTrang\ShopThoiTrang\bin\System.Diagnostics.Tracing.dll
+C:\Users\crhav\OneDrive\Desktop\SHOP_THOI_TRANG\ShopThoiTrang\ShopThoiTrang\bin\System.Drawing.Primitives.dll
+C:\Users\crhav\OneDrive\Desktop\SHOP_THOI_TRANG\ShopThoiTrang\ShopThoiTrang\bin\System.Dynamic.Runtime.dll
+C:\Users\crhav\OneDrive\Desktop\SHOP_THOI_TRANG\ShopThoiTrang\ShopThoiTrang\bin\System.Globalization.Calendars.dll
+C:\Users\crhav\OneDrive\Desktop\SHOP_THOI_TRANG\ShopThoiTrang\ShopThoiTrang\bin\System.Globalization.dll
+C:\Users\crhav\OneDrive\Desktop\SHOP_THOI_TRANG\ShopThoiTrang\ShopThoiTrang\bin\System.Globalization.Extensions.dll
+C:\Users\crhav\OneDrive\Desktop\SHOP_THOI_TRANG\ShopThoiTrang\ShopThoiTrang\bin\System.IO.Compression.dll
+C:\Users\crhav\OneDrive\Desktop\SHOP_THOI_TRANG\ShopThoiTrang\ShopThoiTrang\bin\System.IO.Compression.ZipFile.dll
+C:\Users\crhav\OneDrive\Desktop\SHOP_THOI_TRANG\ShopThoiTrang\ShopThoiTrang\bin\System.IO.dll
+C:\Users\crhav\OneDrive\Desktop\SHOP_THOI_TRANG\ShopThoiTrang\ShopThoiTrang\bin\System.IO.FileSystem.dll
+C:\Users\crhav\OneDrive\Desktop\SHOP_THOI_TRANG\ShopThoiTrang\ShopThoiTrang\bin\System.IO.FileSystem.DriveInfo.dll
+C:\Users\crhav\OneDrive\Desktop\SHOP_THOI_TRANG\ShopThoiTrang\ShopThoiTrang\bin\System.IO.FileSystem.Primitives.dll
+C:\Users\crhav\OneDrive\Desktop\SHOP_THOI_TRANG\ShopThoiTrang\ShopThoiTrang\bin\System.IO.FileSystem.Watcher.dll
+C:\Users\crhav\OneDrive\Desktop\SHOP_THOI_TRANG\ShopThoiTrang\ShopThoiTrang\bin\System.IO.IsolatedStorage.dll
+C:\Users\crhav\OneDrive\Desktop\SHOP_THOI_TRANG\ShopThoiTrang\ShopThoiTrang\bin\System.IO.MemoryMappedFiles.dll
+C:\Users\crhav\OneDrive\Desktop\SHOP_THOI_TRANG\ShopThoiTrang\ShopThoiTrang\bin\System.IO.Pipes.dll
+C:\Users\crhav\OneDrive\Desktop\SHOP_THOI_TRANG\ShopThoiTrang\ShopThoiTrang\bin\System.IO.UnmanagedMemoryStream.dll
+C:\Users\crhav\OneDrive\Desktop\SHOP_THOI_TRANG\ShopThoiTrang\ShopThoiTrang\bin\System.Linq.dll
+C:\Users\crhav\OneDrive\Desktop\SHOP_THOI_TRANG\ShopThoiTrang\ShopThoiTrang\bin\System.Linq.Expressions.dll
+C:\Users\crhav\OneDrive\Desktop\SHOP_THOI_TRANG\ShopThoiTrang\ShopThoiTrang\bin\System.Linq.Parallel.dll
+C:\Users\crhav\OneDrive\Desktop\SHOP_THOI_TRANG\ShopThoiTrang\ShopThoiTrang\bin\System.Linq.Queryable.dll
+C:\Users\crhav\OneDrive\Desktop\SHOP_THOI_TRANG\ShopThoiTrang\ShopThoiTrang\bin\System.Net.Http.dll
+C:\Users\crhav\OneDrive\Desktop\SHOP_THOI_TRANG\ShopThoiTrang\ShopThoiTrang\bin\System.Net.NameResolution.dll
+C:\Users\crhav\OneDrive\Desktop\SHOP_THOI_TRANG\ShopThoiTrang\ShopThoiTrang\bin\System.Net.NetworkInformation.dll
+C:\Users\crhav\OneDrive\Desktop\SHOP_THOI_TRANG\ShopThoiTrang\ShopThoiTrang\bin\System.Net.Ping.dll
+C:\Users\crhav\OneDrive\Desktop\SHOP_THOI_TRANG\ShopThoiTrang\ShopThoiTrang\bin\System.Net.Primitives.dll
+C:\Users\crhav\OneDrive\Desktop\SHOP_THOI_TRANG\ShopThoiTrang\ShopThoiTrang\bin\System.Net.Requests.dll
+C:\Users\crhav\OneDrive\Desktop\SHOP_THOI_TRANG\ShopThoiTrang\ShopThoiTrang\bin\System.Net.Security.dll
+C:\Users\crhav\OneDrive\Desktop\SHOP_THOI_TRANG\ShopThoiTrang\ShopThoiTrang\bin\System.Net.Sockets.dll
+C:\Users\crhav\OneDrive\Desktop\SHOP_THOI_TRANG\ShopThoiTrang\ShopThoiTrang\bin\System.Net.WebHeaderCollection.dll
+C:\Users\crhav\OneDrive\Desktop\SHOP_THOI_TRANG\ShopThoiTrang\ShopThoiTrang\bin\System.Net.WebSockets.Client.dll
+C:\Users\crhav\OneDrive\Desktop\SHOP_THOI_TRANG\ShopThoiTrang\ShopThoiTrang\bin\System.Net.WebSockets.dll
+C:\Users\crhav\OneDrive\Desktop\SHOP_THOI_TRANG\ShopThoiTrang\ShopThoiTrang\bin\System.ObjectModel.dll
+C:\Users\crhav\OneDrive\Desktop\SHOP_THOI_TRANG\ShopThoiTrang\ShopThoiTrang\bin\System.Reflection.dll
+C:\Users\crhav\OneDrive\Desktop\SHOP_THOI_TRANG\ShopThoiTrang\ShopThoiTrang\bin\System.Reflection.Extensions.dll
+C:\Users\crhav\OneDrive\Desktop\SHOP_THOI_TRANG\ShopThoiTrang\ShopThoiTrang\bin\System.Reflection.Primitives.dll
+C:\Users\crhav\OneDrive\Desktop\SHOP_THOI_TRANG\ShopThoiTrang\ShopThoiTrang\bin\System.Resources.Reader.dll
+C:\Users\crhav\OneDrive\Desktop\SHOP_THOI_TRANG\ShopThoiTrang\ShopThoiTrang\bin\System.Resources.ResourceManager.dll
+C:\Users\crhav\OneDrive\Desktop\SHOP_THOI_TRANG\ShopThoiTrang\ShopThoiTrang\bin\System.Resources.Writer.dll
+C:\Users\crhav\OneDrive\Desktop\SHOP_THOI_TRANG\ShopThoiTrang\ShopThoiTrang\bin\System.Runtime.CompilerServices.VisualC.dll
+C:\Users\crhav\OneDrive\Desktop\SHOP_THOI_TRANG\ShopThoiTrang\ShopThoiTrang\bin\System.Runtime.dll
+C:\Users\crhav\OneDrive\Desktop\SHOP_THOI_TRANG\ShopThoiTrang\ShopThoiTrang\bin\System.Runtime.Extensions.dll
+C:\Users\crhav\OneDrive\Desktop\SHOP_THOI_TRANG\ShopThoiTrang\ShopThoiTrang\bin\System.Runtime.Handles.dll
+C:\Users\crhav\OneDrive\Desktop\SHOP_THOI_TRANG\ShopThoiTrang\ShopThoiTrang\bin\System.Runtime.InteropServices.dll
+C:\Users\crhav\OneDrive\Desktop\SHOP_THOI_TRANG\ShopThoiTrang\ShopThoiTrang\bin\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\crhav\OneDrive\Desktop\SHOP_THOI_TRANG\ShopThoiTrang\ShopThoiTrang\bin\System.Runtime.Numerics.dll
+C:\Users\crhav\OneDrive\Desktop\SHOP_THOI_TRANG\ShopThoiTrang\ShopThoiTrang\bin\System.Runtime.Serialization.Formatters.dll
+C:\Users\crhav\OneDrive\Desktop\SHOP_THOI_TRANG\ShopThoiTrang\ShopThoiTrang\bin\System.Runtime.Serialization.Json.dll
+C:\Users\crhav\OneDrive\Desktop\SHOP_THOI_TRANG\ShopThoiTrang\ShopThoiTrang\bin\System.Runtime.Serialization.Primitives.dll
+C:\Users\crhav\OneDrive\Desktop\SHOP_THOI_TRANG\ShopThoiTrang\ShopThoiTrang\bin\System.Runtime.Serialization.Xml.dll
+C:\Users\crhav\OneDrive\Desktop\SHOP_THOI_TRANG\ShopThoiTrang\ShopThoiTrang\bin\System.Security.Claims.dll
+C:\Users\crhav\OneDrive\Desktop\SHOP_THOI_TRANG\ShopThoiTrang\ShopThoiTrang\bin\System.Security.Cryptography.Algorithms.dll
+C:\Users\crhav\OneDrive\Desktop\SHOP_THOI_TRANG\ShopThoiTrang\ShopThoiTrang\bin\System.Security.Cryptography.Csp.dll
+C:\Users\crhav\OneDrive\Desktop\SHOP_THOI_TRANG\ShopThoiTrang\ShopThoiTrang\bin\System.Security.Cryptography.Encoding.dll
+C:\Users\crhav\OneDrive\Desktop\SHOP_THOI_TRANG\ShopThoiTrang\ShopThoiTrang\bin\System.Security.Cryptography.Primitives.dll
+C:\Users\crhav\OneDrive\Desktop\SHOP_THOI_TRANG\ShopThoiTrang\ShopThoiTrang\bin\System.Security.Cryptography.X509Certificates.dll
+C:\Users\crhav\OneDrive\Desktop\SHOP_THOI_TRANG\ShopThoiTrang\ShopThoiTrang\bin\System.Security.Principal.dll
+C:\Users\crhav\OneDrive\Desktop\SHOP_THOI_TRANG\ShopThoiTrang\ShopThoiTrang\bin\System.Security.SecureString.dll
+C:\Users\crhav\OneDrive\Desktop\SHOP_THOI_TRANG\ShopThoiTrang\ShopThoiTrang\bin\System.Text.Encoding.dll
+C:\Users\crhav\OneDrive\Desktop\SHOP_THOI_TRANG\ShopThoiTrang\ShopThoiTrang\bin\System.Text.Encoding.Extensions.dll
+C:\Users\crhav\OneDrive\Desktop\SHOP_THOI_TRANG\ShopThoiTrang\ShopThoiTrang\bin\System.Text.RegularExpressions.dll
+C:\Users\crhav\OneDrive\Desktop\SHOP_THOI_TRANG\ShopThoiTrang\ShopThoiTrang\bin\System.Threading.dll
+C:\Users\crhav\OneDrive\Desktop\SHOP_THOI_TRANG\ShopThoiTrang\ShopThoiTrang\bin\System.Threading.Overlapped.dll
+C:\Users\crhav\OneDrive\Desktop\SHOP_THOI_TRANG\ShopThoiTrang\ShopThoiTrang\bin\System.Threading.Tasks.dll
+C:\Users\crhav\OneDrive\Desktop\SHOP_THOI_TRANG\ShopThoiTrang\ShopThoiTrang\bin\System.Threading.Tasks.Parallel.dll
+C:\Users\crhav\OneDrive\Desktop\SHOP_THOI_TRANG\ShopThoiTrang\ShopThoiTrang\bin\System.Threading.Thread.dll
+C:\Users\crhav\OneDrive\Desktop\SHOP_THOI_TRANG\ShopThoiTrang\ShopThoiTrang\bin\System.Threading.ThreadPool.dll
+C:\Users\crhav\OneDrive\Desktop\SHOP_THOI_TRANG\ShopThoiTrang\ShopThoiTrang\bin\System.Threading.Timer.dll
+C:\Users\crhav\OneDrive\Desktop\SHOP_THOI_TRANG\ShopThoiTrang\ShopThoiTrang\bin\System.ValueTuple.dll
+C:\Users\crhav\OneDrive\Desktop\SHOP_THOI_TRANG\ShopThoiTrang\ShopThoiTrang\bin\System.Xml.ReaderWriter.dll
+C:\Users\crhav\OneDrive\Desktop\SHOP_THOI_TRANG\ShopThoiTrang\ShopThoiTrang\bin\System.Xml.XDocument.dll
+C:\Users\crhav\OneDrive\Desktop\SHOP_THOI_TRANG\ShopThoiTrang\ShopThoiTrang\bin\System.Xml.XmlDocument.dll
+C:\Users\crhav\OneDrive\Desktop\SHOP_THOI_TRANG\ShopThoiTrang\ShopThoiTrang\bin\System.Xml.XmlSerializer.dll
+C:\Users\crhav\OneDrive\Desktop\SHOP_THOI_TRANG\ShopThoiTrang\ShopThoiTrang\bin\System.Xml.XPath.dll
+C:\Users\crhav\OneDrive\Desktop\SHOP_THOI_TRANG\ShopThoiTrang\ShopThoiTrang\bin\System.Xml.XPath.XDocument.dll
+C:\Users\crhav\OneDrive\Desktop\SHOP_THOI_TRANG\ShopThoiTrang\ShopThoiTrang\bin\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\crhav\OneDrive\Desktop\SHOP_THOI_TRANG\ShopThoiTrang\ShopThoiTrang\bin\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\crhav\OneDrive\Desktop\SHOP_THOI_TRANG\ShopThoiTrang\ShopThoiTrang\bin\Microsoft.Extensions.Configuration.Binder.dll
+C:\Users\crhav\OneDrive\Desktop\SHOP_THOI_TRANG\ShopThoiTrang\ShopThoiTrang\bin\Microsoft.Extensions.Configuration.dll
+C:\Users\crhav\OneDrive\Desktop\SHOP_THOI_TRANG\ShopThoiTrang\ShopThoiTrang\bin\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\crhav\OneDrive\Desktop\SHOP_THOI_TRANG\ShopThoiTrang\ShopThoiTrang\bin\Microsoft.Extensions.Http.dll
+C:\Users\crhav\OneDrive\Desktop\SHOP_THOI_TRANG\ShopThoiTrang\ShopThoiTrang\bin\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\crhav\OneDrive\Desktop\SHOP_THOI_TRANG\ShopThoiTrang\ShopThoiTrang\bin\Microsoft.Extensions.Logging.dll
+C:\Users\crhav\OneDrive\Desktop\SHOP_THOI_TRANG\ShopThoiTrang\ShopThoiTrang\bin\Microsoft.Extensions.Options.dll
+C:\Users\crhav\OneDrive\Desktop\SHOP_THOI_TRANG\ShopThoiTrang\ShopThoiTrang\bin\Microsoft.Extensions.Primitives.dll
+C:\Users\crhav\OneDrive\Desktop\SHOP_THOI_TRANG\ShopThoiTrang\ShopThoiTrang\bin\OpenAI_API.dll
+C:\Users\crhav\OneDrive\Desktop\SHOP_THOI_TRANG\ShopThoiTrang\ShopThoiTrang\bin\System.Buffers.dll
+C:\Users\crhav\OneDrive\Desktop\SHOP_THOI_TRANG\ShopThoiTrang\ShopThoiTrang\bin\System.Memory.dll
+C:\Users\crhav\OneDrive\Desktop\SHOP_THOI_TRANG\ShopThoiTrang\ShopThoiTrang\bin\System.Numerics.Vectors.dll
+C:\Users\crhav\OneDrive\Desktop\SHOP_THOI_TRANG\ShopThoiTrang\ShopThoiTrang\bin\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\crhav\OneDrive\Desktop\SHOP_THOI_TRANG\ShopThoiTrang\ShopThoiTrang\bin\System.Threading.Tasks.Extensions.dll
+C:\Users\crhav\OneDrive\Desktop\SHOP_THOI_TRANG\ShopThoiTrang\ShopThoiTrang\bin\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\crhav\OneDrive\Desktop\SHOP_THOI_TRANG\ShopThoiTrang\ShopThoiTrang\bin\Microsoft.Extensions.Configuration.xml
+C:\Users\crhav\OneDrive\Desktop\SHOP_THOI_TRANG\ShopThoiTrang\ShopThoiTrang\bin\Microsoft.Extensions.Configuration.Abstractions.xml
+C:\Users\crhav\OneDrive\Desktop\SHOP_THOI_TRANG\ShopThoiTrang\ShopThoiTrang\bin\Microsoft.Extensions.Configuration.Binder.xml
+C:\Users\crhav\OneDrive\Desktop\SHOP_THOI_TRANG\ShopThoiTrang\ShopThoiTrang\bin\Microsoft.Extensions.DependencyInjection.Abstractions.xml
+C:\Users\crhav\OneDrive\Desktop\SHOP_THOI_TRANG\ShopThoiTrang\ShopThoiTrang\bin\Microsoft.Extensions.Http.xml
+C:\Users\crhav\OneDrive\Desktop\SHOP_THOI_TRANG\ShopThoiTrang\ShopThoiTrang\bin\Microsoft.Extensions.Logging.xml
+C:\Users\crhav\OneDrive\Desktop\SHOP_THOI_TRANG\ShopThoiTrang\ShopThoiTrang\bin\Microsoft.Extensions.Logging.Abstractions.xml
+C:\Users\crhav\OneDrive\Desktop\SHOP_THOI_TRANG\ShopThoiTrang\ShopThoiTrang\bin\Microsoft.Extensions.Options.xml
+C:\Users\crhav\OneDrive\Desktop\SHOP_THOI_TRANG\ShopThoiTrang\ShopThoiTrang\bin\Microsoft.Extensions.Primitives.xml
+C:\Users\crhav\OneDrive\Desktop\SHOP_THOI_TRANG\ShopThoiTrang\ShopThoiTrang\bin\OpenAI_API.xml
+C:\Users\crhav\OneDrive\Desktop\SHOP_THOI_TRANG\ShopThoiTrang\ShopThoiTrang\bin\System.Buffers.xml
+C:\Users\crhav\OneDrive\Desktop\SHOP_THOI_TRANG\ShopThoiTrang\ShopThoiTrang\bin\System.Memory.xml
+C:\Users\crhav\OneDrive\Desktop\SHOP_THOI_TRANG\ShopThoiTrang\ShopThoiTrang\bin\System.Numerics.Vectors.xml
+C:\Users\crhav\OneDrive\Desktop\SHOP_THOI_TRANG\ShopThoiTrang\ShopThoiTrang\bin\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\crhav\OneDrive\Desktop\SHOP_THOI_TRANG\ShopThoiTrang\ShopThoiTrang\bin\System.Threading.Tasks.Extensions.xml
+C:\Users\crhav\OneDrive\Desktop\SHOP_THOI_TRANG\ShopThoiTrang\ShopThoiTrang\bin\System.Net.Http.WinHttpHandler.dll
+C:\Users\crhav\OneDrive\Desktop\SHOP_THOI_TRANG\ShopThoiTrang\ShopThoiTrang\bin\System.Net.Http.WinHttpHandler.xml
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_18_11_2023\ShopThoiTrang\ShopThoiTrang\bin\ShopThoiTrang.dll.config
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_18_11_2023\ShopThoiTrang\ShopThoiTrang\bin\ShopThoiTrang.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_18_11_2023\ShopThoiTrang\ShopThoiTrang\bin\ShopThoiTrang.pdb
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_18_11_2023\ShopThoiTrang\ShopThoiTrang\bin\roslyn\csc.exe
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_18_11_2023\ShopThoiTrang\ShopThoiTrang\bin\roslyn\csc.exe.config
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_18_11_2023\ShopThoiTrang\ShopThoiTrang\bin\roslyn\csc.rsp
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_18_11_2023\ShopThoiTrang\ShopThoiTrang\bin\roslyn\csi.exe
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_18_11_2023\ShopThoiTrang\ShopThoiTrang\bin\roslyn\csi.exe.config
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_18_11_2023\ShopThoiTrang\ShopThoiTrang\bin\roslyn\csi.rsp
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_18_11_2023\ShopThoiTrang\ShopThoiTrang\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_18_11_2023\ShopThoiTrang\ShopThoiTrang\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_18_11_2023\ShopThoiTrang\ShopThoiTrang\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_18_11_2023\ShopThoiTrang\ShopThoiTrang\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_18_11_2023\ShopThoiTrang\ShopThoiTrang\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_18_11_2023\ShopThoiTrang\ShopThoiTrang\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_18_11_2023\ShopThoiTrang\ShopThoiTrang\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_18_11_2023\ShopThoiTrang\ShopThoiTrang\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_18_11_2023\ShopThoiTrang\ShopThoiTrang\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_18_11_2023\ShopThoiTrang\ShopThoiTrang\bin\roslyn\Microsoft.Managed.Core.targets
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_18_11_2023\ShopThoiTrang\ShopThoiTrang\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_18_11_2023\ShopThoiTrang\ShopThoiTrang\bin\roslyn\Microsoft.Win32.Primitives.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_18_11_2023\ShopThoiTrang\ShopThoiTrang\bin\roslyn\System.AppContext.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_18_11_2023\ShopThoiTrang\ShopThoiTrang\bin\roslyn\System.Collections.Immutable.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_18_11_2023\ShopThoiTrang\ShopThoiTrang\bin\roslyn\System.Console.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_18_11_2023\ShopThoiTrang\ShopThoiTrang\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_18_11_2023\ShopThoiTrang\ShopThoiTrang\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_18_11_2023\ShopThoiTrang\ShopThoiTrang\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_18_11_2023\ShopThoiTrang\ShopThoiTrang\bin\roslyn\System.Globalization.Calendars.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_18_11_2023\ShopThoiTrang\ShopThoiTrang\bin\roslyn\System.IO.Compression.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_18_11_2023\ShopThoiTrang\ShopThoiTrang\bin\roslyn\System.IO.Compression.ZipFile.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_18_11_2023\ShopThoiTrang\ShopThoiTrang\bin\roslyn\System.IO.FileSystem.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_18_11_2023\ShopThoiTrang\ShopThoiTrang\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_18_11_2023\ShopThoiTrang\ShopThoiTrang\bin\roslyn\System.Net.Http.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_18_11_2023\ShopThoiTrang\ShopThoiTrang\bin\roslyn\System.Net.Sockets.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_18_11_2023\ShopThoiTrang\ShopThoiTrang\bin\roslyn\System.Reflection.Metadata.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_18_11_2023\ShopThoiTrang\ShopThoiTrang\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_18_11_2023\ShopThoiTrang\ShopThoiTrang\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_18_11_2023\ShopThoiTrang\ShopThoiTrang\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_18_11_2023\ShopThoiTrang\ShopThoiTrang\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_18_11_2023\ShopThoiTrang\ShopThoiTrang\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_18_11_2023\ShopThoiTrang\ShopThoiTrang\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_18_11_2023\ShopThoiTrang\ShopThoiTrang\bin\roslyn\System.Threading.Tasks.Extensions.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_18_11_2023\ShopThoiTrang\ShopThoiTrang\bin\roslyn\System.ValueTuple.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_18_11_2023\ShopThoiTrang\ShopThoiTrang\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_18_11_2023\ShopThoiTrang\ShopThoiTrang\bin\roslyn\System.Xml.XmlDocument.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_18_11_2023\ShopThoiTrang\ShopThoiTrang\bin\roslyn\System.Xml.XPath.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_18_11_2023\ShopThoiTrang\ShopThoiTrang\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_18_11_2023\ShopThoiTrang\ShopThoiTrang\bin\roslyn\vbc.exe
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_18_11_2023\ShopThoiTrang\ShopThoiTrang\bin\roslyn\vbc.exe.config
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_18_11_2023\ShopThoiTrang\ShopThoiTrang\bin\roslyn\vbc.rsp
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_18_11_2023\ShopThoiTrang\ShopThoiTrang\bin\roslyn\VBCSCompiler.exe
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_18_11_2023\ShopThoiTrang\ShopThoiTrang\bin\roslyn\VBCSCompiler.exe.config
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_18_11_2023\ShopThoiTrang\ShopThoiTrang\bin\Microsoft.Win32.Primitives.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_18_11_2023\ShopThoiTrang\ShopThoiTrang\bin\netstandard.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_18_11_2023\ShopThoiTrang\ShopThoiTrang\bin\System.AppContext.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_18_11_2023\ShopThoiTrang\ShopThoiTrang\bin\System.Collections.Concurrent.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_18_11_2023\ShopThoiTrang\ShopThoiTrang\bin\System.Collections.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_18_11_2023\ShopThoiTrang\ShopThoiTrang\bin\System.Collections.NonGeneric.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_18_11_2023\ShopThoiTrang\ShopThoiTrang\bin\System.Collections.Specialized.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_18_11_2023\ShopThoiTrang\ShopThoiTrang\bin\System.ComponentModel.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_18_11_2023\ShopThoiTrang\ShopThoiTrang\bin\System.ComponentModel.EventBasedAsync.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_18_11_2023\ShopThoiTrang\ShopThoiTrang\bin\System.ComponentModel.Primitives.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_18_11_2023\ShopThoiTrang\ShopThoiTrang\bin\System.ComponentModel.TypeConverter.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_18_11_2023\ShopThoiTrang\ShopThoiTrang\bin\System.Console.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_18_11_2023\ShopThoiTrang\ShopThoiTrang\bin\System.Data.Common.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_18_11_2023\ShopThoiTrang\ShopThoiTrang\bin\System.Diagnostics.Contracts.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_18_11_2023\ShopThoiTrang\ShopThoiTrang\bin\System.Diagnostics.Debug.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_18_11_2023\ShopThoiTrang\ShopThoiTrang\bin\System.Diagnostics.FileVersionInfo.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_18_11_2023\ShopThoiTrang\ShopThoiTrang\bin\System.Diagnostics.Process.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_18_11_2023\ShopThoiTrang\ShopThoiTrang\bin\System.Diagnostics.StackTrace.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_18_11_2023\ShopThoiTrang\ShopThoiTrang\bin\System.Diagnostics.TextWriterTraceListener.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_18_11_2023\ShopThoiTrang\ShopThoiTrang\bin\System.Diagnostics.Tools.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_18_11_2023\ShopThoiTrang\ShopThoiTrang\bin\System.Diagnostics.TraceSource.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_18_11_2023\ShopThoiTrang\ShopThoiTrang\bin\System.Diagnostics.Tracing.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_18_11_2023\ShopThoiTrang\ShopThoiTrang\bin\System.Drawing.Primitives.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_18_11_2023\ShopThoiTrang\ShopThoiTrang\bin\System.Dynamic.Runtime.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_18_11_2023\ShopThoiTrang\ShopThoiTrang\bin\System.Globalization.Calendars.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_18_11_2023\ShopThoiTrang\ShopThoiTrang\bin\System.Globalization.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_18_11_2023\ShopThoiTrang\ShopThoiTrang\bin\System.Globalization.Extensions.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_18_11_2023\ShopThoiTrang\ShopThoiTrang\bin\System.IO.Compression.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_18_11_2023\ShopThoiTrang\ShopThoiTrang\bin\System.IO.Compression.ZipFile.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_18_11_2023\ShopThoiTrang\ShopThoiTrang\bin\System.IO.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_18_11_2023\ShopThoiTrang\ShopThoiTrang\bin\System.IO.FileSystem.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_18_11_2023\ShopThoiTrang\ShopThoiTrang\bin\System.IO.FileSystem.DriveInfo.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_18_11_2023\ShopThoiTrang\ShopThoiTrang\bin\System.IO.FileSystem.Primitives.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_18_11_2023\ShopThoiTrang\ShopThoiTrang\bin\System.IO.FileSystem.Watcher.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_18_11_2023\ShopThoiTrang\ShopThoiTrang\bin\System.IO.IsolatedStorage.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_18_11_2023\ShopThoiTrang\ShopThoiTrang\bin\System.IO.MemoryMappedFiles.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_18_11_2023\ShopThoiTrang\ShopThoiTrang\bin\System.IO.Pipes.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_18_11_2023\ShopThoiTrang\ShopThoiTrang\bin\System.IO.UnmanagedMemoryStream.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_18_11_2023\ShopThoiTrang\ShopThoiTrang\bin\System.Linq.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_18_11_2023\ShopThoiTrang\ShopThoiTrang\bin\System.Linq.Expressions.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_18_11_2023\ShopThoiTrang\ShopThoiTrang\bin\System.Linq.Parallel.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_18_11_2023\ShopThoiTrang\ShopThoiTrang\bin\System.Linq.Queryable.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_18_11_2023\ShopThoiTrang\ShopThoiTrang\bin\System.Net.Http.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_18_11_2023\ShopThoiTrang\ShopThoiTrang\bin\System.Net.NameResolution.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_18_11_2023\ShopThoiTrang\ShopThoiTrang\bin\System.Net.NetworkInformation.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_18_11_2023\ShopThoiTrang\ShopThoiTrang\bin\System.Net.Ping.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_18_11_2023\ShopThoiTrang\ShopThoiTrang\bin\System.Net.Primitives.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_18_11_2023\ShopThoiTrang\ShopThoiTrang\bin\System.Net.Requests.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_18_11_2023\ShopThoiTrang\ShopThoiTrang\bin\System.Net.Security.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_18_11_2023\ShopThoiTrang\ShopThoiTrang\bin\System.Net.Sockets.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_18_11_2023\ShopThoiTrang\ShopThoiTrang\bin\System.Net.WebHeaderCollection.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_18_11_2023\ShopThoiTrang\ShopThoiTrang\bin\System.Net.WebSockets.Client.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_18_11_2023\ShopThoiTrang\ShopThoiTrang\bin\System.Net.WebSockets.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_18_11_2023\ShopThoiTrang\ShopThoiTrang\bin\System.ObjectModel.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_18_11_2023\ShopThoiTrang\ShopThoiTrang\bin\System.Reflection.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_18_11_2023\ShopThoiTrang\ShopThoiTrang\bin\System.Reflection.Extensions.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_18_11_2023\ShopThoiTrang\ShopThoiTrang\bin\System.Reflection.Primitives.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_18_11_2023\ShopThoiTrang\ShopThoiTrang\bin\System.Resources.Reader.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_18_11_2023\ShopThoiTrang\ShopThoiTrang\bin\System.Resources.ResourceManager.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_18_11_2023\ShopThoiTrang\ShopThoiTrang\bin\System.Resources.Writer.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_18_11_2023\ShopThoiTrang\ShopThoiTrang\bin\System.Runtime.CompilerServices.VisualC.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_18_11_2023\ShopThoiTrang\ShopThoiTrang\bin\System.Runtime.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_18_11_2023\ShopThoiTrang\ShopThoiTrang\bin\System.Runtime.Extensions.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_18_11_2023\ShopThoiTrang\ShopThoiTrang\bin\System.Runtime.Handles.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_18_11_2023\ShopThoiTrang\ShopThoiTrang\bin\System.Runtime.InteropServices.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_18_11_2023\ShopThoiTrang\ShopThoiTrang\bin\System.Runtime.InteropServices.RuntimeInformation.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_18_11_2023\ShopThoiTrang\ShopThoiTrang\bin\System.Runtime.Numerics.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_18_11_2023\ShopThoiTrang\ShopThoiTrang\bin\System.Runtime.Serialization.Formatters.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_18_11_2023\ShopThoiTrang\ShopThoiTrang\bin\System.Runtime.Serialization.Json.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_18_11_2023\ShopThoiTrang\ShopThoiTrang\bin\System.Runtime.Serialization.Primitives.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_18_11_2023\ShopThoiTrang\ShopThoiTrang\bin\System.Runtime.Serialization.Xml.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_18_11_2023\ShopThoiTrang\ShopThoiTrang\bin\System.Security.Claims.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_18_11_2023\ShopThoiTrang\ShopThoiTrang\bin\System.Security.Cryptography.Algorithms.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_18_11_2023\ShopThoiTrang\ShopThoiTrang\bin\System.Security.Cryptography.Csp.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_18_11_2023\ShopThoiTrang\ShopThoiTrang\bin\System.Security.Cryptography.Encoding.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_18_11_2023\ShopThoiTrang\ShopThoiTrang\bin\System.Security.Cryptography.Primitives.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_18_11_2023\ShopThoiTrang\ShopThoiTrang\bin\System.Security.Cryptography.X509Certificates.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_18_11_2023\ShopThoiTrang\ShopThoiTrang\bin\System.Security.Principal.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_18_11_2023\ShopThoiTrang\ShopThoiTrang\bin\System.Security.SecureString.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_18_11_2023\ShopThoiTrang\ShopThoiTrang\bin\System.Text.Encoding.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_18_11_2023\ShopThoiTrang\ShopThoiTrang\bin\System.Text.Encoding.Extensions.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_18_11_2023\ShopThoiTrang\ShopThoiTrang\bin\System.Text.RegularExpressions.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_18_11_2023\ShopThoiTrang\ShopThoiTrang\bin\System.Threading.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_18_11_2023\ShopThoiTrang\ShopThoiTrang\bin\System.Threading.Overlapped.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_18_11_2023\ShopThoiTrang\ShopThoiTrang\bin\System.Threading.Tasks.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_18_11_2023\ShopThoiTrang\ShopThoiTrang\bin\System.Threading.Tasks.Parallel.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_18_11_2023\ShopThoiTrang\ShopThoiTrang\bin\System.Threading.Thread.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_18_11_2023\ShopThoiTrang\ShopThoiTrang\bin\System.Threading.ThreadPool.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_18_11_2023\ShopThoiTrang\ShopThoiTrang\bin\System.Threading.Timer.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_18_11_2023\ShopThoiTrang\ShopThoiTrang\bin\System.ValueTuple.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_18_11_2023\ShopThoiTrang\ShopThoiTrang\bin\System.Xml.ReaderWriter.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_18_11_2023\ShopThoiTrang\ShopThoiTrang\bin\System.Xml.XDocument.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_18_11_2023\ShopThoiTrang\ShopThoiTrang\bin\System.Xml.XmlDocument.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_18_11_2023\ShopThoiTrang\ShopThoiTrang\bin\System.Xml.XmlSerializer.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_18_11_2023\ShopThoiTrang\ShopThoiTrang\bin\System.Xml.XPath.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_18_11_2023\ShopThoiTrang\ShopThoiTrang\bin\System.Xml.XPath.XDocument.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_18_11_2023\ShopThoiTrang\ShopThoiTrang\bin\EntityFramework.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_18_11_2023\ShopThoiTrang\ShopThoiTrang\bin\EntityFramework.SqlServer.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_18_11_2023\ShopThoiTrang\ShopThoiTrang\bin\Microsoft.Bcl.AsyncInterfaces.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_18_11_2023\ShopThoiTrang\ShopThoiTrang\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_18_11_2023\ShopThoiTrang\ShopThoiTrang\bin\Microsoft.Extensions.Configuration.Abstractions.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_18_11_2023\ShopThoiTrang\ShopThoiTrang\bin\Microsoft.Extensions.Configuration.Binder.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_18_11_2023\ShopThoiTrang\ShopThoiTrang\bin\Microsoft.Extensions.Configuration.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_18_11_2023\ShopThoiTrang\ShopThoiTrang\bin\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_18_11_2023\ShopThoiTrang\ShopThoiTrang\bin\Microsoft.Extensions.Http.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_18_11_2023\ShopThoiTrang\ShopThoiTrang\bin\Microsoft.Extensions.Logging.Abstractions.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_18_11_2023\ShopThoiTrang\ShopThoiTrang\bin\Microsoft.Extensions.Logging.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_18_11_2023\ShopThoiTrang\ShopThoiTrang\bin\Microsoft.Extensions.Options.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_18_11_2023\ShopThoiTrang\ShopThoiTrang\bin\Microsoft.Extensions.Primitives.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_18_11_2023\ShopThoiTrang\ShopThoiTrang\bin\Microsoft.Web.Infrastructure.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_18_11_2023\ShopThoiTrang\ShopThoiTrang\bin\Newtonsoft.Json.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_18_11_2023\ShopThoiTrang\ShopThoiTrang\bin\OpenAI_API.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_18_11_2023\ShopThoiTrang\ShopThoiTrang\bin\System.Buffers.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_18_11_2023\ShopThoiTrang\ShopThoiTrang\bin\System.Memory.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_18_11_2023\ShopThoiTrang\ShopThoiTrang\bin\System.Net.Http.Formatting.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_18_11_2023\ShopThoiTrang\ShopThoiTrang\bin\System.Net.Http.WinHttpHandler.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_18_11_2023\ShopThoiTrang\ShopThoiTrang\bin\System.Numerics.Vectors.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_18_11_2023\ShopThoiTrang\ShopThoiTrang\bin\System.Runtime.CompilerServices.Unsafe.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_18_11_2023\ShopThoiTrang\ShopThoiTrang\bin\System.Threading.Tasks.Extensions.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_18_11_2023\ShopThoiTrang\ShopThoiTrang\bin\System.Web.Helpers.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_18_11_2023\ShopThoiTrang\ShopThoiTrang\bin\System.Web.Http.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_18_11_2023\ShopThoiTrang\ShopThoiTrang\bin\System.Web.Http.WebHost.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_18_11_2023\ShopThoiTrang\ShopThoiTrang\bin\System.Web.Mvc.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_18_11_2023\ShopThoiTrang\ShopThoiTrang\bin\System.Web.Razor.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_18_11_2023\ShopThoiTrang\ShopThoiTrang\bin\System.Web.WebPages.Deployment.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_18_11_2023\ShopThoiTrang\ShopThoiTrang\bin\System.Web.WebPages.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_18_11_2023\ShopThoiTrang\ShopThoiTrang\bin\System.Web.WebPages.Razor.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_18_11_2023\ShopThoiTrang\ShopThoiTrang\bin\EntityFramework.xml
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_18_11_2023\ShopThoiTrang\ShopThoiTrang\bin\EntityFramework.SqlServer.xml
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_18_11_2023\ShopThoiTrang\ShopThoiTrang\bin\Microsoft.Bcl.AsyncInterfaces.xml
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_18_11_2023\ShopThoiTrang\ShopThoiTrang\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_18_11_2023\ShopThoiTrang\ShopThoiTrang\bin\Microsoft.Extensions.Configuration.xml
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_18_11_2023\ShopThoiTrang\ShopThoiTrang\bin\Microsoft.Extensions.Configuration.Abstractions.xml
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_18_11_2023\ShopThoiTrang\ShopThoiTrang\bin\Microsoft.Extensions.Configuration.Binder.xml
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_18_11_2023\ShopThoiTrang\ShopThoiTrang\bin\Microsoft.Extensions.DependencyInjection.Abstractions.xml
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_18_11_2023\ShopThoiTrang\ShopThoiTrang\bin\Microsoft.Extensions.Http.xml
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_18_11_2023\ShopThoiTrang\ShopThoiTrang\bin\Microsoft.Extensions.Logging.xml
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_18_11_2023\ShopThoiTrang\ShopThoiTrang\bin\Microsoft.Extensions.Logging.Abstractions.xml
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_18_11_2023\ShopThoiTrang\ShopThoiTrang\bin\Microsoft.Extensions.Options.xml
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_18_11_2023\ShopThoiTrang\ShopThoiTrang\bin\Microsoft.Extensions.Primitives.xml
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_18_11_2023\ShopThoiTrang\ShopThoiTrang\bin\Newtonsoft.Json.xml
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_18_11_2023\ShopThoiTrang\ShopThoiTrang\bin\OpenAI_API.xml
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_18_11_2023\ShopThoiTrang\ShopThoiTrang\bin\System.Buffers.xml
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_18_11_2023\ShopThoiTrang\ShopThoiTrang\bin\System.Memory.xml
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_18_11_2023\ShopThoiTrang\ShopThoiTrang\bin\System.Net.Http.Formatting.xml
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_18_11_2023\ShopThoiTrang\ShopThoiTrang\bin\System.Net.Http.WinHttpHandler.xml
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_18_11_2023\ShopThoiTrang\ShopThoiTrang\bin\System.Numerics.Vectors.xml
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_18_11_2023\ShopThoiTrang\ShopThoiTrang\bin\System.Runtime.CompilerServices.Unsafe.xml
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_18_11_2023\ShopThoiTrang\ShopThoiTrang\bin\System.Threading.Tasks.Extensions.xml
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_18_11_2023\ShopThoiTrang\ShopThoiTrang\bin\System.Web.Helpers.xml
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_18_11_2023\ShopThoiTrang\ShopThoiTrang\bin\System.Web.Http.xml
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_18_11_2023\ShopThoiTrang\ShopThoiTrang\bin\System.Web.Http.WebHost.xml
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_18_11_2023\ShopThoiTrang\ShopThoiTrang\bin\System.Web.Mvc.xml
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_18_11_2023\ShopThoiTrang\ShopThoiTrang\bin\System.Web.Razor.xml
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_18_11_2023\ShopThoiTrang\ShopThoiTrang\bin\System.Web.WebPages.xml
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_18_11_2023\ShopThoiTrang\ShopThoiTrang\bin\System.Web.WebPages.Deployment.xml
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_18_11_2023\ShopThoiTrang\ShopThoiTrang\bin\System.Web.WebPages.Razor.xml
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_18_11_2023\ShopThoiTrang\ShopThoiTrang\obj\Debug\ShopThoiTrang.csproj.AssemblyReference.cache
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_18_11_2023\ShopThoiTrang\ShopThoiTrang\obj\Debug\ShopThoiTrang.csproj.CoreCompileInputs.cache
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_18_11_2023\ShopThoiTrang\ShopThoiTrang\obj\Debug\ShopThoiTrang.csproj.CopyComplete
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_18_11_2023\ShopThoiTrang\ShopThoiTrang\obj\Debug\ShopThoiTrang.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_18_11_2023\ShopThoiTrang\ShopThoiTrang\obj\Debug\ShopThoiTrang.pdb
+C:\Users\crhav\OneDrive\Desktop\Lập trình web\ShopThoiTrang\ShopThoiTrang\bin\ShopThoiTrang.dll.config
+C:\Users\crhav\OneDrive\Desktop\Lập trình web\ShopThoiTrang\ShopThoiTrang\bin\ShopThoiTrang.dll
+C:\Users\crhav\OneDrive\Desktop\Lập trình web\ShopThoiTrang\ShopThoiTrang\bin\ShopThoiTrang.pdb
+C:\Users\crhav\OneDrive\Desktop\Lập trình web\ShopThoiTrang\ShopThoiTrang\bin\roslyn\csc.exe
+C:\Users\crhav\OneDrive\Desktop\Lập trình web\ShopThoiTrang\ShopThoiTrang\bin\roslyn\csc.exe.config
+C:\Users\crhav\OneDrive\Desktop\Lập trình web\ShopThoiTrang\ShopThoiTrang\bin\roslyn\csc.rsp
+C:\Users\crhav\OneDrive\Desktop\Lập trình web\ShopThoiTrang\ShopThoiTrang\bin\roslyn\csi.exe
+C:\Users\crhav\OneDrive\Desktop\Lập trình web\ShopThoiTrang\ShopThoiTrang\bin\roslyn\csi.exe.config
+C:\Users\crhav\OneDrive\Desktop\Lập trình web\ShopThoiTrang\ShopThoiTrang\bin\roslyn\csi.rsp
+C:\Users\crhav\OneDrive\Desktop\Lập trình web\ShopThoiTrang\ShopThoiTrang\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\crhav\OneDrive\Desktop\Lập trình web\ShopThoiTrang\ShopThoiTrang\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\crhav\OneDrive\Desktop\Lập trình web\ShopThoiTrang\ShopThoiTrang\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\crhav\OneDrive\Desktop\Lập trình web\ShopThoiTrang\ShopThoiTrang\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\crhav\OneDrive\Desktop\Lập trình web\ShopThoiTrang\ShopThoiTrang\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\crhav\OneDrive\Desktop\Lập trình web\ShopThoiTrang\ShopThoiTrang\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\crhav\OneDrive\Desktop\Lập trình web\ShopThoiTrang\ShopThoiTrang\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\crhav\OneDrive\Desktop\Lập trình web\ShopThoiTrang\ShopThoiTrang\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\crhav\OneDrive\Desktop\Lập trình web\ShopThoiTrang\ShopThoiTrang\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\crhav\OneDrive\Desktop\Lập trình web\ShopThoiTrang\ShopThoiTrang\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\crhav\OneDrive\Desktop\Lập trình web\ShopThoiTrang\ShopThoiTrang\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\crhav\OneDrive\Desktop\Lập trình web\ShopThoiTrang\ShopThoiTrang\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\crhav\OneDrive\Desktop\Lập trình web\ShopThoiTrang\ShopThoiTrang\bin\roslyn\System.AppContext.dll
+C:\Users\crhav\OneDrive\Desktop\Lập trình web\ShopThoiTrang\ShopThoiTrang\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\crhav\OneDrive\Desktop\Lập trình web\ShopThoiTrang\ShopThoiTrang\bin\roslyn\System.Console.dll
+C:\Users\crhav\OneDrive\Desktop\Lập trình web\ShopThoiTrang\ShopThoiTrang\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\crhav\OneDrive\Desktop\Lập trình web\ShopThoiTrang\ShopThoiTrang\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\crhav\OneDrive\Desktop\Lập trình web\ShopThoiTrang\ShopThoiTrang\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\crhav\OneDrive\Desktop\Lập trình web\ShopThoiTrang\ShopThoiTrang\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\crhav\OneDrive\Desktop\Lập trình web\ShopThoiTrang\ShopThoiTrang\bin\roslyn\System.IO.Compression.dll
+C:\Users\crhav\OneDrive\Desktop\Lập trình web\ShopThoiTrang\ShopThoiTrang\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\crhav\OneDrive\Desktop\Lập trình web\ShopThoiTrang\ShopThoiTrang\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\crhav\OneDrive\Desktop\Lập trình web\ShopThoiTrang\ShopThoiTrang\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\crhav\OneDrive\Desktop\Lập trình web\ShopThoiTrang\ShopThoiTrang\bin\roslyn\System.Net.Http.dll
+C:\Users\crhav\OneDrive\Desktop\Lập trình web\ShopThoiTrang\ShopThoiTrang\bin\roslyn\System.Net.Sockets.dll
+C:\Users\crhav\OneDrive\Desktop\Lập trình web\ShopThoiTrang\ShopThoiTrang\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\crhav\OneDrive\Desktop\Lập trình web\ShopThoiTrang\ShopThoiTrang\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\crhav\OneDrive\Desktop\Lập trình web\ShopThoiTrang\ShopThoiTrang\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\crhav\OneDrive\Desktop\Lập trình web\ShopThoiTrang\ShopThoiTrang\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\crhav\OneDrive\Desktop\Lập trình web\ShopThoiTrang\ShopThoiTrang\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\crhav\OneDrive\Desktop\Lập trình web\ShopThoiTrang\ShopThoiTrang\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\crhav\OneDrive\Desktop\Lập trình web\ShopThoiTrang\ShopThoiTrang\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\crhav\OneDrive\Desktop\Lập trình web\ShopThoiTrang\ShopThoiTrang\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\crhav\OneDrive\Desktop\Lập trình web\ShopThoiTrang\ShopThoiTrang\bin\roslyn\System.ValueTuple.dll
+C:\Users\crhav\OneDrive\Desktop\Lập trình web\ShopThoiTrang\ShopThoiTrang\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\crhav\OneDrive\Desktop\Lập trình web\ShopThoiTrang\ShopThoiTrang\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\crhav\OneDrive\Desktop\Lập trình web\ShopThoiTrang\ShopThoiTrang\bin\roslyn\System.Xml.XPath.dll
+C:\Users\crhav\OneDrive\Desktop\Lập trình web\ShopThoiTrang\ShopThoiTrang\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\crhav\OneDrive\Desktop\Lập trình web\ShopThoiTrang\ShopThoiTrang\bin\roslyn\vbc.exe
+C:\Users\crhav\OneDrive\Desktop\Lập trình web\ShopThoiTrang\ShopThoiTrang\bin\roslyn\vbc.exe.config
+C:\Users\crhav\OneDrive\Desktop\Lập trình web\ShopThoiTrang\ShopThoiTrang\bin\roslyn\vbc.rsp
+C:\Users\crhav\OneDrive\Desktop\Lập trình web\ShopThoiTrang\ShopThoiTrang\bin\roslyn\VBCSCompiler.exe
+C:\Users\crhav\OneDrive\Desktop\Lập trình web\ShopThoiTrang\ShopThoiTrang\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\crhav\OneDrive\Desktop\Lập trình web\ShopThoiTrang\ShopThoiTrang\bin\Microsoft.Win32.Primitives.dll
+C:\Users\crhav\OneDrive\Desktop\Lập trình web\ShopThoiTrang\ShopThoiTrang\bin\netstandard.dll
+C:\Users\crhav\OneDrive\Desktop\Lập trình web\ShopThoiTrang\ShopThoiTrang\bin\System.AppContext.dll
+C:\Users\crhav\OneDrive\Desktop\Lập trình web\ShopThoiTrang\ShopThoiTrang\bin\System.Collections.Concurrent.dll
+C:\Users\crhav\OneDrive\Desktop\Lập trình web\ShopThoiTrang\ShopThoiTrang\bin\System.Collections.dll
+C:\Users\crhav\OneDrive\Desktop\Lập trình web\ShopThoiTrang\ShopThoiTrang\bin\System.Collections.NonGeneric.dll
+C:\Users\crhav\OneDrive\Desktop\Lập trình web\ShopThoiTrang\ShopThoiTrang\bin\System.Collections.Specialized.dll
+C:\Users\crhav\OneDrive\Desktop\Lập trình web\ShopThoiTrang\ShopThoiTrang\bin\System.ComponentModel.dll
+C:\Users\crhav\OneDrive\Desktop\Lập trình web\ShopThoiTrang\ShopThoiTrang\bin\System.ComponentModel.EventBasedAsync.dll
+C:\Users\crhav\OneDrive\Desktop\Lập trình web\ShopThoiTrang\ShopThoiTrang\bin\System.ComponentModel.Primitives.dll
+C:\Users\crhav\OneDrive\Desktop\Lập trình web\ShopThoiTrang\ShopThoiTrang\bin\System.ComponentModel.TypeConverter.dll
+C:\Users\crhav\OneDrive\Desktop\Lập trình web\ShopThoiTrang\ShopThoiTrang\bin\System.Console.dll
+C:\Users\crhav\OneDrive\Desktop\Lập trình web\ShopThoiTrang\ShopThoiTrang\bin\System.Data.Common.dll
+C:\Users\crhav\OneDrive\Desktop\Lập trình web\ShopThoiTrang\ShopThoiTrang\bin\System.Diagnostics.Contracts.dll
+C:\Users\crhav\OneDrive\Desktop\Lập trình web\ShopThoiTrang\ShopThoiTrang\bin\System.Diagnostics.Debug.dll
+C:\Users\crhav\OneDrive\Desktop\Lập trình web\ShopThoiTrang\ShopThoiTrang\bin\System.Diagnostics.FileVersionInfo.dll
+C:\Users\crhav\OneDrive\Desktop\Lập trình web\ShopThoiTrang\ShopThoiTrang\bin\System.Diagnostics.Process.dll
+C:\Users\crhav\OneDrive\Desktop\Lập trình web\ShopThoiTrang\ShopThoiTrang\bin\System.Diagnostics.StackTrace.dll
+C:\Users\crhav\OneDrive\Desktop\Lập trình web\ShopThoiTrang\ShopThoiTrang\bin\System.Diagnostics.TextWriterTraceListener.dll
+C:\Users\crhav\OneDrive\Desktop\Lập trình web\ShopThoiTrang\ShopThoiTrang\bin\System.Diagnostics.Tools.dll
+C:\Users\crhav\OneDrive\Desktop\Lập trình web\ShopThoiTrang\ShopThoiTrang\bin\System.Diagnostics.TraceSource.dll
+C:\Users\crhav\OneDrive\Desktop\Lập trình web\ShopThoiTrang\ShopThoiTrang\bin\System.Diagnostics.Tracing.dll
+C:\Users\crhav\OneDrive\Desktop\Lập trình web\ShopThoiTrang\ShopThoiTrang\bin\System.Drawing.Primitives.dll
+C:\Users\crhav\OneDrive\Desktop\Lập trình web\ShopThoiTrang\ShopThoiTrang\bin\System.Dynamic.Runtime.dll
+C:\Users\crhav\OneDrive\Desktop\Lập trình web\ShopThoiTrang\ShopThoiTrang\bin\System.Globalization.Calendars.dll
+C:\Users\crhav\OneDrive\Desktop\Lập trình web\ShopThoiTrang\ShopThoiTrang\bin\System.Globalization.dll
+C:\Users\crhav\OneDrive\Desktop\Lập trình web\ShopThoiTrang\ShopThoiTrang\bin\System.Globalization.Extensions.dll
+C:\Users\crhav\OneDrive\Desktop\Lập trình web\ShopThoiTrang\ShopThoiTrang\bin\System.IO.Compression.dll
+C:\Users\crhav\OneDrive\Desktop\Lập trình web\ShopThoiTrang\ShopThoiTrang\bin\System.IO.Compression.ZipFile.dll
+C:\Users\crhav\OneDrive\Desktop\Lập trình web\ShopThoiTrang\ShopThoiTrang\bin\System.IO.dll
+C:\Users\crhav\OneDrive\Desktop\Lập trình web\ShopThoiTrang\ShopThoiTrang\bin\System.IO.FileSystem.dll
+C:\Users\crhav\OneDrive\Desktop\Lập trình web\ShopThoiTrang\ShopThoiTrang\bin\System.IO.FileSystem.DriveInfo.dll
+C:\Users\crhav\OneDrive\Desktop\Lập trình web\ShopThoiTrang\ShopThoiTrang\bin\System.IO.FileSystem.Primitives.dll
+C:\Users\crhav\OneDrive\Desktop\Lập trình web\ShopThoiTrang\ShopThoiTrang\bin\System.IO.FileSystem.Watcher.dll
+C:\Users\crhav\OneDrive\Desktop\Lập trình web\ShopThoiTrang\ShopThoiTrang\bin\System.IO.IsolatedStorage.dll
+C:\Users\crhav\OneDrive\Desktop\Lập trình web\ShopThoiTrang\ShopThoiTrang\bin\System.IO.MemoryMappedFiles.dll
+C:\Users\crhav\OneDrive\Desktop\Lập trình web\ShopThoiTrang\ShopThoiTrang\bin\System.IO.Pipes.dll
+C:\Users\crhav\OneDrive\Desktop\Lập trình web\ShopThoiTrang\ShopThoiTrang\bin\System.IO.UnmanagedMemoryStream.dll
+C:\Users\crhav\OneDrive\Desktop\Lập trình web\ShopThoiTrang\ShopThoiTrang\bin\System.Linq.dll
+C:\Users\crhav\OneDrive\Desktop\Lập trình web\ShopThoiTrang\ShopThoiTrang\bin\System.Linq.Expressions.dll
+C:\Users\crhav\OneDrive\Desktop\Lập trình web\ShopThoiTrang\ShopThoiTrang\bin\System.Linq.Parallel.dll
+C:\Users\crhav\OneDrive\Desktop\Lập trình web\ShopThoiTrang\ShopThoiTrang\bin\System.Linq.Queryable.dll
+C:\Users\crhav\OneDrive\Desktop\Lập trình web\ShopThoiTrang\ShopThoiTrang\bin\System.Net.Http.dll
+C:\Users\crhav\OneDrive\Desktop\Lập trình web\ShopThoiTrang\ShopThoiTrang\bin\System.Net.NameResolution.dll
+C:\Users\crhav\OneDrive\Desktop\Lập trình web\ShopThoiTrang\ShopThoiTrang\bin\System.Net.NetworkInformation.dll
+C:\Users\crhav\OneDrive\Desktop\Lập trình web\ShopThoiTrang\ShopThoiTrang\bin\System.Net.Ping.dll
+C:\Users\crhav\OneDrive\Desktop\Lập trình web\ShopThoiTrang\ShopThoiTrang\bin\System.Net.Primitives.dll
+C:\Users\crhav\OneDrive\Desktop\Lập trình web\ShopThoiTrang\ShopThoiTrang\bin\System.Net.Requests.dll
+C:\Users\crhav\OneDrive\Desktop\Lập trình web\ShopThoiTrang\ShopThoiTrang\bin\System.Net.Security.dll
+C:\Users\crhav\OneDrive\Desktop\Lập trình web\ShopThoiTrang\ShopThoiTrang\bin\System.Net.Sockets.dll
+C:\Users\crhav\OneDrive\Desktop\Lập trình web\ShopThoiTrang\ShopThoiTrang\bin\System.Net.WebHeaderCollection.dll
+C:\Users\crhav\OneDrive\Desktop\Lập trình web\ShopThoiTrang\ShopThoiTrang\bin\System.Net.WebSockets.Client.dll
+C:\Users\crhav\OneDrive\Desktop\Lập trình web\ShopThoiTrang\ShopThoiTrang\bin\System.Net.WebSockets.dll
+C:\Users\crhav\OneDrive\Desktop\Lập trình web\ShopThoiTrang\ShopThoiTrang\bin\System.ObjectModel.dll
+C:\Users\crhav\OneDrive\Desktop\Lập trình web\ShopThoiTrang\ShopThoiTrang\bin\System.Reflection.dll
+C:\Users\crhav\OneDrive\Desktop\Lập trình web\ShopThoiTrang\ShopThoiTrang\bin\System.Reflection.Extensions.dll
+C:\Users\crhav\OneDrive\Desktop\Lập trình web\ShopThoiTrang\ShopThoiTrang\bin\System.Reflection.Primitives.dll
+C:\Users\crhav\OneDrive\Desktop\Lập trình web\ShopThoiTrang\ShopThoiTrang\bin\System.Resources.Reader.dll
+C:\Users\crhav\OneDrive\Desktop\Lập trình web\ShopThoiTrang\ShopThoiTrang\bin\System.Resources.ResourceManager.dll
+C:\Users\crhav\OneDrive\Desktop\Lập trình web\ShopThoiTrang\ShopThoiTrang\bin\System.Resources.Writer.dll
+C:\Users\crhav\OneDrive\Desktop\Lập trình web\ShopThoiTrang\ShopThoiTrang\bin\System.Runtime.CompilerServices.VisualC.dll
+C:\Users\crhav\OneDrive\Desktop\Lập trình web\ShopThoiTrang\ShopThoiTrang\bin\System.Runtime.dll
+C:\Users\crhav\OneDrive\Desktop\Lập trình web\ShopThoiTrang\ShopThoiTrang\bin\System.Runtime.Extensions.dll
+C:\Users\crhav\OneDrive\Desktop\Lập trình web\ShopThoiTrang\ShopThoiTrang\bin\System.Runtime.Handles.dll
+C:\Users\crhav\OneDrive\Desktop\Lập trình web\ShopThoiTrang\ShopThoiTrang\bin\System.Runtime.InteropServices.dll
+C:\Users\crhav\OneDrive\Desktop\Lập trình web\ShopThoiTrang\ShopThoiTrang\bin\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\crhav\OneDrive\Desktop\Lập trình web\ShopThoiTrang\ShopThoiTrang\bin\System.Runtime.Numerics.dll
+C:\Users\crhav\OneDrive\Desktop\Lập trình web\ShopThoiTrang\ShopThoiTrang\bin\System.Runtime.Serialization.Formatters.dll
+C:\Users\crhav\OneDrive\Desktop\Lập trình web\ShopThoiTrang\ShopThoiTrang\bin\System.Runtime.Serialization.Json.dll
+C:\Users\crhav\OneDrive\Desktop\Lập trình web\ShopThoiTrang\ShopThoiTrang\bin\System.Runtime.Serialization.Primitives.dll
+C:\Users\crhav\OneDrive\Desktop\Lập trình web\ShopThoiTrang\ShopThoiTrang\bin\System.Runtime.Serialization.Xml.dll
+C:\Users\crhav\OneDrive\Desktop\Lập trình web\ShopThoiTrang\ShopThoiTrang\bin\System.Security.Claims.dll
+C:\Users\crhav\OneDrive\Desktop\Lập trình web\ShopThoiTrang\ShopThoiTrang\bin\System.Security.Cryptography.Algorithms.dll
+C:\Users\crhav\OneDrive\Desktop\Lập trình web\ShopThoiTrang\ShopThoiTrang\bin\System.Security.Cryptography.Csp.dll
+C:\Users\crhav\OneDrive\Desktop\Lập trình web\ShopThoiTrang\ShopThoiTrang\bin\System.Security.Cryptography.Encoding.dll
+C:\Users\crhav\OneDrive\Desktop\Lập trình web\ShopThoiTrang\ShopThoiTrang\bin\System.Security.Cryptography.Primitives.dll
+C:\Users\crhav\OneDrive\Desktop\Lập trình web\ShopThoiTrang\ShopThoiTrang\bin\System.Security.Cryptography.X509Certificates.dll
+C:\Users\crhav\OneDrive\Desktop\Lập trình web\ShopThoiTrang\ShopThoiTrang\bin\System.Security.Principal.dll
+C:\Users\crhav\OneDrive\Desktop\Lập trình web\ShopThoiTrang\ShopThoiTrang\bin\System.Security.SecureString.dll
+C:\Users\crhav\OneDrive\Desktop\Lập trình web\ShopThoiTrang\ShopThoiTrang\bin\System.Text.Encoding.dll
+C:\Users\crhav\OneDrive\Desktop\Lập trình web\ShopThoiTrang\ShopThoiTrang\bin\System.Text.Encoding.Extensions.dll
+C:\Users\crhav\OneDrive\Desktop\Lập trình web\ShopThoiTrang\ShopThoiTrang\bin\System.Text.RegularExpressions.dll
+C:\Users\crhav\OneDrive\Desktop\Lập trình web\ShopThoiTrang\ShopThoiTrang\bin\System.Threading.dll
+C:\Users\crhav\OneDrive\Desktop\Lập trình web\ShopThoiTrang\ShopThoiTrang\bin\System.Threading.Overlapped.dll
+C:\Users\crhav\OneDrive\Desktop\Lập trình web\ShopThoiTrang\ShopThoiTrang\bin\System.Threading.Tasks.dll
+C:\Users\crhav\OneDrive\Desktop\Lập trình web\ShopThoiTrang\ShopThoiTrang\bin\System.Threading.Tasks.Parallel.dll
+C:\Users\crhav\OneDrive\Desktop\Lập trình web\ShopThoiTrang\ShopThoiTrang\bin\System.Threading.Thread.dll
+C:\Users\crhav\OneDrive\Desktop\Lập trình web\ShopThoiTrang\ShopThoiTrang\bin\System.Threading.ThreadPool.dll
+C:\Users\crhav\OneDrive\Desktop\Lập trình web\ShopThoiTrang\ShopThoiTrang\bin\System.Threading.Timer.dll
+C:\Users\crhav\OneDrive\Desktop\Lập trình web\ShopThoiTrang\ShopThoiTrang\bin\System.ValueTuple.dll
+C:\Users\crhav\OneDrive\Desktop\Lập trình web\ShopThoiTrang\ShopThoiTrang\bin\System.Xml.ReaderWriter.dll
+C:\Users\crhav\OneDrive\Desktop\Lập trình web\ShopThoiTrang\ShopThoiTrang\bin\System.Xml.XDocument.dll
+C:\Users\crhav\OneDrive\Desktop\Lập trình web\ShopThoiTrang\ShopThoiTrang\bin\System.Xml.XmlDocument.dll
+C:\Users\crhav\OneDrive\Desktop\Lập trình web\ShopThoiTrang\ShopThoiTrang\bin\System.Xml.XmlSerializer.dll
+C:\Users\crhav\OneDrive\Desktop\Lập trình web\ShopThoiTrang\ShopThoiTrang\bin\System.Xml.XPath.dll
+C:\Users\crhav\OneDrive\Desktop\Lập trình web\ShopThoiTrang\ShopThoiTrang\bin\System.Xml.XPath.XDocument.dll
+C:\Users\crhav\OneDrive\Desktop\Lập trình web\ShopThoiTrang\ShopThoiTrang\bin\EntityFramework.dll
+C:\Users\crhav\OneDrive\Desktop\Lập trình web\ShopThoiTrang\ShopThoiTrang\bin\EntityFramework.SqlServer.dll
+C:\Users\crhav\OneDrive\Desktop\Lập trình web\ShopThoiTrang\ShopThoiTrang\bin\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\crhav\OneDrive\Desktop\Lập trình web\ShopThoiTrang\ShopThoiTrang\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\crhav\OneDrive\Desktop\Lập trình web\ShopThoiTrang\ShopThoiTrang\bin\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\crhav\OneDrive\Desktop\Lập trình web\ShopThoiTrang\ShopThoiTrang\bin\Microsoft.Extensions.Configuration.Binder.dll
+C:\Users\crhav\OneDrive\Desktop\Lập trình web\ShopThoiTrang\ShopThoiTrang\bin\Microsoft.Extensions.Configuration.dll
+C:\Users\crhav\OneDrive\Desktop\Lập trình web\ShopThoiTrang\ShopThoiTrang\bin\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\crhav\OneDrive\Desktop\Lập trình web\ShopThoiTrang\ShopThoiTrang\bin\Microsoft.Extensions.Http.dll
+C:\Users\crhav\OneDrive\Desktop\Lập trình web\ShopThoiTrang\ShopThoiTrang\bin\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\crhav\OneDrive\Desktop\Lập trình web\ShopThoiTrang\ShopThoiTrang\bin\Microsoft.Extensions.Logging.dll
+C:\Users\crhav\OneDrive\Desktop\Lập trình web\ShopThoiTrang\ShopThoiTrang\bin\Microsoft.Extensions.Options.dll
+C:\Users\crhav\OneDrive\Desktop\Lập trình web\ShopThoiTrang\ShopThoiTrang\bin\Microsoft.Extensions.Primitives.dll
+C:\Users\crhav\OneDrive\Desktop\Lập trình web\ShopThoiTrang\ShopThoiTrang\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\crhav\OneDrive\Desktop\Lập trình web\ShopThoiTrang\ShopThoiTrang\bin\Newtonsoft.Json.dll
+C:\Users\crhav\OneDrive\Desktop\Lập trình web\ShopThoiTrang\ShopThoiTrang\bin\OpenAI_API.dll
+C:\Users\crhav\OneDrive\Desktop\Lập trình web\ShopThoiTrang\ShopThoiTrang\bin\System.Buffers.dll
+C:\Users\crhav\OneDrive\Desktop\Lập trình web\ShopThoiTrang\ShopThoiTrang\bin\System.Memory.dll
+C:\Users\crhav\OneDrive\Desktop\Lập trình web\ShopThoiTrang\ShopThoiTrang\bin\System.Net.Http.Formatting.dll
+C:\Users\crhav\OneDrive\Desktop\Lập trình web\ShopThoiTrang\ShopThoiTrang\bin\System.Net.Http.WinHttpHandler.dll
+C:\Users\crhav\OneDrive\Desktop\Lập trình web\ShopThoiTrang\ShopThoiTrang\bin\System.Numerics.Vectors.dll
+C:\Users\crhav\OneDrive\Desktop\Lập trình web\ShopThoiTrang\ShopThoiTrang\bin\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\crhav\OneDrive\Desktop\Lập trình web\ShopThoiTrang\ShopThoiTrang\bin\System.Threading.Tasks.Extensions.dll
+C:\Users\crhav\OneDrive\Desktop\Lập trình web\ShopThoiTrang\ShopThoiTrang\bin\System.Web.Helpers.dll
+C:\Users\crhav\OneDrive\Desktop\Lập trình web\ShopThoiTrang\ShopThoiTrang\bin\System.Web.Http.dll
+C:\Users\crhav\OneDrive\Desktop\Lập trình web\ShopThoiTrang\ShopThoiTrang\bin\System.Web.Http.WebHost.dll
+C:\Users\crhav\OneDrive\Desktop\Lập trình web\ShopThoiTrang\ShopThoiTrang\bin\System.Web.Mvc.dll
+C:\Users\crhav\OneDrive\Desktop\Lập trình web\ShopThoiTrang\ShopThoiTrang\bin\System.Web.Razor.dll
+C:\Users\crhav\OneDrive\Desktop\Lập trình web\ShopThoiTrang\ShopThoiTrang\bin\System.Web.WebPages.Deployment.dll
+C:\Users\crhav\OneDrive\Desktop\Lập trình web\ShopThoiTrang\ShopThoiTrang\bin\System.Web.WebPages.dll
+C:\Users\crhav\OneDrive\Desktop\Lập trình web\ShopThoiTrang\ShopThoiTrang\bin\System.Web.WebPages.Razor.dll
+C:\Users\crhav\OneDrive\Desktop\Lập trình web\ShopThoiTrang\ShopThoiTrang\bin\EntityFramework.xml
+C:\Users\crhav\OneDrive\Desktop\Lập trình web\ShopThoiTrang\ShopThoiTrang\bin\EntityFramework.SqlServer.xml
+C:\Users\crhav\OneDrive\Desktop\Lập trình web\ShopThoiTrang\ShopThoiTrang\bin\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\crhav\OneDrive\Desktop\Lập trình web\ShopThoiTrang\ShopThoiTrang\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\crhav\OneDrive\Desktop\Lập trình web\ShopThoiTrang\ShopThoiTrang\bin\Microsoft.Extensions.Configuration.xml
+C:\Users\crhav\OneDrive\Desktop\Lập trình web\ShopThoiTrang\ShopThoiTrang\bin\Microsoft.Extensions.Configuration.Abstractions.xml
+C:\Users\crhav\OneDrive\Desktop\Lập trình web\ShopThoiTrang\ShopThoiTrang\bin\Microsoft.Extensions.Configuration.Binder.xml
+C:\Users\crhav\OneDrive\Desktop\Lập trình web\ShopThoiTrang\ShopThoiTrang\bin\Microsoft.Extensions.DependencyInjection.Abstractions.xml
+C:\Users\crhav\OneDrive\Desktop\Lập trình web\ShopThoiTrang\ShopThoiTrang\bin\Microsoft.Extensions.Http.xml
+C:\Users\crhav\OneDrive\Desktop\Lập trình web\ShopThoiTrang\ShopThoiTrang\bin\Microsoft.Extensions.Logging.xml
+C:\Users\crhav\OneDrive\Desktop\Lập trình web\ShopThoiTrang\ShopThoiTrang\bin\Microsoft.Extensions.Logging.Abstractions.xml
+C:\Users\crhav\OneDrive\Desktop\Lập trình web\ShopThoiTrang\ShopThoiTrang\bin\Microsoft.Extensions.Options.xml
+C:\Users\crhav\OneDrive\Desktop\Lập trình web\ShopThoiTrang\ShopThoiTrang\bin\Microsoft.Extensions.Primitives.xml
+C:\Users\crhav\OneDrive\Desktop\Lập trình web\ShopThoiTrang\ShopThoiTrang\bin\Newtonsoft.Json.xml
+C:\Users\crhav\OneDrive\Desktop\Lập trình web\ShopThoiTrang\ShopThoiTrang\bin\OpenAI_API.xml
+C:\Users\crhav\OneDrive\Desktop\Lập trình web\ShopThoiTrang\ShopThoiTrang\bin\System.Buffers.xml
+C:\Users\crhav\OneDrive\Desktop\Lập trình web\ShopThoiTrang\ShopThoiTrang\bin\System.Memory.xml
+C:\Users\crhav\OneDrive\Desktop\Lập trình web\ShopThoiTrang\ShopThoiTrang\bin\System.Net.Http.Formatting.xml
+C:\Users\crhav\OneDrive\Desktop\Lập trình web\ShopThoiTrang\ShopThoiTrang\bin\System.Net.Http.WinHttpHandler.xml
+C:\Users\crhav\OneDrive\Desktop\Lập trình web\ShopThoiTrang\ShopThoiTrang\bin\System.Numerics.Vectors.xml
+C:\Users\crhav\OneDrive\Desktop\Lập trình web\ShopThoiTrang\ShopThoiTrang\bin\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\crhav\OneDrive\Desktop\Lập trình web\ShopThoiTrang\ShopThoiTrang\bin\System.Threading.Tasks.Extensions.xml
+C:\Users\crhav\OneDrive\Desktop\Lập trình web\ShopThoiTrang\ShopThoiTrang\bin\System.Web.Helpers.xml
+C:\Users\crhav\OneDrive\Desktop\Lập trình web\ShopThoiTrang\ShopThoiTrang\bin\System.Web.Http.xml
+C:\Users\crhav\OneDrive\Desktop\Lập trình web\ShopThoiTrang\ShopThoiTrang\bin\System.Web.Http.WebHost.xml
+C:\Users\crhav\OneDrive\Desktop\Lập trình web\ShopThoiTrang\ShopThoiTrang\bin\System.Web.Mvc.xml
+C:\Users\crhav\OneDrive\Desktop\Lập trình web\ShopThoiTrang\ShopThoiTrang\bin\System.Web.Razor.xml
+C:\Users\crhav\OneDrive\Desktop\Lập trình web\ShopThoiTrang\ShopThoiTrang\bin\System.Web.WebPages.xml
+C:\Users\crhav\OneDrive\Desktop\Lập trình web\ShopThoiTrang\ShopThoiTrang\bin\System.Web.WebPages.Deployment.xml
+C:\Users\crhav\OneDrive\Desktop\Lập trình web\ShopThoiTrang\ShopThoiTrang\bin\System.Web.WebPages.Razor.xml
+C:\Users\crhav\OneDrive\Desktop\Lập trình web\ShopThoiTrang\ShopThoiTrang\obj\Debug\ShopThoiTrang.csproj.AssemblyReference.cache
+C:\Users\crhav\OneDrive\Desktop\Lập trình web\ShopThoiTrang\ShopThoiTrang\obj\Debug\ShopThoiTrang.csproj.CoreCompileInputs.cache
+C:\Users\crhav\OneDrive\Desktop\Lập trình web\ShopThoiTrang\ShopThoiTrang\obj\Debug\ShopThoiTrang.csproj.CopyComplete
+C:\Users\crhav\OneDrive\Desktop\Lập trình web\ShopThoiTrang\ShopThoiTrang\obj\Debug\ShopThoiTrang.dll
+C:\Users\crhav\OneDrive\Desktop\Lập trình web\ShopThoiTrang\ShopThoiTrang\obj\Debug\ShopThoiTrang.pdb
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_20_11_2023\ShopThoiTrang\ShopThoiTrang\bin\ShopThoiTrang.dll.config
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_20_11_2023\ShopThoiTrang\ShopThoiTrang\bin\ShopThoiTrang.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_20_11_2023\ShopThoiTrang\ShopThoiTrang\bin\ShopThoiTrang.pdb
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_20_11_2023\ShopThoiTrang\ShopThoiTrang\bin\roslyn\csc.exe
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_20_11_2023\ShopThoiTrang\ShopThoiTrang\bin\roslyn\csc.exe.config
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_20_11_2023\ShopThoiTrang\ShopThoiTrang\bin\roslyn\csc.rsp
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_20_11_2023\ShopThoiTrang\ShopThoiTrang\bin\roslyn\csi.exe
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_20_11_2023\ShopThoiTrang\ShopThoiTrang\bin\roslyn\csi.exe.config
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_20_11_2023\ShopThoiTrang\ShopThoiTrang\bin\roslyn\csi.rsp
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_20_11_2023\ShopThoiTrang\ShopThoiTrang\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_20_11_2023\ShopThoiTrang\ShopThoiTrang\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_20_11_2023\ShopThoiTrang\ShopThoiTrang\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_20_11_2023\ShopThoiTrang\ShopThoiTrang\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_20_11_2023\ShopThoiTrang\ShopThoiTrang\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_20_11_2023\ShopThoiTrang\ShopThoiTrang\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_20_11_2023\ShopThoiTrang\ShopThoiTrang\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_20_11_2023\ShopThoiTrang\ShopThoiTrang\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_20_11_2023\ShopThoiTrang\ShopThoiTrang\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_20_11_2023\ShopThoiTrang\ShopThoiTrang\bin\roslyn\Microsoft.Managed.Core.targets
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_20_11_2023\ShopThoiTrang\ShopThoiTrang\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_20_11_2023\ShopThoiTrang\ShopThoiTrang\bin\roslyn\Microsoft.Win32.Primitives.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_20_11_2023\ShopThoiTrang\ShopThoiTrang\bin\roslyn\System.AppContext.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_20_11_2023\ShopThoiTrang\ShopThoiTrang\bin\roslyn\System.Collections.Immutable.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_20_11_2023\ShopThoiTrang\ShopThoiTrang\bin\roslyn\System.Console.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_20_11_2023\ShopThoiTrang\ShopThoiTrang\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_20_11_2023\ShopThoiTrang\ShopThoiTrang\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_20_11_2023\ShopThoiTrang\ShopThoiTrang\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_20_11_2023\ShopThoiTrang\ShopThoiTrang\bin\roslyn\System.Globalization.Calendars.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_20_11_2023\ShopThoiTrang\ShopThoiTrang\bin\roslyn\System.IO.Compression.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_20_11_2023\ShopThoiTrang\ShopThoiTrang\bin\roslyn\System.IO.Compression.ZipFile.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_20_11_2023\ShopThoiTrang\ShopThoiTrang\bin\roslyn\System.IO.FileSystem.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_20_11_2023\ShopThoiTrang\ShopThoiTrang\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_20_11_2023\ShopThoiTrang\ShopThoiTrang\bin\roslyn\System.Net.Http.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_20_11_2023\ShopThoiTrang\ShopThoiTrang\bin\roslyn\System.Net.Sockets.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_20_11_2023\ShopThoiTrang\ShopThoiTrang\bin\roslyn\System.Reflection.Metadata.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_20_11_2023\ShopThoiTrang\ShopThoiTrang\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_20_11_2023\ShopThoiTrang\ShopThoiTrang\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_20_11_2023\ShopThoiTrang\ShopThoiTrang\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_20_11_2023\ShopThoiTrang\ShopThoiTrang\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_20_11_2023\ShopThoiTrang\ShopThoiTrang\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_20_11_2023\ShopThoiTrang\ShopThoiTrang\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_20_11_2023\ShopThoiTrang\ShopThoiTrang\bin\roslyn\System.Threading.Tasks.Extensions.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_20_11_2023\ShopThoiTrang\ShopThoiTrang\bin\roslyn\System.ValueTuple.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_20_11_2023\ShopThoiTrang\ShopThoiTrang\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_20_11_2023\ShopThoiTrang\ShopThoiTrang\bin\roslyn\System.Xml.XmlDocument.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_20_11_2023\ShopThoiTrang\ShopThoiTrang\bin\roslyn\System.Xml.XPath.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_20_11_2023\ShopThoiTrang\ShopThoiTrang\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_20_11_2023\ShopThoiTrang\ShopThoiTrang\bin\roslyn\vbc.exe
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_20_11_2023\ShopThoiTrang\ShopThoiTrang\bin\roslyn\vbc.exe.config
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_20_11_2023\ShopThoiTrang\ShopThoiTrang\bin\roslyn\vbc.rsp
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_20_11_2023\ShopThoiTrang\ShopThoiTrang\bin\roslyn\VBCSCompiler.exe
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_20_11_2023\ShopThoiTrang\ShopThoiTrang\bin\roslyn\VBCSCompiler.exe.config
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_20_11_2023\ShopThoiTrang\ShopThoiTrang\bin\Microsoft.Win32.Primitives.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_20_11_2023\ShopThoiTrang\ShopThoiTrang\bin\netstandard.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_20_11_2023\ShopThoiTrang\ShopThoiTrang\bin\System.AppContext.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_20_11_2023\ShopThoiTrang\ShopThoiTrang\bin\System.Collections.Concurrent.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_20_11_2023\ShopThoiTrang\ShopThoiTrang\bin\System.Collections.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_20_11_2023\ShopThoiTrang\ShopThoiTrang\bin\System.Collections.NonGeneric.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_20_11_2023\ShopThoiTrang\ShopThoiTrang\bin\System.Collections.Specialized.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_20_11_2023\ShopThoiTrang\ShopThoiTrang\bin\System.ComponentModel.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_20_11_2023\ShopThoiTrang\ShopThoiTrang\bin\System.ComponentModel.EventBasedAsync.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_20_11_2023\ShopThoiTrang\ShopThoiTrang\bin\System.ComponentModel.Primitives.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_20_11_2023\ShopThoiTrang\ShopThoiTrang\bin\System.ComponentModel.TypeConverter.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_20_11_2023\ShopThoiTrang\ShopThoiTrang\bin\System.Console.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_20_11_2023\ShopThoiTrang\ShopThoiTrang\bin\System.Data.Common.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_20_11_2023\ShopThoiTrang\ShopThoiTrang\bin\System.Diagnostics.Contracts.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_20_11_2023\ShopThoiTrang\ShopThoiTrang\bin\System.Diagnostics.Debug.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_20_11_2023\ShopThoiTrang\ShopThoiTrang\bin\System.Diagnostics.FileVersionInfo.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_20_11_2023\ShopThoiTrang\ShopThoiTrang\bin\System.Diagnostics.Process.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_20_11_2023\ShopThoiTrang\ShopThoiTrang\bin\System.Diagnostics.StackTrace.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_20_11_2023\ShopThoiTrang\ShopThoiTrang\bin\System.Diagnostics.TextWriterTraceListener.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_20_11_2023\ShopThoiTrang\ShopThoiTrang\bin\System.Diagnostics.Tools.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_20_11_2023\ShopThoiTrang\ShopThoiTrang\bin\System.Diagnostics.TraceSource.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_20_11_2023\ShopThoiTrang\ShopThoiTrang\bin\System.Diagnostics.Tracing.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_20_11_2023\ShopThoiTrang\ShopThoiTrang\bin\System.Drawing.Primitives.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_20_11_2023\ShopThoiTrang\ShopThoiTrang\bin\System.Dynamic.Runtime.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_20_11_2023\ShopThoiTrang\ShopThoiTrang\bin\System.Globalization.Calendars.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_20_11_2023\ShopThoiTrang\ShopThoiTrang\bin\System.Globalization.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_20_11_2023\ShopThoiTrang\ShopThoiTrang\bin\System.Globalization.Extensions.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_20_11_2023\ShopThoiTrang\ShopThoiTrang\bin\System.IO.Compression.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_20_11_2023\ShopThoiTrang\ShopThoiTrang\bin\System.IO.Compression.ZipFile.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_20_11_2023\ShopThoiTrang\ShopThoiTrang\bin\System.IO.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_20_11_2023\ShopThoiTrang\ShopThoiTrang\bin\System.IO.FileSystem.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_20_11_2023\ShopThoiTrang\ShopThoiTrang\bin\System.IO.FileSystem.DriveInfo.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_20_11_2023\ShopThoiTrang\ShopThoiTrang\bin\System.IO.FileSystem.Primitives.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_20_11_2023\ShopThoiTrang\ShopThoiTrang\bin\System.IO.FileSystem.Watcher.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_20_11_2023\ShopThoiTrang\ShopThoiTrang\bin\System.IO.IsolatedStorage.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_20_11_2023\ShopThoiTrang\ShopThoiTrang\bin\System.IO.MemoryMappedFiles.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_20_11_2023\ShopThoiTrang\ShopThoiTrang\bin\System.IO.Pipes.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_20_11_2023\ShopThoiTrang\ShopThoiTrang\bin\System.IO.UnmanagedMemoryStream.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_20_11_2023\ShopThoiTrang\ShopThoiTrang\bin\System.Linq.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_20_11_2023\ShopThoiTrang\ShopThoiTrang\bin\System.Linq.Expressions.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_20_11_2023\ShopThoiTrang\ShopThoiTrang\bin\System.Linq.Parallel.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_20_11_2023\ShopThoiTrang\ShopThoiTrang\bin\System.Linq.Queryable.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_20_11_2023\ShopThoiTrang\ShopThoiTrang\bin\System.Net.Http.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_20_11_2023\ShopThoiTrang\ShopThoiTrang\bin\System.Net.NameResolution.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_20_11_2023\ShopThoiTrang\ShopThoiTrang\bin\System.Net.NetworkInformation.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_20_11_2023\ShopThoiTrang\ShopThoiTrang\bin\System.Net.Ping.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_20_11_2023\ShopThoiTrang\ShopThoiTrang\bin\System.Net.Primitives.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_20_11_2023\ShopThoiTrang\ShopThoiTrang\bin\System.Net.Requests.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_20_11_2023\ShopThoiTrang\ShopThoiTrang\bin\System.Net.Security.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_20_11_2023\ShopThoiTrang\ShopThoiTrang\bin\System.Net.Sockets.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_20_11_2023\ShopThoiTrang\ShopThoiTrang\bin\System.Net.WebHeaderCollection.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_20_11_2023\ShopThoiTrang\ShopThoiTrang\bin\System.Net.WebSockets.Client.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_20_11_2023\ShopThoiTrang\ShopThoiTrang\bin\System.Net.WebSockets.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_20_11_2023\ShopThoiTrang\ShopThoiTrang\bin\System.ObjectModel.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_20_11_2023\ShopThoiTrang\ShopThoiTrang\bin\System.Reflection.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_20_11_2023\ShopThoiTrang\ShopThoiTrang\bin\System.Reflection.Extensions.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_20_11_2023\ShopThoiTrang\ShopThoiTrang\bin\System.Reflection.Primitives.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_20_11_2023\ShopThoiTrang\ShopThoiTrang\bin\System.Resources.Reader.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_20_11_2023\ShopThoiTrang\ShopThoiTrang\bin\System.Resources.ResourceManager.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_20_11_2023\ShopThoiTrang\ShopThoiTrang\bin\System.Resources.Writer.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_20_11_2023\ShopThoiTrang\ShopThoiTrang\bin\System.Runtime.CompilerServices.VisualC.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_20_11_2023\ShopThoiTrang\ShopThoiTrang\bin\System.Runtime.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_20_11_2023\ShopThoiTrang\ShopThoiTrang\bin\System.Runtime.Extensions.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_20_11_2023\ShopThoiTrang\ShopThoiTrang\bin\System.Runtime.Handles.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_20_11_2023\ShopThoiTrang\ShopThoiTrang\bin\System.Runtime.InteropServices.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_20_11_2023\ShopThoiTrang\ShopThoiTrang\bin\System.Runtime.InteropServices.RuntimeInformation.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_20_11_2023\ShopThoiTrang\ShopThoiTrang\bin\System.Runtime.Numerics.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_20_11_2023\ShopThoiTrang\ShopThoiTrang\bin\System.Runtime.Serialization.Formatters.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_20_11_2023\ShopThoiTrang\ShopThoiTrang\bin\System.Runtime.Serialization.Json.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_20_11_2023\ShopThoiTrang\ShopThoiTrang\bin\System.Runtime.Serialization.Primitives.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_20_11_2023\ShopThoiTrang\ShopThoiTrang\bin\System.Runtime.Serialization.Xml.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_20_11_2023\ShopThoiTrang\ShopThoiTrang\bin\System.Security.Claims.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_20_11_2023\ShopThoiTrang\ShopThoiTrang\bin\System.Security.Cryptography.Algorithms.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_20_11_2023\ShopThoiTrang\ShopThoiTrang\bin\System.Security.Cryptography.Csp.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_20_11_2023\ShopThoiTrang\ShopThoiTrang\bin\System.Security.Cryptography.Encoding.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_20_11_2023\ShopThoiTrang\ShopThoiTrang\bin\System.Security.Cryptography.Primitives.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_20_11_2023\ShopThoiTrang\ShopThoiTrang\bin\System.Security.Cryptography.X509Certificates.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_20_11_2023\ShopThoiTrang\ShopThoiTrang\bin\System.Security.Principal.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_20_11_2023\ShopThoiTrang\ShopThoiTrang\bin\System.Security.SecureString.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_20_11_2023\ShopThoiTrang\ShopThoiTrang\bin\System.Text.Encoding.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_20_11_2023\ShopThoiTrang\ShopThoiTrang\bin\System.Text.Encoding.Extensions.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_20_11_2023\ShopThoiTrang\ShopThoiTrang\bin\System.Text.RegularExpressions.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_20_11_2023\ShopThoiTrang\ShopThoiTrang\bin\System.Threading.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_20_11_2023\ShopThoiTrang\ShopThoiTrang\bin\System.Threading.Overlapped.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_20_11_2023\ShopThoiTrang\ShopThoiTrang\bin\System.Threading.Tasks.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_20_11_2023\ShopThoiTrang\ShopThoiTrang\bin\System.Threading.Tasks.Parallel.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_20_11_2023\ShopThoiTrang\ShopThoiTrang\bin\System.Threading.Thread.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_20_11_2023\ShopThoiTrang\ShopThoiTrang\bin\System.Threading.ThreadPool.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_20_11_2023\ShopThoiTrang\ShopThoiTrang\bin\System.Threading.Timer.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_20_11_2023\ShopThoiTrang\ShopThoiTrang\bin\System.ValueTuple.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_20_11_2023\ShopThoiTrang\ShopThoiTrang\bin\System.Xml.ReaderWriter.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_20_11_2023\ShopThoiTrang\ShopThoiTrang\bin\System.Xml.XDocument.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_20_11_2023\ShopThoiTrang\ShopThoiTrang\bin\System.Xml.XmlDocument.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_20_11_2023\ShopThoiTrang\ShopThoiTrang\bin\System.Xml.XmlSerializer.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_20_11_2023\ShopThoiTrang\ShopThoiTrang\bin\System.Xml.XPath.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_20_11_2023\ShopThoiTrang\ShopThoiTrang\bin\System.Xml.XPath.XDocument.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_20_11_2023\ShopThoiTrang\ShopThoiTrang\bin\EntityFramework.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_20_11_2023\ShopThoiTrang\ShopThoiTrang\bin\EntityFramework.SqlServer.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_20_11_2023\ShopThoiTrang\ShopThoiTrang\bin\Microsoft.Bcl.AsyncInterfaces.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_20_11_2023\ShopThoiTrang\ShopThoiTrang\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_20_11_2023\ShopThoiTrang\ShopThoiTrang\bin\Microsoft.Extensions.Configuration.Abstractions.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_20_11_2023\ShopThoiTrang\ShopThoiTrang\bin\Microsoft.Extensions.Configuration.Binder.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_20_11_2023\ShopThoiTrang\ShopThoiTrang\bin\Microsoft.Extensions.Configuration.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_20_11_2023\ShopThoiTrang\ShopThoiTrang\bin\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_20_11_2023\ShopThoiTrang\ShopThoiTrang\bin\Microsoft.Extensions.Http.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_20_11_2023\ShopThoiTrang\ShopThoiTrang\bin\Microsoft.Extensions.Logging.Abstractions.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_20_11_2023\ShopThoiTrang\ShopThoiTrang\bin\Microsoft.Extensions.Logging.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_20_11_2023\ShopThoiTrang\ShopThoiTrang\bin\Microsoft.Extensions.Options.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_20_11_2023\ShopThoiTrang\ShopThoiTrang\bin\Microsoft.Extensions.Primitives.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_20_11_2023\ShopThoiTrang\ShopThoiTrang\bin\Microsoft.Web.Infrastructure.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_20_11_2023\ShopThoiTrang\ShopThoiTrang\bin\Newtonsoft.Json.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_20_11_2023\ShopThoiTrang\ShopThoiTrang\bin\OpenAI_API.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_20_11_2023\ShopThoiTrang\ShopThoiTrang\bin\System.Buffers.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_20_11_2023\ShopThoiTrang\ShopThoiTrang\bin\System.Memory.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_20_11_2023\ShopThoiTrang\ShopThoiTrang\bin\System.Net.Http.Formatting.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_20_11_2023\ShopThoiTrang\ShopThoiTrang\bin\System.Net.Http.WinHttpHandler.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_20_11_2023\ShopThoiTrang\ShopThoiTrang\bin\System.Numerics.Vectors.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_20_11_2023\ShopThoiTrang\ShopThoiTrang\bin\System.Runtime.CompilerServices.Unsafe.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_20_11_2023\ShopThoiTrang\ShopThoiTrang\bin\System.Threading.Tasks.Extensions.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_20_11_2023\ShopThoiTrang\ShopThoiTrang\bin\System.Web.Helpers.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_20_11_2023\ShopThoiTrang\ShopThoiTrang\bin\System.Web.Http.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_20_11_2023\ShopThoiTrang\ShopThoiTrang\bin\System.Web.Http.WebHost.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_20_11_2023\ShopThoiTrang\ShopThoiTrang\bin\System.Web.Mvc.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_20_11_2023\ShopThoiTrang\ShopThoiTrang\bin\System.Web.Razor.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_20_11_2023\ShopThoiTrang\ShopThoiTrang\bin\System.Web.WebPages.Deployment.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_20_11_2023\ShopThoiTrang\ShopThoiTrang\bin\System.Web.WebPages.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_20_11_2023\ShopThoiTrang\ShopThoiTrang\bin\System.Web.WebPages.Razor.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_20_11_2023\ShopThoiTrang\ShopThoiTrang\bin\EntityFramework.xml
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_20_11_2023\ShopThoiTrang\ShopThoiTrang\bin\EntityFramework.SqlServer.xml
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_20_11_2023\ShopThoiTrang\ShopThoiTrang\bin\Microsoft.Bcl.AsyncInterfaces.xml
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_20_11_2023\ShopThoiTrang\ShopThoiTrang\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_20_11_2023\ShopThoiTrang\ShopThoiTrang\bin\Microsoft.Extensions.Configuration.xml
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_20_11_2023\ShopThoiTrang\ShopThoiTrang\bin\Microsoft.Extensions.Configuration.Abstractions.xml
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_20_11_2023\ShopThoiTrang\ShopThoiTrang\bin\Microsoft.Extensions.Configuration.Binder.xml
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_20_11_2023\ShopThoiTrang\ShopThoiTrang\bin\Microsoft.Extensions.DependencyInjection.Abstractions.xml
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_20_11_2023\ShopThoiTrang\ShopThoiTrang\bin\Microsoft.Extensions.Http.xml
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_20_11_2023\ShopThoiTrang\ShopThoiTrang\bin\Microsoft.Extensions.Logging.xml
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_20_11_2023\ShopThoiTrang\ShopThoiTrang\bin\Microsoft.Extensions.Logging.Abstractions.xml
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_20_11_2023\ShopThoiTrang\ShopThoiTrang\bin\Microsoft.Extensions.Options.xml
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_20_11_2023\ShopThoiTrang\ShopThoiTrang\bin\Microsoft.Extensions.Primitives.xml
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_20_11_2023\ShopThoiTrang\ShopThoiTrang\bin\Newtonsoft.Json.xml
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_20_11_2023\ShopThoiTrang\ShopThoiTrang\bin\OpenAI_API.xml
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_20_11_2023\ShopThoiTrang\ShopThoiTrang\bin\System.Buffers.xml
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_20_11_2023\ShopThoiTrang\ShopThoiTrang\bin\System.Memory.xml
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_20_11_2023\ShopThoiTrang\ShopThoiTrang\bin\System.Net.Http.Formatting.xml
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_20_11_2023\ShopThoiTrang\ShopThoiTrang\bin\System.Net.Http.WinHttpHandler.xml
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_20_11_2023\ShopThoiTrang\ShopThoiTrang\bin\System.Numerics.Vectors.xml
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_20_11_2023\ShopThoiTrang\ShopThoiTrang\bin\System.Runtime.CompilerServices.Unsafe.xml
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_20_11_2023\ShopThoiTrang\ShopThoiTrang\bin\System.Threading.Tasks.Extensions.xml
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_20_11_2023\ShopThoiTrang\ShopThoiTrang\bin\System.Web.Helpers.xml
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_20_11_2023\ShopThoiTrang\ShopThoiTrang\bin\System.Web.Http.xml
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_20_11_2023\ShopThoiTrang\ShopThoiTrang\bin\System.Web.Http.WebHost.xml
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_20_11_2023\ShopThoiTrang\ShopThoiTrang\bin\System.Web.Mvc.xml
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_20_11_2023\ShopThoiTrang\ShopThoiTrang\bin\System.Web.Razor.xml
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_20_11_2023\ShopThoiTrang\ShopThoiTrang\bin\System.Web.WebPages.xml
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_20_11_2023\ShopThoiTrang\ShopThoiTrang\bin\System.Web.WebPages.Deployment.xml
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_20_11_2023\ShopThoiTrang\ShopThoiTrang\bin\System.Web.WebPages.Razor.xml
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_20_11_2023\ShopThoiTrang\ShopThoiTrang\obj\Debug\ShopThoiTrang.csproj.AssemblyReference.cache
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_20_11_2023\ShopThoiTrang\ShopThoiTrang\obj\Debug\ShopThoiTrang.csproj.CoreCompileInputs.cache
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_20_11_2023\ShopThoiTrang\ShopThoiTrang\obj\Debug\ShopThoiTrang.csproj.CopyComplete
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_20_11_2023\ShopThoiTrang\ShopThoiTrang\obj\Debug\ShopThoiTrang.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_20_11_2023\ShopThoiTrang\ShopThoiTrang\obj\Debug\ShopThoiTrang.pdb
+C:\Users\crhav\OneDrive\Desktop\ShopThoiTrang\ShopThoiTrang\obj\Debug\ShopThoiTrang.csproj.AssemblyReference.cache
+C:\Users\crhav\OneDrive\Desktop\ShopThoiTrang\ShopThoiTrang\obj\Debug\ShopThoiTrang.csproj.CoreCompileInputs.cache
+C:\Users\crhav\OneDrive\Desktop\ShopThoiTrang\ShopThoiTrang\obj\Debug\ShopThoiTrang.dll
+C:\Users\crhav\OneDrive\Desktop\ShopThoiTrang\ShopThoiTrang\obj\Debug\ShopThoiTrang.pdb
+C:\Users\crhav\OneDrive\Desktop\ShopThoiTrang\ShopThoiTrang\bin\ShopThoiTrang.dll.config
+C:\Users\crhav\OneDrive\Desktop\ShopThoiTrang\ShopThoiTrang\bin\ShopThoiTrang.dll
+C:\Users\crhav\OneDrive\Desktop\ShopThoiTrang\ShopThoiTrang\bin\ShopThoiTrang.pdb
+C:\Users\crhav\OneDrive\Desktop\ShopThoiTrang\ShopThoiTrang\bin\roslyn\csc.exe
+C:\Users\crhav\OneDrive\Desktop\ShopThoiTrang\ShopThoiTrang\bin\roslyn\csc.exe.config
+C:\Users\crhav\OneDrive\Desktop\ShopThoiTrang\ShopThoiTrang\bin\roslyn\csc.rsp
+C:\Users\crhav\OneDrive\Desktop\ShopThoiTrang\ShopThoiTrang\bin\roslyn\csi.exe
+C:\Users\crhav\OneDrive\Desktop\ShopThoiTrang\ShopThoiTrang\bin\roslyn\csi.exe.config
+C:\Users\crhav\OneDrive\Desktop\ShopThoiTrang\ShopThoiTrang\bin\roslyn\csi.rsp
+C:\Users\crhav\OneDrive\Desktop\ShopThoiTrang\ShopThoiTrang\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\crhav\OneDrive\Desktop\ShopThoiTrang\ShopThoiTrang\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\crhav\OneDrive\Desktop\ShopThoiTrang\ShopThoiTrang\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\crhav\OneDrive\Desktop\ShopThoiTrang\ShopThoiTrang\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\crhav\OneDrive\Desktop\ShopThoiTrang\ShopThoiTrang\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\crhav\OneDrive\Desktop\ShopThoiTrang\ShopThoiTrang\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\crhav\OneDrive\Desktop\ShopThoiTrang\ShopThoiTrang\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\crhav\OneDrive\Desktop\ShopThoiTrang\ShopThoiTrang\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\crhav\OneDrive\Desktop\ShopThoiTrang\ShopThoiTrang\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\crhav\OneDrive\Desktop\ShopThoiTrang\ShopThoiTrang\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\crhav\OneDrive\Desktop\ShopThoiTrang\ShopThoiTrang\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\crhav\OneDrive\Desktop\ShopThoiTrang\ShopThoiTrang\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\crhav\OneDrive\Desktop\ShopThoiTrang\ShopThoiTrang\bin\roslyn\System.AppContext.dll
+C:\Users\crhav\OneDrive\Desktop\ShopThoiTrang\ShopThoiTrang\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\crhav\OneDrive\Desktop\ShopThoiTrang\ShopThoiTrang\bin\roslyn\System.Console.dll
+C:\Users\crhav\OneDrive\Desktop\ShopThoiTrang\ShopThoiTrang\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\crhav\OneDrive\Desktop\ShopThoiTrang\ShopThoiTrang\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\crhav\OneDrive\Desktop\ShopThoiTrang\ShopThoiTrang\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\crhav\OneDrive\Desktop\ShopThoiTrang\ShopThoiTrang\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\crhav\OneDrive\Desktop\ShopThoiTrang\ShopThoiTrang\bin\roslyn\System.IO.Compression.dll
+C:\Users\crhav\OneDrive\Desktop\ShopThoiTrang\ShopThoiTrang\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\crhav\OneDrive\Desktop\ShopThoiTrang\ShopThoiTrang\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\crhav\OneDrive\Desktop\ShopThoiTrang\ShopThoiTrang\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\crhav\OneDrive\Desktop\ShopThoiTrang\ShopThoiTrang\bin\roslyn\System.Net.Http.dll
+C:\Users\crhav\OneDrive\Desktop\ShopThoiTrang\ShopThoiTrang\bin\roslyn\System.Net.Sockets.dll
+C:\Users\crhav\OneDrive\Desktop\ShopThoiTrang\ShopThoiTrang\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\crhav\OneDrive\Desktop\ShopThoiTrang\ShopThoiTrang\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\crhav\OneDrive\Desktop\ShopThoiTrang\ShopThoiTrang\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\crhav\OneDrive\Desktop\ShopThoiTrang\ShopThoiTrang\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\crhav\OneDrive\Desktop\ShopThoiTrang\ShopThoiTrang\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\crhav\OneDrive\Desktop\ShopThoiTrang\ShopThoiTrang\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\crhav\OneDrive\Desktop\ShopThoiTrang\ShopThoiTrang\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\crhav\OneDrive\Desktop\ShopThoiTrang\ShopThoiTrang\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\crhav\OneDrive\Desktop\ShopThoiTrang\ShopThoiTrang\bin\roslyn\System.ValueTuple.dll
+C:\Users\crhav\OneDrive\Desktop\ShopThoiTrang\ShopThoiTrang\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\crhav\OneDrive\Desktop\ShopThoiTrang\ShopThoiTrang\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\crhav\OneDrive\Desktop\ShopThoiTrang\ShopThoiTrang\bin\roslyn\System.Xml.XPath.dll
+C:\Users\crhav\OneDrive\Desktop\ShopThoiTrang\ShopThoiTrang\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\crhav\OneDrive\Desktop\ShopThoiTrang\ShopThoiTrang\bin\roslyn\vbc.exe
+C:\Users\crhav\OneDrive\Desktop\ShopThoiTrang\ShopThoiTrang\bin\roslyn\vbc.exe.config
+C:\Users\crhav\OneDrive\Desktop\ShopThoiTrang\ShopThoiTrang\bin\roslyn\vbc.rsp
+C:\Users\crhav\OneDrive\Desktop\ShopThoiTrang\ShopThoiTrang\bin\roslyn\VBCSCompiler.exe
+C:\Users\crhav\OneDrive\Desktop\ShopThoiTrang\ShopThoiTrang\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\crhav\OneDrive\Desktop\ShopThoiTrang\ShopThoiTrang\bin\Microsoft.Win32.Primitives.dll
+C:\Users\crhav\OneDrive\Desktop\ShopThoiTrang\ShopThoiTrang\bin\netstandard.dll
+C:\Users\crhav\OneDrive\Desktop\ShopThoiTrang\ShopThoiTrang\bin\System.AppContext.dll
+C:\Users\crhav\OneDrive\Desktop\ShopThoiTrang\ShopThoiTrang\bin\System.Collections.Concurrent.dll
+C:\Users\crhav\OneDrive\Desktop\ShopThoiTrang\ShopThoiTrang\bin\System.Collections.dll
+C:\Users\crhav\OneDrive\Desktop\ShopThoiTrang\ShopThoiTrang\bin\System.Collections.NonGeneric.dll
+C:\Users\crhav\OneDrive\Desktop\ShopThoiTrang\ShopThoiTrang\bin\System.Collections.Specialized.dll
+C:\Users\crhav\OneDrive\Desktop\ShopThoiTrang\ShopThoiTrang\bin\System.ComponentModel.dll
+C:\Users\crhav\OneDrive\Desktop\ShopThoiTrang\ShopThoiTrang\bin\System.ComponentModel.EventBasedAsync.dll
+C:\Users\crhav\OneDrive\Desktop\ShopThoiTrang\ShopThoiTrang\bin\System.ComponentModel.Primitives.dll
+C:\Users\crhav\OneDrive\Desktop\ShopThoiTrang\ShopThoiTrang\bin\System.ComponentModel.TypeConverter.dll
+C:\Users\crhav\OneDrive\Desktop\ShopThoiTrang\ShopThoiTrang\bin\System.Console.dll
+C:\Users\crhav\OneDrive\Desktop\ShopThoiTrang\ShopThoiTrang\bin\System.Data.Common.dll
+C:\Users\crhav\OneDrive\Desktop\ShopThoiTrang\ShopThoiTrang\bin\System.Diagnostics.Contracts.dll
+C:\Users\crhav\OneDrive\Desktop\ShopThoiTrang\ShopThoiTrang\bin\System.Diagnostics.Debug.dll
+C:\Users\crhav\OneDrive\Desktop\ShopThoiTrang\ShopThoiTrang\bin\System.Diagnostics.FileVersionInfo.dll
+C:\Users\crhav\OneDrive\Desktop\ShopThoiTrang\ShopThoiTrang\bin\System.Diagnostics.Process.dll
+C:\Users\crhav\OneDrive\Desktop\ShopThoiTrang\ShopThoiTrang\bin\System.Diagnostics.StackTrace.dll
+C:\Users\crhav\OneDrive\Desktop\ShopThoiTrang\ShopThoiTrang\bin\System.Diagnostics.TextWriterTraceListener.dll
+C:\Users\crhav\OneDrive\Desktop\ShopThoiTrang\ShopThoiTrang\bin\System.Diagnostics.Tools.dll
+C:\Users\crhav\OneDrive\Desktop\ShopThoiTrang\ShopThoiTrang\bin\System.Diagnostics.TraceSource.dll
+C:\Users\crhav\OneDrive\Desktop\ShopThoiTrang\ShopThoiTrang\bin\System.Diagnostics.Tracing.dll
+C:\Users\crhav\OneDrive\Desktop\ShopThoiTrang\ShopThoiTrang\bin\System.Drawing.Primitives.dll
+C:\Users\crhav\OneDrive\Desktop\ShopThoiTrang\ShopThoiTrang\bin\System.Dynamic.Runtime.dll
+C:\Users\crhav\OneDrive\Desktop\ShopThoiTrang\ShopThoiTrang\bin\System.Globalization.Calendars.dll
+C:\Users\crhav\OneDrive\Desktop\ShopThoiTrang\ShopThoiTrang\bin\System.Globalization.dll
+C:\Users\crhav\OneDrive\Desktop\ShopThoiTrang\ShopThoiTrang\bin\System.Globalization.Extensions.dll
+C:\Users\crhav\OneDrive\Desktop\ShopThoiTrang\ShopThoiTrang\bin\System.IO.Compression.dll
+C:\Users\crhav\OneDrive\Desktop\ShopThoiTrang\ShopThoiTrang\bin\System.IO.Compression.ZipFile.dll
+C:\Users\crhav\OneDrive\Desktop\ShopThoiTrang\ShopThoiTrang\bin\System.IO.dll
+C:\Users\crhav\OneDrive\Desktop\ShopThoiTrang\ShopThoiTrang\bin\System.IO.FileSystem.dll
+C:\Users\crhav\OneDrive\Desktop\ShopThoiTrang\ShopThoiTrang\bin\System.IO.FileSystem.DriveInfo.dll
+C:\Users\crhav\OneDrive\Desktop\ShopThoiTrang\ShopThoiTrang\bin\System.IO.FileSystem.Primitives.dll
+C:\Users\crhav\OneDrive\Desktop\ShopThoiTrang\ShopThoiTrang\bin\System.IO.FileSystem.Watcher.dll
+C:\Users\crhav\OneDrive\Desktop\ShopThoiTrang\ShopThoiTrang\bin\System.IO.IsolatedStorage.dll
+C:\Users\crhav\OneDrive\Desktop\ShopThoiTrang\ShopThoiTrang\bin\System.IO.MemoryMappedFiles.dll
+C:\Users\crhav\OneDrive\Desktop\ShopThoiTrang\ShopThoiTrang\bin\System.IO.Pipes.dll
+C:\Users\crhav\OneDrive\Desktop\ShopThoiTrang\ShopThoiTrang\bin\System.IO.UnmanagedMemoryStream.dll
+C:\Users\crhav\OneDrive\Desktop\ShopThoiTrang\ShopThoiTrang\bin\System.Linq.dll
+C:\Users\crhav\OneDrive\Desktop\ShopThoiTrang\ShopThoiTrang\bin\System.Linq.Expressions.dll
+C:\Users\crhav\OneDrive\Desktop\ShopThoiTrang\ShopThoiTrang\bin\System.Linq.Parallel.dll
+C:\Users\crhav\OneDrive\Desktop\ShopThoiTrang\ShopThoiTrang\bin\System.Linq.Queryable.dll
+C:\Users\crhav\OneDrive\Desktop\ShopThoiTrang\ShopThoiTrang\bin\System.Net.Http.dll
+C:\Users\crhav\OneDrive\Desktop\ShopThoiTrang\ShopThoiTrang\bin\System.Net.NameResolution.dll
+C:\Users\crhav\OneDrive\Desktop\ShopThoiTrang\ShopThoiTrang\bin\System.Net.NetworkInformation.dll
+C:\Users\crhav\OneDrive\Desktop\ShopThoiTrang\ShopThoiTrang\bin\System.Net.Ping.dll
+C:\Users\crhav\OneDrive\Desktop\ShopThoiTrang\ShopThoiTrang\bin\System.Net.Primitives.dll
+C:\Users\crhav\OneDrive\Desktop\ShopThoiTrang\ShopThoiTrang\bin\System.Net.Requests.dll
+C:\Users\crhav\OneDrive\Desktop\ShopThoiTrang\ShopThoiTrang\bin\System.Net.Security.dll
+C:\Users\crhav\OneDrive\Desktop\ShopThoiTrang\ShopThoiTrang\bin\System.Net.Sockets.dll
+C:\Users\crhav\OneDrive\Desktop\ShopThoiTrang\ShopThoiTrang\bin\System.Net.WebHeaderCollection.dll
+C:\Users\crhav\OneDrive\Desktop\ShopThoiTrang\ShopThoiTrang\bin\System.Net.WebSockets.Client.dll
+C:\Users\crhav\OneDrive\Desktop\ShopThoiTrang\ShopThoiTrang\bin\System.Net.WebSockets.dll
+C:\Users\crhav\OneDrive\Desktop\ShopThoiTrang\ShopThoiTrang\bin\System.ObjectModel.dll
+C:\Users\crhav\OneDrive\Desktop\ShopThoiTrang\ShopThoiTrang\bin\System.Reflection.dll
+C:\Users\crhav\OneDrive\Desktop\ShopThoiTrang\ShopThoiTrang\bin\System.Reflection.Extensions.dll
+C:\Users\crhav\OneDrive\Desktop\ShopThoiTrang\ShopThoiTrang\bin\System.Reflection.Primitives.dll
+C:\Users\crhav\OneDrive\Desktop\ShopThoiTrang\ShopThoiTrang\bin\System.Resources.Reader.dll
+C:\Users\crhav\OneDrive\Desktop\ShopThoiTrang\ShopThoiTrang\bin\System.Resources.ResourceManager.dll
+C:\Users\crhav\OneDrive\Desktop\ShopThoiTrang\ShopThoiTrang\bin\System.Resources.Writer.dll
+C:\Users\crhav\OneDrive\Desktop\ShopThoiTrang\ShopThoiTrang\bin\System.Runtime.CompilerServices.VisualC.dll
+C:\Users\crhav\OneDrive\Desktop\ShopThoiTrang\ShopThoiTrang\bin\System.Runtime.dll
+C:\Users\crhav\OneDrive\Desktop\ShopThoiTrang\ShopThoiTrang\bin\System.Runtime.Extensions.dll
+C:\Users\crhav\OneDrive\Desktop\ShopThoiTrang\ShopThoiTrang\bin\System.Runtime.Handles.dll
+C:\Users\crhav\OneDrive\Desktop\ShopThoiTrang\ShopThoiTrang\bin\System.Runtime.InteropServices.dll
+C:\Users\crhav\OneDrive\Desktop\ShopThoiTrang\ShopThoiTrang\bin\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\crhav\OneDrive\Desktop\ShopThoiTrang\ShopThoiTrang\bin\System.Runtime.Numerics.dll
+C:\Users\crhav\OneDrive\Desktop\ShopThoiTrang\ShopThoiTrang\bin\System.Runtime.Serialization.Formatters.dll
+C:\Users\crhav\OneDrive\Desktop\ShopThoiTrang\ShopThoiTrang\bin\System.Runtime.Serialization.Json.dll
+C:\Users\crhav\OneDrive\Desktop\ShopThoiTrang\ShopThoiTrang\bin\System.Runtime.Serialization.Primitives.dll
+C:\Users\crhav\OneDrive\Desktop\ShopThoiTrang\ShopThoiTrang\bin\System.Runtime.Serialization.Xml.dll
+C:\Users\crhav\OneDrive\Desktop\ShopThoiTrang\ShopThoiTrang\bin\System.Security.Claims.dll
+C:\Users\crhav\OneDrive\Desktop\ShopThoiTrang\ShopThoiTrang\bin\System.Security.Cryptography.Algorithms.dll
+C:\Users\crhav\OneDrive\Desktop\ShopThoiTrang\ShopThoiTrang\bin\System.Security.Cryptography.Csp.dll
+C:\Users\crhav\OneDrive\Desktop\ShopThoiTrang\ShopThoiTrang\bin\System.Security.Cryptography.Encoding.dll
+C:\Users\crhav\OneDrive\Desktop\ShopThoiTrang\ShopThoiTrang\bin\System.Security.Cryptography.Primitives.dll
+C:\Users\crhav\OneDrive\Desktop\ShopThoiTrang\ShopThoiTrang\bin\System.Security.Cryptography.X509Certificates.dll
+C:\Users\crhav\OneDrive\Desktop\ShopThoiTrang\ShopThoiTrang\bin\System.Security.Principal.dll
+C:\Users\crhav\OneDrive\Desktop\ShopThoiTrang\ShopThoiTrang\bin\System.Security.SecureString.dll
+C:\Users\crhav\OneDrive\Desktop\ShopThoiTrang\ShopThoiTrang\bin\System.Text.Encoding.dll
+C:\Users\crhav\OneDrive\Desktop\ShopThoiTrang\ShopThoiTrang\bin\System.Text.Encoding.Extensions.dll
+C:\Users\crhav\OneDrive\Desktop\ShopThoiTrang\ShopThoiTrang\bin\System.Text.RegularExpressions.dll
+C:\Users\crhav\OneDrive\Desktop\ShopThoiTrang\ShopThoiTrang\bin\System.Threading.dll
+C:\Users\crhav\OneDrive\Desktop\ShopThoiTrang\ShopThoiTrang\bin\System.Threading.Overlapped.dll
+C:\Users\crhav\OneDrive\Desktop\ShopThoiTrang\ShopThoiTrang\bin\System.Threading.Tasks.dll
+C:\Users\crhav\OneDrive\Desktop\ShopThoiTrang\ShopThoiTrang\bin\System.Threading.Tasks.Parallel.dll
+C:\Users\crhav\OneDrive\Desktop\ShopThoiTrang\ShopThoiTrang\bin\System.Threading.Thread.dll
+C:\Users\crhav\OneDrive\Desktop\ShopThoiTrang\ShopThoiTrang\bin\System.Threading.ThreadPool.dll
+C:\Users\crhav\OneDrive\Desktop\ShopThoiTrang\ShopThoiTrang\bin\System.Threading.Timer.dll
+C:\Users\crhav\OneDrive\Desktop\ShopThoiTrang\ShopThoiTrang\bin\System.ValueTuple.dll
+C:\Users\crhav\OneDrive\Desktop\ShopThoiTrang\ShopThoiTrang\bin\System.Xml.ReaderWriter.dll
+C:\Users\crhav\OneDrive\Desktop\ShopThoiTrang\ShopThoiTrang\bin\System.Xml.XDocument.dll
+C:\Users\crhav\OneDrive\Desktop\ShopThoiTrang\ShopThoiTrang\bin\System.Xml.XmlDocument.dll
+C:\Users\crhav\OneDrive\Desktop\ShopThoiTrang\ShopThoiTrang\bin\System.Xml.XmlSerializer.dll
+C:\Users\crhav\OneDrive\Desktop\ShopThoiTrang\ShopThoiTrang\bin\System.Xml.XPath.dll
+C:\Users\crhav\OneDrive\Desktop\ShopThoiTrang\ShopThoiTrang\bin\System.Xml.XPath.XDocument.dll
+C:\Users\crhav\OneDrive\Desktop\ShopThoiTrang\ShopThoiTrang\bin\EntityFramework.dll
+C:\Users\crhav\OneDrive\Desktop\ShopThoiTrang\ShopThoiTrang\bin\EntityFramework.SqlServer.dll
+C:\Users\crhav\OneDrive\Desktop\ShopThoiTrang\ShopThoiTrang\bin\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\crhav\OneDrive\Desktop\ShopThoiTrang\ShopThoiTrang\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\crhav\OneDrive\Desktop\ShopThoiTrang\ShopThoiTrang\bin\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\crhav\OneDrive\Desktop\ShopThoiTrang\ShopThoiTrang\bin\Microsoft.Extensions.Configuration.Binder.dll
+C:\Users\crhav\OneDrive\Desktop\ShopThoiTrang\ShopThoiTrang\bin\Microsoft.Extensions.Configuration.dll
+C:\Users\crhav\OneDrive\Desktop\ShopThoiTrang\ShopThoiTrang\bin\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\crhav\OneDrive\Desktop\ShopThoiTrang\ShopThoiTrang\bin\Microsoft.Extensions.Http.dll
+C:\Users\crhav\OneDrive\Desktop\ShopThoiTrang\ShopThoiTrang\bin\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\crhav\OneDrive\Desktop\ShopThoiTrang\ShopThoiTrang\bin\Microsoft.Extensions.Logging.dll
+C:\Users\crhav\OneDrive\Desktop\ShopThoiTrang\ShopThoiTrang\bin\Microsoft.Extensions.Options.dll
+C:\Users\crhav\OneDrive\Desktop\ShopThoiTrang\ShopThoiTrang\bin\Microsoft.Extensions.Primitives.dll
+C:\Users\crhav\OneDrive\Desktop\ShopThoiTrang\ShopThoiTrang\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\crhav\OneDrive\Desktop\ShopThoiTrang\ShopThoiTrang\bin\Newtonsoft.Json.dll
+C:\Users\crhav\OneDrive\Desktop\ShopThoiTrang\ShopThoiTrang\bin\OpenAI_API.dll
+C:\Users\crhav\OneDrive\Desktop\ShopThoiTrang\ShopThoiTrang\bin\System.Buffers.dll
+C:\Users\crhav\OneDrive\Desktop\ShopThoiTrang\ShopThoiTrang\bin\System.Memory.dll
+C:\Users\crhav\OneDrive\Desktop\ShopThoiTrang\ShopThoiTrang\bin\System.Net.Http.Formatting.dll
+C:\Users\crhav\OneDrive\Desktop\ShopThoiTrang\ShopThoiTrang\bin\System.Net.Http.WinHttpHandler.dll
+C:\Users\crhav\OneDrive\Desktop\ShopThoiTrang\ShopThoiTrang\bin\System.Numerics.Vectors.dll
+C:\Users\crhav\OneDrive\Desktop\ShopThoiTrang\ShopThoiTrang\bin\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\crhav\OneDrive\Desktop\ShopThoiTrang\ShopThoiTrang\bin\System.Threading.Tasks.Extensions.dll
+C:\Users\crhav\OneDrive\Desktop\ShopThoiTrang\ShopThoiTrang\bin\System.Web.Helpers.dll
+C:\Users\crhav\OneDrive\Desktop\ShopThoiTrang\ShopThoiTrang\bin\System.Web.Http.dll
+C:\Users\crhav\OneDrive\Desktop\ShopThoiTrang\ShopThoiTrang\bin\System.Web.Http.WebHost.dll
+C:\Users\crhav\OneDrive\Desktop\ShopThoiTrang\ShopThoiTrang\bin\System.Web.Mvc.dll
+C:\Users\crhav\OneDrive\Desktop\ShopThoiTrang\ShopThoiTrang\bin\System.Web.Razor.dll
+C:\Users\crhav\OneDrive\Desktop\ShopThoiTrang\ShopThoiTrang\bin\System.Web.WebPages.Deployment.dll
+C:\Users\crhav\OneDrive\Desktop\ShopThoiTrang\ShopThoiTrang\bin\System.Web.WebPages.dll
+C:\Users\crhav\OneDrive\Desktop\ShopThoiTrang\ShopThoiTrang\bin\System.Web.WebPages.Razor.dll
+C:\Users\crhav\OneDrive\Desktop\ShopThoiTrang\ShopThoiTrang\bin\EntityFramework.xml
+C:\Users\crhav\OneDrive\Desktop\ShopThoiTrang\ShopThoiTrang\bin\EntityFramework.SqlServer.xml
+C:\Users\crhav\OneDrive\Desktop\ShopThoiTrang\ShopThoiTrang\bin\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\crhav\OneDrive\Desktop\ShopThoiTrang\ShopThoiTrang\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\crhav\OneDrive\Desktop\ShopThoiTrang\ShopThoiTrang\bin\Microsoft.Extensions.Configuration.xml
+C:\Users\crhav\OneDrive\Desktop\ShopThoiTrang\ShopThoiTrang\bin\Microsoft.Extensions.Configuration.Abstractions.xml
+C:\Users\crhav\OneDrive\Desktop\ShopThoiTrang\ShopThoiTrang\bin\Microsoft.Extensions.Configuration.Binder.xml
+C:\Users\crhav\OneDrive\Desktop\ShopThoiTrang\ShopThoiTrang\bin\Microsoft.Extensions.DependencyInjection.Abstractions.xml
+C:\Users\crhav\OneDrive\Desktop\ShopThoiTrang\ShopThoiTrang\bin\Microsoft.Extensions.Http.xml
+C:\Users\crhav\OneDrive\Desktop\ShopThoiTrang\ShopThoiTrang\bin\Microsoft.Extensions.Logging.xml
+C:\Users\crhav\OneDrive\Desktop\ShopThoiTrang\ShopThoiTrang\bin\Microsoft.Extensions.Logging.Abstractions.xml
+C:\Users\crhav\OneDrive\Desktop\ShopThoiTrang\ShopThoiTrang\bin\Microsoft.Extensions.Options.xml
+C:\Users\crhav\OneDrive\Desktop\ShopThoiTrang\ShopThoiTrang\bin\Microsoft.Extensions.Primitives.xml
+C:\Users\crhav\OneDrive\Desktop\ShopThoiTrang\ShopThoiTrang\bin\Newtonsoft.Json.xml
+C:\Users\crhav\OneDrive\Desktop\ShopThoiTrang\ShopThoiTrang\bin\OpenAI_API.xml
+C:\Users\crhav\OneDrive\Desktop\ShopThoiTrang\ShopThoiTrang\bin\System.Buffers.xml
+C:\Users\crhav\OneDrive\Desktop\ShopThoiTrang\ShopThoiTrang\bin\System.Memory.xml
+C:\Users\crhav\OneDrive\Desktop\ShopThoiTrang\ShopThoiTrang\bin\System.Net.Http.Formatting.xml
+C:\Users\crhav\OneDrive\Desktop\ShopThoiTrang\ShopThoiTrang\bin\System.Net.Http.WinHttpHandler.xml
+C:\Users\crhav\OneDrive\Desktop\ShopThoiTrang\ShopThoiTrang\bin\System.Numerics.Vectors.xml
+C:\Users\crhav\OneDrive\Desktop\ShopThoiTrang\ShopThoiTrang\bin\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\crhav\OneDrive\Desktop\ShopThoiTrang\ShopThoiTrang\bin\System.Threading.Tasks.Extensions.xml
+C:\Users\crhav\OneDrive\Desktop\ShopThoiTrang\ShopThoiTrang\bin\System.Web.Helpers.xml
+C:\Users\crhav\OneDrive\Desktop\ShopThoiTrang\ShopThoiTrang\bin\System.Web.Http.xml
+C:\Users\crhav\OneDrive\Desktop\ShopThoiTrang\ShopThoiTrang\bin\System.Web.Http.WebHost.xml
+C:\Users\crhav\OneDrive\Desktop\ShopThoiTrang\ShopThoiTrang\bin\System.Web.Mvc.xml
+C:\Users\crhav\OneDrive\Desktop\ShopThoiTrang\ShopThoiTrang\bin\System.Web.Razor.xml
+C:\Users\crhav\OneDrive\Desktop\ShopThoiTrang\ShopThoiTrang\bin\System.Web.WebPages.xml
+C:\Users\crhav\OneDrive\Desktop\ShopThoiTrang\ShopThoiTrang\bin\System.Web.WebPages.Deployment.xml
+C:\Users\crhav\OneDrive\Desktop\ShopThoiTrang\ShopThoiTrang\bin\System.Web.WebPages.Razor.xml
+C:\Users\crhav\OneDrive\Desktop\ShopThoiTrang\ShopThoiTrang\obj\Debug\ShopThoiTrang.csproj.CopyComplete
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_02_12_2023\ShopThoiTrang\ShopThoiTrang\bin\ShopThoiTrang.dll.config
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_02_12_2023\ShopThoiTrang\ShopThoiTrang\bin\ShopThoiTrang.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_02_12_2023\ShopThoiTrang\ShopThoiTrang\bin\ShopThoiTrang.pdb
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_02_12_2023\ShopThoiTrang\ShopThoiTrang\bin\roslyn\csc.exe
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_02_12_2023\ShopThoiTrang\ShopThoiTrang\bin\roslyn\csc.exe.config
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_02_12_2023\ShopThoiTrang\ShopThoiTrang\bin\roslyn\csc.rsp
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_02_12_2023\ShopThoiTrang\ShopThoiTrang\bin\roslyn\csi.exe
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_02_12_2023\ShopThoiTrang\ShopThoiTrang\bin\roslyn\csi.exe.config
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_02_12_2023\ShopThoiTrang\ShopThoiTrang\bin\roslyn\csi.rsp
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_02_12_2023\ShopThoiTrang\ShopThoiTrang\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_02_12_2023\ShopThoiTrang\ShopThoiTrang\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_02_12_2023\ShopThoiTrang\ShopThoiTrang\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_02_12_2023\ShopThoiTrang\ShopThoiTrang\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_02_12_2023\ShopThoiTrang\ShopThoiTrang\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_02_12_2023\ShopThoiTrang\ShopThoiTrang\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_02_12_2023\ShopThoiTrang\ShopThoiTrang\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_02_12_2023\ShopThoiTrang\ShopThoiTrang\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_02_12_2023\ShopThoiTrang\ShopThoiTrang\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_02_12_2023\ShopThoiTrang\ShopThoiTrang\bin\roslyn\Microsoft.Managed.Core.targets
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_02_12_2023\ShopThoiTrang\ShopThoiTrang\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_02_12_2023\ShopThoiTrang\ShopThoiTrang\bin\roslyn\Microsoft.Win32.Primitives.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_02_12_2023\ShopThoiTrang\ShopThoiTrang\bin\roslyn\System.AppContext.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_02_12_2023\ShopThoiTrang\ShopThoiTrang\bin\roslyn\System.Collections.Immutable.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_02_12_2023\ShopThoiTrang\ShopThoiTrang\bin\roslyn\System.Console.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_02_12_2023\ShopThoiTrang\ShopThoiTrang\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_02_12_2023\ShopThoiTrang\ShopThoiTrang\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_02_12_2023\ShopThoiTrang\ShopThoiTrang\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_02_12_2023\ShopThoiTrang\ShopThoiTrang\bin\roslyn\System.Globalization.Calendars.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_02_12_2023\ShopThoiTrang\ShopThoiTrang\bin\roslyn\System.IO.Compression.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_02_12_2023\ShopThoiTrang\ShopThoiTrang\bin\roslyn\System.IO.Compression.ZipFile.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_02_12_2023\ShopThoiTrang\ShopThoiTrang\bin\roslyn\System.IO.FileSystem.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_02_12_2023\ShopThoiTrang\ShopThoiTrang\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_02_12_2023\ShopThoiTrang\ShopThoiTrang\bin\roslyn\System.Net.Http.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_02_12_2023\ShopThoiTrang\ShopThoiTrang\bin\roslyn\System.Net.Sockets.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_02_12_2023\ShopThoiTrang\ShopThoiTrang\bin\roslyn\System.Reflection.Metadata.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_02_12_2023\ShopThoiTrang\ShopThoiTrang\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_02_12_2023\ShopThoiTrang\ShopThoiTrang\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_02_12_2023\ShopThoiTrang\ShopThoiTrang\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_02_12_2023\ShopThoiTrang\ShopThoiTrang\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_02_12_2023\ShopThoiTrang\ShopThoiTrang\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_02_12_2023\ShopThoiTrang\ShopThoiTrang\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_02_12_2023\ShopThoiTrang\ShopThoiTrang\bin\roslyn\System.Threading.Tasks.Extensions.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_02_12_2023\ShopThoiTrang\ShopThoiTrang\bin\roslyn\System.ValueTuple.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_02_12_2023\ShopThoiTrang\ShopThoiTrang\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_02_12_2023\ShopThoiTrang\ShopThoiTrang\bin\roslyn\System.Xml.XmlDocument.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_02_12_2023\ShopThoiTrang\ShopThoiTrang\bin\roslyn\System.Xml.XPath.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_02_12_2023\ShopThoiTrang\ShopThoiTrang\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_02_12_2023\ShopThoiTrang\ShopThoiTrang\bin\roslyn\vbc.exe
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_02_12_2023\ShopThoiTrang\ShopThoiTrang\bin\roslyn\vbc.exe.config
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_02_12_2023\ShopThoiTrang\ShopThoiTrang\bin\roslyn\vbc.rsp
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_02_12_2023\ShopThoiTrang\ShopThoiTrang\bin\roslyn\VBCSCompiler.exe
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_02_12_2023\ShopThoiTrang\ShopThoiTrang\bin\roslyn\VBCSCompiler.exe.config
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_02_12_2023\ShopThoiTrang\ShopThoiTrang\bin\Microsoft.Win32.Primitives.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_02_12_2023\ShopThoiTrang\ShopThoiTrang\bin\netstandard.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_02_12_2023\ShopThoiTrang\ShopThoiTrang\bin\System.AppContext.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_02_12_2023\ShopThoiTrang\ShopThoiTrang\bin\System.Collections.Concurrent.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_02_12_2023\ShopThoiTrang\ShopThoiTrang\bin\System.Collections.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_02_12_2023\ShopThoiTrang\ShopThoiTrang\bin\System.Collections.NonGeneric.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_02_12_2023\ShopThoiTrang\ShopThoiTrang\bin\System.Collections.Specialized.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_02_12_2023\ShopThoiTrang\ShopThoiTrang\bin\System.ComponentModel.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_02_12_2023\ShopThoiTrang\ShopThoiTrang\bin\System.ComponentModel.EventBasedAsync.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_02_12_2023\ShopThoiTrang\ShopThoiTrang\bin\System.ComponentModel.Primitives.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_02_12_2023\ShopThoiTrang\ShopThoiTrang\bin\System.ComponentModel.TypeConverter.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_02_12_2023\ShopThoiTrang\ShopThoiTrang\bin\System.Console.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_02_12_2023\ShopThoiTrang\ShopThoiTrang\bin\System.Data.Common.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_02_12_2023\ShopThoiTrang\ShopThoiTrang\bin\System.Diagnostics.Contracts.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_02_12_2023\ShopThoiTrang\ShopThoiTrang\bin\System.Diagnostics.Debug.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_02_12_2023\ShopThoiTrang\ShopThoiTrang\bin\System.Diagnostics.FileVersionInfo.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_02_12_2023\ShopThoiTrang\ShopThoiTrang\bin\System.Diagnostics.Process.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_02_12_2023\ShopThoiTrang\ShopThoiTrang\bin\System.Diagnostics.StackTrace.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_02_12_2023\ShopThoiTrang\ShopThoiTrang\bin\System.Diagnostics.TextWriterTraceListener.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_02_12_2023\ShopThoiTrang\ShopThoiTrang\bin\System.Diagnostics.Tools.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_02_12_2023\ShopThoiTrang\ShopThoiTrang\bin\System.Diagnostics.TraceSource.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_02_12_2023\ShopThoiTrang\ShopThoiTrang\bin\System.Diagnostics.Tracing.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_02_12_2023\ShopThoiTrang\ShopThoiTrang\bin\System.Drawing.Primitives.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_02_12_2023\ShopThoiTrang\ShopThoiTrang\bin\System.Dynamic.Runtime.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_02_12_2023\ShopThoiTrang\ShopThoiTrang\bin\System.Globalization.Calendars.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_02_12_2023\ShopThoiTrang\ShopThoiTrang\bin\System.Globalization.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_02_12_2023\ShopThoiTrang\ShopThoiTrang\bin\System.Globalization.Extensions.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_02_12_2023\ShopThoiTrang\ShopThoiTrang\bin\System.IO.Compression.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_02_12_2023\ShopThoiTrang\ShopThoiTrang\bin\System.IO.Compression.ZipFile.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_02_12_2023\ShopThoiTrang\ShopThoiTrang\bin\System.IO.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_02_12_2023\ShopThoiTrang\ShopThoiTrang\bin\System.IO.FileSystem.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_02_12_2023\ShopThoiTrang\ShopThoiTrang\bin\System.IO.FileSystem.DriveInfo.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_02_12_2023\ShopThoiTrang\ShopThoiTrang\bin\System.IO.FileSystem.Primitives.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_02_12_2023\ShopThoiTrang\ShopThoiTrang\bin\System.IO.FileSystem.Watcher.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_02_12_2023\ShopThoiTrang\ShopThoiTrang\bin\System.IO.IsolatedStorage.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_02_12_2023\ShopThoiTrang\ShopThoiTrang\bin\System.IO.MemoryMappedFiles.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_02_12_2023\ShopThoiTrang\ShopThoiTrang\bin\System.IO.Pipes.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_02_12_2023\ShopThoiTrang\ShopThoiTrang\bin\System.IO.UnmanagedMemoryStream.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_02_12_2023\ShopThoiTrang\ShopThoiTrang\bin\System.Linq.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_02_12_2023\ShopThoiTrang\ShopThoiTrang\bin\System.Linq.Expressions.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_02_12_2023\ShopThoiTrang\ShopThoiTrang\bin\System.Linq.Parallel.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_02_12_2023\ShopThoiTrang\ShopThoiTrang\bin\System.Linq.Queryable.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_02_12_2023\ShopThoiTrang\ShopThoiTrang\bin\System.Net.Http.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_02_12_2023\ShopThoiTrang\ShopThoiTrang\bin\System.Net.NameResolution.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_02_12_2023\ShopThoiTrang\ShopThoiTrang\bin\System.Net.NetworkInformation.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_02_12_2023\ShopThoiTrang\ShopThoiTrang\bin\System.Net.Ping.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_02_12_2023\ShopThoiTrang\ShopThoiTrang\bin\System.Net.Primitives.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_02_12_2023\ShopThoiTrang\ShopThoiTrang\bin\System.Net.Requests.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_02_12_2023\ShopThoiTrang\ShopThoiTrang\bin\System.Net.Security.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_02_12_2023\ShopThoiTrang\ShopThoiTrang\bin\System.Net.Sockets.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_02_12_2023\ShopThoiTrang\ShopThoiTrang\bin\System.Net.WebHeaderCollection.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_02_12_2023\ShopThoiTrang\ShopThoiTrang\bin\System.Net.WebSockets.Client.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_02_12_2023\ShopThoiTrang\ShopThoiTrang\bin\System.Net.WebSockets.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_02_12_2023\ShopThoiTrang\ShopThoiTrang\bin\System.ObjectModel.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_02_12_2023\ShopThoiTrang\ShopThoiTrang\bin\System.Reflection.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_02_12_2023\ShopThoiTrang\ShopThoiTrang\bin\System.Reflection.Extensions.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_02_12_2023\ShopThoiTrang\ShopThoiTrang\bin\System.Reflection.Primitives.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_02_12_2023\ShopThoiTrang\ShopThoiTrang\bin\System.Resources.Reader.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_02_12_2023\ShopThoiTrang\ShopThoiTrang\bin\System.Resources.ResourceManager.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_02_12_2023\ShopThoiTrang\ShopThoiTrang\bin\System.Resources.Writer.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_02_12_2023\ShopThoiTrang\ShopThoiTrang\bin\System.Runtime.CompilerServices.VisualC.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_02_12_2023\ShopThoiTrang\ShopThoiTrang\bin\System.Runtime.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_02_12_2023\ShopThoiTrang\ShopThoiTrang\bin\System.Runtime.Extensions.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_02_12_2023\ShopThoiTrang\ShopThoiTrang\bin\System.Runtime.Handles.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_02_12_2023\ShopThoiTrang\ShopThoiTrang\bin\System.Runtime.InteropServices.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_02_12_2023\ShopThoiTrang\ShopThoiTrang\bin\System.Runtime.InteropServices.RuntimeInformation.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_02_12_2023\ShopThoiTrang\ShopThoiTrang\bin\System.Runtime.Numerics.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_02_12_2023\ShopThoiTrang\ShopThoiTrang\bin\System.Runtime.Serialization.Formatters.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_02_12_2023\ShopThoiTrang\ShopThoiTrang\bin\System.Runtime.Serialization.Json.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_02_12_2023\ShopThoiTrang\ShopThoiTrang\bin\System.Runtime.Serialization.Primitives.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_02_12_2023\ShopThoiTrang\ShopThoiTrang\bin\System.Runtime.Serialization.Xml.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_02_12_2023\ShopThoiTrang\ShopThoiTrang\bin\System.Security.Claims.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_02_12_2023\ShopThoiTrang\ShopThoiTrang\bin\System.Security.Cryptography.Algorithms.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_02_12_2023\ShopThoiTrang\ShopThoiTrang\bin\System.Security.Cryptography.Csp.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_02_12_2023\ShopThoiTrang\ShopThoiTrang\bin\System.Security.Cryptography.Encoding.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_02_12_2023\ShopThoiTrang\ShopThoiTrang\bin\System.Security.Cryptography.Primitives.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_02_12_2023\ShopThoiTrang\ShopThoiTrang\bin\System.Security.Cryptography.X509Certificates.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_02_12_2023\ShopThoiTrang\ShopThoiTrang\bin\System.Security.Principal.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_02_12_2023\ShopThoiTrang\ShopThoiTrang\bin\System.Security.SecureString.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_02_12_2023\ShopThoiTrang\ShopThoiTrang\bin\System.Text.Encoding.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_02_12_2023\ShopThoiTrang\ShopThoiTrang\bin\System.Text.Encoding.Extensions.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_02_12_2023\ShopThoiTrang\ShopThoiTrang\bin\System.Text.RegularExpressions.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_02_12_2023\ShopThoiTrang\ShopThoiTrang\bin\System.Threading.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_02_12_2023\ShopThoiTrang\ShopThoiTrang\bin\System.Threading.Overlapped.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_02_12_2023\ShopThoiTrang\ShopThoiTrang\bin\System.Threading.Tasks.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_02_12_2023\ShopThoiTrang\ShopThoiTrang\bin\System.Threading.Tasks.Parallel.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_02_12_2023\ShopThoiTrang\ShopThoiTrang\bin\System.Threading.Thread.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_02_12_2023\ShopThoiTrang\ShopThoiTrang\bin\System.Threading.ThreadPool.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_02_12_2023\ShopThoiTrang\ShopThoiTrang\bin\System.Threading.Timer.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_02_12_2023\ShopThoiTrang\ShopThoiTrang\bin\System.ValueTuple.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_02_12_2023\ShopThoiTrang\ShopThoiTrang\bin\System.Xml.ReaderWriter.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_02_12_2023\ShopThoiTrang\ShopThoiTrang\bin\System.Xml.XDocument.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_02_12_2023\ShopThoiTrang\ShopThoiTrang\bin\System.Xml.XmlDocument.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_02_12_2023\ShopThoiTrang\ShopThoiTrang\bin\System.Xml.XmlSerializer.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_02_12_2023\ShopThoiTrang\ShopThoiTrang\bin\System.Xml.XPath.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_02_12_2023\ShopThoiTrang\ShopThoiTrang\bin\System.Xml.XPath.XDocument.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_02_12_2023\ShopThoiTrang\ShopThoiTrang\bin\EntityFramework.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_02_12_2023\ShopThoiTrang\ShopThoiTrang\bin\EntityFramework.SqlServer.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_02_12_2023\ShopThoiTrang\ShopThoiTrang\bin\Microsoft.Bcl.AsyncInterfaces.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_02_12_2023\ShopThoiTrang\ShopThoiTrang\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_02_12_2023\ShopThoiTrang\ShopThoiTrang\bin\Microsoft.Extensions.Configuration.Abstractions.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_02_12_2023\ShopThoiTrang\ShopThoiTrang\bin\Microsoft.Extensions.Configuration.Binder.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_02_12_2023\ShopThoiTrang\ShopThoiTrang\bin\Microsoft.Extensions.Configuration.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_02_12_2023\ShopThoiTrang\ShopThoiTrang\bin\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_02_12_2023\ShopThoiTrang\ShopThoiTrang\bin\Microsoft.Extensions.Http.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_02_12_2023\ShopThoiTrang\ShopThoiTrang\bin\Microsoft.Extensions.Logging.Abstractions.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_02_12_2023\ShopThoiTrang\ShopThoiTrang\bin\Microsoft.Extensions.Logging.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_02_12_2023\ShopThoiTrang\ShopThoiTrang\bin\Microsoft.Extensions.Options.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_02_12_2023\ShopThoiTrang\ShopThoiTrang\bin\Microsoft.Extensions.Primitives.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_02_12_2023\ShopThoiTrang\ShopThoiTrang\bin\Microsoft.Web.Infrastructure.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_02_12_2023\ShopThoiTrang\ShopThoiTrang\bin\Newtonsoft.Json.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_02_12_2023\ShopThoiTrang\ShopThoiTrang\bin\OpenAI_API.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_02_12_2023\ShopThoiTrang\ShopThoiTrang\bin\System.Buffers.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_02_12_2023\ShopThoiTrang\ShopThoiTrang\bin\System.Memory.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_02_12_2023\ShopThoiTrang\ShopThoiTrang\bin\System.Net.Http.Formatting.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_02_12_2023\ShopThoiTrang\ShopThoiTrang\bin\System.Net.Http.WinHttpHandler.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_02_12_2023\ShopThoiTrang\ShopThoiTrang\bin\System.Numerics.Vectors.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_02_12_2023\ShopThoiTrang\ShopThoiTrang\bin\System.Runtime.CompilerServices.Unsafe.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_02_12_2023\ShopThoiTrang\ShopThoiTrang\bin\System.Threading.Tasks.Extensions.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_02_12_2023\ShopThoiTrang\ShopThoiTrang\bin\System.Web.Helpers.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_02_12_2023\ShopThoiTrang\ShopThoiTrang\bin\System.Web.Http.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_02_12_2023\ShopThoiTrang\ShopThoiTrang\bin\System.Web.Http.WebHost.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_02_12_2023\ShopThoiTrang\ShopThoiTrang\bin\System.Web.Mvc.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_02_12_2023\ShopThoiTrang\ShopThoiTrang\bin\System.Web.Razor.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_02_12_2023\ShopThoiTrang\ShopThoiTrang\bin\System.Web.WebPages.Deployment.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_02_12_2023\ShopThoiTrang\ShopThoiTrang\bin\System.Web.WebPages.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_02_12_2023\ShopThoiTrang\ShopThoiTrang\bin\System.Web.WebPages.Razor.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_02_12_2023\ShopThoiTrang\ShopThoiTrang\bin\EntityFramework.xml
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_02_12_2023\ShopThoiTrang\ShopThoiTrang\bin\EntityFramework.SqlServer.xml
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_02_12_2023\ShopThoiTrang\ShopThoiTrang\bin\Microsoft.Bcl.AsyncInterfaces.xml
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_02_12_2023\ShopThoiTrang\ShopThoiTrang\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_02_12_2023\ShopThoiTrang\ShopThoiTrang\bin\Microsoft.Extensions.Configuration.xml
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_02_12_2023\ShopThoiTrang\ShopThoiTrang\bin\Microsoft.Extensions.Configuration.Abstractions.xml
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_02_12_2023\ShopThoiTrang\ShopThoiTrang\bin\Microsoft.Extensions.Configuration.Binder.xml
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_02_12_2023\ShopThoiTrang\ShopThoiTrang\bin\Microsoft.Extensions.DependencyInjection.Abstractions.xml
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_02_12_2023\ShopThoiTrang\ShopThoiTrang\bin\Microsoft.Extensions.Http.xml
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_02_12_2023\ShopThoiTrang\ShopThoiTrang\bin\Microsoft.Extensions.Logging.xml
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_02_12_2023\ShopThoiTrang\ShopThoiTrang\bin\Microsoft.Extensions.Logging.Abstractions.xml
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_02_12_2023\ShopThoiTrang\ShopThoiTrang\bin\Microsoft.Extensions.Options.xml
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_02_12_2023\ShopThoiTrang\ShopThoiTrang\bin\Microsoft.Extensions.Primitives.xml
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_02_12_2023\ShopThoiTrang\ShopThoiTrang\bin\Newtonsoft.Json.xml
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_02_12_2023\ShopThoiTrang\ShopThoiTrang\bin\OpenAI_API.xml
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_02_12_2023\ShopThoiTrang\ShopThoiTrang\bin\System.Buffers.xml
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_02_12_2023\ShopThoiTrang\ShopThoiTrang\bin\System.Memory.xml
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_02_12_2023\ShopThoiTrang\ShopThoiTrang\bin\System.Net.Http.Formatting.xml
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_02_12_2023\ShopThoiTrang\ShopThoiTrang\bin\System.Net.Http.WinHttpHandler.xml
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_02_12_2023\ShopThoiTrang\ShopThoiTrang\bin\System.Numerics.Vectors.xml
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_02_12_2023\ShopThoiTrang\ShopThoiTrang\bin\System.Runtime.CompilerServices.Unsafe.xml
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_02_12_2023\ShopThoiTrang\ShopThoiTrang\bin\System.Threading.Tasks.Extensions.xml
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_02_12_2023\ShopThoiTrang\ShopThoiTrang\bin\System.Web.Helpers.xml
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_02_12_2023\ShopThoiTrang\ShopThoiTrang\bin\System.Web.Http.xml
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_02_12_2023\ShopThoiTrang\ShopThoiTrang\bin\System.Web.Http.WebHost.xml
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_02_12_2023\ShopThoiTrang\ShopThoiTrang\bin\System.Web.Mvc.xml
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_02_12_2023\ShopThoiTrang\ShopThoiTrang\bin\System.Web.Razor.xml
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_02_12_2023\ShopThoiTrang\ShopThoiTrang\bin\System.Web.WebPages.xml
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_02_12_2023\ShopThoiTrang\ShopThoiTrang\bin\System.Web.WebPages.Deployment.xml
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_02_12_2023\ShopThoiTrang\ShopThoiTrang\bin\System.Web.WebPages.Razor.xml
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_02_12_2023\ShopThoiTrang\ShopThoiTrang\obj\Debug\ShopThoiTrang.csproj.AssemblyReference.cache
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_02_12_2023\ShopThoiTrang\ShopThoiTrang\obj\Debug\ShopThoiTrang.csproj.CoreCompileInputs.cache
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_02_12_2023\ShopThoiTrang\ShopThoiTrang\obj\Debug\ShopThoiTrang.csproj.CopyComplete
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_02_12_2023\ShopThoiTrang\ShopThoiTrang\obj\Debug\ShopThoiTrang.dll
+D:\HỌC PHẦN (HK5)\LapTrinhWeb_DoAn\Backup_File\FE_02_12_2023\ShopThoiTrang\ShopThoiTrang\obj\Debug\ShopThoiTrang.pdb

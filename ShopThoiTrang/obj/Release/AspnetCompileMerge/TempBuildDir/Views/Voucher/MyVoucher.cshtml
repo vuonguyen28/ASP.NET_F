@@ -1,0 +1,145 @@
+﻿@model IEnumerable<ShopThoiTrang.Models.VOUCHER_KHACHHANG>
+
+@{
+    ViewBag.Title = "MyVoucher";
+    Layout = "~/Views/Share/LayoutPage_Customer.cshtml";
+}
+
+<style>
+
+    .ctn_MyVoucher {
+        margin-top: 100px;
+        width: 100%;
+        background: #fff;
+        display: flex;
+        align-items: center;
+    }
+
+    .Voucher_card {
+        width: 307px;
+        background: linear-gradient(135deg, #f503a8, #d57bbc);
+        color: #fff;
+        text-align: center;
+        padding: 40px 80px;
+        border-radius: 15px;
+        box-shadow: 0 10px 10px rgba(0, 0, 0, 0.15);
+        position: relative;
+        margin-right: 5%;
+        margin-bottom: 5%;
+    }
+
+    .logo_shop {
+        width: 80px;
+        border-radius: 8px;
+        margin-bottom: 10px;
+    }
+
+    .Voucher_card h3 {
+        font-size: 30px;
+        font-weight: bold;
+        line-height: 40px;
+    }
+
+    .Voucher_card p {
+        width: 100%
+        font-size: 15px;
+        text-align: left;
+        padding-left: 0;
+    }
+
+    .Voucher_Row {
+        display: flex;
+        align-items: center;
+        margin: 25px auto;
+        width: fit-content;
+    }
+
+    .VoucherCode {
+        border: 1px dashed #fff;
+        padding: 10px 20px;
+        border-right: 0;
+        font-size: 14px;
+        font-weight: bold;
+    }
+
+    .btn_CopyVoucher {
+        border: 1px solid #fff;
+        background: #fff;
+        padding: 10px 20px;
+        color: #f503a8;
+        cursor: pointer;
+        font-size: 14px;
+        font-weight: bold;
+    }
+
+
+    .circle1, .circle2 {
+        background-color: #fff;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    .circle1 {
+        left: -25px;
+    }
+
+    .circle2 {
+        right: -25px;
+    }
+</style>
+<br />
+<h2>MyVoucher</h2>
+
+
+<div class="container ctn_MyVoucher">
+    <div class="row">
+        @foreach (var item in Model)
+        {
+            <div class="col col-xl-4 col-md-4 col-sm-12 col-xs-12">
+                <div class="Voucher_card">
+                    <img src="~/Image/Logo_TR.png" class="logo_shop" />
+                    <hr />
+                    <h3> @item.VOUCHER.PhanTramGiam %</h3>
+
+                    <div class="Voucher_Row">
+                        <span id="cpCode_@item.VOUCHER.MA_VOUCHER" class="VoucherCode"> @Html.DisplayFor(modelItem => item.MA_VOUCHER)</span>
+                        <span id="cpBtn_@item.VOUCHER.MA_VOUCHER" class="btn_CopyVoucher">Copy</span>
+                    </div>
+
+                    <p><strong>Giảm tối đa:</strong> @item.VOUCHER.GiamToiDa</p>
+                    <p><strong>Đơn tối thiểu:</strong> @item.VOUCHER.DonToiThieu</p>
+                    <p><strong>Từ: </strong> @item.VOUCHER.Ngaybatdau</p>
+                    <p><strong>Đến: </strong> @item.VOUCHER.Ngayketthuc</p>
+
+                    <div class="circle1"></div>
+                    <div class="circle2"></div>
+
+                </div>
+            </div>
+        }
+    </div>
+</div>
+
+
+
+@foreach (var item in Model)
+{
+    <script>
+        (function() {
+            var cpBtn = document.getElementById("cpBtn_@item.VOUCHER.MA_VOUCHER");
+            var cpCode = document.getElementById("cpCode_@item.VOUCHER.MA_VOUCHER");
+
+            cpBtn.onclick = function () {
+                navigator.clipboard.writeText(cpCode.innerText);
+                cpBtn.innerText = "COPIED";
+                setTimeout(function () {
+                    cpBtn.innerText = "Copy";
+                }, 1000);
+            };
+        })();
+    </script>
+}

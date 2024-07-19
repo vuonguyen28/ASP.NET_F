@@ -1,0 +1,77 @@
+﻿@model ShopThoiTrang.Models.SanPham
+
+@{
+    ViewBag.Title = "CreateProduct";
+    Layout = "~/Areas/Admin/Views/Shared/LayoutPageAdmin.cshtml";
+}
+
+<h2 class="title_page"><u>Thêm Sản Phẩm Mới</u></h2>
+
+@using (Html.BeginForm("CreateProduct", "Product", FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+    @Html.AntiForgeryToken()
+
+<div class="form-horizontal">
+    <h4>Product Information</h4>
+    <hr />
+    <div class="form-group">
+        @Html.LabelFor(model => model.TenSP, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.TenSP, new { htmlAttributes = new { @class = "form-control" } })
+            @Html.ValidationMessageFor(model => model.TenSP, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.Gia, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.Gia, new { htmlAttributes = new { @class = "form-control" } })
+            @Html.ValidationMessageFor(model => model.Gia, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.MoTa, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.MoTa, new { htmlAttributes = new { @class = "form-control" } })
+            @Html.ValidationMessageFor(model => model.MoTa, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="control-label col-md-2">Product Category</label>
+        <div class="col-md-10">
+            @Html.DropDownListFor(model => model.MaDanhMuc, null, "- Select Category -", new { @class = "form-control" })
+            @Html.ValidationMessageFor(model => model.MaDanhMuc, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="control-label col-md-2">Supplier</label>
+        <div class="col-md-10">
+            @Html.DropDownListFor(model => model.MaNhaCungCap, null, "- Select Supplier -", new { @class = "form-control" })
+            @Html.ValidationMessageFor(model => model.MaNhaCungCap, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+
+    <!-- Các trường thông tin khác của sản phẩm -->
+    <!-- ... -->
+
+    <div class="form-group">
+        @Html.Label("Product Image File", new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            <input type="file" name="file" id="file" class="form-control" />
+            @Html.ValidationMessageFor(model => model.HinhAnh, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <!-- Nút Submit cho tạo sản phẩm -->
+    <div class="form-group">
+        <div class="col-md-offset-2 col-md-10">
+            <input type="submit" value="Create Product" class="btn btn-default" />
+        </div>
+    </div>
+
+</div>
+}

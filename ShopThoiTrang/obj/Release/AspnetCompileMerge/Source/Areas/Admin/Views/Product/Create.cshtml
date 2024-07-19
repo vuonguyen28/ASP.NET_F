@@ -1,0 +1,225 @@
+﻿@model ShopThoiTrang.Models.SanPham
+
+@{
+    ViewBag.Title = "Create";
+    Layout = "~/Areas/Admin/Views/Shared/LayoutPageAdmin.cshtml";
+}
+
+<style>
+    /* CSS cho phần chat */
+    #descriptionResult {
+        height: 70px; /* Điều chỉnh chiều cao tùy theo ý muốn */
+        overflow-y: auto;
+        border: 1px solid #ccc;
+        padding: 10px;
+    }
+
+    .chat-bubble {
+        background-color: #f1f0f0;
+        padding: 10px;
+        margin-bottom: 5px;
+        border-radius: 5px;
+        max-width: 70%;
+    }
+
+    .chat-error {
+        color: red;
+        font-style: italic;
+        margin-bottom: 5px;
+    }
+</style>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+<h2 class="title_page"><u>Thêm Sản Phẩm Mới</u></h2>
+
+<!--Back to list-->
+<div class="btn_BackToList" >
+    <button style="height: 2em;">
+        <i class="fa-solid fa-arrow-left"></i>
+        <span> @Html.ActionLink("Back to List", "ShowProduct", "Product", null, new { style = "color: black;" })</span>
+    </button>
+</div>
+<br />
+
+<!--Main-->
+@using (Html.BeginForm("Create", "Product", FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+    @Html.AntiForgeryToken()
+
+<div class="form-horizontal">
+    <h4>Chi tiết sản phẩm</h4>
+    <hr />
+    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+    <!--Name product-->
+    <div class="form-group">
+        @Html.LabelFor(model => model.TenSP, "Tên Sản Phẩm", htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.TenSP, new { htmlAttributes = new { @class = "form-control" } })
+            @Html.ValidationMessageFor(model => model.TenSP, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <!--Price-->
+    <div class="form-group">
+        @Html.LabelFor(model => model.Gia, "Giá", htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.Gia, new { htmlAttributes = new { @class = "form-control" } })
+            @Html.ValidationMessageFor(model => model.Gia, "", new { @class = "text-danger" })
+        </div>
+    </div>
+    <!--Phần trăm giảm giá-->
+    <div class="form-group">
+        @Html.LabelFor(model => model.PhanTramGiamGia, "%sale", htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.PhanTramGiamGia, new { htmlAttributes = new { @class = "form-control" } })
+            @Html.ValidationMessageFor(model => model.PhanTramGiamGia, "", new { @class = "text-danger" })
+        </div>
+    </div>
+    <!--Note-->
+    <div class="form-group">
+        @Html.LabelFor(model => model.MoTa, "Mô Tả", htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            <textarea id="MoTa" name="MoTa" class="form-control" rows="4"></textarea>
+            @Html.ValidationMessageFor(model => model.MoTa, "", new { @class = "text-danger" })
+            <button type="button" onclick="getDescriptionSuggestion()">Gợi ý mô tả</button>
+            <div id="descriptionResult"></div>
+        </div>
+    </div>
+
+    <!--Category-->
+    <div class="form-group">
+        <label class="control-label col-md-2">Product Category</label>
+        <div class="col-md-10">
+            @Html.DropDownListFor(model => model.MaDanhMuc, null, "- Select Category -", new { @class = "form-control" })
+            @Html.ValidationMessageFor(model => model.MaDanhMuc, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <!--Supplier-->
+    <div class="form-group">
+        <label class="control-label col-md-2">Supplier</label>
+        <div class="col-md-10">
+            @Html.DropDownListFor(model => model.MaNhaCungCap, null, "- Select Supplier -", new { @class = "form-control" })
+            @Html.ValidationMessageFor(model => model.MaNhaCungCap, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <!--Choose file img-->
+    <div class="form-group">
+        @Html.Label("Product Images:", new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            <input type="file" name="files" id="files" multiple class="form-control" />
+            <div id="fileList"></div>
+        </div>
+    </div>
+
+    <!--Button Create-->
+    <div class="form-group">
+        <div class="col-md-offset-2 col-md-10">
+            <button type="submit" class="btn_AddItem">
+                <span class="btn_TextAddItem">Create</span>
+                <span class="btn_IconAddItem">
+                    <i class="fa-solid fa-plus" style="color: #ffffff;"></i>
+                </span>
+            </button>
+        </div>
+    </div>
+
+</div>
+}
+
+<script src="https://cdn.ckeditor.com/4.16.2/standard/ckeditor.js"></script>
+<script>
+
+    function getDescriptionSuggestion() {
+        var keyword = $("#MoTa").val();
+
+        axios.post('https://api.openai.com/v1/engines/davinci/completions', {
+            prompt: keyword,
+            max_tokens: 1000,
+
+        }, {
+            headers: {
+                'Content-Type': 'application/json',
+                'Authorization': 'Bearer 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'
+            }
+        })
+            .then(function (response) {
+                // Hiển thị văn bản nhận được từ API như một cuộc trò chuyện
+                var chatBox = $("#descriptionResult");
+                var newMessage = $('<div class="chat-bubble">' + response.data.choices[0].text + '</div>');
+                chatBox.append(newMessage);
+                chatBox.scrollTop(chatBox[0].scrollHeight); // Cuộn xuống cuối phần chat để xem nội dung mới nhất
+            })
+            .catch(function (error) {
+                // Hiển thị thông báo lỗi nếu có lỗi xảy ra
+                var chatBox = $("#descriptionResult");
+                var errorMessage = $('<div class="chat-error">An error occurred while suggesting the description.</div>');
+                chatBox.append(errorMessage);
+                console.error(error);
+            });
+    }
+</script>
+
+<!-- Thêm thư viện CSS Summernote -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.18/summernote-bs4.min.css" rel="stylesheet">
+<!-- Thêm thư viện JS Summernote -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.18/summernote-bs4.min.js"></script>
+<!-- Thêm plugin ImageAttributes -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.18/plugin/summernote-ext-image-attributes.js"></script>
+
+<script>
+    $(document).ready(function () {
+        $('#MoTa').summernote({
+            height: 300, // Điều chỉnh chiều cao tùy theo ý muốn
+            placeholder: 'Nhập mô tả sản phẩm ở đây...',
+            // Plugin ImageAttributes cho phép chỉnh kích thước hình ảnh
+            toolbar: [
+                ['style', ['bold', 'italic', 'underline', 'clear']],
+                ['font', ['strikethrough', 'superscript', 'subscript']],
+                ['fontsize', ['fontsize']],
+                ['color', ['color']],
+                ['para', ['ul', 'ol', 'paragraph']],
+                ['height', ['height']],
+                ['insert', ['link', 'picture', 'video']],
+                ['view', ['fullscreen', 'codeview']],
+                ['mybutton', ['imageAttributes']], // Thêm nút imageAttributes để chỉnh kích thước hình ảnh
+            ],
+            popover: {
+                image: [
+                    ['imageAttributes', ['imageResize', 'imageRemove', 'imageLink', 'imageCaption', 'imageSize']]
+                ],
+            },
+        });
+    });
+
+</script>
+
+
+@*<script type="text/javascript"
+            src='https://cdn.tiny.cloud/1/3opwlc8n9bdqox7vpqfsyiausopjan9nent7ma33yvgsswaj/tinymce/6/tinymce.min.js'
+            referrerpolicy="origin">
+    </script>
+    <script type="text/javascript">
+        tinymce.init({
+            selector: 'textarea#MoTa',
+            width: 600,
+            height: 300,
+            plugins: [
+                'advlist', 'autolink', 'link', 'image', 'lists', 'charmap', 'preview', 'anchor', 'pagebreak',
+                'searchreplace', 'wordcount', 'visualblocks', 'visualchars', 'code', 'fullscreen', 'insertdatetime',
+                'media', 'table', 'emoticons', 'template', 'help'
+            ],
+            toolbar: 'undo redo | styles | bold italic | alignleft aligncenter alignright alignjustify | ' +
+                'bullist numlist outdent indent | link image | print preview media fullscreen | ' +
+                'forecolor backcolor emoticons | help',
+            menu: {
+                favs: { title: 'My Favorites', items: 'code visualaid | searchreplace | emoticons' }
+            },
+            menubar: 'favs file edit view insert format tools table help',
+            content_css: 'css/content.css'
+        });
+    </script>*@

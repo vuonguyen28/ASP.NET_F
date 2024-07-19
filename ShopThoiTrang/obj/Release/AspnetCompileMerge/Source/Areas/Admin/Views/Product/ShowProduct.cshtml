@@ -1,0 +1,274 @@
+﻿@model IEnumerable<ShopThoiTrang.Models.SanPham>
+
+@{
+    ViewBag.Title = "ShowProduct";
+    Layout = "~/Areas/Admin/Views/Shared/LayoutPageAdmin.cshtml";
+}
+<style>
+    .table-container {
+        max-height: 65vh; /* Chiều cao tối đa cho thanh cuộn */
+        overflow-y: auto; /* Thanh cuộn dọc */
+        cursor: pointer;
+    }
+
+    thead {
+        position: sticky;
+        top: 0;
+        background-color: white; /* Đổi màu nền header */
+    }
+    .description {
+        width: 250px;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        -webkit-line-clamp: 2; 
+        text-overflow: ellipsis; 
+    }
+</style>
+
+<h2 class="title_page"> <u>Quản lý sản phẩm</u></h2>
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-12 col-lg-12 col-12 col-sm-12 ">
+            <div class="row">
+
+               <!--Search-->
+                <div class="col-md-4" style="align-items: center; ">
+
+                    @using (Html.BeginForm("ShowProduct", "Product", FormMethod.Get))
+                    {
+                        <div class="input-group mb-3  btn_add_top">
+                            <input type="text" class="form-control" placeholder="Search" name="searching">
+                            <button class="btn btn-success" type="submit"><i class="fa fa-search-plus"></i></button>
+                        </div>
+                    }
+
+
+                </div>
+
+                <div class="col-md-4">
+
+                </div>
+
+                <div class="col-md-3">
+
+                    <!--Button delete-->
+                    <button type="button" onclick="confirmDeleteSelectedProducts()" class="delete_Button btn-delete btn-delete_item" style="float:right">
+                        <span class="text_delete">Delete</span>
+                        <span class="icon_delete">
+                            <i class="fa-solid fa-trash"></i>
+                        </span>
+                    </button>
+                </div>
+
+                <div class="col-md-1">
+
+                  <!--BUtton add new img-->
+                    <button class="btn_addimg btn_add_top" onclick="location.href='@Url.Action("Create")'" style="float: right">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" viewBox="0 0 20 20" height="20" fill="none" class="addimg_svg-icon">
+                            <g stroke-width="1.5" stroke-linecap="round" stroke="#de8a2a">
+                                <circle r="7.5" cy="10" cx="10"></circle>
+                                <path d="m9.99998 7.5v5"></path>
+                                <path d="m7.5 9.99998h5"></path>
+                            </g>
+                        </svg>
+                        <span class="addimg_lableIcon"> New</i></span>
+                    </button>
+                </div>
+                <div class="col-md-6">
+                </div>
+            </div>
+
+
+
+            <br />
+            <hr class="hr_dash" />
+
+           <!--Table-->
+            <div class="table-container">
+                <table class="table table-hover">
+                    <thead class="table-dark ">
+                        <tr>
+
+                            <th>STT</th>
+                            <th>Hình Ảnh</th>
+                            <th>Tên Sản Phẩm</th>
+                            <th>Giá</th>
+                            <th>Sale(%)</th>
+                            <th>Mô Tả</th>
+                            <th>Danh Mục</th>
+                            <th>Nhà Cung Cấp</th>
+                            <th>Chức Năng</th>
+                            <th><input type="checkbox" id="selectAllCheckbox_Product" /> &nbsp; Select All</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @if (Model.Count() == 0)
+                        {
+                            <tr>
+                                <td colspan="3" style="color: red">
+                                    Không tìm thấy danh mục
+                                </td>
+                            </tr>
+                        }
+                        else
+                        {
+                            foreach (var item in Model.Select((value, index) => new { Value = value, Index = index }))
+                            {
+                    <tr>
+                        <td>@(item.Index + 1)</td>
+                        <td>
+                            @if (item.Value.HinhAnh.Any())
+                            {
+                                var firstImage = item.Value.HinhAnh.First();
+                                <img src="@Url.Content("~/Image/" + firstImage.hinhanh1)" alt="Product Image" width="70px" height="auto" />
+                            }
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Value.TenSP)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Value.Gia)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Value.PhanTramGiamGia)
+                        </td>
+                        <td>
+                            <div class="description">
+                                @Html.Raw(item.Value.MoTa)
+                            </div>
+
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Value.DanhMuc.TenDanhMuc)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Value.NhaCungCap.TenNhaCungCap)
+                        </td>
+                        <td>
+                            <a href="@Url.Action("EditProduct", "Product", new { MaSP = item.Value.MaSP })" class="btn btn-primary">
+                                <i class="fa-solid fa-edit"></i>
+                            </a>
+
+                            <a href="@Url.Action("ShowProductImage", "Product", new { MaSP = item.Value.MaSP })" class="btn btn-success">
+                                <i class="fa-solid fa-image"></i>
+                            </a>
+                            <a href="@Url.Action("ShowProductItem", "Product", new { MaSP = item.Value.MaSP })" class="btn btn-warning">
+                                <i class="fa-solid fa-sitemap"></i>
+                            </a>
+                        </td>
+                        <td><input type="checkbox" name="selectedProducts" value="@item.Value.MaSP" /></td>
+
+                    </tr>
+                            }
+                        }
+                    </tbody>
+                </table>
+            </div>
+          <!--end table-->
+
+
+        </div>
+    </div>
+</div>
+
+<!--Thông báo-->
+<div id="confirmDeleteModal" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">Xác nhận xóa sản phẩm</h4>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <p>Bạn có chắc chắn muốn xóa sản phẩm này?</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Hủy bỏ</button>
+                <button type="button" class="btn btn-danger" id="confirmDeleteButton">Xóa</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--js-->
+<script>
+    function confirmDeleteSelectedProducts() {
+        var selectedProductIds = [];
+        var checkboxes = document.getElementsByName('selectedProducts');
+
+        checkboxes.forEach(function (checkbox) {
+            if (checkbox.checked) {
+                selectedProductIds.push(checkbox.value);
+            }
+        });
+
+        if (selectedProductIds.length > 0) {
+            // Show the confirmation modal before deleting
+            $('#confirmDeleteModal').modal('show');
+
+            $('#confirmDeleteButton').off('click').on('click', function () {
+                deleteSelectedProducts(selectedProductIds);
+                $('#confirmDeleteModal').modal('hide'); // Hide modal after deletion
+            });
+        } else {
+            alert('Vui lòng chọn sản phẩm để xóa.');
+        }
+    }
+
+    function deleteSelectedProducts(selectedIds) {
+        // AJAX request to delete the selected products
+        $.ajax({
+            url: '/Product/DeleteSelectedProducts',
+            type: 'POST',
+            data: { selectedIds: selectedIds },
+            success: function (response) {
+                if (response === 'Success') {
+                    // Perform actions after successful deletion (e.g., updating UI)
+                    location.reload(); // Refresh the page after successful deletion
+                } else {
+                    alert('Xóa không thành công!');
+                }
+            },
+            error: function () {
+                alert('Đã có lỗi xảy ra trong quá trình xóa!');
+            }
+        });
+    }
+
+    $(document).ready(function () {
+        // Xử lý sự kiện khi checkbox thay đổi
+        $('input[name="selectedProducts"]').change(function () {
+            var anyCheckboxChecked = $('input[name="selectedProducts"]:checked').length > 0;
+
+            // Nếu có ít nhất một checkbox được chọn, thì hiển thị nút xóa
+            if (anyCheckboxChecked) {
+                $('.btn-delete').addClass('visible');
+            } else {
+                $('.btn-delete').removeClass('visible');
+            }
+        });
+    });
+</script>
+
+@*//js xử lý chon all checkbox*@
+<script>
+    $(document).ready(function () {
+        // Xử lý sự kiện khi nhấn vào checkbox "Select ALL"
+        $('#selectAllCheckbox_Product').click(function () {
+            // Lấy trạng thái của checkbox "Select ALL"
+            var isChecked = $(this).prop('checked');
+
+            // Đặt trạng thái cho tất cả các checkbox khác trong bảng
+            $('input[name="selectedProducts"]').prop('checked', isChecked); 
+            if (isChecked) {
+                $('.btn-delete').addClass('visible');
+            } else {
+                $('.btn-delete').removeClass('visible');
+            }
+
+        });
+    });
+</script>
+

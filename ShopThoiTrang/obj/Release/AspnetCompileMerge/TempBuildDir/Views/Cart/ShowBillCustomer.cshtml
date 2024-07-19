@@ -1,0 +1,161 @@
+﻿@model IEnumerable<ShopThoiTrang.Models.DonHang>
+
+@{
+    ViewBag.Title = "ShowBillCustomer";
+    Layout = "~/Views/Share/LayoutPage_Customer.cshtml";
+}
+
+<style>
+    .ctn_Bills {
+        height: 80vh; /* Độ cao của khu vực chứa nội dung */
+        overflow-y: auto;
+    }
+    /* Thanh cuộn dọc */
+    /* Cho trình duyệt sử dụng Webkit (Chrome, Safari) */
+    .ctn_Bills::-webkit-scrollbar {
+    width: 3px; /* Độ rộng thanh cuộn */
+    height:3px;
+    }
+
+    .ctn_Bills::-webkit-scrollbar-track {
+        background: #f1f1f1; /* Màu nền cho phần track (phần thanh cuộn không được hover hoặc bấm vào) */
+    }
+
+    .ctn_Bills::-webkit-scrollbar-thumb {
+        background: #0c2c37; /* Màu nền cho phần thumb (phần cuộn mà người dùng có thể kéo) */
+        border-radius: 10%; /* Bo tròn góc cho thumb */
+    }
+        
+
+    .Title_Bills {
+        font-weight: bold;
+        font-size: 14px;
+        padding-bottom: 5px;
+        justify-content: center;
+        padding-top: 10px;
+    }
+
+    .form_bill {
+        border-radius: 20px;
+        background: #e0d7d7;
+        box-shadow: 8px 8px 16px #aca6a6, -8px -8px 16px #ffffff;
+        margin-bottom: 30px;
+        height: 100px;
+        text-align: center;
+    }
+
+    .item_Bills {
+        justify-content: center;
+        font-size: 14px;
+    }
+    .header_Bill {
+        background: #0c2c37;
+        color: #fff;
+        font-size: 2em;
+        height: 60px;
+    }
+</style>
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+
+<br />
+<div class="container">
+    <div class="row header_Bill">
+
+        <div class="col-3 col-md-3 col-lg-3 col-sm-3 col-xs-3">
+            <a href="@Url.Action("InvoiceAwaitingConfirmation","BillsCustomer")">
+                Chờ xác nhận
+            </a>
+            
+        </div>
+
+        <div class="col-3 col-md-3 col-lg-3 col-sm-3 col-xs-3">
+            Đang vận chuyển
+        </div>
+
+        <div class="col-3 col-md-3 col-lg-3 col-sm-3 col-xs-3">
+            Hoàn thành
+        </div>
+
+        <div class="col-3 col-md-3 col-lg-3 col-sm-3 col-xs-3">
+            Đã Hủy
+        </div>
+
+    </div>
+</div>
+
+
+<div class="container">
+    <div class="ctn_Bills">
+        @foreach (var item in Model)
+        {
+            <div class="row form_bill">
+
+                <div class="col col-md-1 sm-1">
+                    <div class="row Title_Bills">Mã Đơn</div>
+                    <hr />
+                    <div class="row item_Bills">@Html.DisplayFor(modelItem => item.MaDonHang)</div>
+                </div>
+
+                <div class="col col-md-2">
+                    <div class="row Title_Bills">Ngày Đặt</div>
+                    <hr />
+                    <div class="row item_Bills">@Html.DisplayFor(modelItem => item.NgayDat)</div>
+                </div>
+
+                <div class="col col-md-2">
+                    <div class="row Title_Bills">Ngày Dự Kiến Giao</div>
+                    <hr />
+                    <div class="row item_Bills">@Html.DisplayFor(modelItem => item.NgayDuKienGiaoHang)</div>
+                </div>
+
+                @*<div class="col col-md-1">
+                        <div class="row Title_Bills">Phí Ship</div>
+                        <hr />
+                        <div class="row">@Html.DisplayFor(modelItem => item.PhiVanChuyen)</div>
+                    </div>*@
+
+                <div class="col col-md-1">
+                    <div class="row Title_Bills">Tổng Tiền</div>
+                    <hr />
+                    <div class="row item_Bills">@Html.DisplayFor(modelItem => item.TongGia)</div>
+                </div>
+
+                <div class="col col-md-2 ">
+                    <div class="row Title_Bills">Hình Thức</div>
+                    <hr />
+                    <div class="row item_Bills">@Html.DisplayFor(modelItem => item.HinhThucThanhToan)</div>
+                </div>
+
+                <div class="col col-md-1">
+                    <div class="row Title_Bills">Trạng Thái</div>
+                    <hr />
+                    <div class="row item_Bills">@Html.DisplayFor(modelItem => item.TrangThaiDonHang)</div>
+                </div>
+
+                <div class="col col-md-2">
+                    <div class="row Title_Bills">Trạng Thái Thanh Toán</div>
+                    <hr />
+                    <div class="row item_Bills">@Html.DisplayFor(modelItem => item.TrangThaiThanhToan)</div>
+                </div>
+
+                <div class="col col-md-1">
+                    <div class="row Title_Bills"></div>
+                    <br />
+                    <div class="row item_Bills">
+                        <button class="btn btn-success">
+                            <a href="@Url.Action("ShowBillsItem","Cart", new {MaHoaDon =  item.MaDonHang})"><i style="color: white; font-size: 20px" class="fa-solid fa-file-invoice-dollar"></i></a>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+        }
+
+    </div>
+</div>

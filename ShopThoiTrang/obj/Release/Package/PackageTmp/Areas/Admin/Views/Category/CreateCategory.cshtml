@@ -1,0 +1,52 @@
+﻿@model ShopThoiTrang.Models.DanhMuc
+
+@{
+    ViewBag.Title = "CreateCategory";
+    Layout = "~/Areas/Admin/Views/Shared/LayoutPageAdmin.cshtml";
+}
+
+<h2 class="title_page"><u>Thêm Danh Mục Mới</u></h2>
+
+
+
+
+<div class="container">
+
+    @*back to list*@
+    <div class="btn_BackToList">
+        <button style="height: 2em;">
+            <i class="fa-solid fa-arrow-left"></i>
+            <span> @Html.ActionLink("Back to List", "Index", "Category", null, new { style = "color: black;" })</span>
+        </button>
+    </div>
+
+    @*add*@
+    @using (Html.BeginForm("CreateCategory", "Category", FormMethod.Post, new { enctype = "multipart/form-data" }))
+    {
+        @Html.AntiForgeryToken()
+<div class="form-horizontal">
+
+    <hr />
+
+    <div class="form-group">
+        <label>Tên Danh Mục</label>
+        <input class="form-control" placeholder="Tên Danh Mục" type="text" name="TenDanhMuc">
+    </div>
+
+    <div class="form-group">
+        <label style="color: red; font-weight: bold;">@ViewBag.ThongBao</label>
+    </div>
+
+    @*<button type="submit" class="btn btn-primary">Thêm Danh Mục</button>*@
+    <button type="submit" class="btn_AddItem">
+        <span class="btn_TextAddItem">Add</span>
+        <span class="btn_IconAddItem">
+            <i class="fa-solid fa-plus" style="color: #ffffff;"></i>
+        </span>
+    </button>
+</div>
+    }
+
+
+
+</div>

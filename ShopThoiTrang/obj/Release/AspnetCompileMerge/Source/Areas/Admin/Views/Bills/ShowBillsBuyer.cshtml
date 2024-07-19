@@ -1,0 +1,94 @@
+﻿@model IEnumerable<ShopThoiTrang.Models.DonHang>
+
+@{
+    ViewBag.Title = "ShowBillsBuyer";
+    Layout = "~/Areas/Admin/Views/Shared/LayoutPageAdmin.cshtml";
+}
+
+<style>
+    .table-container {
+        max-height: 65vh; /* Chiều cao tối đa cho thanh cuộn */
+        overflow-y: auto; /* Thanh cuộn dọc */
+        cursor: pointer;
+    }
+
+    thead {
+        position: sticky;
+        top: 0;
+        background-color: white; /* Đổi màu nền header */
+    }
+</style>
+
+<h2 class="title_page"><u>Danh Sách Đơn Hàng Khách Hàng</u></h2>
+<br />
+
+<div class="table-container">
+
+    <table class="table">
+        <thead class="table-dark">
+            <tr>
+                <th>
+                    Mã Đơn
+                </th>
+                <th>
+                    Mã Khách
+                </th>
+                <th>
+                    Ngày Đặt
+                </th>
+                <th>
+                    Tổng Giá
+                </th>
+                <th>
+                    Phí Ship
+                </th>
+                <th>
+                    Trạng Thái Thanh Toán
+                </th>
+                <th>
+                    Hình Thức Thanh Toán
+                </th>
+                <th>
+                    Trạng Thái Đơn
+                </th>
+                <th>Xem Chi Tiết</th>
+
+            </tr>
+        </thead>
+
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.MaDonHang)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.MaKhachHang)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.NgayDat)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.TongGia)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.PhiVanChuyen)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.TrangThaiThanhToan)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.HinhThucThanhToan)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.TrangThaiDonHang)
+                    </td>
+                    <td>
+                        <button class="btn btn-success"><a href="@Url.Action("ShowBillsItem","Bills", new { MaDonHang=item.MaDonHang} )"><i style="color: white; font-size: 20px" class="fa-solid fa-eye"></i></a></button>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

@@ -1,0 +1,36 @@
+﻿@model IEnumerable<ShopThoiTrang.Models.SanPham>
+
+@{
+    ViewBag.Title = "IndexCustomer";
+    Layout = "~/Views/Share/LayoutPage_Customer.cshtml";
+}
+
+<h2>IndexCustomer</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+ 
+        <th>
+            @Html.DisplayNameFor(model => model.TenSP)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Gia)
+        </th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+
+        <td>
+            @Html.DisplayFor(modelItem => item.TenSP)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Gia)
+        </td>
+    </tr>
+}
+
+</table>

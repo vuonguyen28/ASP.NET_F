@@ -1,0 +1,53 @@
+﻿
+@{
+    ViewBag.Title = "SendEmail";
+    Layout = "~/Views/Share/LayoutPage_Customer.cshtml";
+}
+
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+
+<br />
+<h2>Send Email</h2>
+
+@using (Html.BeginForm("SendEmail", "Email", FormMethod.Post))
+{
+    <div>
+        @if (!string.IsNullOrEmpty(ViewBag.Message))
+        {
+            <p>@ViewBag.Message</p>
+        }
+        @if (!string.IsNullOrEmpty(ViewBag.Error))
+        {
+            <p>@ViewBag.Error</p>
+        }
+
+        <div>
+            <label for="receiverEmail">Receiver Email:</label>
+            <input type="email" id="receiverEmail" name="receiverEmail" required />
+        </div>
+        <div>
+            <label for="subject">Subject:</label>
+            <input type="text" id="subject" name="subject" required />
+        </div>
+        <div>
+            <label for="body">Body:</label>
+            <textarea id="body" name="body" rows="4" required></textarea>
+        </div>
+        <div>
+            <input type="submit" value="Send Email" />
+        </div>
+    </div>
+}

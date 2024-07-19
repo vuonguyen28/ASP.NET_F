@@ -1,0 +1,84 @@
+﻿@model IEnumerable<ShopThoiTrang.Models.ChiTietSanPham>
+
+@{
+    ViewBag.Title = "ShowProductItem";
+    Layout = "~/Areas/Admin/Views/Shared/LayoutPageAdmin.cshtml";
+}
+
+<style>
+    .table-container {
+        max-height: 65vh; /* Chiều cao tối đa cho thanh cuộn */
+        overflow-y: auto; /* Thanh cuộn dọc */
+        cursor: pointer;
+    }
+
+    thead {
+        position: sticky;
+        top: 0;
+        background-color: white; /* Đổi màu nền header */
+    }
+</style>
+
+<h2 class="title_page"><u>Chi Tiết</u></h2>
+
+<!--Button back to list-->
+<div class="btn_BackToList">
+    <button style="height: 2em;">
+        <i class="fa-solid fa-arrow-left"></i>
+        <span> @Html.ActionLink("Back to List", "ShowProduct", null, new { style = "color: black;" })</span>
+    </button>
+</div>
+<br />
+
+<div class="table-container">
+
+    <table class="table">
+        <thead class="table-dark ">
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.MaChiTiet)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.MaSP)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.MaKichThuoc)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.MaMau)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.SoLuongTon)
+                </th>
+            </tr>
+        </thead>
+
+        <tbody>
+
+
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.MaChiTiet)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.MaSP)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.MaKichThuoc)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.MaMau)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.SoLuongTon)
+                    </td>
+
+                </tr>
+            }
+
+        </tbody>
+
+    </table>
+</div>

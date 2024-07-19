@@ -1,0 +1,453 @@
+/* @import url('http://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,700;1,600&family=Rubik+Puddles&display=swap');
+/* Định dạng màu sắc để gọi lại thống nhất */
+:root{
+    --grey: #aaadab;
+    --black: black;
+    --light-color: #666;
+    --box-shadow: 0 .5rem 1.5rem rgba(0,0,0,.1);
+    --color-text: rgb(24, 96, 121);
+}
+
+*
+{
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+}
+html{
+    font-size: 63%;
+    overflow: hidden;
+    scroll-padding-top: 5.5rem;
+    scroll-behavior: smooth;
+}
+body
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url(../img/image_Banner/Banner_SanPham.jpg) no-repeat; 
+    background-size: cover;
+    background-position: center;
+}
+/* ------------------------------------------ */
+/* HEADER */
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 1rem 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    box-shadow: var(--box-shadow);
+    background: #ffffff;
+}
+
+header .logo_main{
+    color: var(--black);
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+header .logo_main i{
+    color: var(--color-text);
+}
+
+header .navbar_main a{
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 1.7rem;
+    border-radius: .5rem;
+    padding: .5rem 1.5rem;
+    color: var(--light-color);
+    text-decoration: none;
+    position: relative;
+}
+header .navbar_main a::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: black;
+    width: 0;
+    height: 2.5px;
+    transition: all 0.5s ease;
+}
+header .navbar_main a:hover::before{
+    background: linear-gradient(45deg, #f30000, #3cf);
+    /* -webkit-text-fill-color: transparent; */
+    width: 100%;
+}
+
+header .icons_main i,
+header .icons_main a{
+    cursor: pointer;
+    margin-left: .5rem;
+    height: 4.5rem;
+    line-height: 4.5rem;
+    width: 4.5rem;
+    text-align: center;
+    font-size: 2rem;
+    color: var(--black);
+    border-radius: 50%;
+    background: #ffffff;
+}
+
+header .icons_main i:hover,
+header .icons_main a:hover{
+    color: #ffffff;
+    background: linear-gradient(45deg, #f30000, #3cf);
+    transform: rotate(360deg);
+}
+
+header .icons_main #menu_bars{
+    display: none;
+}
+
+/* header
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+}
+
+.logo
+{
+    font-size: 2em;
+    color: aliceblue;
+    user-select:  none;
+}
+
+.navigation a
+{
+    position: relative;
+    font-size: 1.1em;
+    color: aliceblue;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 40px;
+}
+
+
+/* Hiệu ứng gạch chân khi rê chuột vào */
+/*.navigation a::after
+{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 3px;
+    background: aliceblue;
+    border-radius: 5px;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .4s;
+}
+.navigation a:hover::after
+{ 
+    transform-origin: left ;
+    transform: scaleX(1);
+} */
+
+ 
+/* PHẦN LOGIN*/
+/* .navigation .btnLogin-popup */
+.navigation
+{
+    width: 130px;
+    height: 50px;
+    background: transparent;
+    border: 2px solid aliceblue;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.1em;
+    color: aliceblue;
+    font-weight: 500;
+    margin-left: 40px;
+    transition: .4s;
+}
+/* .navigation .btnLogin-popup:hover */
+.navigation:hover
+{
+    background: aliceblue;
+    color: darkslategrey;
+}
+
+.wrapper
+{
+    position: relative;
+    width: 400px;
+    height: 440px;
+    background: transparent;
+    border: 2px solid aliceblue;
+    border-radius: 20px;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 30px black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    transform: scale(0);
+    transition: transform .3s ease,height .2 ease;
+}
+
+/* .wrapper.active_popup */
+.wrapper
+{
+    transform: scale(1);
+}
+
+.wrapper.active
+{
+    height: 520px;
+}
+
+.wrapper .icon_close
+{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 45px;
+    height: 45px;
+    font-size: 2em;
+    color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom-left-radius: 20px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.wrapper .icon_close:hover
+{
+    background: red;
+}
+.wrapper .form_box
+{
+    width: 100%;
+    padding: 40px;
+}
+
+.wrapper .form_box.login
+{
+    /* display: none; */
+    transition: transform .18s ease;
+    transform: translateX(0);
+}
+
+
+.wrapper.active .form_box.login
+{
+    position: absolute;
+    transform: translateX(-400px);
+}
+
+.wrapper.form_box.register
+{
+    position: absolute;
+    transition: none;
+    transform: translateX(400px);
+}
+
+.wrapper.active .form_box.register
+{
+    /* display: none; */
+    transition: transform .18s ease;
+    transform: translateX(0);
+}
+/* ĐĂNG KÝ */
+.wrapper .form_box.register
+{
+    position: absolute;
+    transform: translateX(400px);
+}
+.form_box h2
+{
+    font-size: 2em;
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+.input_box
+{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    border-bottom: 2px solid rgb(253, 255, 255);
+    margin: 30px 0;
+}
+
+.input_box label
+{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    font-size: 2em;
+    color: darkslategrey;
+    font-weight: none;
+    transition: .3s;
+} 
+
+/* Đẩy chữ Email và Password lên để nhập thông tin */
+.input_box input:focus~label,
+.input_box input:valid~label
+{
+    top: 5px;
+}
+.input_box input
+{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    color: rgb(244, 250, 250);
+    font-weight: 600;
+    padding: 0 35px 0 5px;
+}
+.input_box .icon
+{
+    position: absolute;
+    right: 8px;
+    font-size: 1.2em;
+    color: darkslategrey;
+    line-height: 57px;
+}
+
+.remember-forgot
+{
+    font-size: .9em;
+    color: rgb(212, 217, 217);
+    font-weight: 500;
+    margin: -15px 0 15px;
+    display: flex;
+    justify-content: space-between ;
+}
+
+.remember-forgot label input
+{
+    accent-color: rgb(234, 234, 234);
+    margin-right: 3px;
+}
+
+.remember-forgot a
+{
+    color: rgb(240, 240, 240);
+    text-decoration: none;
+}
+.remember-forgot a:hover
+{
+    text-decoration: underline;
+}
+
+.btn_submit_login
+{
+    width: 100%;
+    height: 45px;
+    background: rgb(21, 165, 165);
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 2em;
+    color: white;
+    font-weight: 500;
+}
+
+.login_register
+{
+    font-size: .9em;
+    color: rgb(230, 230, 230);
+    text-align: center;
+    font-weight: 500;
+    margin: 25px 0 10px;
+}
+
+.login_register p a
+{
+    color: rgb(238, 241, 241);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.login_register p a:hover
+{
+    text-decoration: underline;
+}
+
+
+/* Truy vấn Media (media queries) */
+/* ///////////////////////////////////////////// */
+@media (max-width: 991px){
+
+    html{
+        font-size: 55%;
+    }
+
+    header{
+        padding: 1rem 2rem;
+    }
+}
+
+/* Đến kích thước 768 hiện menu_bars */
+@media (max-width: 768px){
+
+    header .icons_main #menu_bars{
+        display: inline-block;
+        float: right;
+    }
+    header .navbar_main{
+        position: absolute;
+        top: 100px;
+        left: 0;
+        right: 0;
+        background: #fff;
+        border-top: .1rem solid black;
+        border-bottom: .1rem solid black;
+        padding: 1rem;
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+
+    header .navbar_main.active{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    }
+    header .navbar_main a{
+        display: block;
+        padding: 1.5rem;
+        margin: 1rem;
+        font-size: 2rem;
+        background: #fff;
+    }
+
+    #search_form #search_box{
+        width: 80%;
+        margin: 0 1rem;
+    }
+}
+
+@media (max-width: 991px){
+
+    html{
+        font-size: 50%;
+    }
+}

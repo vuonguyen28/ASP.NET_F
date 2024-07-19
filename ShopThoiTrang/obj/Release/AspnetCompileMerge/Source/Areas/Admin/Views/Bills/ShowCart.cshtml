@@ -1,0 +1,109 @@
+﻿@model IEnumerable<ShopThoiTrang.Models.GioHang>
+
+@{
+    ViewBag.Title = "ShowCart";
+    Layout = "~/Areas/Admin/Views/Shared/LayoutPageAdmin.cshtml";
+}
+
+<style>
+    .table-container {
+        max-height: 65vh; /* Chiều cao tối đa cho thanh cuộn */
+        overflow-y: auto; /* Thanh cuộn dọc */
+        cursor: pointer;
+    }
+
+    thead {
+        position: sticky;
+        top: 0;
+        background-color: white; /* Đổi màu nền header */
+    }
+</style>
+
+<h2 class="title_page"><u>Danh Sách Đơn Hàng Nháp</u></h2>
+<br />
+@*Search*@
+<div class="col-md-4">
+    @using (Html.BeginForm("ShowCart", "Bills", FormMethod.Get))
+    {
+        <div class="input-group mb-3  btn_add_top">
+            <input type="text" class="form-control" placeholder="Search" name="searching">
+            <button class="btn btn-success" type="submit"><i class="fa fa-search-plus"></i></button>
+        </div>
+    }
+</div>
+<div class="table-container">
+    <table class="table">
+        <thead class="table-dark">
+            <tr>
+                <td>
+                    Mã Giỏ Hàng
+                </td>
+                <td>
+                    Tên Khách Hàng
+                </td>
+                <td>
+                    Tên Sản Phẩm
+                </td>
+                <td>
+                    Giá Tiền Gốc
+                </td>
+                <td>
+                    Giá tiền Sale
+                </td>
+                <td>
+                    Kích Thước
+                </td>
+                <td>
+                    Màu Sắc
+                </td>
+                <td>
+                    Số Lượng SP
+                </td>
+            </tr>
+
+        </thead>
+
+        <tbody>
+            @if (Model.Any())
+            {
+                foreach (var item in Model)
+                {
+                    <tr>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.MaGioHang)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.KHACHHANG.TenKH)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.ChiTietSanPham.SanPham.TenSP)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.ChiTietSanPham.SanPham.Gia)
+                        </td>
+                        <td>
+                            @ViewBag.GiaSanPham
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.ChiTietSanPham.KichThuoc.TenKichThuoc)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.ChiTietSanPham.MauSac.TenMau)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.SoLuong)
+                        </td>
+                    </tr>
+                }
+
+            }
+            else
+            {
+                <tr>
+                    <td colspan="9"> Không tìm thấy </td>
+                </tr>
+            }
+        </tbody>
+
+    </table>
+</div>

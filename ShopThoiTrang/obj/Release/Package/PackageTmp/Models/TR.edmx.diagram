@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="1b30279e8c9448bb9e650b8e37c07f20" Name="Diagram1">
+        <EntityTypeShape EntityType="QL_SHOPTHOITRANG_DOANModel.ChiTietDonHang" Width="1.5" PointX="7.5" PointY="4.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="QL_SHOPTHOITRANG_DOANModel.ChiTietSanPham" Width="1.5" PointX="5.25" PointY="4.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="QL_SHOPTHOITRANG_DOANModel.ChucNang" Width="1.5" PointX="7.75" PointY="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="QL_SHOPTHOITRANG_DOANModel.DanhMuc" Width="1.5" PointX="0.75" PointY="4.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="QL_SHOPTHOITRANG_DOANModel.DonHang" Width="1.5" PointX="5.25" PointY="11.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="QL_SHOPTHOITRANG_DOANModel.FeedBack" Width="1.5" PointX="12.75" PointY="4.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="QL_SHOPTHOITRANG_DOANModel.GioHang" Width="1.5" PointX="10.5" PointY="4.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="QL_SHOPTHOITRANG_DOANModel.HinhAnh" Width="1.5" PointX="5.25" PointY="8.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="QL_SHOPTHOITRANG_DOANModel.KichThuoc" Width="1.5" PointX="3" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="QL_SHOPTHOITRANG_DOANModel.KHACHHANG" Width="1.5" PointX="3" PointY="12" IsExpanded="true" />
+        <EntityTypeShape EntityType="QL_SHOPTHOITRANG_DOANModel.MauSac" Width="1.5" PointX="3" PointY="9.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="QL_SHOPTHOITRANG_DOANModel.NhaCungCap" Width="1.5" PointX="0.75" PointY="1.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="QL_SHOPTHOITRANG_DOANModel.NHANVIEN" Width="1.5" PointX="7.75" PointY="8.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="QL_SHOPTHOITRANG_DOANModel.PhanQuyen" Width="1.5" PointX="10" PointY="1.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="QL_SHOPTHOITRANG_DOANModel.SanPham" Width="1.5" PointX="3" PointY="4" IsExpanded="true" />
+        <EntityTypeShape EntityType="QL_SHOPTHOITRANG_DOANModel.sysdiagrams" Width="1.5" PointX="9.75" PointY="8.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="QL_SHOPTHOITRANG_DOANModel.VOUCHER" Width="1.5" PointX="6" PointY="16.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="QL_SHOPTHOITRANG_DOANModel.VOUCHER_KHACHHANG" Width="1.5" PointX="8.25" PointY="12.75" IsExpanded="true" />
+        <AssociationConnector Association="QL_SHOPTHOITRANG_DOANModel.FK_ChiTietDonHang_ChiTietSanPham" ManuallyRouted="false" />
+        <AssociationConnector Association="QL_SHOPTHOITRANG_DOANModel.FK_ChiTietDonHang_DonHang" ManuallyRouted="false" />
+        <AssociationConnector Association="QL_SHOPTHOITRANG_DOANModel.FK_FeedBack_ChiTietDonHang" ManuallyRouted="false" />
+        <AssociationConnector Association="QL_SHOPTHOITRANG_DOANModel.FK_ChiTietSanPham_KichThuoc" ManuallyRouted="false" />
+        <AssociationConnector Association="QL_SHOPTHOITRANG_DOANModel.FK_ChiTietSanPham_MauSac" ManuallyRouted="false" />
+        <AssociationConnector Association="QL_SHOPTHOITRANG_DOANModel.FK_ChiTietSanPham_SanPham" ManuallyRouted="false" />
+        <AssociationConnector Association="QL_SHOPTHOITRANG_DOANModel.FK_GioHang_ChiTietSanPham" ManuallyRouted="false" />
+        <AssociationConnector Association="QL_SHOPTHOITRANG_DOANModel.FK_PHANQUYEN_NHANVIEN" ManuallyRouted="false" />
+        <AssociationConnector Association="QL_SHOPTHOITRANG_DOANModel.FK_SANPHAM_DANHMUC" ManuallyRouted="false" />
+        <AssociationConnector Association="QL_SHOPTHOITRANG_DOANModel.FK_DonHang_KhachHang" ManuallyRouted="false" />
+        <AssociationConnector Association="QL_SHOPTHOITRANG_DOANModel.FK_FeedBack_KhachHang" ManuallyRouted="false" />
+        <AssociationConnector Association="QL_SHOPTHOITRANG_DOANModel.FK_GioHang_KhachHang" ManuallyRouted="false" />
+        <AssociationConnector Association="QL_SHOPTHOITRANG_DOANModel.FK_HinhAnh_SanPham" ManuallyRouted="false" />
+        <AssociationConnector Association="QL_SHOPTHOITRANG_DOANModel.FK_VOUCHER_KHACHHANG_KHACHHANG" ManuallyRouted="false" />
+        <AssociationConnector Association="QL_SHOPTHOITRANG_DOANModel.FK_SanPham_NhaCungCap" ManuallyRouted="false" />
+        <AssociationConnector Association="QL_SHOPTHOITRANG_DOANModel.FK_PHANQUYEN_NHANVIEN_NV" ManuallyRouted="false" />
+        <AssociationConnector Association="QL_SHOPTHOITRANG_DOANModel.FK_VOUCHER_KHACHHANG_VOUCHER" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

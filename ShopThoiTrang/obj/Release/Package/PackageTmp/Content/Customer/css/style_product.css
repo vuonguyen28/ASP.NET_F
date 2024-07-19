@@ -1,0 +1,245 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+}
+
+.nav__pc{
+    width: 100%;
+    height: 80px;
+    background-color: black;
+}
+
+
+.nav{
+    width: 100%;
+    height: 100px;
+    /* opacity: 0.3; */
+    background-color: rgb(0, 0, 0);
+    
+}
+
+/* nav mobile-tablet */
+/* content */
+
+
+.course_item_left {
+    margin-top: 110px;
+}
+
+.course_item_mid {
+    margin-top: 110px;
+}
+
+.course_item_right {
+    background-color: antiquewhite;
+
+}
+
+.list-danhmuc {
+    width: 100%;
+    height: auto;
+    float: right;
+    background-color: rgb(252, 252, 252);
+    border: 1px solid rgb(181, 181, 181);
+    border-radius: 5px;
+    margin-top: 10px;
+    box-shadow: #c7c7c7 1px 0px 1px 1px;
+}
+
+.text-list h3 {
+    font-size: 16px;
+    font-weight: bold;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+.text-list {
+    width: 100%;
+    height: 40px;
+    border-bottom: 1px solid rgb(181, 181, 181);
+}
+
+.text-list1 {
+    width: 90%;
+    height: 35px;
+    margin-left: 5%;
+}
+
+.text-list12 {
+    width: 90%;
+    height: 35px;
+    margin-left: 5%;
+}
+
+.text-list1 h6,
+.text-list12 h6 {
+    margin-left: 10px;
+    margin-top: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    color: rgb(43, 0, 0);
+    cursor: pointer;
+}
+.text-list1 h6:hover{
+    color: rgb(0, 4, 121);
+}
+
+.box-thanhtoan {
+    width: 300px;
+    height: auto;
+    border-radius: 8px;
+    float: left;
+    background-color: #ffffff;
+    margin-top: 10px;
+    box-shadow: #CDCDCD 1px 0px 1px 1px;
+}
+
+/* mid */
+.text_title{
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.text_title{
+    width: 100%;
+    height: auto;
+}
+
+/* right */
+.giohang {
+    width: 100%;
+    height: 30px;
+    border-bottom: 1px solid #CDCDCD;
+
+}
+
+.giohang h5 {
+    font-size: 14px;
+    font-weight: bold;
+    margin-left: 10px;
+    margin-top: 15px;
+
+}
+
+.giohang h5 span {
+    float: right;
+    font-size: 12px;
+    margin-right: 15px;
+}
+
+.order {
+    width: 90%;
+    height: auto;
+    border-bottom: 1px solid #CDCDCD;
+    margin-left: 5%;
+    margin-top: 10px;
+}
+
+.order h4 {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.text-order {
+    width: 75%;
+    height: auto;
+    display: inline-block;
+}
+
+.text-order h5 {
+    font-size: 14px;
+    color: #707070;
+
+}
+
+.text-order h6 {
+    font-size: 14px;
+    color: #212529;
+}
+
+.quantity {
+    width: 60px;
+    height: auto;
+    float: right;
+    margin-top: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.less {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    border: 1px solid;
+    float: left;
+    border-radius: 20px;
+    background: #799dd9;
+    color: #ffffff;
+    font-weight: bold;
+    line-height: 20px;
+    text-align: center;
+
+}
+
+.more {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    border: 1px solid;
+    float: right;
+    border-radius: 20px;
+    background: #799dd9;
+    color: #ffffff;
+    font-weight: bold;
+    line-height: 20px;
+    text-align: center;
+}
+
+.pay {
+    width: 80%;
+    height: auto;
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.pay img {
+    width: 22px;
+    height: 35px;
+}
+
+.number-pay {
+    display: inline-block;
+}
+
+.button-pay {
+    width: 80%;
+    height: auto;
+    border: 1px solid #d8b979;
+    background-color: #d8b979;
+    color: #ffffff;
+    text-align: center;
+    margin-left: 10%;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+/* login */
+/*  */
+/*  */
+/*  */
+/*  */
+.nav__overlay{
+    position: fixed;
+    top:100px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0,0,0, 0.3);
+    display: none;
+    /* animation: fadeIn linear 0.2s; */
+    z-index: 8;
+}

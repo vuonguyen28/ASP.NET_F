@@ -1,0 +1,158 @@
+﻿@model IEnumerable<ShopThoiTrang.Models.KHACHHANG>
+
+@{
+    ViewBag.Title = "ShowBuyer";
+    Layout = "~/Areas/Admin/Views/Shared/LayoutPageAdmin.cshtml";
+}
+
+<style>
+    .table-container {
+        max-height: 65vh; /* Chiều cao tối đa cho thanh cuộn */
+        overflow-y: auto; /* Thanh cuộn dọc */
+        cursor: pointer;
+    }
+
+    thead {
+        position: sticky;
+        top: 0;
+        background-color: white; /* Đổi màu nền header */
+    }
+</style>
+
+
+
+<h2 class="title_page"><u>Danh Sách Khách Hàng</u></h2>
+@*Search*@
+<div class="col-md-4">
+    @using (Html.BeginForm("ShowBuyer", "Buyer", FormMethod.Get))
+    {
+        <div class="input-group mb-3  btn_add_top">
+            <input type="text" class="form-control" placeholder="Search" name="searching">
+            <button class="btn btn-success" type="submit"><i class="fa fa-search-plus"></i></button>
+        </div>
+    }
+</div>
+
+<div class="table-container">
+
+    <table class="table">
+        <thead class="table-dark ">
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.Avatar)
+                </th>
+                <th>
+                    Mã Số
+                </th>
+                <th>
+                    Họ Tên
+                </th>
+                <th>
+                    Số Điện Thoại
+                </th>
+                <th>
+                    Email
+                </th>
+                <th>
+                    Địa Chỉ
+                </th>
+
+                <th>
+                    Giới Tính
+                </th>
+                <th>
+                    Trạng Thái
+                </th>
+                <th>
+                    Xem Đơn Hàng
+                </th>
+            </tr>
+        </thead>
+
+        <tbody>
+
+            @if (Model.Any())
+            {
+                foreach (var item in Model)
+                {
+                    <tr>
+                        <td>
+                            <img src="~/Image/@item.Avatar" style="width: 70px; height: 80px; border-radius: 50%; border: 2px solid #00ff21;" />
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.MaKH)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.TenKH)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.SoDienThoai)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Email)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.DiaChi)
+                        </td>
+
+                        <td>
+                            @Html.DisplayFor(modelItem => item.GioiTinh)
+                        </td>
+
+                        <td>
+                            @if (item.TrangThai == "Được Dùng")
+                            {
+                                <a href="javascript:void(0);" onclick="updateStatus('@item.MaKH')"><i class="fa-solid fa-lock"></i></a>
+                            }
+                            else
+                            {
+                                <a href="javascript:void(0);" onclick="updateStatus('@item.MaKH')"><i class="fa-solid fa-lock-open"></i></a>
+                            }
+                        </td>
+
+
+
+                        <td>
+                            <button class="btn btn-success"><a href="@Url.Action("ShowCartBuyer","Bills", new {MaKhachHang =  item.MaKH})"><i style="color: white; font-size: 20px" class="fa-solid fa-cart-shopping"></i></a></button>
+
+                            <button class="btn btn-warning"><a href="@Url.Action("ShowBillsBuyer","Bills", new {MaKhachHang =  item.MaKH})"><i style="color: white; font-size: 20px" class="fa-solid fa-file-invoice-dollar"></i></a></button>
+                        </td>
+                    </tr>
+                }
+            }
+            else
+            {
+                <tr>
+                    <td colspan="9">Không tìm thấy khách hàng</td>
+                </tr>
+            }
+
+
+
+
+
+        </tbody>
+
+    </table>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    function updateStatus(maKH) {
+        $.ajax({
+            url: '@Url.Action("Update_TrangThai", "Buyer")',
+            type: 'POST',
+            data: { makh: maKH },
+            success: function (response) {
+                // On success, you can handle any UI changes here if needed
+                // For example, updating the icon or reloading specific elements
+                // For simplicity, you can reload the entire page:
+                location.reload();
+            },
+            error: function (xhr, status, error) {
+                // Handle error scenarios here
+                console.error(error);
+            }
+        });
+    }
+</script>

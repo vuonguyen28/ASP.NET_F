@@ -1,0 +1,207 @@
+﻿@model IEnumerable<ShopThoiTrang.Models.DonHang>
+
+@{
+    ViewBag.Title = "InvoiceAwaitingConfirmation";
+    Layout = "~/Views/Share/LayoutPage_Customer.cshtml";
+}
+<style>
+    .ctn_Bills {
+        height: 80vh; /* Độ cao của khu vực chứa nội dung */
+        overflow-y: auto;
+    }
+        /* Thanh cuộn dọc */
+        /* Cho trình duyệt sử dụng Webkit (Chrome, Safari) */
+        .ctn_Bills::-webkit-scrollbar {
+            width: 3px; /* Độ rộng thanh cuộn */
+            height: 3px;
+        }
+
+        .ctn_Bills::-webkit-scrollbar-track {
+            background: #f1f1f1; /* Màu nền cho phần track (phần thanh cuộn không được hover hoặc bấm vào) */
+        }
+
+        .ctn_Bills::-webkit-scrollbar-thumb {
+            background: #0c2c37; /* Màu nền cho phần thumb (phần cuộn mà người dùng có thể kéo) */
+            border-radius: 10%; /* Bo tròn góc cho thumb */
+        }
+
+
+
+    /*css from bills*/
+    .Form_Order {
+        background: #c9c6b9;
+        margin-top: 30px;
+        border-radius: 10px;
+    }
+
+    .ID_Order p {
+        padding-top: 10px;
+        font-size: 14px;
+    }
+
+    .title_order {
+        font-size: 16px;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .content_oder {
+        text-align: center;
+        font-size: 17px;
+    }
+
+    .btn_ViewOrder {
+        height: 30px;
+        border-radius: 10px;
+        font-weight: bold;
+        font-size: 13px;
+        transition: .3s ease;
+        width: 60px;
+        margin-left: 5%;
+        text-decoration: none; /* Remove underline */
+        color: black;
+    }
+
+        .btn_ViewOrder a {
+            text-decoration: none;
+            color: green;
+        }
+
+        .btn_ViewOrder:hover {
+            transform: scale(1.1);
+            box-shadow: 5px 5px 10px #131313, -5px -5px 10px #ffffff;
+        }
+
+    .Change_Location {
+        font-size: 16px;
+        font-weight: bold;
+    }
+
+    .Location_content {
+        font-size: 15px;
+    }
+
+    .Date_Bill p {
+        font-size: 14px;
+    }
+
+    .Select_Menu {
+        background: #33a14f;
+        transition: all .4s ease;
+        border-radius: 10px 10px 0 0;
+    }
+</style>
+<br />
+<div class="container">
+    <div class="row ">
+        <div class="col-md-12">
+
+            <nav class="Menu_Order">
+                <a href="@Url.Action("InvoiceAwaitingConfirmation","BillsCustomer")" data-menu-index="1">Chờ xác nhận</a>
+                <a href="@Url.Action("BeingTransported","BillsCustomer")" data-menu-index="2" class="Select_Menu" style="z-index:0;">Đang giao</a>
+                <a href="@Url.Action("BillsDelivered","BillsCustomer")" data-menu-index="3">Đã giao</a>
+                <a href="@Url.Action("canceled","BillsCustomer")" data-menu-index="4">Đã hủy</a>
+                <div class="Animation_MenuOrder Start_Menu"></div>
+            </nav>
+        </div>
+
+    </div>
+</div>
+
+
+<div class="container ctn_Bills">
+
+    @foreach (var item in Model)
+    {
+
+        <div class="row Form_Order">
+
+            <!--Row 1: content of order - nội dung của đơn hàng-->
+            <div class="row">
+                <!--ID-Mã đơn hàng-->
+                <div class="col-md-12 col-12 col-sm-12 col-xl-12 col-lg-12 ID_Order">
+                    <p>Đơn hàng: #@item.MaDonHang</p>
+                </div>
+                <hr>
+
+                <!--Tiêu đề: Ngày đặt + ngày dự kiến-->
+                <div class="col-md-2 col-2 col-sm-2 col-xl-2 col-lg-2">
+                    <p class="title_order">Ngày đặt: </p>
+                    <p class="title_order">Dự kiến giao: </p>
+                </div>
+
+                <!--Nội dung: Ngày đặt + ngày dự kiến-->
+                <div class="col-md-3 col-3 col-sm-3 col-xl-3 col-lg-3 Date_Bill">
+                    <p>@item.NgayDat</p>
+                    <p>@item.NgayDuKienGiaoHang </p>
+                </div>
+
+                <!--Trạng thái đơn hàng-->
+                <div class="col-md-3 col-3 col-sm-3 col-xl-3 col-lg-3">
+                    <p class="title_order">Trạng thái</p>
+                    <hr>
+                    <P class="content_oder">@item.TrangThaiDonHang</P>
+                </div>
+
+                <!--Tổng tiền-->
+                <div class="col-md-2 col-2 col-sm-2 col-xl-2 col-lg-2">
+                    <p class="title_order">Tổng Tiền</p>
+                    <hr>
+                    <p class="content_oder">@item.TongTienSauKhiGiamGia</p>
+                </div>
+
+                <!--Button hủy đơn-->
+                <div class="col-md-2 col-2 col-sm-2 col-xl-2 col-lg-2 d-flex justify-content-center align-items-center">
+                    <button class="btn_ViewOrder">
+                        <a href="@Url.Action("ShowBillsItem1","Cart", new {MaHoaDon = item.MaDonHang})">Xem  <i class="fa-solid fa-eye"></i></a>
+                    </button>
+                </div>
+
+            </div>
+            <!--END ROW 1-->
+            <hr>
+
+            <!--Row 2: location - địa chỉ-->
+            <div class="row">
+
+                <!--Title: phần tiêu đề-->
+                <div class="col-md-2 col-2 col-sm-2 col-xl-2 col-lg-2">
+                    <p class="title_order">Địa chỉ: </p>
+                </div>
+
+                <!--Content: nội dung của địa chỉ-->
+                <div class="col-md-8 col-8 col-sm-8 col-xl-8 col-lg-8 Location_content">
+                    <p>@item.DiaChiGiaoHang</p>
+                </div>
+            </div>
+            <!--End ROW 2-->
+
+
+        </div>
+
+    }
+
+
+</div>
+
+
+@*// hiệu ứng nav*@
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        var menuLinks = document.querySelectorAll(".Menu_Order a");
+
+        menuLinks.forEach(function (link) {
+            link.addEventListener("click", function () {
+                menuLinks.forEach(function (item) {
+                    item.classList.remove("clicked");
+                });
+
+                link.classList.add("clicked");
+
+                // Lấy giá trị href của link và chuyển trang
+                var targetUrl = link.getAttribute("href");
+                window.location.href = targetUrl;
+            });
+        });
+    });
+</script>

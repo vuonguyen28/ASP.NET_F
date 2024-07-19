@@ -1,0 +1,39 @@
+﻿@model ShopThoiTrang.Models.DonHang
+@{
+    ViewBag.Title = "CapNhatDonHangVaChiTietDonHang";
+    Layout = "~/Views/Share/LayoutPage_Customer.cshtml";
+}
+
+<h2>CapNhatDonHangVaChiTietDonHang</h2>
+
+
+@using (Html.BeginForm("CapNhatDonHangVaChiTietDonHang", "ControllerName", FormMethod.Post))
+{
+    @Html.HiddenFor(model => model.MaDonHang) <!-- Trường ẩn chứa mã đơn hàng -->
+
+    <div>
+        <label for="NgayDat">Ngày đặt hàng:</label>
+        @Html.TextBoxFor(model => model.NgayDat, new { @class = "form-control" }) <!-- Trường cập nhật thông tin ngày đặt hàng -->
+    </div>
+
+    <div>
+        <label for="TongGia">Tổng giá:</label>
+        @Html.TextBoxFor(model => model.TongGia, new { @class = "form-control" }) <!-- Trường cập nhật thông tin tổng giá -->
+    </div>
+
+    <!-- Duyệt qua danh sách chi tiết đơn hàng -->
+    @for (int i = 0; i < Model.ChiTietDonHang.Count; i++)
+    {
+        <div>
+            @Html.HiddenFor(model => model.ChiTietDonHang[i].MaChiTiet) <!-- Trường ẩn chứa mã chi tiết đơn hàng -->
+
+            <label for="ChiTietDonHang[@i].SoLuong">Số lượng:</label>
+            @Html.TextBoxFor(model => model.ChiTietDonHang[i].SoLuong, new { @class = "form-control" }) <!-- Trường cập nhật thông tin số lượng -->
+
+            <label for="ChiTietDonHang[@i].Gia">Giá:</label>
+            @Html.TextBoxFor(model => model.ChiTietDonHang[i].Gia, new { @class = "form-control" }) <!-- Trường cập nhật thông tin giá -->
+        </div>
+    }
+
+    <button type="submit">Cập nhật</button>
+}

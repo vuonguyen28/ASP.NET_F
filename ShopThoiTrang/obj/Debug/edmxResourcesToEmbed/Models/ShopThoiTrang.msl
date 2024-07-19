@@ -1,0 +1,248 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="WEB_0111_4hModelStoreContainer" CdmEntityContainer="ShopFSEntities">
+    <EntitySetMapping Name="BINHLUAN">
+      <EntityTypeMapping TypeName="WEB_0111_4hModel.BINHLUAN">
+        <MappingFragment StoreEntitySet="BINHLUAN">
+          <ScalarProperty Name="ID_BINHLUAN" ColumnName="ID_BINHLUAN" />
+          <ScalarProperty Name="MaDonHang" ColumnName="MaDonHang" />
+          <ScalarProperty Name="MaNV" ColumnName="MaNV" />
+          <ScalarProperty Name="NoiDung" ColumnName="NoiDung" />
+          <ScalarProperty Name="HinhAnh" ColumnName="HinhAnh" />
+          <ScalarProperty Name="NgayTao" ColumnName="NgayTao" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CALAMVIEC">
+      <EntityTypeMapping TypeName="WEB_0111_4hModel.CALAMVIEC">
+        <MappingFragment StoreEntitySet="CALAMVIEC">
+          <ScalarProperty Name="MaCa" ColumnName="MaCa" />
+          <ScalarProperty Name="TenCa" ColumnName="TenCa" />
+          <ScalarProperty Name="TGBatDau" ColumnName="TGBatDau" />
+          <ScalarProperty Name="TGKetThuc" ColumnName="TGKetThuc" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ChiTietDonHang">
+      <EntityTypeMapping TypeName="WEB_0111_4hModel.ChiTietDonHang">
+        <MappingFragment StoreEntitySet="ChiTietDonHang">
+          <ScalarProperty Name="MaChiTiet" ColumnName="MaChiTiet" />
+          <ScalarProperty Name="MaDonHang" ColumnName="MaDonHang" />
+          <ScalarProperty Name="MaChiTietSanPham" ColumnName="MaChiTietSanPham" />
+          <ScalarProperty Name="SoLuong" ColumnName="SoLuong" />
+          <ScalarProperty Name="Gia" ColumnName="Gia" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ChiTietSanPham">
+      <EntityTypeMapping TypeName="WEB_0111_4hModel.ChiTietSanPham">
+        <MappingFragment StoreEntitySet="ChiTietSanPham">
+          <ScalarProperty Name="MaChiTiet" ColumnName="MaChiTiet" />
+          <ScalarProperty Name="MaSP" ColumnName="MaSP" />
+          <ScalarProperty Name="MaKichThuoc" ColumnName="MaKichThuoc" />
+          <ScalarProperty Name="MaMau" ColumnName="MaMau" />
+          <ScalarProperty Name="SoLuongTon" ColumnName="SoLuongTon" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ChucNang">
+      <EntityTypeMapping TypeName="WEB_0111_4hModel.ChucNang">
+        <MappingFragment StoreEntitySet="ChucNang">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="TenChucNang" ColumnName="TenChucNang" />
+          <ScalarProperty Name="MaChucNang" ColumnName="MaChucNang" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DanhMuc">
+      <EntityTypeMapping TypeName="WEB_0111_4hModel.DanhMuc">
+        <MappingFragment StoreEntitySet="DanhMuc">
+          <ScalarProperty Name="MaDanhMuc" ColumnName="MaDanhMuc" />
+          <ScalarProperty Name="TenDanhMuc" ColumnName="TenDanhMuc" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DonHang">
+      <EntityTypeMapping TypeName="WEB_0111_4hModel.DonHang">
+        <MappingFragment StoreEntitySet="DonHang">
+          <ScalarProperty Name="MaDonHang" ColumnName="MaDonHang" />
+          <ScalarProperty Name="MaKhachHang" ColumnName="MaKhachHang" />
+          <ScalarProperty Name="NgayDat" ColumnName="NgayDat" />
+          <ScalarProperty Name="TongGia" ColumnName="TongGia" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GioHang">
+      <EntityTypeMapping TypeName="WEB_0111_4hModel.GioHang">
+        <MappingFragment StoreEntitySet="GioHang">
+          <ScalarProperty Name="MaGioHang" ColumnName="MaGioHang" />
+          <ScalarProperty Name="MaKhachHang" ColumnName="MaKhachHang" />
+          <ScalarProperty Name="MaChiTietSanPham" ColumnName="MaChiTietSanPham" />
+          <ScalarProperty Name="SoLuong" ColumnName="SoLuong" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="HinhAnh">
+      <EntityTypeMapping TypeName="WEB_0111_4hModel.HinhAnh">
+        <MappingFragment StoreEntitySet="HinhAnh">
+          <ScalarProperty Name="MaHinhAnh" ColumnName="MaHinhAnh" />
+          <ScalarProperty Name="MaSp" ColumnName="MaSp" />
+          <ScalarProperty Name="hinhanh1" ColumnName="hinhanh" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="KichThuoc">
+      <EntityTypeMapping TypeName="WEB_0111_4hModel.KichThuoc">
+        <MappingFragment StoreEntitySet="KichThuoc">
+          <ScalarProperty Name="MaKichThuoc" ColumnName="MaKichThuoc" />
+          <ScalarProperty Name="TenKichThuoc" ColumnName="TenKichThuoc" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="KHACHHANG">
+      <EntityTypeMapping TypeName="WEB_0111_4hModel.KHACHHANG">
+        <MappingFragment StoreEntitySet="KHACHHANG">
+          <ScalarProperty Name="MaKH" ColumnName="MaKH" />
+          <ScalarProperty Name="TenKH" ColumnName="TenKH" />
+          <ScalarProperty Name="SoDienThoai" ColumnName="SoDienThoai" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="DiaChi" ColumnName="DiaChi" />
+          <ScalarProperty Name="Password_hs5" ColumnName="Password_hs5" />
+          <ScalarProperty Name="GioiTinh" ColumnName="GioiTinh" />
+          <ScalarProperty Name="TrangThai" ColumnName="TrangThai" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MauSac">
+      <EntityTypeMapping TypeName="WEB_0111_4hModel.MauSac">
+        <MappingFragment StoreEntitySet="MauSac">
+          <ScalarProperty Name="MaMau" ColumnName="MaMau" />
+          <ScalarProperty Name="TenMau" ColumnName="TenMau" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="NhaCungCap">
+      <EntityTypeMapping TypeName="WEB_0111_4hModel.NhaCungCap">
+        <MappingFragment StoreEntitySet="NhaCungCap">
+          <ScalarProperty Name="MaNhaCungCap" ColumnName="MaNhaCungCap" />
+          <ScalarProperty Name="TenNhaCungCap" ColumnName="TenNhaCungCap" />
+          <ScalarProperty Name="DiaChi" ColumnName="DiaChi" />
+          <ScalarProperty Name="SoDienThoai" ColumnName="SoDienThoai" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="NHANVIEN">
+      <EntityTypeMapping TypeName="WEB_0111_4hModel.NHANVIEN">
+        <MappingFragment StoreEntitySet="NHANVIEN">
+          <ScalarProperty Name="MaNV" ColumnName="MaNV" />
+          <ScalarProperty Name="MaBP" ColumnName="MaBP" />
+          <ScalarProperty Name="HinhAnhNV" ColumnName="HinhAnhNV" />
+          <ScalarProperty Name="HoTenNV" ColumnName="HoTenNV" />
+          <ScalarProperty Name="NgaySinh" ColumnName="NgaySinh" />
+          <ScalarProperty Name="GioiTinh" ColumnName="GioiTinh" />
+          <ScalarProperty Name="DiaChi" ColumnName="DiaChi" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="TrangThai" ColumnName="TrangThai" />
+          <ScalarProperty Name="Username" ColumnName="Username" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="OTP">
+      <EntityTypeMapping TypeName="WEB_0111_4hModel.OTP">
+        <MappingFragment StoreEntitySet="OTP">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="MaKH" ColumnName="MaKH" />
+          <ScalarProperty Name="OTP_CODE" ColumnName="OTP_CODE" />
+          <ScalarProperty Name="Expiration_time" ColumnName="Expiration_time" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PhanQuyen">
+      <EntityTypeMapping TypeName="WEB_0111_4hModel.PhanQuyen">
+        <MappingFragment StoreEntitySet="PhanQuyen">
+          <ScalarProperty Name="MaNV" ColumnName="MaNV" />
+          <ScalarProperty Name="MaChucNang" ColumnName="MaChucNang" />
+          <ScalarProperty Name="note" ColumnName="note" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="QUANLYDONHANG">
+      <EntityTypeMapping TypeName="WEB_0111_4hModel.QUANLYDONHANG">
+        <MappingFragment StoreEntitySet="QUANLYDONHANG">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="MaDonHang" ColumnName="MaDonHang" />
+          <ScalarProperty Name="NgayDuKienNhanHang" ColumnName="NgayDuKienNhanHang" />
+          <ScalarProperty Name="PhiVanChuyen" ColumnName="PhiVanChuyen" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SanPham">
+      <EntityTypeMapping TypeName="WEB_0111_4hModel.SanPham">
+        <MappingFragment StoreEntitySet="SanPham">
+          <ScalarProperty Name="MaSP" ColumnName="MaSP" />
+          <ScalarProperty Name="TenSP" ColumnName="TenSP" />
+          <ScalarProperty Name="Gia" ColumnName="Gia" />
+          <ScalarProperty Name="MoTa" ColumnName="MoTa" />
+          <ScalarProperty Name="MaDanhMuc" ColumnName="MaDanhMuc" />
+          <ScalarProperty Name="MaNhaCungCap" ColumnName="MaNhaCungCap" />
+          <ScalarProperty Name="SoLuongTon" ColumnName="SoLuongTon" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sysdiagrams">
+      <EntityTypeMapping TypeName="WEB_0111_4hModel.sysdiagrams">
+        <MappingFragment StoreEntitySet="sysdiagrams">
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+          <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="definition" ColumnName="definition" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TINNHAN">
+      <EntityTypeMapping TypeName="WEB_0111_4hModel.TINNHAN">
+        <MappingFragment StoreEntitySet="TINNHAN">
+          <ScalarProperty Name="MaTinNhan" ColumnName="MaTinNhan" />
+          <ScalarProperty Name="MaNV" ColumnName="MaNV" />
+          <ScalarProperty Name="MaKH" ColumnName="MaKH" />
+          <ScalarProperty Name="NoiDung" ColumnName="NoiDung" />
+          <ScalarProperty Name="ThoiGianGui" ColumnName="ThoiGianGui" />
+          <ScalarProperty Name="DaGui" ColumnName="DaGui" />
+          <ScalarProperty Name="DaXem" ColumnName="DaXem" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="VOUCHER">
+      <EntityTypeMapping TypeName="WEB_0111_4hModel.VOUCHER">
+        <MappingFragment StoreEntitySet="VOUCHER">
+          <ScalarProperty Name="MA_VOUCHER" ColumnName="MA_VOUCHER" />
+          <ScalarProperty Name="Ten_VOUCHER" ColumnName="Ten_VOUCHER" />
+          <ScalarProperty Name="PhanTramGiam" ColumnName="PhanTramGiam" />
+          <ScalarProperty Name="DonToiThieu" ColumnName="DonToiThieu" />
+          <ScalarProperty Name="GiamToiDa" ColumnName="GiamToiDa" />
+          <ScalarProperty Name="SoLuongVOUCHER" ColumnName="SoLuongVOUCHER" />
+          <ScalarProperty Name="Ngaybatdau" ColumnName="Ngaybatdau" />
+          <ScalarProperty Name="Ngayketthuc" ColumnName="Ngayketthuc" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <AssociationSetMapping Name="NHANVIEN_CALAMVIEC" TypeName="WEB_0111_4hModel.NHANVIEN_CALAMVIEC" StoreEntitySet="NHANVIEN_CALAMVIEC">
+      <EndProperty Name="CALAMVIEC">
+        <ScalarProperty Name="MaCa" ColumnName="MaCa" />
+      </EndProperty>
+      <EndProperty Name="NHANVIEN">
+        <ScalarProperty Name="MaNV" ColumnName="MaNV" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="VOUCHER_DONHANG" TypeName="WEB_0111_4hModel.VOUCHER_DONHANG" StoreEntitySet="VOUCHER_DONHANG">
+      <EndProperty Name="DonHang">
+        <ScalarProperty Name="MaDonHang" ColumnName="MADonHang" />
+      </EndProperty>
+      <EndProperty Name="VOUCHER">
+        <ScalarProperty Name="MA_VOUCHER" ColumnName="MA_VOUCHER" />
+      </EndProperty>
+    </AssociationSetMapping>
+  </EntityContainerMapping>
+</Mapping>

@@ -1,0 +1,336 @@
+ * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     font-family: Arial, Helvetica, sans-serif;
+ }
+
+ nav {
+     align-items: center;
+     justify-content: space-between;
+ }
+
+ nav .logo_info_product {
+     font-size: 35px;
+     font-weight: 600;
+     color: #000000;
+ }
+
+ nav ul li {
+     list-style: none;
+     display: inline-block;
+ }
+
+ nav ul li a {
+     text-transform: uppercase;
+     display: block;
+     margin: 0 10px;
+     color: black;
+     font-weight: 600;
+     text-decoration: none;
+     font-size: 15px;
+     position: relative;
+ }
+ .nav__pc{
+    padding-top: 20px;
+ }
+
+ nav ul li a::before {
+     content: '';
+     position: absolute;
+     bottom: 0;
+     left: 0;
+     background-color: black;
+     width: 0;
+     height: 2.5px;
+     transition: all 0.5s ease;
+ }
+
+ nav ul li a:hover::before {
+     width: 100%;
+ }
+
+ nav ul li i {
+     margin-left: 10px;
+     cursor: pointer;
+
+ }
+
+ /* ___________________________________________________________________________*/
+
+ /* PHẦN THÔNG TIN SẢN PHẦM */
+ .flex_ip_items {
+     display: flex;
+     width: 1000px;
+     margin: 40px auto;
+ }
+
+ /* KHUNG BÊN TRÁI */
+ .onLeft_ip {
+     width: 50%;
+ }
+ .main_img {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.main_img img {
+    width: 100%;
+    border: 1px solid rgb(142, 142, 142);
+    margin: 0 auto;
+}
+
+ .main_img_ip {
+     width: 90%;
+     margin: 0 auto;
+ }
+
+ .main_img_ip img {
+     width: 100%;
+     border: 1px solid rgb(142, 142, 142);
+     margin: 0 auto;
+ }
+
+ .img_ip {
+    width: 100%;
+     display: flex;
+     width: inherit;
+     margin: 20px auto;
+ }
+
+ .main_img_ip {
+    width:100%;
+ }
+
+ .main_img_ip img {
+     width: 100%;
+     border: 1px solid black;
+     border-radius: 8px;
+     cursor: pointer;
+     transition: all 0.5s ease;
+ }
+
+ .main_img_ip img:hover {
+     background-color: cornflowerblue;
+ }
+
+ /* zoom to hình khi click vào <=> thay đổi kích thước ảnh khi khi click vào*/
+ .main_img_ip:hover img {
+     transform: scale(1.2);
+ }
+
+ 
+ /* KHUNG BÊN PHẢI */
+ .onRight_ip
+ {
+    margin-left: 20px;
+ }
+ .name_ip {
+     font-size: 30px;
+     font-weight: 600;
+     margin-top: 0;
+     border-bottom: 2px solid black;
+ }
+
+ /* ĐÁNH GIÁ */
+
+ .rating_ip {
+    margin-right: 20px;
+    display: inline-block;
+    direction: ltr; /* Đảm bảo hiển thị từ trái sang phải */
+  }
+  .rating_ip p
+  {
+    margin-top: 10px;
+    font-size: 15px;
+  }
+  .rating_ip input {
+    float: right;
+    display: none;
+  }
+  
+  .rating_ip label {
+    font-size: 30px;
+    color: gray;
+    cursor: pointer;
+    float: right; /* Đảo ngược thứ tự hiển thị từ phải sang trái */
+  }
+  
+  .rating_ip label:before {
+    content: '\2605';
+  }
+  
+  .rating_ip input:checked ~ label {
+    color: yellow;
+  }
+  .rating_txt p{
+    font-size: 15px;
+    margin-top: 10px;
+  }
+/*  */
+ .price_ip {
+     font-size: 30px;
+     font-weight: 700;
+     margin: 20px 0;
+ }
+
+ .color_ip {
+     display: flex;
+     font-size: 20px;
+     align-items: center;
+     margin: 20px 0;
+ }
+
+ .color_ip p {
+     font-size: 20px;
+     font-weight: bold;
+ }
+
+ .color_ip button {
+     font-size: 30px;
+     border-radius: 50%;
+ }
+
+ .color_ip button.zoomed {
+     transform: scale(1.5);
+     /* Tăng kích thước lên 1.2 lần */
+ }
+
+ .color_ip1 {
+     width: 30px;
+     height: 30px;
+     background-color: black;
+     margin: 10px 10px;
+     cursor: pointer;
+     transition: all 0.3s ease;
+ }
+
+
+ .color_ip2 {
+     width: 30px;
+     height: 30px;
+     background-color: rgb(161, 156, 156);
+     margin: 10px 10px;
+     cursor: pointer;
+     transition: all 0.3s ease;
+ }
+
+
+ .size_ip {
+     display: flex;
+     /* margin-top: 10px; */
+ }
+
+ .size_ip p {
+     font-size: 20px;
+     font-weight: bold;
+ }
+
+ .size_ip button {
+     width: 40px;
+     height: 25px;
+     margin: 0 10px;
+     transition: all 0.3s ease;
+ }
+
+ .size_ip button.zoomed {
+     transform: scale(1.2);
+     background: linear-gradient(45deg,#f30000,#3cf);
+    color: aliceblue;
+    box-shadow: #7d7d7d 2px 10px 10px 5px;
+    border: 1px solid #fff;
+     color: #ffffff;
+     font-weight: bold;
+ }
+ .size_ip button:hover {
+    background-color: #a7a7a7;
+}
+ .quantity_ip {
+     display: flex;
+     margin-top: 5px;
+ }
+
+ .quantity_ip p {
+     font-size: 20px;
+     font-weight: bold;
+     margin-top: 10px;
+ }
+
+ .quantity_ip input {
+     width: 60px;
+     font-size: 18px;
+     font-weight: 500;
+     text-align: center;
+     border: 1px solid #cdcdcd;
+     border-radius: 3px;
+     margin-top: 10px;
+     ;
+     margin-left: 10px;
+ }
+
+ .quantity_ip button {
+     font-size: 20px;
+     font-weight: bold;
+     width: 30px;
+     height: 30px;
+     border-radius: 50%;
+     margin-top: 10px;
+     margin-left: 5px;
+     cursor: pointer;
+     transition: background-color 0.3s ease;
+ }
+
+ .quantity_ip button:hover {
+     background-color: #f1f1f1;
+ }
+
+ .btn_box_ip
+ {
+    display: flex;
+    margin: 40px 0;
+
+ }
+ .btn_box_ip button {
+    font-size: 30px;
+    font-weight: bold;
+    padding: 8px 16px;
+    border-radius: 5px;
+    margin-left:  30px;
+    cursor: pointer;
+    color: #0a0a0a;
+    transition: all 0.3s ease;
+ }
+
+ .btn_add_ip:hover
+ {
+    background: linear-gradient(45deg,#f30000,#3cf);
+    color: aliceblue;
+    box-shadow: #535353 2px 10px 10px 5px;
+ }
+ .btn_buy_ip:hover
+ {
+    background: linear-gradient(45deg,#f30000,#3cf);
+    color: aliceblue;
+    box-shadow: #535353 2px 10px 10px 5px;
+
+ }
+
+ .details_ip
+ {
+    display: flex;
+    margin-top: 20px;
+ }
+ .details_ip p
+ {
+    font-size: 15px;
+    border-top: 2px solid black ;
+    padding-top: 10px;
+    margin-left: 10px;
+ }
+
+ .note_ip p
+ {
+    display: flex;
+    margin-top: 10px;
+    font-size: 15px;
+ }

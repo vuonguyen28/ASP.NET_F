@@ -1,0 +1,175 @@
+﻿@model ShopThoiTrang.Models.NHANVIEN
+
+@{
+    ViewBag.Title = "ShowProfile";
+    Layout = "~/Areas/Admin/Views/Shared/LayoutPageAdmin.cshtml";
+}
+
+<style>
+
+    .container {
+        margin-top: 80px;
+    }
+
+    .avatar_customer {
+        width: 300px;
+        height: 310px;
+        border-radius: 150px;
+        background: linear-gradient(225deg, #cacaca, #f0f0f0);
+        box-shadow: -25px 25px 28px #5a5a5a, 25px -25px 28px #ffffff;
+    }
+
+        .avatar_customer img {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+        }
+
+    .btn_SaveChange {
+        background: #2ea532;
+        color: white;
+        width: 100px;
+        height: 40px;
+        margin-top: 20px;
+        /*padding: 10px 10px;*/
+        font-size: 16px;
+        font-weight: bold;
+        border: 2px solid #00ff21;
+        border-radius: 30px;
+        text-align: center;
+    }
+
+        .btn_SaveChange i {
+            padding-right: 10px;
+        }
+
+        .btn_SaveChange:hover {
+            background: #fff;
+            border: 2px solid #00ff21;
+        }
+
+    .btn_chooseimg {
+        margin-top: 20px;
+        margin-left: 20px;
+        font-size: 13px;
+    }
+
+    .title_customer {
+        font-size: 16px;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+
+    .txt_customer {
+        font-size: 16px;
+    }
+
+    .icon_profile{
+        font-size: 35px;
+        padding-right: 20px;
+        color: #fff;
+    }
+
+    .card_profile {
+        width: 80%;
+        background: #169c9d;
+        padding-top: 30px;
+        margin: 0 auto;
+        border-radius: 20px;
+        box-shadow: -25px 25px 28px #5a5a5a, 25px -25px 28px #ffffff;
+    }
+
+    .box_card {
+        background-color: #169c9d;
+    }
+
+    .table td {
+        background-color: #169c9d;
+    }
+
+    .table span{
+        color: #fff;
+        font-size: 16px;
+        font-weight: bold;
+    }
+    .btn_EditProfile{
+        margin-top: 20px;
+        width: 100px;
+        font-size: 16px;
+        border-radius: 30px;
+        font-weight: bold;
+        border: 1px solid #000000;
+        background-color: #29a92e;
+        height: 50px;
+        transition: 0.2s ease;
+    }
+    .btn_EditProfile a{
+        color: #fff;
+    }
+    .btn_EditProfile:hover{
+        transform: scale(1.1);
+    }
+       
+</style>
+
+<!--container-->
+<div class="container">
+
+    <!--Row-->
+    <div class="card_profile">
+        <div class="row">
+
+            <!--COLUMN 1: Avatar - button choose file - Button Save-->
+            <div class="col-md-7">
+                <div class="form-group">
+                    @*@Html.LabelFor(model => model.Avatar, htmlAttributes: new { @class = "control-label col-md-2" })*@
+                    <!--Avatar-->
+                    <div class="col-md-10  d-flex justify-content-center align-items-center">
+                        <div class="avatar_customer">
+                            <img src="~/Image/@Model.HinhAnhNV" width="60px;" height="70px;" />
+                        </div>
+
+                    </div>
+                    <div class="col-md-10  d-flex justify-content-center align-items-center">
+                        <button class="btn_EditProfile">
+                            <a href="@Url.Action("EditProfile", "Home")">Chỉnh Sửa</a>
+                        </button>
+                    </div>
+                   
+                </div>
+            </div>
+
+            <!---->
+            <div class="col-md-4 " >
+
+                <table class="table">
+
+                    <tbody>
+                        <tr>
+                            <td ><i class="fa-solid fa-user-astronaut icon_profile"></i><span>@Model.HoTenNV</span> </td>
+                        </tr>
+                        <tr>
+                            <td><i class="fa-solid fa-cake-candles icon_profile"></i> <span>@Model.NgaySinh</span></td>
+                        </tr>
+                        <tr>
+                            <td ><i class="fa-solid fa-map-location-dot icon_profile"></i> <span>@Model.DiaChi</span></td>
+                        </tr>
+                        <tr>
+                            <td ><i class="fa-solid fa-square-envelope icon_profile"></i><span>@Model.Email</span></td>
+                        </tr>
+                        <tr>
+                            <td ><i class="fa-solid fa-venus-mars icon_profile"></i> <span>@Model.GioiTinh</span></td>
+                        </tr>
+                        <tr>
+                            <td class="box_card"><i class="fa-solid fa-lock icon_profile"></i><span>@Model.TrangThai</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+   
+</div>
+<!--End row-->
+
+

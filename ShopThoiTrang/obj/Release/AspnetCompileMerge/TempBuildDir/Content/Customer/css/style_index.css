@@ -1,0 +1,474 @@
+/*
+    #f5f5f5
+    #d3b673
+*/
+/* LOGIN */
+/* PHẦN LOGIN*/
+.navigation .btnLogin-popup
+{
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid aliceblue;
+    border-radius: 50%;
+    outline: none;
+    cursor: pointer;
+    font-size: 1.1em;
+    color: aliceblue;
+    font-weight: 500;
+    margin-left: 40px;
+    float: right;
+    transition: .4s;
+}
+.navigation .btnLogin-popup:hover
+{
+    background: aliceblue;
+    color: darkslategrey;
+}
+
+.wrapper
+{
+    position: relative;
+    width: 400px;
+    height: 440px;
+    background: transparent;
+    border: 2px solid aliceblue;
+    border-radius: 20px;
+    backdrop-filter: blur(50px);
+    box-shadow: 0 0 30px black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    transform: scale(0);
+    transition: transform .3s ease,height .2 ease;
+}
+
+.wrapper.active_popup
+{
+    transform: scale(1);
+}
+
+.wrapper.active
+{
+    height: 520px;
+}
+
+.wrapper .icon_close
+{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 45px;
+    height: 45px;
+    font-size: 2em;
+    color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom-left-radius: 20px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.wrapper .icon_close:hover
+{
+    background: red;
+}
+.wrapper .form_box
+{
+    width: 100%;
+    padding: 40px;
+}
+
+.wrapper .form_box.login
+{
+    /* display: none; */
+    transition: transform .18s ease;
+    transform: translateX(0);
+}
+
+
+.wrapper.active .form_box.login
+{
+    position: absolute;
+    transform: translateX(-400px);
+}
+
+.wrapper.form_box.register
+{
+    position: absolute;
+    transition: none;
+    transform: translateX(400px);
+}
+
+.wrapper.active .form_box.register
+{
+    /* display: none; */
+    transition: transform .18s ease;
+    transform: translateX(0);
+}
+/* ĐĂNG KÝ */
+.wrapper .form_box.register
+{
+    position: absolute;
+    transform: translateX(400px);
+}
+.form_box h2
+{
+    font-size: 2em;
+    color: rgb(235, 235, 235);
+    text-align: center;
+}
+
+.input_box
+{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    border-bottom: 2px solid darkslategrey;
+    margin: 30px 0;
+}
+
+.input_box label
+{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    font-size: 1em;
+    color: rgb(255, 255, 255);
+    font-weight: none;
+    transition: .3s;
+} 
+
+/* Đẩy chữ Email và Password lên để nhập thông tin */
+.input_box input:focus~label,
+.input_box input:valid~label
+{
+    top: 5px;
+}
+.input_box input
+{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    padding: 0 35px 0 5px;
+}
+.input_box .icon
+{
+    position: absolute;
+    right: 8px;
+    font-size: 1.2em;
+    color: rgb(255, 255, 255);
+    line-height: 57px;
+}
+
+.remember-forgot
+{
+    font-size: .9em;
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+    margin: -15px 0 15px;
+    display: flex;
+    justify-content: space-between ;
+}
+.remember-forgot label input
+{
+    accent-color: rgb(255, 255, 255);
+    margin-right: 3px;
+}
+
+.remember-forgot a
+{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+.remember-forgot a:hover
+{
+    text-decoration: underline;
+}
+
+.btn_submit_login
+{
+    width: 100%;
+    height: 45px;
+    background: darkslategrey;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1em;
+    color: white;
+    font-weight: 500;
+}
+
+.login_register
+{
+    font-size: .9em;
+    text-align: center;
+    font-weight: 500;
+    margin: 25px 0 10px;
+}
+
+.login_register p a
+{
+    color: darkslategrey;
+    text-decoration: none;
+    font-weight: 600;
+}
+.login_register p 
+{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-weight: 600;
+}
+.login_register p a:hover
+{
+    text-decoration: underline;
+}
+
+
+
+
+/* huuu */
+
+.overlay_1{
+    position: fixed;
+    top: 15%;
+    right: 35%;
+    bottom: 0;
+    background-color: rgba(0,0,0, 0.2);
+    animation: fadeIn linear 0.2s;
+    z-index: 999;
+}
+
+/* LOGIN END */
+
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+}
+/* mobile-tablet-phone */
+.menu__mobile{
+    display: none;
+}
+/* chuyen sang thanh nav mobi*/
+
+
+/* content */
+.text-1 {
+    color: #ffffff;
+    font-size: 2rem;
+    font-family: Muli, sans-serif;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
+}
+.text-2 {
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 10px;
+    letter-spacing: 1.8px;
+    font-weight: bold;
+}
+.icon-home {
+    background: url(./img/home_line.webp) no-repeat center;
+    width: 315px;
+    height: 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.text, .text-1, .text-2 ,.icon-home{
+    display: block;
+}
+
+
+.box_carousel{
+    width: 100%;
+    height: auto;
+}
+.course-item-menu {
+    margin-top: 20px;
+    height: auto;
+    padding-bottom: 20px;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(176, 176, 176);
+    box-shadow: 1px 1px 0px 1px rgb(179, 179, 179);
+}
+.course-item-menu:hover {
+    box-shadow: 1px 1px 2px 1px rgb(11, 11, 11);
+}
+
+.course-item-menu .box img{
+    width: 100%;
+    height: 40%;
+}
+.box__item{
+    width: 100%;
+    height: 50px;
+}
+.btn_buy,.btn_add{
+    width: 48%;
+    height: 50px;
+    background-color: #000000;
+    cursor: pointer;
+    color: aliceblue;
+    text-align: center;
+}
+.btn_add{
+    float: right;
+    display: none;
+}
+.btn_buy, .btn_add{
+    font-size: 1.5em;
+}
+.btn_buy div ,.btn_add div{
+    text-align: center;
+    color: #fbfbfb;
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+    margin-top: 18px;
+}
+.btn_buy  p,.btn_add  p{
+    font-size: 1.5rem;
+    margin-top: 10px;
+}
+.btn_buy{
+    float: left;
+    display: none;
+
+}
+
+.box__product{
+    width: 100%;
+    height: 100px;
+    margin-top: 10px;
+}
+.box__color{
+    width: 100px;
+    height: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.color_1{
+    float: left;
+    margin-right: 10px;
+    background-color: #acacac;
+    width: 39px;
+    height: 10px;
+}
+.color_2{
+    float: right;
+    background-color: #000000;
+    width: 39px;
+    height: 10px;
+}
+.product_name{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2em;
+    font-weight: 600;
+    color: #000000;
+    text-align: center;
+}
+.product_money{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5em;
+    font-weight: 600;
+    color: #000000;
+    text-align: center;
+    margin-top: -10px;
+}
+
+.course-item-menu .box_2 img{
+    width: 100%;
+    height: auto;
+    opacity: 0;
+    display: none;
+}
+
+.course-item-menu:hover .btn_add {
+    animation: slideTop 1s ease forwards;
+    /* animation-delay: 1s; */
+    display: block;
+}
+.course-item-menu:hover .btn_buy {
+    animation: slideTop 1s ease forwards;
+    display: block;
+}
+.course-item-menu:hover .box {
+    display: none;
+}
+.course-item-menu:hover .box_2 img {
+    animation: fadeIn 1.2s ease forwards  ;
+    
+    display: block;
+}
+
+
+
+/* content btn */
+/*.text__click-btn{
+    width: 130px;
+    height: 40px;
+    background-color: #ffffff;
+    border: 2px solid #006746;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 20PX;
+    text-align: center;
+    font-size: 16px;
+    padding-top: 8px;
+}
+.text__click-btn a{
+    text-decoration: none;
+    color: #006746;
+}
+.text__click-btn:hover{
+    background-color: #006746;
+    color: #ffffff;
+    border: 2px solid #006746;
+    font-weight: 700;
+}
+.text__click-btn a:hover{
+    color: #ffffff;
+}
+*/
+
+/* animation */
+
+@keyframes slideTop{
+    0%{
+        opacity: 0;
+        transform:  translateY(10px);
+    }
+    100%{
+        opacity: 1;
+        transform:  translateY(0);
+    }
+}
+@keyframes slide{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}

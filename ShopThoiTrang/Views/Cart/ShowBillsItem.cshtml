@@ -1,0 +1,244 @@
+﻿@model IEnumerable<ShopThoiTrang.Models.ChiTietDonHang>
+
+@{
+    ViewBag.Title = "ShowBillsItem";
+    Layout = "~/Views/Share/LayoutPage_Customer.cshtml";
+}
+
+<style>
+    .title_name {
+        font-size: 20px;
+        font-weight: bold;
+        /*justify-content: center;*/
+        padding-top: 10px;
+    }
+
+    .Title_Bills {
+        font-weight: bold;
+        font-size: 14px;
+        padding-bottom: 5px;
+        justify-content: center;
+        padding-top: 10px;
+    }
+
+    .form_Billdetails {
+        border-radius: 20px;
+        background: #e0d7d7;
+        box-shadow: 8px 8px 16px #aca6a6, -8px -8px 16px #ffffff;
+        margin-bottom: 30px;
+        height: auto;
+        text-align: center;
+        padding-top: 20px;
+    }
+
+    .item_Bills {
+        justify-content: center;
+        font-size: 20px;
+    }
+
+    .properties_item {
+        font-size: 20px;
+    }
+
+    .btn_BackToList button {
+        display: flex;
+        height: 4em;
+        width: 100px;
+        align-items: center;
+        justify-content: center;
+        background-color: #eeeeee4b;
+        border-radius: 3px;
+        letter-spacing: 1px;
+        transition: all 0.2s linear;
+        cursor: pointer;
+        border: 1px solid black;
+        background: #fff;
+        margin-left: 100px;
+    }
+
+        .btn_BackToList button > i {
+            margin-right: 4px;
+            margin-left: 4px;
+            font-size: 12px;
+            transition: all 0.2s ease-in;
+        }
+
+        .btn_BackToList button:hover > i {
+            font-size: 1.2em;
+            transform: translateX(-5px);
+        }
+
+        .btn_BackToList button:hover {
+            /*box-shadow: 9px 9px 33px #d1d1d1, -9px -9px 33px #ffffff;*/
+            box-shadow: 10px 10px 20px 0 rgba(0, 0, 0, 0.5);
+            transform: translateY(-2px);
+        }
+
+    .btn_BackToList a {
+        color: black;
+        text-decoration: none;
+        font-size: 14px;
+        font-weight: bold;
+    }
+
+    .title_page {
+        text-align: center;
+        font-weight: bold;
+        font-family: 'Playfair Display', serif;
+        margin-bottom: 10px;
+        margin-top: 130px;
+        font-size: 30px;
+    }
+
+    .btn_Feedback {
+        width: 80%;
+        font-size: 18px;
+        font-weight: bold;
+        padding-left: 10px;
+        padding-right: 10px;
+        margin-top: 20%;
+        border-radius: 20px;
+        transition: 0.3s ease;
+    }
+
+        .btn_Feedback:hover {
+            transform: scale(1.1);
+            box-shadow: 10px 10px 20px 0 rgba(0, 0, 0, 0.5);
+        }
+
+    .btn_BuyAgain {
+        width: 80%;
+        font-size: 18px;
+        font-weight: bold;
+        padding-left: 10px;
+        padding-right: 10px;
+        margin-top: 10%;
+        border-radius: 20px;
+        transition: 0.3s ease;
+    }
+
+        .btn_BuyAgain:hover {
+            transform: scale(1.1);
+            box-shadow: 10px 10px 20px 0 rgba(0, 0, 0, 0.5);
+        }
+</style>
+
+<h2 class="title_page"><u>Chi tiết đơn hàng</u></h2>
+<br />
+
+@*back to list*@
+<div class="btn_BackToList">
+    <button>
+        <i class="fa-solid fa-arrow-left"></i>
+        <a href="@Url.Action("InvoiceAwaitingConfirmation","BillsCustomer")">
+            Quay lại
+        </a>
+    </button>
+</div>
+<hr />
+<div class="container">
+    <div class="ctn_detailsBill">
+
+        @foreach (var item in Model)
+        {
+            <div class="row form_Billdetails">
+
+                <!--Id detail - Id Bill: Mã chi tiết - mã hóa đơn-->
+                <div class="col col-md-1">
+                    <!--Mã hóa đơn-->
+                    <div class="row">
+                        <div class="row Title_Bills">Mã Đơn</div>
+                        <hr />
+                        <div class="row item_Bills">@Html.DisplayFor(modelItem => item.MaDonHang)</div>
+                    </div>
+
+                    <!--Id Details-->
+                    <div class="row">
+                        <div class="row Title_Bills">Mã Chi Tiết</div>
+                        <hr />
+                        <div class="row item_Bills">@Html.DisplayFor(modelItem => item.MaChiTiet)</div>
+                    </div>
+                </div>
+
+                <!--Image-->
+                <div class="col col-2">
+                    @{
+                        bool flag = false;
+                    }
+                    @foreach (var hinhAnh in item.ChiTietSanPham.SanPham.HinhAnh)
+                    {
+                        if (flag == false)
+                        {
+                            <img src="~/Image/@Url.Content(hinhAnh.hinhanh1)" alt="Hình ảnh sản phẩm" width="120px" height="130px;" />
+                            flag = true;
+                        }
+                    }
+                </div>
+
+                <!--properties: Thuộc tính-->
+                <div class="col col-md-5">
+                    <div class="row">
+                        <div class="row title_name"> @Html.DisplayFor(modelItem => item.ChiTietSanPham.SanPham.TenSP)</div>
+                        <hr />
+                    </div>
+                    <div class="row">
+                        <div class="col col-md-3">
+                            <div class="row properties_item" style="font-weight: bold;">Size: </div>
+                            <div class="row properties_item" style="font-weight: bold;">Color: </div>
+                            <div class="row properties_item" style="font-weight: bold;">Quantity: </div>
+                            <div class="row properties_item" style="font-weight: bold;">Price: </div>
+
+                        </div>
+                        <div class="col col-md-2">
+                            <div class="row properties_item">
+                                @Html.DisplayFor(modelItem => item.ChiTietSanPham.KichThuoc.TenKichThuoc)
+                            </div>
+                            <div class="row properties_item">@Html.DisplayFor(modelItem => item.ChiTietSanPham.MauSac.TenMau)</div>
+                            <div class="row properties_item">@Html.DisplayFor(modelItem => item.SoLuong)</div>
+                            <div class="row properties_item">@Html.DisplayFor(modelItem => item.Gia)</div>
+
+                        </div>
+                    </div>
+
+                </div>
+
+                <!--total: tổng tiền-->
+                <div class="col col-md-2">
+                    <div class="row title_name" style="justify-content: center; padding-top: 20%;">Tổng Tiền</div>
+                    <hr />
+                    <div class="row properties_item" style="justify-content: center;"> @Html.DisplayFor(modelItem => item.DonHang.TongGia)</div>
+                </div>
+
+                <!--Button Hủy-->
+
+                <script>
+                    // Chọn tất cả các nút "Feedback" trong trang và gán sự kiện click cho mỗi nút
+                    var feedbackButtons = document.querySelectorAll('.btn_Huy');
+                    feedbackButtons.forEach(function (button) {
+                        button.addEventListener('click', function () {
+                            // Lấy mã chi tiết đơn hàng từ dữ liệu thuộc tính data-*
+                            var maChiTietDH = this.getAttribute('data-maChiTietDH');
+                            // Chuyển hướng sang trang tạo mới phản hồi và truyền mã chi tiết đơn hàng
+                            window.location.href = '/Cart/CreateFeedback?maChiTietDH=' + maChiTietDH;
+                        });
+                    });
+                </script>
+
+                <div class="col col-md-2">
+                    <a href="@Url.Action("CreateFeedback", "Cart", new { MaChiTiet = item.MaChiTiet })">
+                        <button class="btn_Feedback">FeedBack <i class="fa-solid fa-paper-plane"></i></button>
+                    </a>
+
+                    @using (Html.BeginForm("MuaLaiSanPham", "BillsCustomer", new { maChiTiet = item.MaChiTietSanPham }, FormMethod.Post)) // Đường dẫn đến hàm xử lý chức năng mua lại sản phẩm
+                    {
+
+                        <input type="submit" value="Mua Lại" class="btn_BuyAgain">
+                    }
+                </div>
+
+
+
+            </div>
+        }
+    </div>
+</div>

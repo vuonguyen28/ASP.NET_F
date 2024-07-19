@@ -1,0 +1,223 @@
+﻿
+@model IEnumerable<ShopThoiTrang.Models.ShoppingCartItemViewModel>
+
+@{
+    ViewBag.Title = "ShoppingCartXemtruoc";
+    Layout = "~/Views/Share/LayoutPage_Customer.cshtml";
+}
+
+<style>
+    .container {
+        margin-top: 130px;
+        /*margin-left: 20px;*/
+        font-size: 16px;
+    }
+
+    .title_cart {
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    .quantity-controls input {
+        width: 40px;
+        text-align: center;
+    }
+
+    .quantity-controls button {
+        width: 20px;
+        text-align: center;
+    }
+
+    .btn_ThanhToan button {
+        width: 200px;
+        height: 50px;
+        background: #f79700;
+        border-radius: 30px;
+        border: 2px solid #f79700;
+        float: right;
+        font-size: 20px;
+        font-weight: bold;
+        color: #fff;
+    }
+
+        .btn_ThanhToan button:hover {
+            background: #fff;
+            transform: scale(1.1);
+            border: 2px solid #f79700;
+            color: #f79700;
+        }
+</style>
+
+<h2>Xem Trước San Phẩm trước khi thanh toán</h2>
+
+
+<div class="container">
+
+    <!--Row 1: tên tiêu đề-->
+    <div class="row  title_cart">
+        <!--Cột 1: hình ảnh-->
+        <div class="col col-md-2 d-flex justify-content-center align-items-center">
+            <p>Hình Ảnh</p>
+        </div>
+
+        <!--Cột 2: Tên SP-->
+        <div class="col col-md-2">
+            <p>Tên Sản phẩm</p>
+        </div>
+
+        <!--Cột 3: Giá-->
+        <div class="col col-md-2">
+            <p>Giá Bán</p>
+        </div>
+
+        <!--Cột 4: Số lượng-->
+        <div class="col col-md-1">
+            <p>Số Lượng</p>
+        </div>
+        <!--Cột 5: Màu sắc-->
+        <div class="col col-md-1 d-flex justify-content-center align-items-center">
+            <p>Màu Sắc</p>
+        </div>
+        <!--Cột 6: size-->
+        <div class="col col-md-1 d-flex justify-content-center align-items-center">
+            <p>Size</p>
+        </div>
+        <!--Cột 7: Tổng tiền-->
+        <div class="col col-md-1">
+            <p>Tổng Tiền</p>
+        </div>
+        <!--Cột 8: Chức năng-->
+        <div class="col col-md-2">
+            <p></p>
+        </div>
+        <hr style="height: 3px; background: #000000;" />
+    </div>
+
+    <!--Row 2: Thông tin sản phẩm-->
+    @foreach (var item in Model)
+    {
+        <div class="row">
+
+            @{
+                bool flag = false;
+            }
+            <div class="col col-md-2 d-flex justify-content-center align-items-center">
+                <!--image-->
+                @foreach (var image in item.Images)
+                {
+                    if (flag == false)
+                    {
+                        <img src="~/Image/@Url.Content(image)" alt="Product Image" width="80" height="90" />
+                        flag = true;
+                    }
+                }
+            </div>
+
+            <!--Cột 2: Tên SP-->
+            <div class="col col-md-2">
+                <p>@Html.DisplayFor(modelItem => item.ProductName)</p>
+            </div>
+
+            <!--Cột 3: Giá-->
+            <div class="col col-md-2">
+                <p id="quantity2">
+                    @item.Price
+                </p>
+            </div>
+
+            <!--Cột 4: Số lượng-->
+            <div class="col col-md-1">
+                <p class="quantity-controls">
+                    <button class="quantity-decrement" data-cartitemid="@item.CartItemId">-</button>
+                    <input id="quantityInput-@item.CartItemId" type="number" class="quantity-input" value="@item.Quantity" data-cartitemid="@item.CartItemId" onchange="updateTotalPrice()" />
+                    <button class="quantity-increment" data-cartitemid="@item.CartItemId">+</button>
+                </p>
+            </div>
+
+            <!--Cột 5: Màu sắc-->
+            <div class="col col-md-1 d-flex justify-content-center align-items-center">
+                <p>
+                    @Html.DisplayFor(modelItem => item.ColorName)
+                </p>
+            </div>
+            <!--Cột 6: size-->
+            <div class="col col-md-1 d-flex justify-content-center align-items-center">
+                <p>
+                    @Html.DisplayFor(modelItem => item.SizeName)
+                </p>
+            </div>
+
+            <!--Cột 7: Tổng tiền-->
+            <div class="col col-md-1">
+                <p>@item.TotalPrice</p>
+            </div>
+            <!--Cột 8: Chức năng-->
+            <div class="col col-md-2">
+
+                @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
+                @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
+                @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+
+            </div>
+
+        </div>
+        <hr />
+    }
+    <hr />
+    <!--Row 3: Button thanh toán-->
+    <div class="row">
+        @using (Html.BeginForm("MuaNgay", "Cart", FormMethod.Post))
+        {
+            <div class="btn_ThanhToan">
+                <button type="submit" class="btn btn-primary">Thanh Toán</button>
+            </div>
+        }
+    </div>
+
+
+    </table>
+
+</div>
+
+
+
+@section scripts {
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(".quantity-controls").on("click", ".quantity-decrement, .quantity-increment", function () {
+                var $input = $(this).siblings(".quantity-input");
+                var cartItemId = $input.data("cartitemid");
+                var currentQuantity = parseInt($input.val());
+
+                if ($(this).hasClass("quantity-increment")) {
+                    currentQuantity++;
+                } else if ($(this).hasClass("quantity-decrement") && currentQuantity > 1) {
+                    currentQuantity--;
+                }
+
+                $input.val(currentQuantity);
+
+                // Update the quantity in the database via AJAX
+                updateQuantity(cartItemId, currentQuantity);
+            });
+
+            function updateQuantity(cartItemId, newQuantity) {
+                $.ajax({
+                    url: "@Url.Action("UpdateQuantity", "Cart")",
+                    method: "POST",
+                    data: { cartItemId: cartItemId, newQuantity: newQuantity },
+                    success: function (data) {
+                        // Handle success (e.g., update the UI)
+                        console.log("Quantity updated successfully");
+                    },
+                    error: function () {
+                        console.error("Failed to update quantity");
+                    }
+                });
+            }
+        });
+    </script>
+    @*// hàm tính tổng tiền*@
+
+}

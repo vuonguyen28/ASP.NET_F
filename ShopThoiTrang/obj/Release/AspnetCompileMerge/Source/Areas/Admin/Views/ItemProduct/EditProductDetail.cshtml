@@ -1,0 +1,76 @@
+﻿@model ShopThoiTrang.Models.ChiTietSanPham
+
+@{
+    ViewBag.Title = "EditProductDetail";
+    Layout = "~/Areas/Admin/Views/Shared/LayoutPageAdmin.cshtml";
+}
+
+<h2>EditProductDetail</h2>
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+
+<div class="form-horizontal">
+    <h4>ChiTietSanPham</h4>
+    <hr />
+    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+    <div class="form-group">
+        @Html.LabelFor(model => model.MaChiTiet, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.MaChiTiet, new { htmlAttributes = new { @class = "form-control" } })
+            @Html.ValidationMessageFor(model => model.MaChiTiet, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+
+    <!--Size-->
+    <div class="form-group">
+        <label class="control-label col-md-2">Tên Sản Phẩm</label>
+        <div class="col-md-10">
+            @Html.DropDownListFor(model => model.MaSP, null, "- Select Product -", new { @class = "form-control" })
+            @Html.ValidationMessageFor(model => model.MaSP, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+
+    <!--Size-->
+    <div class="form-group">
+        <label class="control-label col-md-2">Kích Thước</label>
+        <div class="col-md-10">
+            @Html.DropDownListFor(model => model.MaKichThuoc, null, "- Select Size -", new { @class = "form-control" })
+            @Html.ValidationMessageFor(model => model.MaKichThuoc, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <!--Color-->
+    <div class="form-group">
+        <label class="control-label col-md-2">Màu sắt</label>
+        <div class="col-md-10">
+            @Html.DropDownListFor(model => model.MaMau, null, "- Select Color -", new { @class = "form-control" })
+            @Html.ValidationMessageFor(model => model.MaMau, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.SoLuongTon, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.SoLuongTon, new { htmlAttributes = new { @class = "form-control" } })
+            @Html.ValidationMessageFor(model => model.SoLuongTon, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <div class="form-group">
+        <div class="col-md-offset-2 col-md-10">
+            <input type="submit" value="Save" class="btn btn-default" />
+        </div>
+    </div>
+</div>
+}
+
+
+
+
+

@@ -1,0 +1,203 @@
+﻿@model ShopThoiTrang.Models.SanPham
+
+@{
+    ViewBag.Title = "DetailProduct";
+    Layout = "~/Views/Share/LayoutPage_Customer.cshtml";
+}
+
+
+
+
+<style>
+    .nav_left {
+        float: left;
+    }
+
+    .nav ul {
+        width: auto;
+        height: auto;
+        float: right;
+    }
+
+    .btn_accept {
+        width: 87%;
+        height: auto;
+        background-color: darkgreen;
+        color: #ffffff;
+        font-size: 20px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .window_text p {
+        font-size: 16px;
+        color: #003201;
+        font-weight: bold;
+    }
+
+    .window_text div {
+        width: 100%;
+        height: auto;
+        margin-top: -12px;
+    }
+
+        .window_text div input {
+            padding-top: 10px;
+            width: 100%;
+        }
+
+    main {
+        padding-top: 68px;
+    }
+</style>
+
+<main>
+    <section class="container">
+        <div class="row">
+            <div class="col-lg-5 col-md-12 col-sm-12 col-12">
+                <div class="left_content">
+                    <div class="col-lg-8 offset-lg-2 col-md-6 offset-md-3 col-sm-8 offset-sm-2 col-8 offset-2">
+                        @{
+                            bool displayedFirstImage = false;
+                        }
+
+                        @if (ViewBag.ProductImages != null)
+                        {
+                            foreach (var image in ViewBag.ProductImages)
+                            {
+                                if (!displayedFirstImage)
+                                {
+                                    <div class="main_img ">
+                                        <img src="~/Image/@image.hinhanh1" alt="" onclick="showImg(this.src)" width="300px" />
+                                    </div>
+                                    displayedFirstImage = true;
+                                }
+
+                            }
+                        }
+
+                    </div>
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-12 img_ip">
+
+                        @foreach (var image in ViewBag.ProductImages)
+                        {
+                            <div class="col-lg-3">
+                                <div class="main_img_ip">
+                                    <img src="~/Image/@image.hinhanh1" alt="" onclick="showImg(this.src)" />
+                                </div>
+                            </div>
+                        }
+
+
+                    </div>
+                    <div class="note_ip">
+                        <p> * LƯU Ý: Hạn chế sử dụng máy sấy nhiệt cao để giữ form áo.</p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-lg-7 col-md-12 col-sm-12 col-12">
+                <div class="right_content">
+                    <div class="name_ip"> @Model.TenSP</div>
+                    <div class="rating_txt">
+                        <p>1000 Đã bán | 580 Đánh giá</p>
+                    </div>
+                    <div class="rating_ip">
+                        <input type="radio" id="star1" name="rating_ip" value="1" />
+                        <label for="star1" title="1 star"></label>
+                        <input type="radio" id="star2" name="rating_ip" value="2" />
+                        <label for="star2" title="2 stars"></label>
+                        <input type="radio" id="star3" name="rating_ip" value="3" />
+                        <label for="star3" title="3 stars"></label>
+                        <input type="radio" id="star4" name="rating_ip" value="4" />
+                        <label for="star4" title="4 stars"></label>
+                        <input type="radio" id="star5" name="rating_ip" value="5" />
+                        <label for="star5" title="5 stars"></label>
+                    </div>
+                    <div class="price_ip">Price:  @Model.Gia $</div>
+                    <div class="color_ip">
+                        <p>Color: </p>
+                        <button class="color_ip1"></button>
+                        <button class="color_ip2"></button>
+                    </div>
+                    <div class="size_ip">
+                        <p>Chọn size:</p>
+                        <button class="size_btn">S</button>
+                        <button class="size_btn">M</button>
+                        <button class="size_btn">L</button>
+                        <button class="size_btn">XL</button>
+                    </div>
+                    <div class="quantity_ip">
+                        <p>Số lượng: </p>
+                        <button class="quantity_btn decrease">-</button>
+                        <input type="number" min="1" max="10" value="1">
+                        <button class="quantity_btn increase">+</button>
+                    </div>
+                    <div class="btn_box_ip">
+                        <button type="button" class="btn_add_ip">Thêm vào giỏ</button>
+                        <button type="button" class="btn_add_ip btn_buy_ip">Mua ngay</button>
+                    </div>
+                    <div class="details_ip">
+                        <p>
+                            @Html.Raw(Model.MoTa)
+                        </p>
+                        </h>
+                    </div>
+
+
+
+
+                    @*@if (ViewBag.ProductDetails != null)
+                        {
+                            <h3>Thông tin mã kích thước và mã màu:</h3>
+                            <ul>
+                                @foreach (var item in ViewBag.ProductDetails)
+                                {
+                                    <li>
+                                        Mã kích thước: @item.kichthuoc<br />
+                                        Mã màu: @item.MaMau
+                                    </li>
+                                }
+                            </ul>
+                        }*@
+
+
+
+
+
+
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<script src="~/Content/Customer/js/js_ip.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+
+
+
+<h3>Chi tiết sản phẩm</h3>
+@if (ViewBag.ProductDetails != null )
+{
+    <ul>
+        @foreach (var detail in ViewBag.ProductDetails)
+        {
+            <li>Mã Chi Tiết: @detail.MaChiTiet</li>
+        }
+    </ul>
+    <ul>
+        @foreach (var detail in ViewBag.ProductDetails)
+        {
+            <li>Mã Kích Thước: @detail.MaKichThuoc</li>
+        }
+    </ul>
+}
+else
+{
+    <p>Không có chi tiết sản phẩm cho sản phẩm này.</p>
+}

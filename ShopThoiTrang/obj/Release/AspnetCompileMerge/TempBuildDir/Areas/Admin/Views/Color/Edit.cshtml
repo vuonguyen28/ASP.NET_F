@@ -1,0 +1,58 @@
+﻿@model ShopThoiTrang.Models.MauSac
+
+@{
+    ViewBag.Title = "Edit";
+    Layout = "~/Areas/Admin/Views/Shared/LayoutPageAdmin.cshtml";
+}
+
+<h2 class="title_page"><u>Chỉnh Sửa Màu Sắc</u></h2>
+
+<!--Back to list-->
+<div class="btn_BackToList">
+    <button style="height: 2em;">
+        <i class="fa-solid fa-arrow-left"></i>
+        <span> @Html.ActionLink("Back to List", "Show", "Color", null, new { style = "color: black;" })</span>
+    </button>
+</div>
+<br />
+
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+
+<div class="form-horizontal">
+    <hr />
+    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+    <div class="form-group">
+        @Html.LabelFor(model => model.MaMau, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.MaMau, new { htmlAttributes = new { @class = "form-control", @readonly = "readonly" } })
+            @Html.ValidationMessageFor(model => model.MaMau, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.TenMau, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.TenMau, new { htmlAttributes = new { @class = "form-control" } })
+            @Html.ValidationMessageFor(model => model.TenMau, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <!--Button save-->
+    <div class="form-group">
+        <div class="col-md-offset-2 col-md-10">
+            @*<input type="submit" value="Save" class="btn btn-default" />*@
+            <button class="btn_save">
+                <span class="ctn_IconSave">
+                    <i class="fa-solid fa-floppy-disk icon_save" style="color: #ffffff;"></i>
+                </span>
+                <p class="text_save">Save</p>
+            </button>
+        </div>
+    </div>
+
+</div>
+}
+

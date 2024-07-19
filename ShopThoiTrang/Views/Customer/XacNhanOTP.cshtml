@@ -1,0 +1,269 @@
+﻿@model ShopThoiTrang.Models.KHACHHANG
+@{
+    ViewBag.Title = "Login";
+    //Layout = "~/Views/Share/LayoutPage_Customer.cshtml";
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+}
+
+<style>
+    body {
+        background-image: url('../../Image/image_Banner/Banner_SanPham.jpg');
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        margin: 0;
+    }
+
+    footer {
+        display: none;
+    }
+</style>
+<style>
+    /* CSS */
+    /* body {
+        background-color: aqua;
+        display: flex;
+    }*/
+    .inactive-form {
+        pointer-events: none;
+        opacity: 0.5;
+        /* Bạn có thể điều chỉnh độ mờ để làm cho các điều khiển biểu mẫu ít nổi bật hơn */
+    }
+
+        .inactive-form input,
+        .inactive-form button {
+            pointer-events: none;
+            opacity: 0.5;
+            /* Bạn có thể điều chỉnh độ mờ để làm cho các điều khiển biểu mẫu ít nổi bật hơn */
+        }
+
+    .form_ctn_Login {
+        width: 400px;
+        height: 450px;
+        background-color: rgba(255, 255, 255, 0.8);
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        border-radius: 10px;
+        box-sizing: border-box;
+        padding: 20px 30px;
+    }
+
+    .Title_Login {
+        text-align: center;
+        font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+        margin: 10px 0 20px 0;
+        font-size: 28px;
+        font-weight: 800;
+    }
+
+    .form_login {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 18px;
+        margin-bottom: 15px;
+    }
+
+    .Input_User {
+        border-radius: 20px;
+        /*border: 1px solid #c0c0c0;*/
+        outline: 0 !important;
+        box-sizing: border-box;
+        padding: 12px 15px;
+        /*padding-left: 39px;*/
+    }
+
+        .Input_User label {
+            margin-right: 20px;
+        }
+
+    .Input_Password {
+        border-radius: 20px;
+        /*border: 1px solid #c0c0c0;*/
+        outline: 0 !important;
+        box-sizing: border-box;
+        padding: 12px 15px;
+    }
+
+
+    .input-group input {
+        height: 30px;
+        width: 100%;
+        padding: 12px 15px;
+        font-size: 13px;
+    }
+
+    .input-group label {
+        padding-right: 30px;
+        font-size: 12px;
+        font-weight: bold;
+    }
+
+    .page-link {
+        text-decoration: underline;
+        margin: 0;
+        text-align: end;
+        color: #747474;
+        text-decoration-color: #747474;
+    }
+
+    .page-link-label {
+        cursor: pointer;
+        font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+        font-size: 9px;
+        font-weight: 700;
+    }
+
+        .page-link-label:hover {
+            color: #000;
+        }
+
+    .btn_Login {
+        padding: 5px 15px;
+        font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+        border-radius: 10px;
+        border: 0 !important;
+        outline: 0 !important;
+        /*margin-left: 95px;*/
+        margin-top: 30px;
+        margin-bottom: 40px;
+        background: teal;
+        color: white;
+        cursor: pointer;
+        /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;*/
+        width: -webkit-fill-available;
+        height: 50px;
+        font-weight: bold;
+    }
+
+        .btn_Login:active {
+            box-shadow: none;
+        }
+
+        .btn_Login:hover {
+            color: aqua;
+            box-shadow: 5px 10px 20px 0 rgba(0, 0, 0, 0.5);
+            border: 2px solid #000;
+            border-color: red;
+        }
+
+    .Signup_label {
+        margin: 0;
+        font-size: 13px;
+        color: #000;
+        font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+        text-align: center;
+    }
+
+
+    .signup_link {
+        margin-left: 1px;
+        font-size: 13px;
+        text-decoration: underline;
+        text-decoration-color: teal;
+        color: teal;
+        cursor: pointer;
+        font-weight: 800;
+        font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    }
+
+    .forgot_Password {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+        .forgot_Password span {
+            font-size: 14px;
+        }
+
+    .border-container {
+        border: 2px solid gray;
+        border-radius: 10px;
+        width: 40px;
+        padding: 5px;
+        position: relative;
+        right: -70px;
+        transition: border-color 0.3s ease; /* Thêm hiệu ứng transition */
+    }
+
+        .border-container:hover {
+            border-color: red; /* Đổi màu của khung khi hover */
+        }
+</style>
+
+
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+</head>
+<body>
+    <div class="form-container form_ctn_Login">
+        <h2 class="Title_Login">Đăng Nhập</h2>
+        <hr />
+
+    </div>
+    <div style="position:relative ; right: 340px; width:280px; background-color:white" class="form-container form_ctn_Login">
+        <h2 class="Title_Login">OTP <i class="fa-regular fa-hand-point-down"></i></h2>
+        <hr />
+        <div style="margin-top:30px; border-bottom: 3px solid rgba(128, 128, 128, 0.5); padding: 10px; border-right: 3px solid rgba(128, 128, 128, 0.5);">
+            @using (Html.BeginForm("XacNhanOTP", "Customer", FormMethod.Post))
+            {
+                @Html.AntiForgeryToken()
+                <!--FORM-->
+                <form class="form_login">
+                    <!-- Email -->
+                    <div class="input-group Input_User">
+                        <div style="position:relative;" class="form-group">
+                            <div style="position: relative; right: 15px;" class="form-group">
+                                @Html.TextBox("Maotp", null, new { @class = "form-control additional-class", placeholder = "Nhập Mã OTP", style = "width:120%; height: 45px; padding-left: 40px;" })
+                                @Html.ValidationMessageFor(model => model.Email)
+                                <i class="fa-regular fa-comment" style="position: absolute; top: 50%; transform: translateY(-50%); left: 10px; color:teal ; font-size:20px"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="btn_Login"><i style="color:white" class="fa-solid fa-share-from-square"></i></button>
+
+                    @*<div class="border-container">
+                            <a href="#" class="btn btn-danger">
+                                <i style="font-size: 30px; color:red ; align-content:center; position:relative;right:-9px" class="fa-solid fa-arrow-rotate-left"></i>
+                            </a>
+                        </div>*@
+
+
+
+                </form>
+
+
+            }
+        </div>
+    </div>
+
+
+    <style>
+
+
+        .additional-class {
+            transition: all 0.3s; /* Add a smooth transition effect for all properties */
+            width: 30px; /* Set the initial width */
+            border: 1px solid #ccc;
+            padding: 5px;
+        }
+
+            .additional-class:hover {
+                height: 80px;
+                width: 100px; /* Set the initial width */
+                border-color: #4CAF50;
+                background-color: #e6f7e3;
+            }
+    </style>
+
+
+
+
+</body>
+</html>

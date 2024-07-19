@@ -1,0 +1,228 @@
+﻿@model IEnumerable<ShopThoiTrang.Models.VOUCHER>
+
+@{
+    ViewBag.Title = "ShowVoucher";
+    Layout = "~/Views/Share/LayoutPage_Customer.cshtml";
+}
+
+<style>
+    .ctn_ShowVoucher {
+        margin-top: 150px;
+        margin-bottom: 150px;
+    }
+
+    .Vouchercard_box {
+        margin-top: 20px;
+        width: 250px;
+        height: 400px;
+        border-radius: 20px;
+        background: linear-gradient(180deg, rgba(254,0,252,1) 3%, rgba(209,64,230,1) 34%, rgba(213,169,221,1) 91%);
+        position: relative;
+        box-shadow: 0 25px 50px rgba(0,0,0,0.55);
+        cursor: pointer;
+        transition: all .3s;
+    }
+        /* .Vouchercard_box:hover{
+            transform: scale(1.1);
+        } */
+        .Vouchercard_box span {
+            position: absolute;
+            overflow: hidden;
+            width: 150px;
+            height: 150px;
+            top: -10px;
+            left: -10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 1;
+        }
+
+            .Vouchercard_box span::before {
+                content: 'TR Voucher';
+                position: absolute;
+                width: 150%;
+                height: 40px;
+                background-image: linear-gradient(45deg, #ff6547 0%, #ffb144 51%, #ff7053 100%);
+                transform: rotate(-45deg) translateY(-20px);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: #fff;
+                font-weight: bold;
+                letter-spacing: 0.1em;
+                text-transform: uppercase;
+                box-shadow: 0 5px 10px rgba(0,0,0,0.23);
+            }
+
+            .Vouchercard_box span::after {
+                content: '';
+                position: absolute;
+                width: 10px;
+                bottom: 0;
+                left: 0;
+                height: 10px;
+                z-index: -1;
+                box-shadow: 140px -140px #cc3f47;
+                background-image: linear-gradient(45deg, #FF512F 0%, #F09819 51%, #FF512F 100%);
+            }
+
+    .Voucher_name {
+        text-align: right;
+        padding: 5% 10% 0 0;
+        font-size: 1.5em;
+        font-weight: bold;
+        color: #fff;
+    }
+
+    .Voucher_percent {
+        text-align: center;
+        color: #fff;
+        font-size: 4em;
+        font-weight: bold;
+        margin-top: 0;
+        padding-left: 15%;
+    }
+
+    .Voucher_code {
+        text-align: center;
+        font-size: 20px;
+        font-weight: bold;
+        color: #fff;
+        border: 1px solid #000000;
+        border-radius: 20px;
+        width: 50%;
+        margin-left: 25%;
+    }
+
+    .Voucher_min {
+        padding-left: 8%;
+        color: #000000;
+        font-size: 18px;
+    }
+
+    .Voucher_max {
+        padding-left: 8%;
+        color: #000000;
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    .Voucher_Date {
+        padding-left: 5%;
+        color: #000000;
+        font-size: 14px;
+    }
+
+    .Voucher_quantity {
+        padding-left: 15%;
+        color: #000000;
+        font-size: 18px;
+    }
+
+    .btn_SaveVoucher {
+        text-align: center;
+        width: 50%;
+        height: 5vh;
+        margin-left: 25%;
+        border-radius: 20px;
+        font-weight: bold;
+        font-size: 2em;
+        background: #00FA9A;
+        transition: .3s ease;
+    }
+
+        .btn_SaveVoucher:hover {
+            text-align: center;
+            width: 50%;
+            height: 5vh;
+            margin-left: 25%;
+            border-radius: 20px;
+            font-weight: bold;
+            background: #ffffff;
+            transform: scale(1.1);
+        }
+
+    .btn_MyVoucher {
+        background: transparent;
+        position: relative;
+        padding: 5px 15px;
+        display: flex;
+        align-items: center;
+        font-size: 17px;
+        font-weight: 600;
+        text-decoration: none;
+        cursor: pointer;
+        border: 1px solid rgb(255,0,0);
+        border-radius: 25px;
+        outline: none;
+        overflow: hidden;
+        color: rgb(255,0,0);
+        transition: color 0.3s 0.1s ease-out;
+        text-align: center;
+    }
+
+        .btn_MyVoucher::before {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            margin: auto;
+            content: '';
+            border-radius: 50%;
+            display: block;
+            width: 20em;
+            height: 20em;
+            left: -5em;
+            text-align: center;
+            transition: box-shadow 0.5s ease-out;
+            z-index: -1;
+        }
+
+        .btn_MyVoucher:hover {
+            color: #fff;
+            border: 1px solid rgb(255,0,0);
+        }
+
+            .btn_MyVoucher:hover::before {
+                box-shadow: inset 0 0 0 10em rgb(255, 0, 0);
+            }
+</style>
+
+<p>@ViewBag.thongbao</p>
+
+
+
+<div class="container ctn_ShowVoucher">
+    <button class="btn_MyVoucher">
+        <a href="@Url.Action("MyVoucher","Voucher")" class="btn_MyVoucher">Voucher của tôi &nbsp;<i class="fa-solid fa-ticket"></i></a>
+    </button>
+    <br />
+    <div class="row">
+        @foreach (var item in Model)
+        {
+            <div class="col col-xl-3 col-md-4 col-sm-6 col-xs-12 d-flex align-items-center">
+                <div class="Vouchercard_box">
+
+                    <span></span>
+                    <p class="Voucher_name"> @Html.DisplayFor(modelItem => item.Ten_VOUCHER)</p>
+                    <hr style="z-index: 0;">
+                    <p class="Voucher_percent">@Html.DisplayFor(modelItem => item.PhanTramGiam)%</p>
+                    <p class="Voucher_code">Mã:  @Html.DisplayFor(modelItem => item.MA_VOUCHER)</p>
+                    <p class="Voucher_max">Giảm tối đa: @Html.DisplayFor(modelItem => item.GiamToiDa) vnđ</p>
+                    <p class="Voucher_min">Đơn tối thiểu:  @Html.DisplayFor(modelItem => item.DonToiThieu) vnđ</p>
+                    <p class="Voucher_Date"><strong>Hiệu lực:</strong> @Html.DisplayFor(modelItem => item.Ngaybatdau)</p>
+                    <p class="Voucher_Date"><strong>Đến: </strong>  @Html.DisplayFor(modelItem => item.Ngayketthuc)</p>
+                    <p class="Voucher_quantity">Số lượng còn lại:  @Html.DisplayFor(modelItem => item.SoLuongVOUCHER)</p>
+                    @using (Html.BeginForm("SaveVoucher", "Voucher", new { MaVoucher = item.MA_VOUCHER }, FormMethod.Post))
+                    {
+                        <button type="submit" class="btn_SaveVoucher">Lưu</button>
+                    }
+                </div>
+            </div>
+        }
+    </div>
+</div>
+
+

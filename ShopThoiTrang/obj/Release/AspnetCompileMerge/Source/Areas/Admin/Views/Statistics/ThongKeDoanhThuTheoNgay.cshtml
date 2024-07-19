@@ -1,0 +1,305 @@
+﻿@*@model IEnumerable<ShopThoiTrang.Models.ThongKeDoanhThuTheoNgay_Result>*@
+
+@{
+    ViewBag.Title = "ThongKeDoanhThuTheoNgay";
+    Layout = "~/Areas/Admin/Views/Shared/LayoutPageAdmin.cshtml";
+}
+<style>
+    .table-container {
+        max-height: 70vh; /* Chiều cao tối đa cho thanh cuộn */
+        overflow-y: auto; /* Thanh cuộn dọc */
+        cursor: pointer;
+    }
+
+    thead {
+        position: sticky;
+        top: 0;
+        background-color: white; /* Đổi màu nền header */
+    }
+</style>
+
+
+@using (Html.BeginForm("ThongKeDoanhThuTheoNgay", "Statistics", FormMethod.Get, new { id = "thongKeForm" }))
+{
+    <div class="container-fluid">
+        <div class="row">
+            <h2>Chọn thời gian thống kê</h2>
+            <div class="col-md-3">
+                <label for="startTime">Thời gian bắt đầu:</label>
+            </div>
+            <div class="col-md-9">
+                <input type="datetime-local" id="startTime" name="startTime" value="@DateTime.Now.AddDays(-7).ToString("yyyy-MM-ddTHH:mm")">
+            </div>
+
+
+        </div>
+
+
+
+        <div class="row">
+            <div class="col-md-3">
+                <label for="endTime">Thời gian kết thúc:</label>
+            </div>
+            <div class="col-md-9">
+                <input type="datetime-local" id="endTime" name="endTime" value="@DateTime.Now.ToString("yyyy-MM-ddTHH:mm")">
+            </div>
+        </div>
+    </div>
+
+
+    @*<button type="submit" class="btn btn-warning">Thống kê</button>*@
+}
+
+<br />
+
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        var form = document.getElementById('thongKeForm');
+
+        form.addEventListener('input', function () {
+            // Tự động gửi biểu mẫu khi ô nhập ngày thay đổi
+            form.submit();
+        });
+    });
+</script>
+
+
+<div class="container-fluid">
+    <div class="row">
+        <h2 style="text-align: center">Thống kê doanh thu ngày</h2>
+        <br />
+        <br />
+
+        <br />
+
+        <div class="col-md-3 scroll-container-vertical">
+            <div class="table-container">
+
+
+                <table class="table">
+                    <thead class="table-dark ">
+                        <tr>
+                            <th>Ngày</th>
+                            <th>Doanh thu</th>
+
+                        </tr>
+                    </thead>
+
+                    <tbody>
+
+                        @foreach (var item in ViewBag.chart_doanhthu)
+                        {
+                            <tr>
+                                <td>@item.Ngay.ToString("dd/MM/yyyy")</td>
+                                <td>@item.TongDoanhThu</td>
+                            </tr>
+                        }
+
+                    </tbody>
+
+                </table>
+
+            </div>
+            <p>Doanh Thu: @ViewBag.tong</p>
+
+        </div>
+
+        <div class="col-md-9 ">
+            <canvas id="myChart" width="400" height="200"></canvas>
+        </div>
+    </div>
+</div>
+
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+@*---------------------------------------------------------------------------------*@
+<div class="container-fluid">
+    <div class="row">
+        <h2 style="text-align: center">Thống kê số lượng sản phẩm bán theo ngày</h2>
+        <br />
+        <br />
+        <br />
+
+        <div class="col-md-4 scroll-container-vertical">
+            <div class="table-container">
+
+
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Tên SP</th>
+                            <th>SL Bán</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+
+
+                        @{
+
+                            foreach (var item in ViewBag.chart_tksp)
+                            {
+
+                                <tr>
+                                    <td>@item.TenSanPham</td>
+                                    <td>@item.TongSoLuongBan</td>
+                                </tr>
+                            }
+
+                        }
+                     
+                    </tbody>
+
+                </table>
+            </div>
+            <strong style="float:right; margin-right: 30px;">SL Bán: @ViewBag.chart_tksp_tong</strong>
+
+        </div>
+
+        <div class="col-md-8 ">
+            <canvas id="myPieChart" width="200"></canvas>
+        </div>
+    </div>
+</div>
+
+
+
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+
+
+@*aaaa*@
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        var chartData = @Html.Raw(Json.Encode(ViewBag.chart_doanhthu));
+
+        var labels = chartData.map(function (item) {
+            return moment(item.Ngay).format('DD/MM/YYYY');
+        });
+
+        var data = chartData.map(function (item) {
+            return item.TongDoanhThu;
+        });
+
+        var ctx = document.getElementById('myChart').getContext('2d');
+        var myChart = new Chart(ctx, {
+            type: 'bar', // hoặc 'line' tùy thuộc vào loại biểu đồ bạn muốn vẽ
+            data: {
+                labels: labels,
+                datasets: [{
+                    label: 'Doanh thu',
+                    data: data,
+                    backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                    borderColor: 'rgba(75, 192, 192, 1)',
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
+                }
+            }
+        });
+    });
+</script>
+
+@*<div style="min-height:200px">
+        <h6>Sản Phẩm Bán Chạy</h6>
+
+
+
+        <table class="table">
+
+
+
+            </tbody>
+        </table>
+    </div>*@
+
+
+
+
+
+
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        var chartData = @Html.Raw(Json.Encode(ViewBag.chart_tksp));
+
+        var labels = chartData.map(function (item) {
+            return item.TenSanPham;
+        });
+
+        var data = chartData.map(function (item) {
+            return item.TongSoLuongBan;
+        });
+
+        /* Hàm sinh màu ngẫu nhiên */
+        function getRandomColor() {
+            var letters = '0123456789ABCDEF';
+            var color = '#';
+            for (var i = 0; i < 6; i++) {
+                color += letters[Math.floor(Math.random() * 16)];
+            }
+            return color;
+        }
+
+        // Tạo mảng màu ngẫu nhiên cho từng sản phẩm
+        var backgroundColors = chartData.map(function () {
+            return getRandomColor();
+        });
+
+        var ctx = document.getElementById('myPieChart').getContext('2d');
+        var myChart = new Chart(ctx, {
+            type: 'pie',
+            data: {
+                datasets: [{
+                    label: 'Doanh thu',
+                    data: data,
+                    backgroundColor: backgroundColors,
+                    borderColor: 'rgba(75, 192, 192, 1)',
+                    borderWidth: 1
+                }],
+                labels: labels
+            },
+            options: {
+                //responsive: true,
+                //maintainAspectRatio: false,
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
+                },
+                legend: {
+                    position: 'bottom', // Đặt vị trí của legend là bottom
+                    align: 'start',    // Đặt alignment là start để dòng chữ nằm bên trái
+                    labels: {
+                        font: {
+                            size: 12
+
+                        }
+                    }
+                }
+            }
+        });
+    });
+</script>
+
+
